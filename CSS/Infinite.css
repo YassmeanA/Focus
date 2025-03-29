@@ -1,0 +1,64 @@
+
+.container3 {
+    width:330px;
+    height:330px;
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    border-radius:20px;
+    transition:0.3s;
+    background-size:cover;
+    background-position:center;
+    background: white;}
+    
+    .container3 .infinite{
+    transform:scale(0.8) translateX(-5%) rotate(40deg);
+    display: flex;
+    gap:1em;
+    align-items: center;
+    justify-content: center;}
+    
+    .container3 #carousel1{
+    transform: translateY(-100%);}
+    
+    .container3 .carousel {
+    max-height: 2200px;
+    height: 100%;}
+    
+    .container3 .carousel > ul {
+    list-style:none;
+    height:max-content;
+    padding:1em 0;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    flex-wrap:nowrap;
+    list-style:none;
+    gap:1em;}
+    
+    .container3 .carousel .card {
+    position:relative;
+    pointer-events:none;
+    overflow:hidden;
+    height: 280px;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    cursor: pointer;
+    width:200px;
+    align-items: center;
+    justify-content: center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);}
+    
+    .container3 img {
+    height: 100%;
+    width:100%;
+    object-fit: cover;}
+    
+    @keyframes move-ltr {
+    to {transform: translateY(calc(-50%));}}
+    
+    @keyframes move-rtl {
+    to {transform: translateY(calc(50%));}}
+    

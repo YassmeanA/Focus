@@ -1,0 +1,6 @@
+<svg id="change" width="50" height="50" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path d="M195.719 174.383H106.295C105.8 174.383 105.543 174.972 105.879 175.335L133.347 205.001" stroke="#CACACA" stroke-width="12" stroke-linecap="round"/>
+       <path d="M195.719 174.38H106.295C105.8 174.38 105.543 173.791 105.879 173.428L133.347 143.762" stroke="#CACACA" stroke-width="12" stroke-linecap="round"/>
+       <path d="M105 125.617H194.424C194.919 125.617 195.176 126.206 194.84 126.569L167.371 156.236" stroke="#CACACA" stroke-width="12" stroke-linecap="round"/>
+       <path d="M105 125.619H194.424C194.919 125.619 195.176 125.029 194.84 124.666L167.371 95" stroke="#CACACA" stroke-width="12" stroke-linecap="round"/>
+       </svg>

@@ -1,0 +1,8 @@
+<svg id="display" width="50" height="50" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path d="M150 136.668H194C200.075 136.668 205 141.593 205 147.668V189.835C205 195.909 200.075 200.835 194 200.835H150" stroke="#CACACA" stroke-width="11" stroke-linecap="round"/>
+       <path d="M150 136.668H106C99.9249 136.668 95 141.593 95 147.668V189.835C95 195.909 99.9249 200.835 106 200.835H150" stroke="#CACACA" stroke-width="11" stroke-linecap="round"/>
+       <path d="M150 118.332H191.25" stroke="#CACACA" stroke-width="11" stroke-linecap="round"/>
+       <path d="M150 118.332H108.75" stroke="#CACACA" stroke-width="11" stroke-linecap="round"/>
+       <path d="M150 100H179.333" stroke="#CACACA" stroke-width="11" stroke-linecap="round"/>
+       <path d="M149.997 100H120.664" stroke="#CACACA" stroke-width="11" stroke-linecap="round"/>
+       </svg>

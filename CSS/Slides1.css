@@ -50,7 +50,7 @@
     .container4 .card h2 {
     user-select:none;
     font-weight: 600;
-    font-size:12px;
+    font-size:13px;
     width:200px;
     position : absolute;
     padding:10px;
@@ -64,13 +64,13 @@
     .container4 .card h3 {
     user-select:none;
     font-weight: 500;
-    font-size:9px;
+    font-size:10px;
     width:200px;
     position : absolute;
     padding:10px;
     bottom:-20px;
     left:0;
-    opacity :0;
+    opacity:0;
     color:white;
     text-shadow:2px 2px 2px rgba(0,0,0,0.4);
     transition: 0.4s cubic-bezier(0.5,0,0.5,1) ,bottom 0.4s cubic-bezier(0.5,0,0.5,1);}

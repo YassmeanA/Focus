@@ -1,0 +1,97 @@
+.container6 {
+    width:330px;
+    height:330px;
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    border-radius:20px;
+    transition:0.3s;
+    background: rgba(228, 220, 220,0.9);
+    background-blend-mode: lighten;
+    background-size:cover;
+    background-position:center;}
+    
+    .container6 .wrapper{
+    position: absolute;
+    width:334px;
+    height:250px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow: hidden;}
+    
+    .container6 .carousel {
+    margin:20px 0;
+    width:80%;
+    height:80%;
+    display: flex;
+    gap:10px;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:nowrap;}
+    
+    .container6 .card{
+    --i1:65%;
+    --i2:25%;
+    --i3:15%;
+    --i4:50%;
+    --i5:40%;
+    --i6:10%;
+    position:relative;
+    height:100%;
+    width:65%;
+    list-style: none;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background:var(--i);
+    background-size:cover;
+    background-position:center;}
+    
+    .container6 .card:nth-child(2){
+    width:25%;}
+    
+    .container6 .card:nth-child(3){
+    width:15%;}
+    
+    .container6 .card h2 {
+    text-shadow:1px 1px 3px rgba(0,0,0,0.3);
+    user-select:none;
+    font-weight: 500;
+    font-size: 12px;
+    width:200px;
+    color:white;
+    padding:10px;
+    position : absolute;
+    bottom:5px; 
+    left:0;
+    opacity :0;
+    transition: 0.4s cubic-bezier(0.5,0,0.5,1) ,bottom 0.4s cubic-bezier(0.5,0,0.5,1);}
+    
+    .container6 .card span {
+    text-shadow:1px 1px 1px rgba(0,0,0,0.3);
+    user-select:none;
+    font-weight: 250;
+    font-size: 9px;
+    width:200px;
+    color:white;
+    padding:10px;
+    position : absolute;
+    bottom:-5px; 
+    left:0;
+    opacity :0;
+    transition: 0.4s cubic-bezier(0.5,0,0.5,1) ,bottom 0.4s cubic-bezier(0.5,0,0.5,1);}
+    
+    .container6 .card.active h2{
+    left:5px;
+    bottom:12px; 
+    opacity:1;}
+    
+    .container6 .card.active span{
+    left:5px;
+    bottom:0px; 
+    opacity:1;}

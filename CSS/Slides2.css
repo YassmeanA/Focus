@@ -1,0 +1,117 @@
+
+.container5 {
+    width:330px;
+    height:330px;
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    border-radius:20px;
+    transition:0.3s;
+    background: rgba(228, 220, 220,0.75);
+    background-blend-mode: lighten;
+    background-size:cover;
+    background-position:center;}
+    
+    .container5 .wrapper{
+    width:330px;
+    height:350px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;}
+    
+    .container5 .carousel {
+    height:100%;
+    margin:20px 10px;
+    display: flex;
+    column-gap:10px;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:nowrap;
+    transform:scale(0.5);}
+    
+    .container5 .card{
+    position:relative;
+    height: 200px;
+    list-style: none;
+    border-radius: 5px;
+    width:60px;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s cubic-bezier(0.5,0,0.5,1);
+    background-size:cover;
+    background-position:center;}
+    
+    .container5 .card h2 {
+    z-index:1;
+    writing-mode: vertical-lr;
+    text-orientation:upright;
+    letter-spacing:5px;
+    user-select:none;
+    font-weight: 500;
+    font-size: 15px;
+    color:white;
+    transition:0.4s;}
+    
+    .container5 .card h3 {
+    position: absolute;
+    width:300px;
+    left:0;
+    bottom:15px;
+    opacity:0;
+    user-select:none;
+    font-weight: 500;
+    font-size: 18px;
+    color:white;
+    padding:10px;
+    transition:0.4s;
+    text-shadow:2px 2px 2px rgba(0,0,0,0.5);}
+    
+    .container5 .card span {
+    width:300px;
+    position: absolute;
+    opacity:0;
+    left:0;
+    bottom:-5px;
+    user-select:none;
+    font-weight: 300;
+    font-size: 12px;
+    color:white;
+    padding:10px;
+    transition:0.4s;
+    text-shadow:2px 2px 2px rgba(0,0,0,0.5);}
+    
+    .container5 .dark{
+    position: absolute;
+    height:100%;
+    width:100%;
+    background:black;
+    opacity:0.7;
+    object-fit:cover;
+    pointer-events:auto;
+    transition:0.4s;}
+    
+    .container5 .card.active{
+    width:300px;
+    filter: brightness(100%);}
+    
+    .container5 .card.active h2{
+    opacity:0;}
+    
+    .container5 .card.active h3{
+    opacity:1;
+    left:10px;
+    bottom:23px;}
+    
+    .container5 .card.active span{
+    opacity:1;
+    left:10px;
+    bottom:5px;}
+    
+    .container5 .card.active .dark{
+    opacity:0;}
+    

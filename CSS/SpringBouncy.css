@@ -1,0 +1,1069 @@
+
+@keyframes Bouncy-Scale1 {
+  0.00% { transform: scale(calc(var(--i5) + var(--i6)*0.00)) }
+  0.877% { transform: scale(calc(var(--i5) + var(--i6)*0.0467)) }
+  1.75% { transform: scale(calc(var(--i5) + var(--i6)*0.0161)) }
+  2.63% { transform: scale(calc(var(--i5) + var(--i6)*0.171)) }
+  3.51% { transform: scale(calc(var(--i5) + var(--i6)*0.394)) }
+  4.39% { transform: scale(calc(var(--i5) + var(--i6)*0.653)) }
+  5.26% { transform: scale(calc(var(--i5) + var(--i6)*0.921)) }
+  6.14% { transform: scale(calc(var(--i5) + var(--i6)*1.17)) }
+  7.02% { transform: scale(calc(var(--i5) + var(--i6)*1.38)) }
+  7.89% { transform: scale(calc(var(--i5) + var(--i6)*1.53)) }
+  8.77% { transform: scale(calc(var(--i5) + var(--i6)*1.61)) }
+  9.65% { transform: scale(calc(var(--i5) + var(--i6)*1.62)) }
+  10.5% { transform: scale(calc(var(--i5) + var(--i6)*1.57)) }
+  11.4% { transform: scale(calc(var(--i5) + var(--i6)*1.47)) }
+  12.3% { transform: scale(calc(var(--i5) + var(--i6)*1.33)) }
+  13.2% { transform: scale(calc(var(--i5) + var(--i6)*1.17)) }
+  14.0% { transform: scale(calc(var(--i5) + var(--i6)*1.01)) }
+  14.9% { transform: scale(calc(var(--i5) + var(--i6)*0.865)) }
+  15.8% { transform: scale(calc(var(--i5) + var(--i6)*0.749)) }
+  16.7% { transform: scale(calc(var(--i5) + var(--i6)*0.670)) }
+  17.5% { transform: scale(calc(var(--i5) + var(--i6)*0.631)) }
+  18.4% { transform: scale(calc(var(--i5) + var(--i6)*0.633)) }
+  19.3% { transform: scale(calc(var(--i5) + var(--i6)*0.672)) }
+  20.2% { transform: scale(calc(var(--i5) + var(--i6)*0.739)) }
+  21.1% { transform: scale(calc(var(--i5) + var(--i6)*0.826)) }
+  21.9% { transform: scale(calc(var(--i5) + var(--i6)*0.922)) }
+  22.8% { transform: scale(calc(var(--i5) + var(--i6)*1.02)) }
+  23.7% { transform: scale(calc(var(--i5) + var(--i6)*1.10)) }
+  24.6% { transform: scale(calc(var(--i5) + var(--i6)*1.16)) }
+  25.4% { transform: scale(calc(var(--i5) + var(--i6)*1.21)) }
+  26.3% { transform: scale(calc(var(--i5) + var(--i6)*1.22)) }
+  27.2% { transform: scale(calc(var(--i5) + var(--i6)*1.22)) }
+  28.1% { transform: scale(calc(var(--i5) + var(--i6)*1.19)) }
+  28.9% { transform: scale(calc(var(--i5) + var(--i6)*1.14)) }
+  29.8% { transform: scale(calc(var(--i5) + var(--i6)*1.09)) }
+  30.7% { transform: scale(calc(var(--i5) + var(--i6)*1.03)) }
+  31.6% { transform: scale(calc(var(--i5) + var(--i6)*0.978)) }
+  32.5% { transform: scale(calc(var(--i5) + var(--i6)*0.931)) }
+  33.3% { transform: scale(calc(var(--i5) + var(--i6)*0.895)) }
+  34.2% { transform: scale(calc(var(--i5) + var(--i6)*0.873)) }
+  35.1% { transform: scale(calc(var(--i5) + var(--i6)*0.867)) }
+  36.0% { transform: scale(calc(var(--i5) + var(--i6)*0.874)) }
+  36.8% { transform: scale(calc(var(--i5) + var(--i6)*0.893)) }
+  37.7% { transform: scale(calc(var(--i5) + var(--i6)*0.921)) }
+  38.6% { transform: scale(calc(var(--i5) + var(--i6)*0.954)) }
+  39.5% { transform: scale(calc(var(--i5) + var(--i6)*0.988)) }
+  40.4% { transform: scale(calc(var(--i5) + var(--i6)*1.02)) }
+  41.2% { transform: scale(calc(var(--i5) + var(--i6)*1.05)) }
+  42.1% { transform: scale(calc(var(--i5) + var(--i6)*1.07)) }
+  43.0% { transform: scale(calc(var(--i5) + var(--i6)*1.08)) }
+  43.9% { transform: scale(calc(var(--i5) + var(--i6)*1.08)) }
+  44.7% { transform: scale(calc(var(--i5) + var(--i6)*1.07)) }
+  45.6% { transform: scale(calc(var(--i5) + var(--i6)*1.06)) }
+  46.5% { transform: scale(calc(var(--i5) + var(--i6)*1.04)) }
+  47.4% { transform: scale(calc(var(--i5) + var(--i6)*1.02)) }
+  48.2% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  49.1% { transform: scale(calc(var(--i5) + var(--i6)*0.984)) }
+  50.0% { transform: scale(calc(var(--i5) + var(--i6)*0.969)) }
+  50.9% { transform: scale(calc(var(--i5) + var(--i6)*0.958)) }
+  51.8% { transform: scale(calc(var(--i5) + var(--i6)*0.953)) }
+  52.6% { transform: scale(calc(var(--i5) + var(--i6)*0.953)) }
+  53.5% { transform: scale(calc(var(--i5) + var(--i6)*0.958)) }
+  54.4% { transform: scale(calc(var(--i5) + var(--i6)*0.966)) }
+  55.3% { transform: scale(calc(var(--i5) + var(--i6)*0.977)) }
+  56.1% { transform: scale(calc(var(--i5) + var(--i6)*0.989)) }
+  57.0% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  57.9% { transform: scale(calc(var(--i5) + var(--i6)*1.01)) }
+  58.8% { transform: scale(calc(var(--i5) + var(--i6)*1.02)) }
+  59.6% { transform: scale(calc(var(--i5) + var(--i6)*1.03)) }
+  60.5% { transform: scale(calc(var(--i5) + var(--i6)*1.03)) }
+  61.4% { transform: scale(calc(var(--i5) + var(--i6)*1.03)) }
+  62.3% { transform: scale(calc(var(--i5) + var(--i6)*1.02)) }
+  63.2% { transform: scale(calc(var(--i5) + var(--i6)*1.02)) }
+  64.0% { transform: scale(calc(var(--i5) + var(--i6)*1.01)) }
+  64.9% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  65.8% { transform: scale(calc(var(--i5) + var(--i6)*0.997)) }
+  66.7% { transform: scale(calc(var(--i5) + var(--i6)*0.991)) }
+  67.5% { transform: scale(calc(var(--i5) + var(--i6)*0.987)) }
+  68.4% { transform: scale(calc(var(--i5) + var(--i6)*0.984)) }
+  69.3% { transform: scale(calc(var(--i5) + var(--i6)*0.983)) }
+  70.2% { transform: scale(calc(var(--i5) + var(--i6)*0.984)) }
+  71.1% { transform: scale(calc(var(--i5) + var(--i6)*0.986)) }
+  71.9% { transform: scale(calc(var(--i5) + var(--i6)*0.990)) }
+  72.8% { transform: scale(calc(var(--i5) + var(--i6)*0.994)) }
+  73.7% { transform: scale(calc(var(--i5) + var(--i6)*0.998)) }
+  74.6% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  75.4% { transform: scale(calc(var(--i5) + var(--i6)*1.01)) }
+  76.3% { transform: scale(calc(var(--i5) + var(--i6)*1.01)) }
+  77.2% { transform: scale(calc(var(--i5) + var(--i6)*1.01)) }
+  78.1% { transform: scale(calc(var(--i5) + var(--i6)*1.01)) }
+  78.9% { transform: scale(calc(var(--i5) + var(--i6)*1.01)) }
+  79.8% { transform: scale(calc(var(--i5) + var(--i6)*1.01)) }
+  80.7% { transform: scale(calc(var(--i5) + var(--i6)*1.01)) }
+  81.6% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  82.5% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  83.3% { transform: scale(calc(var(--i5) + var(--i6)*0.998)) }
+  84.2% { transform: scale(calc(var(--i5) + var(--i6)*0.996)) }
+  85.1% { transform: scale(calc(var(--i5) + var(--i6)*0.995)) }
+  86.0% { transform: scale(calc(var(--i5) + var(--i6)*0.994)) }
+  86.8% { transform: scale(calc(var(--i5) + var(--i6)*0.994)) }
+  87.7% { transform: scale(calc(var(--i5) + var(--i6)*0.995)) }
+  88.6% { transform: scale(calc(var(--i5) + var(--i6)*0.996)) }
+  89.5% { transform: scale(calc(var(--i5) + var(--i6)*0.997)) }
+  90.4% { transform: scale(calc(var(--i5) + var(--i6)*0.999)) }
+  91.2% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  92.1% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  93.0% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  93.9% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  94.7% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  95.6% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  96.5% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  97.4% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  98.2% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  99.1% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+  100% { transform: scale(calc(var(--i5) + var(--i6)*1.00)) }
+}
+
+
+@keyframes Bouncy-Scale2 {
+  0.00% { transform: scale(calc(var(--i7) - var(--i8)*0.00)) }
+  0.877% { transform: scale(calc(var(--i7) - var(--i8)*0.0467)) }
+  1.75% { transform: scale(calc(var(--i7) - var(--i8)*0.0161)) }
+  2.63% { transform: scale(calc(var(--i7) - var(--i8)*0.171)) }
+  3.51% { transform: scale(calc(var(--i7) - var(--i8)*0.394)) }
+  4.39% { transform: scale(calc(var(--i7) - var(--i8)*0.653)) }
+  5.26% { transform: scale(calc(var(--i7) - var(--i8)*0.921)) }
+  6.14% { transform: scale(calc(var(--i7) - var(--i8)*1.17)) }
+  7.02% { transform: scale(calc(var(--i7) - var(--i8)*1.38)) }
+  7.89% { transform: scale(calc(var(--i7) - var(--i8)*1.53)) }
+  8.77% { transform: scale(calc(var(--i7) - var(--i8)*1.61)) }
+  9.65% { transform: scale(calc(var(--i7) - var(--i8)*1.62)) }
+  10.5% { transform: scale(calc(var(--i7) - var(--i8)*1.57)) }
+  11.4% { transform: scale(calc(var(--i7) - var(--i8)*1.47)) }
+  12.3% { transform: scale(calc(var(--i7) - var(--i8)*1.33)) }
+  13.2% { transform: scale(calc(var(--i7) - var(--i8)*1.17)) }
+  14.0% { transform: scale(calc(var(--i7) - var(--i8)*1.01)) }
+  14.9% { transform: scale(calc(var(--i7) - var(--i8)*0.865)) }
+  15.8% { transform: scale(calc(var(--i7) - var(--i8)*0.749)) }
+  16.7% { transform: scale(calc(var(--i7) - var(--i8)*0.670)) }
+  17.5% { transform: scale(calc(var(--i7) - var(--i8)*0.631)) }
+  18.4% { transform: scale(calc(var(--i7) - var(--i8)*0.633)) }
+  19.3% { transform: scale(calc(var(--i7) - var(--i8)*0.672)) }
+  20.2% { transform: scale(calc(var(--i7) - var(--i8)*0.739)) }
+  21.1% { transform: scale(calc(var(--i7) - var(--i8)*0.826)) }
+  21.9% { transform: scale(calc(var(--i7) - var(--i8)*0.922)) }
+  22.8% { transform: scale(calc(var(--i7) - var(--i8)*1.02)) }
+  23.7% { transform: scale(calc(var(--i7) - var(--i8)*1.10)) }
+  24.6% { transform: scale(calc(var(--i7) - var(--i8)*1.16)) }
+  25.4% { transform: scale(calc(var(--i7) - var(--i8)*1.21)) }
+  26.3% { transform: scale(calc(var(--i7) - var(--i8)*1.22)) }
+  27.2% { transform: scale(calc(var(--i7) - var(--i8)*1.22)) }
+  28.1% { transform: scale(calc(var(--i7) - var(--i8)*1.19)) }
+  28.9% { transform: scale(calc(var(--i7) - var(--i8)*1.14)) }
+  29.8% { transform: scale(calc(var(--i7) - var(--i8)*1.09)) }
+  30.7% { transform: scale(calc(var(--i7) - var(--i8)*1.03)) }
+  31.6% { transform: scale(calc(var(--i7) - var(--i8)*0.978)) }
+  32.5% { transform: scale(calc(var(--i7) - var(--i8)*0.931)) }
+  33.3% { transform: scale(calc(var(--i7) - var(--i8)*0.895)) }
+  34.2% { transform: scale(calc(var(--i7) - var(--i8)*0.873)) }
+  35.1% { transform: scale(calc(var(--i7) - var(--i8)*0.867)) }
+  36.0% { transform: scale(calc(var(--i7) - var(--i8)*0.874)) }
+  36.8% { transform: scale(calc(var(--i7) - var(--i8)*0.893)) }
+  37.7% { transform: scale(calc(var(--i7) - var(--i8)*0.921)) }
+  38.6% { transform: scale(calc(var(--i7) - var(--i8)*0.954)) }
+  39.5% { transform: scale(calc(var(--i7) - var(--i8)*0.988)) }
+  40.4% { transform: scale(calc(var(--i7) - var(--i8)*1.02)) }
+  41.2% { transform: scale(calc(var(--i7) - var(--i8)*1.05)) }
+  42.1% { transform: scale(calc(var(--i7) - var(--i8)*1.07)) }
+  43.0% { transform: scale(calc(var(--i7) - var(--i8)*1.08)) }
+  43.9% { transform: scale(calc(var(--i7) - var(--i8)*1.08)) }
+  44.7% { transform: scale(calc(var(--i7) - var(--i8)*1.07)) }
+  45.6% { transform: scale(calc(var(--i7) - var(--i8)*1.06)) }
+  46.5% { transform: scale(calc(var(--i7) - var(--i8)*1.04)) }
+  47.4% { transform: scale(calc(var(--i7) - var(--i8)*1.02)) }
+  48.2% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  49.1% { transform: scale(calc(var(--i7) - var(--i8)*0.984)) }
+  50.0% { transform: scale(calc(var(--i7) - var(--i8)*0.969)) }
+  50.9% { transform: scale(calc(var(--i7) - var(--i8)*0.958)) }
+  51.8% { transform: scale(calc(var(--i7) - var(--i8)*0.953)) }
+  52.6% { transform: scale(calc(var(--i7) - var(--i8)*0.953)) }
+  53.5% { transform: scale(calc(var(--i7) - var(--i8)*0.958)) }
+  54.4% { transform: scale(calc(var(--i7) - var(--i8)*0.966)) }
+  55.3% { transform: scale(calc(var(--i7) - var(--i8)*0.977)) }
+  56.1% { transform: scale(calc(var(--i7) - var(--i8)*0.989)) }
+  57.0% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  57.9% { transform: scale(calc(var(--i7) - var(--i8)*1.01)) }
+  58.8% { transform: scale(calc(var(--i7) - var(--i8)*1.02)) }
+  59.6% { transform: scale(calc(var(--i7) - var(--i8)*1.03)) }
+  60.5% { transform: scale(calc(var(--i7) - var(--i8)*1.03)) }
+  61.4% { transform: scale(calc(var(--i7) - var(--i8)*1.03)) }
+  62.3% { transform: scale(calc(var(--i7) - var(--i8)*1.02)) }
+  63.2% { transform: scale(calc(var(--i7) - var(--i8)*1.02)) }
+  64.0% { transform: scale(calc(var(--i7) - var(--i8)*1.01)) }
+  64.9% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  65.8% { transform: scale(calc(var(--i7) - var(--i8)*0.997)) }
+  66.7% { transform: scale(calc(var(--i7) - var(--i8)*0.991)) }
+  67.5% { transform: scale(calc(var(--i7) - var(--i8)*0.987)) }
+  68.4% { transform: scale(calc(var(--i7) - var(--i8)*0.984)) }
+  69.3% { transform: scale(calc(var(--i7) - var(--i8)*0.983)) }
+  70.2% { transform: scale(calc(var(--i7) - var(--i8)*0.984)) }
+  71.1% { transform: scale(calc(var(--i7) - var(--i8)*0.986)) }
+  71.9% { transform: scale(calc(var(--i7) - var(--i8)*0.990)) }
+  72.8% { transform: scale(calc(var(--i7) - var(--i8)*0.994)) }
+  73.7% { transform: scale(calc(var(--i7) - var(--i8)*0.998)) }
+  74.6% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  75.4% { transform: scale(calc(var(--i7) - var(--i8)*1.01)) }
+  76.3% { transform: scale(calc(var(--i7) - var(--i8)*1.01)) }
+  77.2% { transform: scale(calc(var(--i7) - var(--i8)*1.01)) }
+  78.1% { transform: scale(calc(var(--i7) - var(--i8)*1.01)) }
+  78.9% { transform: scale(calc(var(--i7) - var(--i8)*1.01)) }
+  79.8% { transform: scale(calc(var(--i7) - var(--i8)*1.01)) }
+  80.7% { transform: scale(calc(var(--i7) - var(--i8)*1.01)) }
+  81.6% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  82.5% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  83.3% { transform: scale(calc(var(--i7) - var(--i8)*0.998)) }
+  84.2% { transform: scale(calc(var(--i7) - var(--i8)*0.996)) }
+  85.1% { transform: scale(calc(var(--i7) - var(--i8)*0.995)) }
+  86.0% { transform: scale(calc(var(--i7) - var(--i8)*0.994)) }
+  86.8% { transform: scale(calc(var(--i7) - var(--i8)*0.994)) }
+  87.7% { transform: scale(calc(var(--i7) - var(--i8)*0.995)) }
+  88.6% { transform: scale(calc(var(--i7) - var(--i8)*0.996)) }
+  89.5% { transform: scale(calc(var(--i7) - var(--i8)*0.997)) }
+  90.4% { transform: scale(calc(var(--i7) - var(--i8)*0.999)) }
+  91.2% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  92.1% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  93.0% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  93.9% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  94.7% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  95.6% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  96.5% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  97.4% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  98.2% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  99.1% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+  100% { transform: scale(calc(var(--i7) - var(--i8)*1.00)) }
+}
+
+
+
+
+@keyframes Bouncy-TranslateX {
+  0.00% { transform: translateX(calc(var(--i1) + var(--i2)*0.00)) }
+  0.877% { transform: translateX(calc(var(--i1) + var(--i2)*0.0467)) }
+  1.75% { transform: translateX(calc(var(--i1) + var(--i2)*0.0161)) }
+  2.63% { transform: translateX(calc(var(--i1) + var(--i2)*0.171)) }
+  3.51% { transform: translateX(calc(var(--i1) + var(--i2)*0.394)) }
+  4.39% { transform: translateX(calc(var(--i1) + var(--i2)*0.653)) }
+  5.26% { transform: translateX(calc(var(--i1) + var(--i2)*0.921)) }
+  6.14% { transform: translateX(calc(var(--i1) + var(--i2)*1.17)) }
+  7.02% { transform: translateX(calc(var(--i1) + var(--i2)*1.38)) }
+  7.89% { transform: translateX(calc(var(--i1) + var(--i2)*1.53)) }
+  8.77% { transform: translateX(calc(var(--i1) + var(--i2)*1.61)) }
+  9.65% { transform: translateX(calc(var(--i1) + var(--i2)*1.62)) }
+  10.5% { transform: translateX(calc(var(--i1) + var(--i2)*1.57)) }
+  11.4% { transform: translateX(calc(var(--i1) + var(--i2)*1.47)) }
+  12.3% { transform: translateX(calc(var(--i1) + var(--i2)*1.33)) }
+  13.2% { transform: translateX(calc(var(--i1) + var(--i2)*1.17)) }
+  14.0% { transform: translateX(calc(var(--i1) + var(--i2)*1.01)) }
+  14.9% { transform: translateX(calc(var(--i1) + var(--i2)*0.865)) }
+  15.8% { transform: translateX(calc(var(--i1) + var(--i2)*0.749)) }
+  16.7% { transform: translateX(calc(var(--i1) + var(--i2)*0.670)) }
+  17.5% { transform: translateX(calc(var(--i1) + var(--i2)*0.631)) }
+  18.4% { transform: translateX(calc(var(--i1) + var(--i2)*0.633)) }
+  19.3% { transform: translateX(calc(var(--i1) + var(--i2)*0.672)) }
+  20.2% { transform: translateX(calc(var(--i1) + var(--i2)*0.739)) }
+  21.1% { transform: translateX(calc(var(--i1) + var(--i2)*0.826)) }
+  21.9% { transform: translateX(calc(var(--i1) + var(--i2)*0.922)) }
+  22.8% { transform: translateX(calc(var(--i1) + var(--i2)*1.02)) }
+  23.7% { transform: translateX(calc(var(--i1) + var(--i2)*1.10)) }
+  24.6% { transform: translateX(calc(var(--i1) + var(--i2)*1.16)) }
+  25.4% { transform: translateX(calc(var(--i1) + var(--i2)*1.21)) }
+  26.3% { transform: translateX(calc(var(--i1) + var(--i2)*1.22)) }
+  27.2% { transform: translateX(calc(var(--i1) + var(--i2)*1.22)) }
+  28.1% { transform: translateX(calc(var(--i1) + var(--i2)*1.19)) }
+  28.9% { transform: translateX(calc(var(--i1) + var(--i2)*1.14)) }
+  29.8% { transform: translateX(calc(var(--i1) + var(--i2)*1.09)) }
+  30.7% { transform: translateX(calc(var(--i1) + var(--i2)*1.03)) }
+  31.6% { transform: translateX(calc(var(--i1) + var(--i2)*0.978)) }
+  32.5% { transform: translateX(calc(var(--i1) + var(--i2)*0.931)) }
+  33.3% { transform: translateX(calc(var(--i1) + var(--i2)*0.895)) }
+  34.2% { transform: translateX(calc(var(--i1) + var(--i2)*0.873)) }
+  35.1% { transform: translateX(calc(var(--i1) + var(--i2)*0.867)) }
+  36.0% { transform: translateX(calc(var(--i1) + var(--i2)*0.874)) }
+  36.8% { transform: translateX(calc(var(--i1) + var(--i2)*0.893)) }
+  37.7% { transform: translateX(calc(var(--i1) + var(--i2)*0.921)) }
+  38.6% { transform: translateX(calc(var(--i1) + var(--i2)*0.954)) }
+  39.5% { transform: translateX(calc(var(--i1) + var(--i2)*0.988)) }
+  40.4% { transform: translateX(calc(var(--i1) + var(--i2)*1.02)) }
+  41.2% { transform: translateX(calc(var(--i1) + var(--i2)*1.05)) }
+  42.1% { transform: translateX(calc(var(--i1) + var(--i2)*1.07)) }
+  43.0% { transform: translateX(calc(var(--i1) + var(--i2)*1.08)) }
+  43.9% { transform: translateX(calc(var(--i1) + var(--i2)*1.08)) }
+  44.7% { transform: translateX(calc(var(--i1) + var(--i2)*1.07)) }
+  45.6% { transform: translateX(calc(var(--i1) + var(--i2)*1.06)) }
+  46.5% { transform: translateX(calc(var(--i1) + var(--i2)*1.04)) }
+  47.4% { transform: translateX(calc(var(--i1) + var(--i2)*1.02)) }
+  48.2% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  49.1% { transform: translateX(calc(var(--i1) + var(--i2)*0.984)) }
+  50.0% { transform: translateX(calc(var(--i1) + var(--i2)*0.969)) }
+  50.9% { transform: translateX(calc(var(--i1) + var(--i2)*0.958)) }
+  51.8% { transform: translateX(calc(var(--i1) + var(--i2)*0.953)) }
+  52.6% { transform: translateX(calc(var(--i1) + var(--i2)*0.953)) }
+  53.5% { transform: translateX(calc(var(--i1) + var(--i2)*0.958)) }
+  54.4% { transform: translateX(calc(var(--i1) + var(--i2)*0.966)) }
+  55.3% { transform: translateX(calc(var(--i1) + var(--i2)*0.977)) }
+  56.1% { transform: translateX(calc(var(--i1) + var(--i2)*0.989)) }
+  57.0% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  57.9% { transform: translateX(calc(var(--i1) + var(--i2)*1.01)) }
+  58.8% { transform: translateX(calc(var(--i1) + var(--i2)*1.02)) }
+  59.6% { transform: translateX(calc(var(--i1) + var(--i2)*1.03)) }
+  60.5% { transform: translateX(calc(var(--i1) + var(--i2)*1.03)) }
+  61.4% { transform: translateX(calc(var(--i1) + var(--i2)*1.03)) }
+  62.3% { transform: translateX(calc(var(--i1) + var(--i2)*1.02)) }
+  63.2% { transform: translateX(calc(var(--i1) + var(--i2)*1.02)) }
+  64.0% { transform: translateX(calc(var(--i1) + var(--i2)*1.01)) }
+  64.9% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  65.8% { transform: translateX(calc(var(--i1) + var(--i2)*0.997)) }
+  66.7% { transform: translateX(calc(var(--i1) + var(--i2)*0.991)) }
+  67.5% { transform: translateX(calc(var(--i1) + var(--i2)*0.987)) }
+  68.4% { transform: translateX(calc(var(--i1) + var(--i2)*0.984)) }
+  69.3% { transform: translateX(calc(var(--i1) + var(--i2)*0.983)) }
+  70.2% { transform: translateX(calc(var(--i1) + var(--i2)*0.984)) }
+  71.1% { transform: translateX(calc(var(--i1) + var(--i2)*0.986)) }
+  71.9% { transform: translateX(calc(var(--i1) + var(--i2)*0.990)) }
+  72.8% { transform: translateX(calc(var(--i1) + var(--i2)*0.994)) }
+  73.7% { transform: translateX(calc(var(--i1) + var(--i2)*0.998)) }
+  74.6% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  75.4% { transform: translateX(calc(var(--i1) + var(--i2)*1.01)) }
+  76.3% { transform: translateX(calc(var(--i1) + var(--i2)*1.01)) }
+  77.2% { transform: translateX(calc(var(--i1) + var(--i2)*1.01)) }
+  78.1% { transform: translateX(calc(var(--i1) + var(--i2)*1.01)) }
+  78.9% { transform: translateX(calc(var(--i1) + var(--i2)*1.01)) }
+  79.8% { transform: translateX(calc(var(--i1) + var(--i2)*1.01)) }
+  80.7% { transform: translateX(calc(var(--i1) + var(--i2)*1.01)) }
+  81.6% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  82.5% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  83.3% { transform: translateX(calc(var(--i1) + var(--i2)*0.998)) }
+  84.2% { transform: translateX(calc(var(--i1) + var(--i2)*0.996)) }
+  85.1% { transform: translateX(calc(var(--i1) + var(--i2)*0.995)) }
+  86.0% { transform: translateX(calc(var(--i1) + var(--i2)*0.994)) }
+  86.8% { transform: translateX(calc(var(--i1) + var(--i2)*0.994)) }
+  87.7% { transform: translateX(calc(var(--i1) + var(--i2)*0.995)) }
+  88.6% { transform: translateX(calc(var(--i1) + var(--i2)*0.996)) }
+  89.5% { transform: translateX(calc(var(--i1) + var(--i2)*0.997)) }
+  90.4% { transform: translateX(calc(var(--i1) + var(--i2)*0.999)) }
+  91.2% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  92.1% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  93.0% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  93.9% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  94.7% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  95.6% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  96.5% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  97.4% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  98.2% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  99.1% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+  100% { transform: translateX(calc(var(--i1) + var(--i2)*1.00)) }
+}
+
+@keyframes Bouncy-TranslateY {
+  0.00% { transform: translateY(calc(var(--i3) + var(--i4)*0.00)) }
+  0.877% { transform: translateY(calc(var(--i3) + var(--i4)*0.0467)) }
+  1.75% { transform: translateY(calc(var(--i3) + var(--i4)*0.0161)) }
+  2.63% { transform: translateY(calc(var(--i3) + var(--i4)*0.171)) }
+  3.51% { transform: translateY(calc(var(--i3) + var(--i4)*0.394)) }
+  4.39% { transform: translateY(calc(var(--i3) + var(--i4)*0.653)) }
+  5.26% { transform: translateY(calc(var(--i3) + var(--i4)*0.921)) }
+  6.14% { transform: translateY(calc(var(--i3) + var(--i4)*1.17)) }
+  7.02% { transform: translateY(calc(var(--i3) + var(--i4)*1.38)) }
+  7.89% { transform: translateY(calc(var(--i3) + var(--i4)*1.53)) }
+  8.77% { transform: translateY(calc(var(--i3) + var(--i4)*1.61)) }
+  9.65% { transform: translateY(calc(var(--i3) + var(--i4)*1.62)) }
+  10.5% { transform: translateY(calc(var(--i3) + var(--i4)*1.57)) }
+  11.4% { transform: translateY(calc(var(--i3) + var(--i4)*1.47)) }
+  12.3% { transform: translateY(calc(var(--i3) + var(--i4)*1.33)) }
+  13.2% { transform: translateY(calc(var(--i3) + var(--i4)*1.17)) }
+  14.0% { transform: translateY(calc(var(--i3) + var(--i4)*1.01)) }
+  14.9% { transform: translateY(calc(var(--i3) + var(--i4)*0.865)) }
+  15.8% { transform: translateY(calc(var(--i3) + var(--i4)*0.749)) }
+  16.7% { transform: translateY(calc(var(--i3) + var(--i4)*0.670)) }
+  17.5% { transform: translateY(calc(var(--i3) + var(--i4)*0.631)) }
+  18.4% { transform: translateY(calc(var(--i3) + var(--i4)*0.633)) }
+  19.3% { transform: translateY(calc(var(--i3) + var(--i4)*0.672)) }
+  20.2% { transform: translateY(calc(var(--i3) + var(--i4)*0.739)) }
+  21.1% { transform: translateY(calc(var(--i3) + var(--i4)*0.826)) }
+  21.9% { transform: translateY(calc(var(--i3) + var(--i4)*0.922)) }
+  22.8% { transform: translateY(calc(var(--i3) + var(--i4)*1.02)) }
+  23.7% { transform: translateY(calc(var(--i3) + var(--i4)*1.10)) }
+  24.6% { transform: translateY(calc(var(--i3) + var(--i4)*1.16)) }
+  25.4% { transform: translateY(calc(var(--i3) + var(--i4)*1.21)) }
+  26.3% { transform: translateY(calc(var(--i3) + var(--i4)*1.22)) }
+  27.2% { transform: translateY(calc(var(--i3) + var(--i4)*1.22)) }
+  28.1% { transform: translateY(calc(var(--i3) + var(--i4)*1.19)) }
+  28.9% { transform: translateY(calc(var(--i3) + var(--i4)*1.14)) }
+  29.8% { transform: translateY(calc(var(--i3) + var(--i4)*1.09)) }
+  30.7% { transform: translateY(calc(var(--i3) + var(--i4)*1.03)) }
+  31.6% { transform: translateY(calc(var(--i3) + var(--i4)*0.978)) }
+  32.5% { transform: translateY(calc(var(--i3) + var(--i4)*0.931)) }
+  33.3% { transform: translateY(calc(var(--i3) + var(--i4)*0.895)) }
+  34.2% { transform: translateY(calc(var(--i3) + var(--i4)*0.873)) }
+  35.1% { transform: translateY(calc(var(--i3) + var(--i4)*0.867)) }
+  36.0% { transform: translateY(calc(var(--i3) + var(--i4)*0.874)) }
+  36.8% { transform: translateY(calc(var(--i3) + var(--i4)*0.893)) }
+  37.7% { transform: translateY(calc(var(--i3) + var(--i4)*0.921)) }
+  38.6% { transform: translateY(calc(var(--i3) + var(--i4)*0.954)) }
+  39.5% { transform: translateY(calc(var(--i3) + var(--i4)*0.988)) }
+  40.4% { transform: translateY(calc(var(--i3) + var(--i4)*1.02)) }
+  41.2% { transform: translateY(calc(var(--i3) + var(--i4)*1.05)) }
+  42.1% { transform: translateY(calc(var(--i3) + var(--i4)*1.07)) }
+  43.0% { transform: translateY(calc(var(--i3) + var(--i4)*1.08)) }
+  43.9% { transform: translateY(calc(var(--i3) + var(--i4)*1.08)) }
+  44.7% { transform: translateY(calc(var(--i3) + var(--i4)*1.07)) }
+  45.6% { transform: translateY(calc(var(--i3) + var(--i4)*1.06)) }
+  46.5% { transform: translateY(calc(var(--i3) + var(--i4)*1.04)) }
+  47.4% { transform: translateY(calc(var(--i3) + var(--i4)*1.02)) }
+  48.2% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  49.1% { transform: translateY(calc(var(--i3) + var(--i4)*0.984)) }
+  50.0% { transform: translateY(calc(var(--i3) + var(--i4)*0.969)) }
+  50.9% { transform: translateY(calc(var(--i3) + var(--i4)*0.958)) }
+  51.8% { transform: translateY(calc(var(--i3) + var(--i4)*0.953)) }
+  52.6% { transform: translateY(calc(var(--i3) + var(--i4)*0.953)) }
+  53.5% { transform: translateY(calc(var(--i3) + var(--i4)*0.958)) }
+  54.4% { transform: translateY(calc(var(--i3) + var(--i4)*0.966)) }
+  55.3% { transform: translateY(calc(var(--i3) + var(--i4)*0.977)) }
+  56.1% { transform: translateY(calc(var(--i3) + var(--i4)*0.989)) }
+  57.0% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  57.9% { transform: translateY(calc(var(--i3) + var(--i4)*1.01)) }
+  58.8% { transform: translateY(calc(var(--i3) + var(--i4)*1.02)) }
+  59.6% { transform: translateY(calc(var(--i3) + var(--i4)*1.03)) }
+  60.5% { transform: translateY(calc(var(--i3) + var(--i4)*1.03)) }
+  61.4% { transform: translateY(calc(var(--i3) + var(--i4)*1.03)) }
+  62.3% { transform: translateY(calc(var(--i3) + var(--i4)*1.02)) }
+  63.2% { transform: translateY(calc(var(--i3) + var(--i4)*1.02)) }
+  64.0% { transform: translateY(calc(var(--i3) + var(--i4)*1.01)) }
+  64.9% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  65.8% { transform: translateY(calc(var(--i3) + var(--i4)*0.997)) }
+  66.7% { transform: translateY(calc(var(--i3) + var(--i4)*0.991)) }
+  67.5% { transform: translateY(calc(var(--i3) + var(--i4)*0.987)) }
+  68.4% { transform: translateY(calc(var(--i3) + var(--i4)*0.984)) }
+  69.3% { transform: translateY(calc(var(--i3) + var(--i4)*0.983)) }
+  70.2% { transform: translateY(calc(var(--i3) + var(--i4)*0.984)) }
+  71.1% { transform: translateY(calc(var(--i3) + var(--i4)*0.986)) }
+  71.9% { transform: translateY(calc(var(--i3) + var(--i4)*0.990)) }
+  72.8% { transform: translateY(calc(var(--i3) + var(--i4)*0.994)) }
+  73.7% { transform: translateY(calc(var(--i3) + var(--i4)*0.998)) }
+  74.6% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  75.4% { transform: translateY(calc(var(--i3) + var(--i4)*1.01)) }
+  76.3% { transform: translateY(calc(var(--i3) + var(--i4)*1.01)) }
+  77.2% { transform: translateY(calc(var(--i3) + var(--i4)*1.01)) }
+  78.1% { transform: translateY(calc(var(--i3) + var(--i4)*1.01)) }
+  78.9% { transform: translateY(calc(var(--i3) + var(--i4)*1.01)) }
+  79.8% { transform: translateY(calc(var(--i3) + var(--i4)*1.01)) }
+  80.7% { transform: translateY(calc(var(--i3) + var(--i4)*1.01)) }
+  81.6% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  82.5% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  83.3% { transform: translateY(calc(var(--i3) + var(--i4)*0.998)) }
+  84.2% { transform: translateY(calc(var(--i3) + var(--i4)*0.996)) }
+  85.1% { transform: translateY(calc(var(--i3) + var(--i4)*0.995)) }
+  86.0% { transform: translateY(calc(var(--i3) + var(--i4)*0.994)) }
+  86.8% { transform: translateY(calc(var(--i3) + var(--i4)*0.994)) }
+  87.7% { transform: translateY(calc(var(--i3) + var(--i4)*0.995)) }
+  88.6% { transform: translateY(calc(var(--i3) + var(--i4)*0.996)) }
+  89.5% { transform: translateY(calc(var(--i3) + var(--i4)*0.997)) }
+  90.4% { transform: translateY(calc(var(--i3) + var(--i4)*0.999)) }
+  91.2% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  92.1% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  93.0% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  93.9% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  94.7% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  95.6% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  96.5% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  97.4% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  98.2% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  99.1% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+  100% { transform: translateY(calc(var(--i3) + var(--i4)*1.00)) }
+}
+
+@keyframes Bouncy-Rotate {
+  0.00% { transform: rotate(calc(var(--i3) + var(--i4)*0.00)) }
+  0.877% { transform: rotate(calc(var(--i3) + var(--i4)*0.0467)) }
+  1.75% { transform: rotate(calc(var(--i3) + var(--i4)*0.0161)) }
+  2.63% { transform: rotate(calc(var(--i3) + var(--i4)*0.171)) }
+  3.51% { transform: rotate(calc(var(--i3) + var(--i4)*0.394)) }
+  4.39% { transform: rotate(calc(var(--i3) + var(--i4)*0.653)) }
+  5.26% { transform: rotate(calc(var(--i3) + var(--i4)*0.921)) }
+  6.14% { transform: rotate(calc(var(--i3) + var(--i4)*1.17)) }
+  7.02% { transform: rotate(calc(var(--i3) + var(--i4)*1.38)) }
+  7.89% { transform: rotate(calc(var(--i3) + var(--i4)*1.53)) }
+  8.77% { transform: rotate(calc(var(--i3) + var(--i4)*1.61)) }
+  9.65% { transform: rotate(calc(var(--i3) + var(--i4)*1.62)) }
+  10.5% { transform: rotate(calc(var(--i3) + var(--i4)*1.57)) }
+  11.4% { transform: rotate(calc(var(--i3) + var(--i4)*1.47)) }
+  12.3% { transform: rotate(calc(var(--i3) + var(--i4)*1.33)) }
+  13.2% { transform: rotate(calc(var(--i3) + var(--i4)*1.17)) }
+  14.0% { transform: rotate(calc(var(--i3) + var(--i4)*1.01)) }
+  14.9% { transform: rotate(calc(var(--i3) + var(--i4)*0.865)) }
+  15.8% { transform: rotate(calc(var(--i3) + var(--i4)*0.749)) }
+  16.7% { transform: rotate(calc(var(--i3) + var(--i4)*0.670)) }
+  17.5% { transform: rotate(calc(var(--i3) + var(--i4)*0.631)) }
+  18.4% { transform: rotate(calc(var(--i3) + var(--i4)*0.633)) }
+  19.3% { transform: rotate(calc(var(--i3) + var(--i4)*0.672)) }
+  20.2% { transform: rotate(calc(var(--i3) + var(--i4)*0.739)) }
+  21.1% { transform: rotate(calc(var(--i3) + var(--i4)*0.826)) }
+  21.9% { transform: rotate(calc(var(--i3) + var(--i4)*0.922)) }
+  22.8% { transform: rotate(calc(var(--i3) + var(--i4)*1.02)) }
+  23.7% { transform: rotate(calc(var(--i3) + var(--i4)*1.10)) }
+  24.6% { transform: rotate(calc(var(--i3) + var(--i4)*1.16)) }
+  25.4% { transform: rotate(calc(var(--i3) + var(--i4)*1.21)) }
+  26.3% { transform: rotate(calc(var(--i3) + var(--i4)*1.22)) }
+  27.2% { transform: rotate(calc(var(--i3) + var(--i4)*1.22)) }
+  28.1% { transform: rotate(calc(var(--i3) + var(--i4)*1.19)) }
+  28.9% { transform: rotate(calc(var(--i3) + var(--i4)*1.14)) }
+  29.8% { transform: rotate(calc(var(--i3) + var(--i4)*1.09)) }
+  30.7% { transform: rotate(calc(var(--i3) + var(--i4)*1.03)) }
+  31.6% { transform: rotate(calc(var(--i3) + var(--i4)*0.978)) }
+  32.5% { transform: rotate(calc(var(--i3) + var(--i4)*0.931)) }
+  33.3% { transform: rotate(calc(var(--i3) + var(--i4)*0.895)) }
+  34.2% { transform: rotate(calc(var(--i3) + var(--i4)*0.873)) }
+  35.1% { transform: rotate(calc(var(--i3) + var(--i4)*0.867)) }
+  36.0% { transform: rotate(calc(var(--i3) + var(--i4)*0.874)) }
+  36.8% { transform: rotate(calc(var(--i3) + var(--i4)*0.893)) }
+  37.7% { transform: rotate(calc(var(--i3) + var(--i4)*0.921)) }
+  38.6% { transform: rotate(calc(var(--i3) + var(--i4)*0.954)) }
+  39.5% { transform: rotate(calc(var(--i3) + var(--i4)*0.988)) }
+  40.4% { transform: rotate(calc(var(--i3) + var(--i4)*1.02)) }
+  41.2% { transform: rotate(calc(var(--i3) + var(--i4)*1.05)) }
+  42.1% { transform: rotate(calc(var(--i3) + var(--i4)*1.07)) }
+  43.0% { transform: rotate(calc(var(--i3) + var(--i4)*1.08)) }
+  43.9% { transform: rotate(calc(var(--i3) + var(--i4)*1.08)) }
+  44.7% { transform: rotate(calc(var(--i3) + var(--i4)*1.07)) }
+  45.6% { transform: rotate(calc(var(--i3) + var(--i4)*1.06)) }
+  46.5% { transform: rotate(calc(var(--i3) + var(--i4)*1.04)) }
+  47.4% { transform: rotate(calc(var(--i3) + var(--i4)*1.02)) }
+  48.2% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  49.1% { transform: rotate(calc(var(--i3) + var(--i4)*0.984)) }
+  50.0% { transform: rotate(calc(var(--i3) + var(--i4)*0.969)) }
+  50.9% { transform: rotate(calc(var(--i3) + var(--i4)*0.958)) }
+  51.8% { transform: rotate(calc(var(--i3) + var(--i4)*0.953)) }
+  52.6% { transform: rotate(calc(var(--i3) + var(--i4)*0.953)) }
+  53.5% { transform: rotate(calc(var(--i3) + var(--i4)*0.958)) }
+  54.4% { transform: rotate(calc(var(--i3) + var(--i4)*0.966)) }
+  55.3% { transform: rotate(calc(var(--i3) + var(--i4)*0.977)) }
+  56.1% { transform: rotate(calc(var(--i3) + var(--i4)*0.989)) }
+  57.0% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  57.9% { transform: rotate(calc(var(--i3) + var(--i4)*1.01)) }
+  58.8% { transform: rotate(calc(var(--i3) + var(--i4)*1.02)) }
+  59.6% { transform: rotate(calc(var(--i3) + var(--i4)*1.03)) }
+  60.5% { transform: rotate(calc(var(--i3) + var(--i4)*1.03)) }
+  61.4% { transform: rotate(calc(var(--i3) + var(--i4)*1.03)) }
+  62.3% { transform: rotate(calc(var(--i3) + var(--i4)*1.02)) }
+  63.2% { transform: rotate(calc(var(--i3) + var(--i4)*1.02)) }
+  64.0% { transform: rotate(calc(var(--i3) + var(--i4)*1.01)) }
+  64.9% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  65.8% { transform: rotate(calc(var(--i3) + var(--i4)*0.997)) }
+  66.7% { transform: rotate(calc(var(--i3) + var(--i4)*0.991)) }
+  67.5% { transform: rotate(calc(var(--i3) + var(--i4)*0.987)) }
+  68.4% { transform: rotate(calc(var(--i3) + var(--i4)*0.984)) }
+  69.3% { transform: rotate(calc(var(--i3) + var(--i4)*0.983)) }
+  70.2% { transform: rotate(calc(var(--i3) + var(--i4)*0.984)) }
+  71.1% { transform: rotate(calc(var(--i3) + var(--i4)*0.986)) }
+  71.9% { transform: rotate(calc(var(--i3) + var(--i4)*0.990)) }
+  72.8% { transform: rotate(calc(var(--i3) + var(--i4)*0.994)) }
+  73.7% { transform: rotate(calc(var(--i3) + var(--i4)*0.998)) }
+  74.6% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  75.4% { transform: rotate(calc(var(--i3) + var(--i4)*1.01)) }
+  76.3% { transform: rotate(calc(var(--i3) + var(--i4)*1.01)) }
+  77.2% { transform: rotate(calc(var(--i3) + var(--i4)*1.01)) }
+  78.1% { transform: rotate(calc(var(--i3) + var(--i4)*1.01)) }
+  78.9% { transform: rotate(calc(var(--i3) + var(--i4)*1.01)) }
+  79.8% { transform: rotate(calc(var(--i3) + var(--i4)*1.01)) }
+  80.7% { transform: rotate(calc(var(--i3) + var(--i4)*1.01)) }
+  81.6% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  82.5% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  83.3% { transform: rotate(calc(var(--i3) + var(--i4)*0.998)) }
+  84.2% { transform: rotate(calc(var(--i3) + var(--i4)*0.996)) }
+  85.1% { transform: rotate(calc(var(--i3) + var(--i4)*0.995)) }
+  86.0% { transform: rotate(calc(var(--i3) + var(--i4)*0.994)) }
+  86.8% { transform: rotate(calc(var(--i3) + var(--i4)*0.994)) }
+  87.7% { transform: rotate(calc(var(--i3) + var(--i4)*0.995)) }
+  88.6% { transform: rotate(calc(var(--i3) + var(--i4)*0.996)) }
+  89.5% { transform: rotate(calc(var(--i3) + var(--i4)*0.997)) }
+  90.4% { transform: rotate(calc(var(--i3) + var(--i4)*0.999)) }
+  91.2% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  92.1% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  93.0% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  93.9% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  94.7% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  95.6% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  96.5% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  97.4% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  98.2% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  99.1% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+  100% { transform: rotate(calc(var(--i3) + var(--i4)*1.00)) }
+}
+
+@keyframes Bouncy-SkewX {
+  0.00% { transform: skewX(calc(var(--i1) + var(--i2)*0.00)) }
+  0.877% { transform: skewX(calc(var(--i1) + var(--i2)*0.0467)) }
+  1.75% { transform: skewX(calc(var(--i1) + var(--i2)*0.0161)) }
+  2.63% { transform: skewX(calc(var(--i1) + var(--i2)*0.171)) }
+  3.51% { transform: skewX(calc(var(--i1) + var(--i2)*0.394)) }
+  4.39% { transform: skewX(calc(var(--i1) + var(--i2)*0.653)) }
+  5.26% { transform: skewX(calc(var(--i1) + var(--i2)*0.921)) }
+  6.14% { transform: skewX(calc(var(--i1) + var(--i2)*1.17)) }
+  7.02% { transform: skewX(calc(var(--i1) + var(--i2)*1.38)) }
+  7.89% { transform: skewX(calc(var(--i1) + var(--i2)*1.53)) }
+  8.77% { transform: skewX(calc(var(--i1) + var(--i2)*1.61)) }
+  9.65% { transform: skewX(calc(var(--i1) + var(--i2)*1.62)) }
+  10.5% { transform: skewX(calc(var(--i1) + var(--i2)*1.57)) }
+  11.4% { transform: skewX(calc(var(--i1) + var(--i2)*1.47)) }
+  12.3% { transform: skewX(calc(var(--i1) + var(--i2)*1.33)) }
+  13.2% { transform: skewX(calc(var(--i1) + var(--i2)*1.17)) }
+  14.0% { transform: skewX(calc(var(--i1) + var(--i2)*1.01)) }
+  14.9% { transform: skewX(calc(var(--i1) + var(--i2)*0.865)) }
+  15.8% { transform: skewX(calc(var(--i1) + var(--i2)*0.749)) }
+  16.7% { transform: skewX(calc(var(--i1) + var(--i2)*0.670)) }
+  17.5% { transform: skewX(calc(var(--i1) + var(--i2)*0.631)) }
+  18.4% { transform: skewX(calc(var(--i1) + var(--i2)*0.633)) }
+  19.3% { transform: skewX(calc(var(--i1) + var(--i2)*0.672)) }
+  20.2% { transform: skewX(calc(var(--i1) + var(--i2)*0.739)) }
+  21.1% { transform: skewX(calc(var(--i1) + var(--i2)*0.826)) }
+  21.9% { transform: skewX(calc(var(--i1) + var(--i2)*0.922)) }
+  22.8% { transform: skewX(calc(var(--i1) + var(--i2)*1.02)) }
+  23.7% { transform: skewX(calc(var(--i1) + var(--i2)*1.10)) }
+  24.6% { transform: skewX(calc(var(--i1) + var(--i2)*1.16)) }
+  25.4% { transform: skewX(calc(var(--i1) + var(--i2)*1.21)) }
+  26.3% { transform: skewX(calc(var(--i1) + var(--i2)*1.22)) }
+  27.2% { transform: skewX(calc(var(--i1) + var(--i2)*1.22)) }
+  28.1% { transform: skewX(calc(var(--i1) + var(--i2)*1.19)) }
+  28.9% { transform: skewX(calc(var(--i1) + var(--i2)*1.14)) }
+  29.8% { transform: skewX(calc(var(--i1) + var(--i2)*1.09)) }
+  30.7% { transform: skewX(calc(var(--i1) + var(--i2)*1.03)) }
+  31.6% { transform: skewX(calc(var(--i1) + var(--i2)*0.978)) }
+  32.5% { transform: skewX(calc(var(--i1) + var(--i2)*0.931)) }
+  33.3% { transform: skewX(calc(var(--i1) + var(--i2)*0.895)) }
+  34.2% { transform: skewX(calc(var(--i1) + var(--i2)*0.873)) }
+  35.1% { transform: skewX(calc(var(--i1) + var(--i2)*0.867)) }
+  36.0% { transform: skewX(calc(var(--i1) + var(--i2)*0.874)) }
+  36.8% { transform: skewX(calc(var(--i1) + var(--i2)*0.893)) }
+  37.7% { transform: skewX(calc(var(--i1) + var(--i2)*0.921)) }
+  38.6% { transform: skewX(calc(var(--i1) + var(--i2)*0.954)) }
+  39.5% { transform: skewX(calc(var(--i1) + var(--i2)*0.988)) }
+  40.4% { transform: skewX(calc(var(--i1) + var(--i2)*1.02)) }
+  41.2% { transform: skewX(calc(var(--i1) + var(--i2)*1.05)) }
+  42.1% { transform: skewX(calc(var(--i1) + var(--i2)*1.07)) }
+  43.0% { transform: skewX(calc(var(--i1) + var(--i2)*1.08)) }
+  43.9% { transform: skewX(calc(var(--i1) + var(--i2)*1.08)) }
+  44.7% { transform: skewX(calc(var(--i1) + var(--i2)*1.07)) }
+  45.6% { transform: skewX(calc(var(--i1) + var(--i2)*1.06)) }
+  46.5% { transform: skewX(calc(var(--i1) + var(--i2)*1.04)) }
+  47.4% { transform: skewX(calc(var(--i1) + var(--i2)*1.02)) }
+  48.2% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  49.1% { transform: skewX(calc(var(--i1) + var(--i2)*0.984)) }
+  50.0% { transform: skewX(calc(var(--i1) + var(--i2)*0.969)) }
+  50.9% { transform: skewX(calc(var(--i1) + var(--i2)*0.958)) }
+  51.8% { transform: skewX(calc(var(--i1) + var(--i2)*0.953)) }
+  52.6% { transform: skewX(calc(var(--i1) + var(--i2)*0.953)) }
+  53.5% { transform: skewX(calc(var(--i1) + var(--i2)*0.958)) }
+  54.4% { transform: skewX(calc(var(--i1) + var(--i2)*0.966)) }
+  55.3% { transform: skewX(calc(var(--i1) + var(--i2)*0.977)) }
+  56.1% { transform: skewX(calc(var(--i1) + var(--i2)*0.989)) }
+  57.0% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  57.9% { transform: skewX(calc(var(--i1) + var(--i2)*1.01)) }
+  58.8% { transform: skewX(calc(var(--i1) + var(--i2)*1.02)) }
+  59.6% { transform: skewX(calc(var(--i1) + var(--i2)*1.03)) }
+  60.5% { transform: skewX(calc(var(--i1) + var(--i2)*1.03)) }
+  61.4% { transform: skewX(calc(var(--i1) + var(--i2)*1.03)) }
+  62.3% { transform: skewX(calc(var(--i1) + var(--i2)*1.02)) }
+  63.2% { transform: skewX(calc(var(--i1) + var(--i2)*1.02)) }
+  64.0% { transform: skewX(calc(var(--i1) + var(--i2)*1.01)) }
+  64.9% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  65.8% { transform: skewX(calc(var(--i1) + var(--i2)*0.997)) }
+  66.7% { transform: skewX(calc(var(--i1) + var(--i2)*0.991)) }
+  67.5% { transform: skewX(calc(var(--i1) + var(--i2)*0.987)) }
+  68.4% { transform: skewX(calc(var(--i1) + var(--i2)*0.984)) }
+  69.3% { transform: skewX(calc(var(--i1) + var(--i2)*0.983)) }
+  70.2% { transform: skewX(calc(var(--i1) + var(--i2)*0.984)) }
+  71.1% { transform: skewX(calc(var(--i1) + var(--i2)*0.986)) }
+  71.9% { transform: skewX(calc(var(--i1) + var(--i2)*0.990)) }
+  72.8% { transform: skewX(calc(var(--i1) + var(--i2)*0.994)) }
+  73.7% { transform: skewX(calc(var(--i1) + var(--i2)*0.998)) }
+  74.6% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  75.4% { transform: skewX(calc(var(--i1) + var(--i2)*1.01)) }
+  76.3% { transform: skewX(calc(var(--i1) + var(--i2)*1.01)) }
+  77.2% { transform: skewX(calc(var(--i1) + var(--i2)*1.01)) }
+  78.1% { transform: skewX(calc(var(--i1) + var(--i2)*1.01)) }
+  78.9% { transform: skewX(calc(var(--i1) + var(--i2)*1.01)) }
+  79.8% { transform: skewX(calc(var(--i1) + var(--i2)*1.01)) }
+  80.7% { transform: skewX(calc(var(--i1) + var(--i2)*1.01)) }
+  81.6% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  82.5% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  83.3% { transform: skewX(calc(var(--i1) + var(--i2)*0.998)) }
+  84.2% { transform: skewX(calc(var(--i1) + var(--i2)*0.996)) }
+  85.1% { transform: skewX(calc(var(--i1) + var(--i2)*0.995)) }
+  86.0% { transform: skewX(calc(var(--i1) + var(--i2)*0.994)) }
+  86.8% { transform: skewX(calc(var(--i1) + var(--i2)*0.994)) }
+  87.7% { transform: skewX(calc(var(--i1) + var(--i2)*0.995)) }
+  88.6% { transform: skewX(calc(var(--i1) + var(--i2)*0.996)) }
+  89.5% { transform: skewX(calc(var(--i1) + var(--i2)*0.997)) }
+  90.4% { transform: skewX(calc(var(--i1) + var(--i2)*0.999)) }
+  91.2% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  92.1% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  93.0% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  93.9% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  94.7% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  95.6% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  96.5% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  97.4% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  98.2% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  99.1% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+  100% { transform: skewX(calc(var(--i1) + var(--i2)*1.00)) }
+}
+
+
+@keyframes Bouncy-SkewY {
+  0.00% { transform: skewY(calc(var(--i1) + var(--i2)*0.00)) }
+  0.877% { transform: skewY(calc(var(--i1) + var(--i2)*0.0467)) }
+  1.75% { transform: skewY(calc(var(--i1) + var(--i2)*0.0161)) }
+  2.63% { transform: skewY(calc(var(--i1) + var(--i2)*0.171)) }
+  3.51% { transform: skewY(calc(var(--i1) + var(--i2)*0.394)) }
+  4.39% { transform: skewY(calc(var(--i1) + var(--i2)*0.653)) }
+  5.26% { transform: skewY(calc(var(--i1) + var(--i2)*0.921)) }
+  6.14% { transform: skewY(calc(var(--i1) + var(--i2)*1.17)) }
+  7.02% { transform: skewY(calc(var(--i1) + var(--i2)*1.38)) }
+  7.89% { transform: skewY(calc(var(--i1) + var(--i2)*1.53)) }
+  8.77% { transform: skewY(calc(var(--i1) + var(--i2)*1.61)) }
+  9.65% { transform: skewY(calc(var(--i1) + var(--i2)*1.62)) }
+  10.5% { transform: skewY(calc(var(--i1) + var(--i2)*1.57)) }
+  11.4% { transform: skewY(calc(var(--i1) + var(--i2)*1.47)) }
+  12.3% { transform: skewY(calc(var(--i1) + var(--i2)*1.33)) }
+  13.2% { transform: skewY(calc(var(--i1) + var(--i2)*1.17)) }
+  14.0% { transform: skewY(calc(var(--i1) + var(--i2)*1.01)) }
+  14.9% { transform: skewY(calc(var(--i1) + var(--i2)*0.865)) }
+  15.8% { transform: skewY(calc(var(--i1) + var(--i2)*0.749)) }
+  16.7% { transform: skewY(calc(var(--i1) + var(--i2)*0.670)) }
+  17.5% { transform: skewY(calc(var(--i1) + var(--i2)*0.631)) }
+  18.4% { transform: skewY(calc(var(--i1) + var(--i2)*0.633)) }
+  19.3% { transform: skewY(calc(var(--i1) + var(--i2)*0.672)) }
+  20.2% { transform: skewY(calc(var(--i1) + var(--i2)*0.739)) }
+  21.1% { transform: skewY(calc(var(--i1) + var(--i2)*0.826)) }
+  21.9% { transform: skewY(calc(var(--i1) + var(--i2)*0.922)) }
+  22.8% { transform: skewY(calc(var(--i1) + var(--i2)*1.02)) }
+  23.7% { transform: skewY(calc(var(--i1) + var(--i2)*1.10)) }
+  24.6% { transform: skewY(calc(var(--i1) + var(--i2)*1.16)) }
+  25.4% { transform: skewY(calc(var(--i1) + var(--i2)*1.21)) }
+  26.3% { transform: skewY(calc(var(--i1) + var(--i2)*1.22)) }
+  27.2% { transform: skewY(calc(var(--i1) + var(--i2)*1.22)) }
+  28.1% { transform: skewY(calc(var(--i1) + var(--i2)*1.19)) }
+  28.9% { transform: skewY(calc(var(--i1) + var(--i2)*1.14)) }
+  29.8% { transform: skewY(calc(var(--i1) + var(--i2)*1.09)) }
+  30.7% { transform: skewY(calc(var(--i1) + var(--i2)*1.03)) }
+  31.6% { transform: skewY(calc(var(--i1) + var(--i2)*0.978)) }
+  32.5% { transform: skewY(calc(var(--i1) + var(--i2)*0.931)) }
+  33.3% { transform: skewY(calc(var(--i1) + var(--i2)*0.895)) }
+  34.2% { transform: skewY(calc(var(--i1) + var(--i2)*0.873)) }
+  35.1% { transform: skewY(calc(var(--i1) + var(--i2)*0.867)) }
+  36.0% { transform: skewY(calc(var(--i1) + var(--i2)*0.874)) }
+  36.8% { transform: skewY(calc(var(--i1) + var(--i2)*0.893)) }
+  37.7% { transform: skewY(calc(var(--i1) + var(--i2)*0.921)) }
+  38.6% { transform: skewY(calc(var(--i1) + var(--i2)*0.954)) }
+  39.5% { transform: skewY(calc(var(--i1) + var(--i2)*0.988)) }
+  40.4% { transform: skewY(calc(var(--i1) + var(--i2)*1.02)) }
+  41.2% { transform: skewY(calc(var(--i1) + var(--i2)*1.05)) }
+  42.1% { transform: skewY(calc(var(--i1) + var(--i2)*1.07)) }
+  43.0% { transform: skewY(calc(var(--i1) + var(--i2)*1.08)) }
+  43.9% { transform: skewY(calc(var(--i1) + var(--i2)*1.08)) }
+  44.7% { transform: skewY(calc(var(--i1) + var(--i2)*1.07)) }
+  45.6% { transform: skewY(calc(var(--i1) + var(--i2)*1.06)) }
+  46.5% { transform: skewY(calc(var(--i1) + var(--i2)*1.04)) }
+  47.4% { transform: skewY(calc(var(--i1) + var(--i2)*1.02)) }
+  48.2% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  49.1% { transform: skewY(calc(var(--i1) + var(--i2)*0.984)) }
+  50.0% { transform: skewY(calc(var(--i1) + var(--i2)*0.969)) }
+  50.9% { transform: skewY(calc(var(--i1) + var(--i2)*0.958)) }
+  51.8% { transform: skewY(calc(var(--i1) + var(--i2)*0.953)) }
+  52.6% { transform: skewY(calc(var(--i1) + var(--i2)*0.953)) }
+  53.5% { transform: skewY(calc(var(--i1) + var(--i2)*0.958)) }
+  54.4% { transform: skewY(calc(var(--i1) + var(--i2)*0.966)) }
+  55.3% { transform: skewY(calc(var(--i1) + var(--i2)*0.977)) }
+  56.1% { transform: skewY(calc(var(--i1) + var(--i2)*0.989)) }
+  57.0% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  57.9% { transform: skewY(calc(var(--i1) + var(--i2)*1.01)) }
+  58.8% { transform: skewY(calc(var(--i1) + var(--i2)*1.02)) }
+  59.6% { transform: skewY(calc(var(--i1) + var(--i2)*1.03)) }
+  60.5% { transform: skewY(calc(var(--i1) + var(--i2)*1.03)) }
+  61.4% { transform: skewY(calc(var(--i1) + var(--i2)*1.03)) }
+  62.3% { transform: skewY(calc(var(--i1) + var(--i2)*1.02)) }
+  63.2% { transform: skewY(calc(var(--i1) + var(--i2)*1.02)) }
+  64.0% { transform: skewY(calc(var(--i1) + var(--i2)*1.01)) }
+  64.9% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  65.8% { transform: skewY(calc(var(--i1) + var(--i2)*0.997)) }
+  66.7% { transform: skewY(calc(var(--i1) + var(--i2)*0.991)) }
+  67.5% { transform: skewY(calc(var(--i1) + var(--i2)*0.987)) }
+  68.4% { transform: skewY(calc(var(--i1) + var(--i2)*0.984)) }
+  69.3% { transform: skewY(calc(var(--i1) + var(--i2)*0.983)) }
+  70.2% { transform: skewY(calc(var(--i1) + var(--i2)*0.984)) }
+  71.1% { transform: skewY(calc(var(--i1) + var(--i2)*0.986)) }
+  71.9% { transform: skewY(calc(var(--i1) + var(--i2)*0.990)) }
+  72.8% { transform: skewY(calc(var(--i1) + var(--i2)*0.994)) }
+  73.7% { transform: skewY(calc(var(--i1) + var(--i2)*0.998)) }
+  74.6% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  75.4% { transform: skewY(calc(var(--i1) + var(--i2)*1.01)) }
+  76.3% { transform: skewY(calc(var(--i1) + var(--i2)*1.01)) }
+  77.2% { transform: skewY(calc(var(--i1) + var(--i2)*1.01)) }
+  78.1% { transform: skewY(calc(var(--i1) + var(--i2)*1.01)) }
+  78.9% { transform: skewY(calc(var(--i1) + var(--i2)*1.01)) }
+  79.8% { transform: skewY(calc(var(--i1) + var(--i2)*1.01)) }
+  80.7% { transform: skewY(calc(var(--i1) + var(--i2)*1.01)) }
+  81.6% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  82.5% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  83.3% { transform: skewY(calc(var(--i1) + var(--i2)*0.998)) }
+  84.2% { transform: skewY(calc(var(--i1) + var(--i2)*0.996)) }
+  85.1% { transform: skewY(calc(var(--i1) + var(--i2)*0.995)) }
+  86.0% { transform: skewY(calc(var(--i1) + var(--i2)*0.994)) }
+  86.8% { transform: skewY(calc(var(--i1) + var(--i2)*0.994)) }
+  87.7% { transform: skewY(calc(var(--i1) + var(--i2)*0.995)) }
+  88.6% { transform: skewY(calc(var(--i1) + var(--i2)*0.996)) }
+  89.5% { transform: skewY(calc(var(--i1) + var(--i2)*0.997)) }
+  90.4% { transform: skewY(calc(var(--i1) + var(--i2)*0.999)) }
+  91.2% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  92.1% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  93.0% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  93.9% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  94.7% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  95.6% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  96.5% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  97.4% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  98.2% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  99.1% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+  100% { transform: skewY(calc(var(--i1) + var(--i2)*1.00)) }
+}
+
+
+@keyframes Bouncy-Width {
+  0.00% { width:calc(var(--i1) + var(--i2)*0.00)}
+  0.877% { width:calc(var(--i1) + var(--i2)*0.0467)}
+  1.75% { width:calc(var(--i1) + var(--i2)*0.0161)}
+  2.63% { width:calc(var(--i1) + var(--i2)*0.171)}
+  3.51% { width:calc(var(--i1) + var(--i2)*0.394)}
+  4.39% { width:calc(var(--i1) + var(--i2)*0.653)}
+  5.26% { width:calc(var(--i1) + var(--i2)*0.921)}
+  6.14% { width:calc(var(--i1) + var(--i2)*1.17)}
+  7.02% { width:calc(var(--i1) + var(--i2)*1.38)}
+  7.89% { width:calc(var(--i1) + var(--i2)*1.53)}
+  8.77% { width:calc(var(--i1) + var(--i2)*1.61)}
+  9.65% { width:calc(var(--i1) + var(--i2)*1.62)}
+  10.5% { width:calc(var(--i1) + var(--i2)*1.57)}
+  11.4% { width:calc(var(--i1) + var(--i2)*1.47)}
+  12.3% { width:calc(var(--i1) + var(--i2)*1.33)}
+  13.2% { width:calc(var(--i1) + var(--i2)*1.17)}
+  14.0% { width:calc(var(--i1) + var(--i2)*1.01)}
+  14.9% { width:calc(var(--i1) + var(--i2)*0.865)}
+  15.8% { width:calc(var(--i1) + var(--i2)*0.749)}
+  16.7% { width:calc(var(--i1) + var(--i2)*0.670)}
+  17.5% { width:calc(var(--i1) + var(--i2)*0.631)}
+  18.4% { width:calc(var(--i1) + var(--i2)*0.633)}
+  19.3% { width:calc(var(--i1) + var(--i2)*0.672)}
+  20.2% { width:calc(var(--i1) + var(--i2)*0.739)}
+  21.1% { width:calc(var(--i1) + var(--i2)*0.826)}
+  21.9% { width:calc(var(--i1) + var(--i2)*0.922)}
+  22.8% { width:calc(var(--i1) + var(--i2)*1.02)}
+  23.7% { width:calc(var(--i1) + var(--i2)*1.10)}
+  24.6% { width:calc(var(--i1) + var(--i2)*1.16)}
+  25.4% { width:calc(var(--i1) + var(--i2)*1.21)}
+  26.3% { width:calc(var(--i1) + var(--i2)*1.22)}
+  27.2% { width:calc(var(--i1) + var(--i2)*1.22)}
+  28.1% { width:calc(var(--i1) + var(--i2)*1.19)}
+  28.9% { width:calc(var(--i1) + var(--i2)*1.14)}
+  29.8% { width:calc(var(--i1) + var(--i2)*1.09)}
+  30.7% { width:calc(var(--i1) + var(--i2)*1.03)}
+  31.6% { width:calc(var(--i1) + var(--i2)*0.978)}
+  32.5% { width:calc(var(--i1) + var(--i2)*0.931)}
+  33.3% { width:calc(var(--i1) + var(--i2)*0.895)}
+  34.2% { width:calc(var(--i1) + var(--i2)*0.873)}
+  35.1% { width:calc(var(--i1) + var(--i2)*0.867)}
+  36.0% { width:calc(var(--i1) + var(--i2)*0.874)}
+  36.8% { width:calc(var(--i1) + var(--i2)*0.893)}
+  37.7% { width:calc(var(--i1) + var(--i2)*0.921)}
+  38.6% { width:calc(var(--i1) + var(--i2)*0.954)}
+  39.5% { width:calc(var(--i1) + var(--i2)*0.988)}
+  40.4% { width:calc(var(--i1) + var(--i2)*1.02)}
+  41.2% { width:calc(var(--i1) + var(--i2)*1.05)}
+  42.1% { width:calc(var(--i1) + var(--i2)*1.07)}
+  43.0% { width:calc(var(--i1) + var(--i2)*1.08)}
+  43.9% { width:calc(var(--i1) + var(--i2)*1.08)}
+  44.7% { width:calc(var(--i1) + var(--i2)*1.07)}
+  45.6% { width:calc(var(--i1) + var(--i2)*1.06)}
+  46.5% { width:calc(var(--i1) + var(--i2)*1.04)}
+  47.4% { width:calc(var(--i1) + var(--i2)*1.02)}
+  48.2% { width:calc(var(--i1) + var(--i2)*1.00)}
+  49.1% { width:calc(var(--i1) + var(--i2)*0.984)}
+  50.0% { width:calc(var(--i1) + var(--i2)*0.969)}
+  50.9% { width:calc(var(--i1) + var(--i2)*0.958)}
+  51.8% { width:calc(var(--i1) + var(--i2)*0.953)}
+  52.6% { width:calc(var(--i1) + var(--i2)*0.953)}
+  53.5% { width:calc(var(--i1) + var(--i2)*0.958)}
+  54.4% { width:calc(var(--i1) + var(--i2)*0.966)}
+  55.3% { width:calc(var(--i1) + var(--i2)*0.977)}
+  56.1% { width:calc(var(--i1) + var(--i2)*0.989)}
+  57.0% { width:calc(var(--i1) + var(--i2)*1.00)}
+  57.9% { width:calc(var(--i1) + var(--i2)*1.01)}
+  58.8% { width:calc(var(--i1) + var(--i2)*1.02)}
+  59.6% { width:calc(var(--i1) + var(--i2)*1.03)}
+  60.5% { width:calc(var(--i1) + var(--i2)*1.03)}
+  61.4% { width:calc(var(--i1) + var(--i2)*1.03)}
+  62.3% { width:calc(var(--i1) + var(--i2)*1.02)}
+  63.2% { width:calc(var(--i1) + var(--i2)*1.02)}
+  64.0% { width:calc(var(--i1) + var(--i2)*1.01)}
+  64.9% { width:calc(var(--i1) + var(--i2)*1.00)}
+  65.8% { width:calc(var(--i1) + var(--i2)*0.997)}
+  66.7% { width:calc(var(--i1) + var(--i2)*0.991)}
+  67.5% { width:calc(var(--i1) + var(--i2)*0.987)}
+  68.4% { width:calc(var(--i1) + var(--i2)*0.984)}
+  69.3% { width:calc(var(--i1) + var(--i2)*0.983)}
+  70.2% { width:calc(var(--i1) + var(--i2)*0.984)}
+  71.1% { width:calc(var(--i1) + var(--i2)*0.986)}
+  71.9% { width:calc(var(--i1) + var(--i2)*0.990)}
+  72.8% { width:calc(var(--i1) + var(--i2)*0.994)}
+  73.7% { width:calc(var(--i1) + var(--i2)*0.998)}
+  74.6% { width:calc(var(--i1) + var(--i2)*1.00)}
+  75.4% { width:calc(var(--i1) + var(--i2)*1.01)}
+  76.3% { width:calc(var(--i1) + var(--i2)*1.01)}
+  77.2% { width:calc(var(--i1) + var(--i2)*1.01)}
+  78.1% { width:calc(var(--i1) + var(--i2)*1.01)}
+  78.9% { width:calc(var(--i1) + var(--i2)*1.01)}
+  79.8% { width:calc(var(--i1) + var(--i2)*1.01)}
+  80.7% { width:calc(var(--i1) + var(--i2)*1.01)}
+  81.6% { width:calc(var(--i1) + var(--i2)*1.00)}
+  82.5% { width:calc(var(--i1) + var(--i2)*1.00)}
+  83.3% { width:calc(var(--i1) + var(--i2)*0.998)}
+  84.2% { width:calc(var(--i1) + var(--i2)*0.996)}
+  85.1% { width:calc(var(--i1) + var(--i2)*0.995)}
+  86.0% { width:calc(var(--i1) + var(--i2)*0.994)}
+  86.8% { width:calc(var(--i1) + var(--i2)*0.994)}
+  87.7% { width:calc(var(--i1) + var(--i2)*0.995)}
+  88.6% { width:calc(var(--i1) + var(--i2)*0.996)}
+  89.5% { width:calc(var(--i1) + var(--i2)*0.997)}
+  90.4% { width:calc(var(--i1) + var(--i2)*0.999)}
+  91.2% { width:calc(var(--i1) + var(--i2)*1.00)}
+  92.1% { width:calc(var(--i1) + var(--i2)*1.00)}
+  93.0% { width:calc(var(--i1) + var(--i2)*1.00)}
+  93.9% { width:calc(var(--i1) + var(--i2)*1.00)}
+  94.7% { width:calc(var(--i1) + var(--i2)*1.00)}
+  95.6% { width:calc(var(--i1) + var(--i2)*1.00)}
+  96.5% { width:calc(var(--i1) + var(--i2)*1.00)}
+  97.4% { width:calc(var(--i1) + var(--i2)*1.00)}
+  98.2% { width:calc(var(--i1) + var(--i2)*1.00)}
+  99.1% { width:calc(var(--i1) + var(--i2)*1.00)}
+  100% { width:calc(var(--i1) + var(--i2)*1.00)}
+}
+
+
+@keyframes Bouncy-Height {
+  0.00% { height:calc(var(--i1) + var(--i2)*0.00)}
+  0.877% { height:calc(var(--i1) + var(--i2)*0.0467)}
+  1.75% { height:calc(var(--i1) + var(--i2)*0.0161)}
+  2.63% { height:calc(var(--i1) + var(--i2)*0.171)}
+  3.51% { height:calc(var(--i1) + var(--i2)*0.394)}
+  4.39% { height:calc(var(--i1) + var(--i2)*0.653)}
+  5.26% { height:calc(var(--i1) + var(--i2)*0.921)}
+  6.14% { height:calc(var(--i1) + var(--i2)*1.17)}
+  7.02% { height:calc(var(--i1) + var(--i2)*1.38)}
+  7.89% { height:calc(var(--i1) + var(--i2)*1.53)}
+  8.77% { height:calc(var(--i1) + var(--i2)*1.61)}
+  9.65% { height:calc(var(--i1) + var(--i2)*1.62)}
+  10.5% { height:calc(var(--i1) + var(--i2)*1.57)}
+  11.4% { height:calc(var(--i1) + var(--i2)*1.47)}
+  12.3% { height:calc(var(--i1) + var(--i2)*1.33)}
+  13.2% { height:calc(var(--i1) + var(--i2)*1.17)}
+  14.0% { height:calc(var(--i1) + var(--i2)*1.01)}
+  14.9% { height:calc(var(--i1) + var(--i2)*0.865)}
+  15.8% { height:calc(var(--i1) + var(--i2)*0.749)}
+  16.7% { height:calc(var(--i1) + var(--i2)*0.670)}
+  17.5% { height:calc(var(--i1) + var(--i2)*0.631)}
+  18.4% { height:calc(var(--i1) + var(--i2)*0.633)}
+  19.3% { height:calc(var(--i1) + var(--i2)*0.672)}
+  20.2% { height:calc(var(--i1) + var(--i2)*0.739)}
+  21.1% { height:calc(var(--i1) + var(--i2)*0.826)}
+  21.9% { height:calc(var(--i1) + var(--i2)*0.922)}
+  22.8% { height:calc(var(--i1) + var(--i2)*1.02)}
+  23.7% { height:calc(var(--i1) + var(--i2)*1.10)}
+  24.6% { height:calc(var(--i1) + var(--i2)*1.16)}
+  25.4% { height:calc(var(--i1) + var(--i2)*1.21)}
+  26.3% { height:calc(var(--i1) + var(--i2)*1.22)}
+  27.2% { height:calc(var(--i1) + var(--i2)*1.22)}
+  28.1% { height:calc(var(--i1) + var(--i2)*1.19)}
+  28.9% { height:calc(var(--i1) + var(--i2)*1.14)}
+  29.8% { height:calc(var(--i1) + var(--i2)*1.09)}
+  30.7% { height:calc(var(--i1) + var(--i2)*1.03)}
+  31.6% { height:calc(var(--i1) + var(--i2)*0.978)}
+  32.5% { height:calc(var(--i1) + var(--i2)*0.931)}
+  33.3% { height:calc(var(--i1) + var(--i2)*0.895)}
+  34.2% { height:calc(var(--i1) + var(--i2)*0.873)}
+  35.1% { height:calc(var(--i1) + var(--i2)*0.867)}
+  36.0% { height:calc(var(--i1) + var(--i2)*0.874)}
+  36.8% { height:calc(var(--i1) + var(--i2)*0.893)}
+  37.7% { height:calc(var(--i1) + var(--i2)*0.921)}
+  38.6% { height:calc(var(--i1) + var(--i2)*0.954)}
+  39.5% { height:calc(var(--i1) + var(--i2)*0.988)}
+  40.4% { height:calc(var(--i1) + var(--i2)*1.02)}
+  41.2% { height:calc(var(--i1) + var(--i2)*1.05)}
+  42.1% { height:calc(var(--i1) + var(--i2)*1.07)}
+  43.0% { height:calc(var(--i1) + var(--i2)*1.08)}
+  43.9% { height:calc(var(--i1) + var(--i2)*1.08)}
+  44.7% { height:calc(var(--i1) + var(--i2)*1.07)}
+  45.6% { height:calc(var(--i1) + var(--i2)*1.06)}
+  46.5% { height:calc(var(--i1) + var(--i2)*1.04)}
+  47.4% { height:calc(var(--i1) + var(--i2)*1.02)}
+  48.2% { height:calc(var(--i1) + var(--i2)*1.00)}
+  49.1% { height:calc(var(--i1) + var(--i2)*0.984)}
+  50.0% { height:calc(var(--i1) + var(--i2)*0.969)}
+  50.9% { height:calc(var(--i1) + var(--i2)*0.958)}
+  51.8% { height:calc(var(--i1) + var(--i2)*0.953)}
+  52.6% { height:calc(var(--i1) + var(--i2)*0.953)}
+  53.5% { height:calc(var(--i1) + var(--i2)*0.958)}
+  54.4% { height:calc(var(--i1) + var(--i2)*0.966)}
+  55.3% { height:calc(var(--i1) + var(--i2)*0.977)}
+  56.1% { height:calc(var(--i1) + var(--i2)*0.989)}
+  57.0% { height:calc(var(--i1) + var(--i2)*1.00)}
+  57.9% { height:calc(var(--i1) + var(--i2)*1.01)}
+  58.8% { height:calc(var(--i1) + var(--i2)*1.02)}
+  59.6% { height:calc(var(--i1) + var(--i2)*1.03)}
+  60.5% { height:calc(var(--i1) + var(--i2)*1.03)}
+  61.4% { height:calc(var(--i1) + var(--i2)*1.03)}
+  62.3% { height:calc(var(--i1) + var(--i2)*1.02)}
+  63.2% { height:calc(var(--i1) + var(--i2)*1.02)}
+  64.0% { height:calc(var(--i1) + var(--i2)*1.01)}
+  64.9% { height:calc(var(--i1) + var(--i2)*1.00)}
+  65.8% { height:calc(var(--i1) + var(--i2)*0.997)}
+  66.7% { height:calc(var(--i1) + var(--i2)*0.991)}
+  67.5% { height:calc(var(--i1) + var(--i2)*0.987)}
+  68.4% { height:calc(var(--i1) + var(--i2)*0.984)}
+  69.3% { height:calc(var(--i1) + var(--i2)*0.983)}
+  70.2% { height:calc(var(--i1) + var(--i2)*0.984)}
+  71.1% { height:calc(var(--i1) + var(--i2)*0.986)}
+  71.9% { height:calc(var(--i1) + var(--i2)*0.990)}
+  72.8% { height:calc(var(--i1) + var(--i2)*0.994)}
+  73.7% { height:calc(var(--i1) + var(--i2)*0.998)}
+  74.6% { height:calc(var(--i1) + var(--i2)*1.00)}
+  75.4% { height:calc(var(--i1) + var(--i2)*1.01)}
+  76.3% { height:calc(var(--i1) + var(--i2)*1.01)}
+  77.2% { height:calc(var(--i1) + var(--i2)*1.01)}
+  78.1% { height:calc(var(--i1) + var(--i2)*1.01)}
+  78.9% { height:calc(var(--i1) + var(--i2)*1.01)}
+  79.8% { height:calc(var(--i1) + var(--i2)*1.01)}
+  80.7% { height:calc(var(--i1) + var(--i2)*1.01)}
+  81.6% { height:calc(var(--i1) + var(--i2)*1.00)}
+  82.5% { height:calc(var(--i1) + var(--i2)*1.00)}
+  83.3% { height:calc(var(--i1) + var(--i2)*0.998)}
+  84.2% { height:calc(var(--i1) + var(--i2)*0.996)}
+  85.1% { height:calc(var(--i1) + var(--i2)*0.995)}
+  86.0% { height:calc(var(--i1) + var(--i2)*0.994)}
+  86.8% { height:calc(var(--i1) + var(--i2)*0.994)}
+  87.7% { height:calc(var(--i1) + var(--i2)*0.995)}
+  88.6% { height:calc(var(--i1) + var(--i2)*0.996)}
+  89.5% { height:calc(var(--i1) + var(--i2)*0.997)}
+  90.4% { height:calc(var(--i1) + var(--i2)*0.999)}
+  91.2% { height:calc(var(--i1) + var(--i2)*1.00)}
+  92.1% { height:calc(var(--i1) + var(--i2)*1.00)}
+  93.0% { height:calc(var(--i1) + var(--i2)*1.00)}
+  93.9% { height:calc(var(--i1) + var(--i2)*1.00)}
+  94.7% { height:calc(var(--i1) + var(--i2)*1.00)}
+  95.6% { height:calc(var(--i1) + var(--i2)*1.00)}
+  96.5% { height:calc(var(--i1) + var(--i2)*1.00)}
+  97.4% { height:calc(var(--i1) + var(--i2)*1.00)}
+  98.2% { height:calc(var(--i1) + var(--i2)*1.00)}
+  99.1% { height:calc(var(--i1) + var(--i2)*1.00)}
+  100% { height:calc(var(--i1) + var(--i2)*1.00)}
+}

@@ -1,0 +1,326 @@
+.logo-container {
+position:absolute;
+top:0;
+width:100vw;
+height:100vh;
+overflow-x:hidden;
+overflow-y:auto;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family: "Montserrat Alternates", serif;
+font-weight: 1000;
+font-style: normal;}
+
+.logo-container::-webkit-scrollbar {
+width:15px;}
+
+.logo-container::-webkit-scrollbar-track {
+background:none;}
+
+.logo-container::-webkit-scrollbar-thumb {
+background:linear-gradient(to bottom,#00FFFF,#00FF9F);
+border-radius:7.5px;}
+
+.logo-container.touch::-webkit-scrollbar {
+display:none;}
+
+.logo-container.mouse::-webkit-scrollbar {
+display:flex;}
+
+.logo-container .logo {
+position: absolute;
+top:800px;
+width:200px;
+height:200px;
+background:#051B34;
+display:flex;
+justify-content:center;
+align-items:center;}
+
+.logo-container #light {
+opacity:1;
+position:absolute;
+left:63px;
+top:43px;
+width:120px;
+height:120px;
+display:flex;
+justify-content:center;
+background:linear-gradient(to right, rgba(51,255,255,0.15) 0%, #051B34 80%);
+clip-path:path('M1.14431 53.3397L141.851 0C152.95 35.7562 152.48 84.1316 141.851 120L1.14431 67.1162C-0.334474 61.7426 -0.427685 58.7198 1.14431 53.3397Z');}
+
+.logo-container #F {
+font-weight: 1000;
+position:absolute;
+left:30px;
+color: aqua;
+letter-spacing:5px;}
+
+.logo-container #cus{
+font-weight: 1000;
+position:absolute;
+left:89px;
+color: transparent;
+letter-spacing:5px;
+transition:0.4s;
+background:linear-gradient(to right,#00FFFF,#00FF9F);
+-webkit-background-clip:text;}
+
+.logo-container #focus {
+position:absolute;
+left:54px;
+width:30px;
+height:30px;
+display:flex;
+justify-content:center;}
+
+.logo-container #backside {
+position:absolute;
+bottom:1px;
+left:3px;}
+
+.logo-container #glass {
+position:absolute;
+bottom:1px;
+left:8.5px;
+width:20px;
+height:20px;
+background:#051B34;
+border-radius:11px;
+border:0.1rem solid aqua;}
+
+.logo-container #glow {
+position:absolute;
+bottom:1px;
+left:8.5px;
+width:20px;
+height:20px;
+background:aqua;
+border-radius:11px;
+border:1.4px solid aqua;
+filter:blur(6px);
+opacity:0.5;}
+
+.logo-container #shine {
+position:absolute;
+bottom:1px;
+left:8.5px;
+transform:rotate(0deg);
+opacity:1;}
+
+.logo-container .shine.active {
+animation:logo-rotate 0.5s;}
+
+@keyframes logo-rotate {
+50%{transform:rotate(60deg);}
+100%{transform:rotate(0deg);}}
+
+@keyframes lighting1 {
+5%{opacity:1;}
+10%{opacity:0;}
+15%{opacity:1;}
+20%{opacity:0;}
+100%{opacity:1;}}
+
+@keyframes lighting2 {
+0%{opacity:1;}
+100%{opacity:0;}}
+
+.logo-container button {
+font-family: "Montserrat Alternates", serif;
+font-weight: 1000;
+font-style: normal;
+cursor:pointer;
+transition:0.3s;
+width:130px;
+height:50px;
+position:absolute;
+top:980px;
+border:none;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:25px;
+background:linear-gradient(to right,#00FFFF,#00FF9F);}
+
+.logo-container button .background {
+transition:0.3s;
+width:126px;
+height:46px;
+position:absolute;
+border-radius:23px;
+background:#051B34;}
+
+.logo-container button span {
+position:absolute;
+transition:0.3s;
+color:transparent;
+background:linear-gradient(to right,#00FFFF,#00FF9F);
+-webkit-background-clip:text;}
+
+.logo-container button:hover {
+box-shadow:0px 10px 20px rgba(0,255,255,0.2);}
+
+.logo-container button:hover .background {
+opacity:0;}
+
+.logo-container button:hover span {
+color: transparent;
+background:#051B34;
+-webkit-background-clip:text;}
+
+footer {
+width:100vw;
+height:300px;
+position:absolute;
+top:1200px;
+display:flex;
+justify-content:center;}
+
+.line {
+width:90vw;
+height:0.1rem;
+border-radius:0.05rem;
+position:absolute;
+top:0;
+background:linear-gradient(to right, #00FFFF,#00FF9F);}
+
+.show{
+--i:800px;
+position:fixed;
+top:0;
+left:0;
+width:100vw;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+opacity:0;
+pointer-events:none;
+overflow-x:hidden;
+overflow-y:auto;}
+
+.show .layer{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:calc(100vh + 250px);
+background:#051B34;}
+
+.show .Container{
+position:absolute;
+top:180px;
+border-radius:10px;
+width:100vw;
+height:auto;
+background:#051B34;
+transition:0.3s;
+pointer-events:none;
+opacity:0;}
+
+.show .Container.active {
+transition:0.3s 0.3s;
+pointer-events:auto;
+opacity:1;
+top:200px;} 
+
+.show nav {
+transition:0.3s;
+width:90vw;
+height:70px;
+position:absolute;
+top:80px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:35px;
+overflow:hidden;
+font-family: "Montserrat Alternates", serif;
+font-weight: 1000;
+font-style: normal;
+background:linear-gradient(to right,#00FFFF,#00FF9F);}
+
+.show nav .background {
+transition:0.3s;
+width:calc(90vw - 4px);
+height:66px;
+position:absolute;
+border-radius:33px;
+background:#051B34;}
+
+.show nav section {
+user-select:none;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+overflow-x:auto;
+position: absolute;
+display: flex;
+align-items:center;
+border-radius:33px;
+height:66px;}
+
+.show nav section::-webkit-scrollbar {
+display:none;}
+
+.show nav section span {
+cursor:pointer;
+transition:0.3s;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:0.7rem;
+white-space:nowrap;
+text-overflow: ellipsis;
+max-width:400px;
+background:linear-gradient(to right,#00FFFF,#00FF9F);
+-webkit-background-clip:text;
+color:#A1A1A1;}
+
+.show nav section span.active{
+color:transparent;
+background:linear-gradient(to right,#00FFFF,#00FF9F);
+-webkit-background-clip:text;
+text-shadow:2px 2px 8px rgba(0,255,255,0.3);}
+
+.show .back{
+cursor:pointer;
+position: absolute;
+top:10px;
+left:10px;
+border-radius:9px;
+background:linear-gradient(to bottom right,#00FFFF,#00FF9F);
+box-shadow:0px 0px 5px rgba(0,255,255,0.2);}
+
+
+@media screen and (max-width:700px) {
+ 
+.show nav {
+width:90vw - 4px;}
+
+.show nav .background {
+width:calc(90vw - 4px);}
+
+.show nav section {
+width:calc(90vw - 4px);
+column-gap:30px;
+padding:0 30px;}
+
+}
+
+@media screen and (min-width:700px) {
+ 
+.show nav {
+width:600px;}
+
+.show nav .background {
+width:596px;}
+
+.show nav section {
+width:596px;
+column-gap:50px;
+padding:0 50px;
+justify-content:center;}
+ 
+}

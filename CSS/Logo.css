@@ -206,10 +206,8 @@ position:absolute;
 top:0;
 left:0;
 width:100%;
-height:calc(100vh + 250px);
-background:#051B34;
-overflow:hidden;
-pointer-events:none;}
+height:250px;
+background:#051B34;}
 
 .show .Container{
 position:absolute;

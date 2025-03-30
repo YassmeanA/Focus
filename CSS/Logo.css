@@ -53,7 +53,7 @@ clip-path:path('M1.14431 53.3397L141.851 0C152.95 35.7562 152.48 84.1316 141.851
 .logo-container #F {
 font-weight: 1000;
 position:absolute;
-left:31px;
+left:32px;
 color: aqua;
 letter-spacing:5px;}
 
@@ -88,7 +88,7 @@ width:20px;
 height:20px;
 background:#051B34;
 border-radius:11px;
-border:0.115rem solid aqua;}
+border:0.114rem solid aqua;}
 
 .logo-container #glow {
 position:absolute;

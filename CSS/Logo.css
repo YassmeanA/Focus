@@ -207,7 +207,9 @@ top:0;
 left:0;
 width:100%;
 height:calc(100vh + 250px);
-background:#051B34;}
+background:#051B34;
+overflow:hidden;
+pointer-events:none;}
 
 .show .Container{
 position:absolute;

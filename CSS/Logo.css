@@ -20,17 +20,15 @@ background:none;}
 
 .logo-container::-webkit-scrollbar-thumb {
 background:linear-gradient(to bottom,#00FFFF,#00FF9F);
-background:red;
 border-radius:7.5px;}
 
 .show::-webkit-scrollbar {
-width:150px;
-display:none;}
+width:15px;}
 
-.Container::-webkit-scrollbar-track {
+.show::-webkit-scrollbar-track {
 background:none;}
 
-.Container::-webkit-scrollbar-thumb {
+.show::-webkit-scrollbar-thumb {
 background:linear-gradient(to bottom,#00FFFF,#00FF9F);
 border-radius:7.5px;}
 
@@ -38,6 +36,12 @@ border-radius:7.5px;}
 display:none;}
 
 .logo-container.mouse::-webkit-scrollbar {
+display:flex;}
+
+.show.touch::-webkit-scrollbar {
+display:none;}
+
+.show.mouse::-webkit-scrollbar {
 display:flex;}
 
 .logo-container .logo {

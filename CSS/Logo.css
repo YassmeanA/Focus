@@ -26,7 +26,7 @@ border-radius:7.5px;}
 width:15px;}
 
 .show::-webkit-scrollbar-track {
-background:none;}
+background:#051B34;}
 
 .show::-webkit-scrollbar-thumb {
 background:linear-gradient(to bottom,#00FFFF,#00FF9F);

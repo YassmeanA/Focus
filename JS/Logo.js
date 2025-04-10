@@ -22,9 +22,9 @@ let Z;
 //Check if the user uses touchscreen or not
 if ("ontouchstart" in document.documentElement)
 
-{LogoContainer.classList.add("touch");LogoContainer.classList.remove("mouse");Z=0;}
+{LogoContainer.classList.add("touch");LogoContainer.classList.remove("mouse");show.classList.add("touch");show.classList.remove("mouse");Z=0;}
 
-else {LogoContainer.classList.add("mouse");LogoContainer.classList.remove("touch");Z=7;}
+else {LogoContainer.classList.add("mouse");LogoContainer.classList.remove("touch");show.classList.add("mouse");show.classList.remove("touch");Z=7;}
 
 let Y;
 

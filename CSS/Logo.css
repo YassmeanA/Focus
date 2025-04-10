@@ -23,7 +23,7 @@ background:linear-gradient(to bottom,#00FFFF,#00FF9F);
 border-radius:7.5px;}
 
 .show::-webkit-scrollbar {
-width:15px;
+width:150px;
 display:none;}
 
 .Container::-webkit-scrollbar-track {

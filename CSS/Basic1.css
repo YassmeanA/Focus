@@ -104,16 +104,16 @@
     padding:6px;
     display:flex;
     align-items:center;
-    column-gap:2.5px;}
+    column-gap:3px;}
     
     .container1 i {
-    font-size:10.5px;
+    font-size:10px;
     color:gold;
-    margin-top:-1px;}
+    margin-top:-2px;}
     
     .container1 .rating {
     color:black;
-    font-size:10.5px;
+    font-size:10px;
     font-weight:800;}
     
     .container1 .section {

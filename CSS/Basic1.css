@@ -104,10 +104,10 @@
     padding:6px;
     display:flex;
     align-items:center;
-    column-gap:15px;}
+    column-gap:3px;}
     
     .container1 i {
-    font-size:100px;
+    font-size:10px;
     color:gold;
     margin-top:-2px;}
     

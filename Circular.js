@@ -18,7 +18,7 @@ button.classList.toggle("active");
 document.querySelector(".Active").classList.remove("Active");
 Imgs[index].classList.add("Active");
 
-if(window.innerHeight <= 650){Title.style.top="700px";text.style.top="700px";}else{Title.style.top="100vh";text.style.top="100vh";}
+Title.style.top="700px";text.style.top="700px";
 Title.style.opacity="0";Title.style.transition="0s";
 text.style.opacity="0";text.style.transition="0s";
 

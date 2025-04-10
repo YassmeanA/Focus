@@ -13,7 +13,7 @@ font-weight: 1000;
 font-style: normal;}
 
 .logo-container::-webkit-scrollbar {
-width:15px;}
+width:150px;}
 
 .logo-container::-webkit-scrollbar-track {
 background:none;}

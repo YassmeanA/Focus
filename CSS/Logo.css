@@ -13,13 +13,14 @@ font-weight: 1000;
 font-style: normal;}
 
 .logo-container::-webkit-scrollbar {
-width:150px;}
+width:15px;}
 
 .logo-container::-webkit-scrollbar-track {
 background:none;}
 
 .logo-container::-webkit-scrollbar-thumb {
 background:linear-gradient(to bottom,#00FFFF,#00FF9F);
+background:red;
 border-radius:7.5px;}
 
 .show::-webkit-scrollbar {

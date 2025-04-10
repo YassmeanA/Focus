@@ -22,13 +22,13 @@ background:none;}
 background:linear-gradient(to bottom,#00FFFF,#00FF9F);
 border-radius:7.5px;}
 
-.show::-webkit-scrollbar {
+.Container::-webkit-scrollbar {
 width:15px;}
 
-.show::-webkit-scrollbar-track {
+.Container::-webkit-scrollbar-track {
 background:none;}
 
-.show::-webkit-scrollbar-thumb {
+.Container::-webkit-scrollbar-thumb {
 background:linear-gradient(to bottom,#00FFFF,#00FF9F);
 border-radius:7.5px;}
 
@@ -43,7 +43,6 @@ position: absolute;
 top:800px;
 width:200px;
 height:200px;
-background:#051B34;
 display:flex;
 justify-content:center;
 align-items:center;}

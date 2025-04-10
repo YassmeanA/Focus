@@ -22,8 +22,9 @@ background:none;}
 background:linear-gradient(to bottom,#00FFFF,#00FF9F);
 border-radius:7.5px;}
 
-.Container::-webkit-scrollbar {
-width:15px;}
+.show::-webkit-scrollbar {
+width:15px;
+display:none;}
 
 .Container::-webkit-scrollbar-track {
 background:none;}

@@ -1,0 +1,20 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="25" cy="25" r="25" fill="#051B34"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.2081 17.2823C17.2622 15.2282 20.0481 14.0742 22.953 14.0742V14.0785H27.647V35.9846H22.9529V35.9803C20.048 35.9802 17.2621 34.8263 15.2081 32.7722C13.154 30.7181 12 27.9322 12 25.0273C12 22.1223 13.154 19.3364 15.2081 17.2823Z" fill="#00FFFF"/>
+<circle cx="27.6468" cy="25.0351" r="10.1707" fill="#051B34" stroke="#00FFFF" stroke-width="1.56472"/>
+<path d="M33.6544 28.7039C33.269 29.3343 32.7867 29.9001 32.2254 30.3805" stroke="#00FFFF" stroke-width="1.56472" stroke-linecap="round"/>
+<path d="M25.4707 18.3301C26.5275 17.9867 27.6505 17.8983 28.748 18.0722C29.8455 18.246 30.8863 18.6771 31.7853 19.3302C32.6842 19.9834 33.4159 20.84 33.9203 21.8301C34.4248 22.8201 34.6878 23.9155 34.6878 25.0267" stroke="#00FFFF" stroke-width="1.56472" stroke-linecap="round"/>
+<g filter="url(#filter0_f_19249_35872)">
+<circle cx="28.499" cy="25.5019" r="6.80263" fill="#00FFFF"/>
+<circle cx="28.499" cy="25.5019" r="6.31673" stroke="#00FFFF" stroke-opacity="0.5" stroke-width="0.971804"/>
+<path d="M33.6723 28.662C33.3404 29.2048 32.9251 29.692 32.4417 30.1058" stroke="#00FFFF" stroke-opacity="0.5" stroke-width="1.34743" stroke-linecap="round"/>
+<path d="M26.625 19.7283C27.5351 19.4326 28.5022 19.3565 29.4473 19.5062C30.3923 19.6559 31.2886 20.0271 32.0627 20.5895C32.8368 21.152 33.4669 21.8896 33.9013 22.7422C34.3357 23.5948 34.5621 24.5381 34.5621 25.4949" stroke="#00FFFF" stroke-opacity="0.5" stroke-width="1.34743" stroke-linecap="round"/>
+</g>
+<defs>
+<filter id="filter0_f_19249_35872" x="7.69635" y="4.69922" width="41.6053" height="41.6055" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="7" result="effect1_foregroundBlur_19249_35872"/>
+</filter>
+</defs>
+</svg>

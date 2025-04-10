@@ -13,7 +13,7 @@
     background: white;}
     
     .container3 .infinite{
-    transform:scale(0.8) translateX(-2%) rotate(40deg);
+    transform:scale(0.8) translateX(-1.5%) rotate(40deg);
     display: flex;
     gap:1em;
     align-items: center;

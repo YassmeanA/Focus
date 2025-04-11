@@ -55,6 +55,54 @@ LogoNavbar.style.justifyContent="center";
 
 }
 
+
+let isDragging = false, startX, startScrollLeft;
+
+const snapToNearestCard = () => {
+  const scrollLeft = LogoNavbar.scrollLeft;
+  let closestSlide = LogoSections[0];
+  let minDistance = Math.abs(scrollLeft - LogoSections[0].offsetLeft);
+
+  // Loop through all slides to find the one closest to current scroll
+  LogoSections.forEach(slide => {
+    const distance = Math.abs(scrollLeft - slide.offsetLeft);
+    if (distance < minDistance) {
+      minDistance = distance;
+      closestSlide = slide;
+    }
+  });
+
+  // Snap to the closest slide
+  LogoNavbar.scrollTo({
+    left: closestSlide.offsetLeft,
+    behavior: "smooth"
+  });
+};
+
+const dragStart = (e) => {
+  isDragging = true;
+  LogoNavbar.classList.add("dragging");
+  startX = e.pageX;
+  startScrollLeft = LogoNavbar.scrollLeft;
+};
+
+const dragging = (e) => {
+  if (!isDragging) return;
+  e.preventDefault(); // Prevent text/image selection
+  LogoNavbar.scrollLeft = startScrollLeft - (e.pageX - startX);
+};
+
+const dragStop = () => {
+  isDragging = false;
+  LogoNavbar.classList.remove("dragging");
+  snapToNearestCard();
+};
+
+LogoNavbar.addEventListener("mousedown", dragStart);
+LogoNavbar.addEventListener("mousemove", dragging);
+LogoNavbar.addEventListener("mouseup", dragStop);
+
+
 LogoSections.forEach((Section,index) => {
 
 Section.addEventListener("click", () => {

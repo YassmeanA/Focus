@@ -30,11 +30,7 @@ let Y;
 
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
-let W;
-
-W = LogoSections.slice(0, LogoSections.length).reduce((total, section) => total + section.clientWidth, 250);
-
-//W = (LogoSections[0].clientWidth + LogoSections[1].clientWidth + LogoSections[2].clientWidth + LogoSections[3].clientWidth + 250);
+const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 250);
 
 if(window.innerWidth < 700 && LogoNavbar.innerWidth >= W){
 

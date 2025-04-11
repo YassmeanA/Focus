@@ -195,7 +195,7 @@ justify-content:center;}
 
 .line {
 width:90vw;
-height:0.1rem;
+height:1rem;
 border-radius:0.05rem;
 position:absolute;
 top:0;
@@ -275,6 +275,10 @@ display: flex;
 align-items:center;
 border-radius:33px;
 height:66px;}
+
+.show nav section.dragging {
+scroll-snap-type: none;
+scroll-behavior: auto;}
 
 .show nav section::-webkit-scrollbar {
 display:none;}

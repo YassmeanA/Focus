@@ -52,27 +52,6 @@ if(LogoContainer.classList.contains("mouse")){
 
 let isDragging = false, startX, startScrollLeft;
 
-const snapToNearestCard = () => {
-  const scrollLeft = LogoNavbar.scrollLeft;
-  let closestSlide = LogoSections[0];
-  let minDistance = Math.abs(scrollLeft);
-
-  // Loop through all slides to find the one closest to current scroll
-  LogoSections.forEach(slide => {
-    const distance = Math.abs(scrollLeft - slide.offsetLeft);
-    if (distance < minDistance) {
-      minDistance = distance;
-      closestSlide = slide;
-    }
-  });
-
-  // Snap to the closest slide
-  LogoNavbar.scrollTo({
-    left: closestSlide.offsetLeft + 50,
-    behavior: "smooth"
-  });
-};
-
 const dragStart = (e) => {
   isDragging = true;
   LogoNavbar.classList.add("dragging");
@@ -89,7 +68,6 @@ const dragging = (e) => {
 const dragStop = () => {
   isDragging = false;
   LogoNavbar.classList.remove("dragging");
-  snapToNearestCard();
 };
 
 LogoNavbar.addEventListener("mousedown", dragStart);

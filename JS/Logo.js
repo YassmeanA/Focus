@@ -67,7 +67,7 @@ const snapToNearestCard = () => {
 
   // Snap to the closest slide
   LogoNavbar.scrollTo({
-    left: closestSlide.offsetLeft,
+    left: closestSlide.offsetLeft + 50,
     behavior: "smooth"
   });
 };

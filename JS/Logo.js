@@ -32,26 +32,19 @@ if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.i
 
 const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 250);
 
-if(window.innerWidth < 700 && LogoNavbar.innerWidth >= W){
+if(LogoNavbar.innerWidth >= W){
 
 LogoNav.style.width=`calc(${W}px + 4px)`;
 LogoBackground.style.width=`${W}px`;
 LogoNavbar.style.width=`${W}px`;
 LogoNavbar.style.justifyContent="center";
 
-}else if(window.innerWidth < 700 && LogoNavbar.innerWidth < W){
+}else if(LogoNavbar.innerWidth < W){
 
 LogoNav.style.width="90vw";
 LogoBackground.style.width="calc(90vw - 4px)";
 LogoNavbar.style.width="calc(90vw - 4px)";
 LogoNavbar.style.justifyContent="start";
-
-}else if(window.innerWidth > 700){
-
-LogoNav.style.width="600px";
-LogoBackground.style.width="596px";
-LogoNavbar.style.width="596px";
-LogoNavbar.style.justifyContent="center";
 
 }
 

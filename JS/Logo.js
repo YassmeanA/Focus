@@ -32,7 +32,7 @@ if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.i
 
 let W;
 
-W = LogoSections.slice(0, Slides.length).reduce((total, section) => total + section.clientWidth, 250);
+W = LogoSections.slice(0, LogoSections.length).reduce((total, section) => total + section.clientWidth, 250);
 
 //W = (LogoSections[0].clientWidth + LogoSections[1].clientWidth + LogoSections[2].clientWidth + LogoSections[3].clientWidth + 250);
 

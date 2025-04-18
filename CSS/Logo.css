@@ -195,7 +195,7 @@ justify-content:center;}
 
 .line {
 width:90vw;
-height:1rem;
+height:0.1rem;
 border-radius:0.05rem;
 position:absolute;
 top:0;
@@ -274,7 +274,9 @@ position: absolute;
 display: flex;
 align-items:center;
 border-radius:33px;
-height:66px;}
+height:66px;
+padding:50px;
+gap:50px;}
 
 .show nav section.dragging {
 scroll-snap-type: none;

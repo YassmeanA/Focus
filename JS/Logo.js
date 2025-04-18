@@ -28,6 +28,8 @@ else {LogoContainer.classList.add("mouse");LogoContainer.classList.remove("touch
 
 let Y;
 
+window.addEventListener("resize", () => {
+
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
 const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 250);
@@ -48,6 +50,9 @@ LogoNavbar.style.justifyContent="start";
 
 }
 
+});
+
+  
 if(LogoContainer.classList.contains("mouse")){
 
 let isDragging = false, startX, startScrollLeft;

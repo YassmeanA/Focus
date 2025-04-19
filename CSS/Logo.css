@@ -215,15 +215,13 @@ align-items:center;
 opacity:0;
 pointer-events:none;
 overflow-x:hidden;
-overflow-y:auto;
-z-index:2;}
+overflow-y:auto;}
 
 .show .layer{
- z-index:1;
 position:fixed;
 top:0;
 left:0;
-width:100%;
+width:calc(100% - 15px);
 height:100%;
 background:#051B34;}
 

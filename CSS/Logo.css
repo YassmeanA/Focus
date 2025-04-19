@@ -30,8 +30,7 @@ background:#051B34;}
 
 .show::-webkit-scrollbar-thumb {
 background:linear-gradient(to bottom,#00FFFF,#00FF9F);
-border-radius:7.5px;
-z-index:2;}
+border-radius:7.5px;}
 
 .logo-container.touch::-webkit-scrollbar {
 display:none;}
@@ -219,6 +218,7 @@ overflow-x:hidden;
 overflow-y:auto;}
 
 .show .layer{
+ z-index:-1;
 position:fixed;
 top:0;
 left:0;

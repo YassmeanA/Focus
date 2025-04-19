@@ -119,9 +119,6 @@ LogoContainer.style.pointerEvents="none";
 show.style.pointerEvents="auto";
 
 Containers.forEach((Container,index) => {
-Container.style.display="grid";});
-
-Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="auto";};});
 
 show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) - ${X}px + 104.034px))`;
@@ -195,9 +192,6 @@ shine.classList.add("active");
 setTimeout(() => {shine.classList.remove("active");},500);
 
 light.style.animation="lighting1 0.8s forwards";},200);
-
-Containers.forEach((Container,index) => {
-Container.style.display="none";});
 
 },900);
 

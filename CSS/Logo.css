@@ -197,8 +197,8 @@ background:red;}
 
 .line {
 width:90vw;
-height:0.1rem;
-border-radius:0.05rem;
+height:1px;
+border-radius:0.5px;
 position:absolute;
 top:0;
 background:linear-gradient(to right, #00FFFF,#00FF9F);}

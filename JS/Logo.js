@@ -136,7 +136,7 @@ shine.style.opacity="0";
 shine.style.left="3px";
 
 shine.classList.add("active");
-setTimeout(() => {shine.classList.remove("active");show.style.background="#051B34";},500)
+setTimeout(() => {shine.classList.remove("active");},500)
 
 glow.style.transition="0.3s";
 glow.style.opacity="0";
@@ -153,7 +153,6 @@ hide.setAttribute('x',10);},100);
 LogoBack.addEventListener("click",() => {
  
 show.classList.remove("active");
-show.style.background="none";
   
 show.style.pointerEvents="none";
 LogoContainer.style.pointerEvents="auto";

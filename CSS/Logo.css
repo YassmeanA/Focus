@@ -42,7 +42,8 @@ display:flex;}
 display:none;}
 
 .show.mouse::-webkit-scrollbar {
-display:flex;}
+display:flex;
+z-index:2;}
 
 .logo-container .logo {
 position: absolute;

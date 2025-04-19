@@ -227,6 +227,7 @@ background:#051B34;}
 
 .show .Container{
 position:absolute;
+display:grid;
 top:180px;
 background:#051B34;
 width:100vw;

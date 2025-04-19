@@ -30,7 +30,8 @@ background:#051B34;}
 
 .show::-webkit-scrollbar-thumb {
 background:linear-gradient(to bottom,#00FFFF,#00FF9F);
-border-radius:7.5px;}
+border-radius:7.5px;
+z-index:2;}
 
 .logo-container.touch::-webkit-scrollbar {
 display:none;}
@@ -42,8 +43,7 @@ display:flex;}
 display:none;}
 
 .show.mouse::-webkit-scrollbar {
-display:flex;
-z-index:2;}
+display:flex;}
 
 .logo-container .logo {
 position: absolute;
@@ -228,14 +228,14 @@ background:#051B34;}
 
 .show .Container{
 position:absolute;
-display:grid;
+display:none;
 top:180px;
 background:#051B34;
 width:100vw;
 height:auto;
 transition:0.3s;
 pointer-events:none;
-opacity:1;}
+opacity:0;}
 
 .show .Container.active {
 transition:0.3s 0.3s;

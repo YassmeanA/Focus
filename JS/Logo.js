@@ -139,7 +139,7 @@ shine.style.opacity="0";
 shine.style.left="3px";
 
 shine.classList.add("active");
-setTimeout(() => {shine.classList.remove("active");},500)
+setTimeout(() => {shine.classList.remove("active");LogoContainer.style.display="none";},500)
 
 glow.style.transition="0.3s";
 glow.style.opacity="0";
@@ -155,6 +155,8 @@ hide.setAttribute('x',10);},100);
 
 LogoBack.addEventListener("click",() => {
 
+LogoContainer.style.display="flex";
+  
 show.classList.remove("active");
 
 show.style.pointerEvents="none";

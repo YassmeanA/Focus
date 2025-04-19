@@ -28,9 +28,9 @@ else {LogoContainer.classList.add("mouse");LogoContainer.classList.remove("touch
 
 let Y;
 
-window.addEventListener("resize", () => {
-
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+
+window.addEventListener("resize", () => {
 
 const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 250);
 

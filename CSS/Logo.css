@@ -213,13 +213,13 @@ height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-opacity:0;
+opacity:1;
 pointer-events:none;
 overflow-x:hidden;
 overflow-y:auto;}
 
 .show .layer{
-position:fixed;
+position:absolute;
 top:0;
 left:0;
 width:100%;
@@ -229,7 +229,7 @@ background:red;}
 
 .show .Container{
 position:absolute;
-display:none;
+display:grid;
 top:180px;
 background:#051B34;
 width:100vw;

@@ -192,8 +192,7 @@ height:300px;
 position:absolute;
 top:1200px;
 display:flex;
-justify-content:center;
-background:red;}
+justify-content:center;}
 
 .line {
 width:90vw;

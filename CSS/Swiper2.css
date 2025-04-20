@@ -45,8 +45,8 @@ left:0px;
 color:white;
 font-weight:600;
 z-index:1;
-font-size:16px;
-padding:15px;
+font-size:12px;
+padding:12px;
 text-shadow:3px 3px 5px rgba(0,0,0,0.2);}
 
 .container12 img{
@@ -63,7 +63,7 @@ font-weight: bold;
 z-index:1;
 color:white;
 padding:10px;
-font-size:32px;
+font-size:30px;
 text-shadow:2px 2px 4px rgba(0,0,0,0.2);}
 
 .container12 .swiper-slide h3 {
@@ -72,9 +72,9 @@ font-weight: 500;
 z-index:1;
 position: absolute;
 color:white;
-bottom:18px;
+bottom:15px;
 padding:15px;
-font-size:22px;
+font-size:18px;
 text-shadow:2px 2px 3px rgba(0,0,0,0.5);}
 
 /* target the active bullet */

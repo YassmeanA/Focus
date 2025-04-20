@@ -30,7 +30,11 @@ let Y;
 
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
+show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 104.034px))`;
+
 window.addEventListener("resize", () => {
+
+if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
 const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 250);
 

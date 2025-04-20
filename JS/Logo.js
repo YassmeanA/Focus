@@ -95,6 +95,7 @@ Containers[index].classList.add("active");
 });
 
 Containers.forEach((Container,index) => {
+Container.style.height="0";
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="none";};});
 
 LogoContainer.addEventListener("scroll",() => {

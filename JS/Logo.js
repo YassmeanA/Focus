@@ -119,6 +119,7 @@ LogoContainer.style.pointerEvents="none";
 show.style.pointerEvents="auto";
 
 Containers.forEach((Container,index) => {
+Container.style.height="auto";
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="auto";};});
 
 show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) - ${X}px + 104.034px))`;
@@ -158,6 +159,7 @@ show.style.pointerEvents="none";
 LogoContainer.style.pointerEvents="auto";
 
 Containers.forEach((Container,index) => {
+Container.style.height="0";
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="none";};});
 
 show.style.transition="clip-path 0.5s, opacity 0.5s 0.5s";

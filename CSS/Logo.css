@@ -89,7 +89,8 @@ left:54px;
 width:30px;
 height:30px;
 display:flex;
-justify-content:center;}
+justify-content:center;
+transform:translateY(-2px);}
 
 .logo-container #backside {
 position:absolute;

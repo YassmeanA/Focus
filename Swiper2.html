@@ -31,7 +31,7 @@ background: linear-gradient(to bottom right, #F8EBA6, #FFD8C2);}
 .Container{
 position: absolute;
 top:50px;
-width:100vw;
+width:100%;
 display: flex;
 overflow-x:hidden;
 align-items: center;
@@ -41,13 +41,13 @@ justify-content: center;}
 .swiper {
 position:relative;
 max-width: 2200px;
-width:100vw;
+width:100%;
 display:flex;
 align-items: center;
 justify-content: center;}
 
 .swiper-wrapper {
-padding:50px 0;
+padding:60px 0;
 display: flex;
 align-items:center;
 list-style:none;}
@@ -121,7 +121,10 @@ color:white;}
 .swiper-pagination{
 position: absolute;
 bottom:0;}
- 
+
+.swiper-pagination {
+padding:10px 0;}   
+    
 /* target the active bullet */
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
 opacity:1;

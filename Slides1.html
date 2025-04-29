@@ -177,7 +177,7 @@ const Wrapper = document.querySelector(".wrapper");
 
 if(window.innerWidth < (Cards[0].offsetWidth + 10)*Cards.length){Wrapper.style.justifyContent="start";}else{Wrapper.style.justifyContent="center";};
    
-window.addEventlistener("resize", () => {
+window.addEventListener("resize", () => {
     
 if(window.innerWidth < (Cards[0].offsetWidth + 10)*Cards.length){Wrapper.style.justifyContent="start";}else{Wrapper.style.justifyContent="center";};
 

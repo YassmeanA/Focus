@@ -173,12 +173,11 @@ opacity:1;}
 const Cards = document.querySelectorAll(".card");
 const Wrapper = document.querySelector(".wrapper");
 
-    
-if(window.innerWidth < 760){Wrapper.style.justifyContent="start";}else{Wrapper.style.justifyContent="center";};
-    
+if(window.innerWidth < Cards.length * (Cards.[0].offsetWidth + 10)){Wrapper.style.justifyContent="start";}else{Wrapper.style.justifyContent="center";};
+   
 window.addEventlistener("resize", () => {
     
-if(window.innerWidth < 760){Wrapper.style.justifyContent="start";}else{Wrapper.style.justifyContent="center";};
+if(window.innerWidth < Cards.length * (Cards.[0].offsetWidth + 10)){Wrapper.style.justifyContent="start";}else{Wrapper.style.justifyContent="center";};
 
 });
 

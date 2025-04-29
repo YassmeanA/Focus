@@ -227,6 +227,7 @@ buttons.forEach(button => {
 button.addEventListener("click", () => {
 
  updateJustifyContent();
+window.addEventListener("resize", updateJustifyContent);
 
 buttons.forEach(btn => {
 if (btn !== button && btn.classList.contains("active")) {btn.classList.remove("active");}});
@@ -236,7 +237,8 @@ button.classList.toggle("active");
 W.addEventListener("click", () => {
 
 updateJustifyContent();
-    
+window.addEventListener("resize", updateJustifyContent);
+  
 buttons.forEach(btn => {
 if (btn.classList.contains("active")) {btn.classList.remove("active");}});
 

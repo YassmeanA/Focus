@@ -76,7 +76,7 @@ function setupDots() {
   slidesInView = getSlidesInView();
 
   
-  if (slidesInView >= slides.length - 3) {dotsContainer.style.display = "none";}else{dotsContainer.style.display = "flex";}
+  if (slidesInView >= 0.7 * slides.length) {dotsContainer.style.display = "none";}else{dotsContainer.style.display = "flex";}
 
   if (slidesInView >= slides.length / 2) {slidesInView = slides.length / 2;} 
 

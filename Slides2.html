@@ -205,7 +205,7 @@ const buttons = document.querySelectorAll(".card");
 
 buttons.forEach(button => {
 
-if(button.classList.conatins("active")){
+if(button.classList.contains("active")){
 
 if(window.innerWidth >= (buttons.length - 1) * (buttons[0].offsetWidth + 10) + button.offsetWidth){Wrapper.style.justifyContent="center";}else{Wrapper.style.justifyContent="start";};
     
@@ -223,7 +223,7 @@ window.addEventListener("resize", () => {
 
 buttons.forEach(button => {
 
-if(button.classList.conatins("active")){
+if(button.classList.contains("active")){
 
 if(window.innerWidth >= (buttons.length - 1) * (buttons[0].offsetWidth + 10) + button.offsetWidth){Wrapper.style.justifyContent="center";}else{Wrapper.style.justifyContent="start";};
     

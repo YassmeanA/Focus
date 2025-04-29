@@ -206,7 +206,7 @@ const buttons = document.querySelectorAll(".card");
 
 function updateJustifyContent() {
 
-  if (window.innerWidth >= (buttons.length - 1)*(buttons[0].offsetWidth + 10) + 310) {
+  if (window.innerWidth >= 70*(buttons.length - 1) + 310) {
     Wrapper.style.justifyContent = "center";
   } else {
     Wrapper.style.justifyContent = "start";

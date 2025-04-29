@@ -206,11 +206,7 @@ const buttons = document.querySelectorAll(".card");
 
 function updateJustifyContent() {
 
-  const totalSlideWidth = Array.from(buttons).reduce((total, btn) => {
-    return total + btn.offsetWidth + 10; // 10px assumed margin between slides
-  }, 0);
-
-  if (window.innerWidth >= totalSlideWidth) {
+  if (window.innerWidth >= (buttons.length - 1)*(buttons[0].offsetWidth + 10) + 310) {
     Wrapper.style.justifyContent = "center";
   } else {
     Wrapper.style.justifyContent = "start";
@@ -226,33 +222,13 @@ window.addEventListener("resize", updateJustifyContent);
 buttons.forEach(button => {
 
 button.addEventListener("click", () => {
-
-setTimeout(() => {
-
-// Initial check
-updateJustifyContent();
-
-// Re-check on resize
-window.addEventListener("resize", updateJustifyContent);
-
-},450);
-    
+   
 buttons.forEach(btn => {
 if (btn !== button && btn.classList.contains("active")) {btn.classList.remove("active");}});
 button.classList.toggle("active");
 });
 
 W.addEventListener("click", () => {
-
-setTimeout(() => {
-
-// Initial check
-updateJustifyContent();
-
-// Re-check on resize
-window.addEventListener("resize", updateJustifyContent);
-
-},450);
     
 buttons.forEach(btn => {
 if (btn.classList.contains("active")) {btn.classList.remove("active");}});

@@ -202,24 +202,26 @@ width:100vw;}
 
 const Wrapper = document.querySelector(".wrapper");
 const buttons = document.querySelectorAll(".card");
-const Active = document.querySelector(".card.active");
 
-buttons.forEach(button => {
+function updateJustifyContent() {
 
-if(window.innerWidth >= buttons.length * (button.offsetWidth + 10)){Wrapper.style.justifyContent="center";}else{Wrapper.style.justifyContent="start";};
-   
-});
+  const totalSlideWidth = Array.from(buttons).reduce((total, btn) => {
+    return total + btn.offsetWidth + 10; // 10px assumed margin between slides
+  }, 0);
 
-window.addEventListener("resize", () => {
+  if (window.innerWidth >= totalSlideWidth) {
+    Wrapper.style.justifyContent = "center";
+  } else {
+    Wrapper.style.justifyContent = "start";
+  }
+}
 
-buttons.forEach(button => {
+// Initial check
+updateJustifyContent();
 
-if(window.innerWidth >= buttons.length * (button.offsetWidth + 10)){Wrapper.style.justifyContent="center";}else{Wrapper.style.justifyContent="start";};
-   
-});
-    
-});
-    
+// Re-check on resize
+window.addEventListener("resize", updateJustifyContent);
+
 buttons.forEach(button => {
 
 button.addEventListener("click", () => {

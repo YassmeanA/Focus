@@ -227,13 +227,26 @@ buttons.forEach(button => {
 
 button.addEventListener("click", () => {
 
+// Initial check
+updateJustifyContent();
+
+// Re-check on resize
+window.addEventListener("resize", updateJustifyContent);
+
+    
 buttons.forEach(btn => {
 if (btn !== button && btn.classList.contains("active")) {btn.classList.remove("active");}});
 button.classList.toggle("active");
 });
 
 W.addEventListener("click", () => {
-   
+
+// Initial check
+updateJustifyContent();
+
+// Re-check on resize
+window.addEventListener("resize", updateJustifyContent);
+    
 buttons.forEach(btn => {
 if (btn.classList.contains("active")) {btn.classList.remove("active");}});
 

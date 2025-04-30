@@ -31,13 +31,13 @@ let Y;
 
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
-//window.addEventListener("resize", () => {
+window.addEventListener("resize", () => {
 
 let W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 50*(1 + sections.length));
 
   LogoSections[0].innerHTML = "0";
   
-//if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
   
 if(window.innerWidth * 0.9 >= W){
 
@@ -58,7 +58,7 @@ LogoNavbar.style.padding="0 30px";
 LogoNavbar.style.columnGap="30px";
 }
   
-//});
+});
 
 if(LogoContainer.classList.contains("mouse")){
 

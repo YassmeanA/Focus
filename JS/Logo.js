@@ -31,9 +31,11 @@ let Y;
 
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
-window.addEventListener("orientationchange", () => {
+window.addEventListener("resize", () => {
 
 const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 50*(1 + sections.length));
+
+  LogoBack.innerHTML=W;
   
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
   

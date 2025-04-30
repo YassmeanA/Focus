@@ -31,7 +31,7 @@ let Y;
 
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
-window.addEventListener("resize", () => {
+window.addEventListener("orientationchange", () => {
 
 const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 50*(1 + sections.length));
   

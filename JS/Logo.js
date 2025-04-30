@@ -32,8 +32,8 @@ if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.i
 
 show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.34px))`;
 
-window.addEventListener("resize", () => {
-
+function checkScreenSize() {
+  
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
 const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 50*(1 + sections.length));
@@ -54,7 +54,11 @@ LogoNavbar.style.justifyContent="start";
 
 }
 
-});
+}
+
+checkScreenSize();
+
+window.addEventListener("resize", checkScreenSize);
 
   
 if(LogoContainer.classList.contains("mouse")){

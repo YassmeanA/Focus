@@ -56,7 +56,7 @@ if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.i
     LogoNavbar.style.justifyContent = "center";
     LogoNavbar.style.padding = "0 50px";
     LogoNavbar.style.columnGap = "50px";
-  } else if (ninetyVW >= totalSpanWidth) {
+  } else if (ninetyVW < totalSpanWidth) {
     LogoNav.style.width = "90vw";
     LogoBackground.style.width = "calc(90vw - 4px)";
     LogoNavbar.style.width = "calc(90vw - 4px)";

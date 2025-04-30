@@ -16,47 +16,62 @@ const cus = document.querySelector(".logo-container #cus");
 const audio1 = document.querySelector("#audio1");
 const audio2 = document.querySelector("#audio2");
 
+// Touch or mouse setup
 let Z;
-
-//Check if the user uses touchscreen or not
-if ("ontouchstart" in document.documentElement)
-
-{LogoContainer.classList.add("touch");LogoContainer.classList.remove("mouse");show.classList.add("touch");show.classList.remove("mouse");Z=0;}
-
-else {LogoContainer.classList.add("mouse");LogoContainer.classList.remove("touch");show.classList.add("mouse");show.classList.remove("touch");Z=7;}
-
-show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.34px))`;
-
-let Y;
-
-if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
-
-//window.addEventListener("resize", () => {
-
-const W = Array.from(LogoSections).reduce((total, section) => total + section.offsetWidth, 50*(1 + sections.length));
-  
-//if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
-  
-if(window.innerWidth * 0.9 >= W){
-
-LogoNav.style.width=`calc(${W}px + 4px)`;
-LogoBackground.style.width=`${W}px`;
-LogoNavbar.style.width=`${W}px`;
-LogoNavbar.style.justifyContent="center";
-LogoNavbar.style.padding="0 50px";
-LogoNavbar.style.columnGap="50px";
-
-}else if(window.innerWidth * 0.9 < W){
-
-LogoNav.style.width="90vw";
-LogoBackground.style.width="calc(90vw - 4px)";
-LogoNavbar.style.width="calc(90vw - 4px)";
-LogoNavbar.style.justifyContent="start";
-LogoNavbar.style.padding="0 30px";
-LogoNavbar.style.columnGap="30px";
+if ("ontouchstart" in document.documentElement) {
+  LogoContainer.classList.add("touch");
+  LogoContainer.classList.remove("mouse");
+  show.classList.add("touch");
+  show.classList.remove("mouse");
+  Z = 0;
+} else {
+  LogoContainer.classList.add("mouse");
+  LogoContainer.classList.remove("touch");
+  show.classList.add("mouse");
+  show.classList.remove("touch");
+  Z = 7;
 }
-  
-//});
+
+show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.34px))`;
+
+// Function to recalculate and apply navbar width
+function updateNavbarWidth() {
+  // Calculate total width of spans + padding/gap allowance
+  const totalSpanWidth = Array.from(LogoSections).reduce(
+    (total, section) => total + section.offsetWidth + 50, // +50 for expected spacing
+    0
+  );
+
+  const ninetyVW = window.innerWidth * 0.9;
+
+  if (ninetyVW >= totalSpanWidth) {
+    LogoNav.style.width = `${totalSpanWidth + 4}px`;
+    LogoBackground.style.width = `${totalSpanWidth}px`;
+    LogoNavbar.style.width = `${totalSpanWidth}px`;
+    LogoNavbar.style.justifyContent = "center";
+    LogoNavbar.style.padding = "0 50px";
+    LogoNavbar.style.columnGap = "50px";
+  } else {
+    LogoNav.style.width = "90vw";
+    LogoBackground.style.width = "calc(90vw - 4px)";
+    LogoNavbar.style.width = "calc(90vw - 4px)";
+    LogoNavbar.style.justifyContent = "start";
+    LogoNavbar.style.padding = "0 30px";
+    LogoNavbar.style.columnGap = "30px";
+  }
+}
+
+// Initial call
+updateNavbarWidth();
+
+// Update on resize and orientation change
+window.addEventListener("resize", updateNavbarWidth);
+if (screen.orientation && screen.orientation.addEventListener) {
+  screen.orientation.addEventListener("change", updateNavbarWidth);
+} else {
+  window.addEventListener("orientationchange", updateNavbarWidth);
+}
+
 
 if(LogoContainer.classList.contains("mouse")){
 

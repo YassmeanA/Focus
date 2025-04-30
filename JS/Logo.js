@@ -45,6 +45,8 @@ LogoNav.style.width=`calc(${W}px + 4px)`;
 LogoBackground.style.width=`${W}px`;
 LogoNavbar.style.width=`${W}px`;
 LogoNavbar.style.justifyContent="center";
+LogoNavbar.style.padding="0 50px";
+LogoNavbar.style.columnGap="50px";
 
 }else if(window.innerWidth * 0.9 < W){
 
@@ -52,11 +54,12 @@ LogoNav.style.width="90vw";
 LogoBackground.style.width="calc(90vw - 4px)";
 LogoNavbar.style.width="calc(90vw - 4px)";
 LogoNavbar.style.justifyContent="start";
-
+LogoNavbar.style.padding="0 30px";
+LogoNavbar.style.columnGap="30px";
 }
   
 //});
-  
+
 if(LogoContainer.classList.contains("mouse")){
 
 let isDragging = false, startX, startScrollLeft;

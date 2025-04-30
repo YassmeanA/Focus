@@ -34,8 +34,13 @@ if ("ontouchstart" in document.documentElement) {
 
 show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.34px))`;
 
+let Y;
+
 // Function to recalculate and apply navbar width
 function updateNavbarWidth() {
+
+if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+
   // Calculate total width of spans + padding/gap allowance
   const totalSpanWidth = Array.from(LogoSections).reduce(
     (total, section) => total + section.offsetWidth + 50, // +50 for expected spacing
@@ -66,12 +71,6 @@ updateNavbarWidth();
 
 // Update on resize and orientation change
 window.addEventListener("resize", updateNavbarWidth);
-if (screen.orientation && screen.orientation.addEventListener) {
-  screen.orientation.addEventListener("change", updateNavbarWidth);
-} else {
-  window.addEventListener("orientationchange", updateNavbarWidth);
-}
-
 
 if(LogoContainer.classList.contains("mouse")){
 

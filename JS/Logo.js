@@ -18,51 +18,45 @@ const audio2 = document.querySelector("#audio2");
 
 let Z;
 
-// Check if the user uses touchscreen or not
-if ("ontouchstart" in document.documentElement) {
-  LogoContainer.classList.add("touch");
-  LogoContainer.classList.remove("mouse");
-  show.classList.add("touch");
-  show.classList.remove("mouse");
-  Z = 0;
-} else {
-  LogoContainer.classList.add("mouse");
-  LogoContainer.classList.remove("touch");
-  show.classList.add("mouse");
-  show.classList.remove("touch");
-  Z = 7;
+//Check if the user uses touchscreen or not
+if ("ontouchstart" in document.documentElement)
+
+{LogoContainer.classList.add("touch");LogoContainer.classList.remove("mouse");show.classList.add("touch");show.classList.remove("mouse");Z=0;}
+
+else {LogoContainer.classList.add("mouse");LogoContainer.classList.remove("touch");show.classList.add("mouse");show.classList.remove("touch");Z=7;}
+
+let Y;
+
+if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+
+show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.34px))`;
+  
+//const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 50*(1 + sections.length));
+
+
+window.addEventListener("resize", () => {
+
+const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth + 50, 0);
+  
+if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+
+if(window.innerWidth * 0.9 >= W){
+
+LogoNav.style.width=`calc(${W}px + 4px)`;
+LogoBackground.style.width=`${W}px`;
+LogoNavbar.style.width=`${W}px`;
+LogoNavbar.style.justifyContent="center";
+
+}else if(window.innerWidth * 0.9 < W){
+
+LogoNav.style.width="90vw";
+LogoBackground.style.width="calc(90vw - 4px)";
+LogoNavbar.style.width="calc(90vw - 4px)";
+LogoNavbar.style.justifyContent="start";
+
 }
-
-let Y = window.innerHeight > window.innerWidth ? window.innerHeight : window.innerWidth;
-
-show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.34px))`;
-
-// Calculate total width (W) of all LogoSections
-const W = Array.from(LogoSections).reduce((total, section) => total + section.offsetWidth + 50, 0); // includes spacing
-
-function updateNavWidths() {
-  Y = window.innerHeight > window.innerWidth ? window.innerHeight : window.innerWidth;
-  const ninetyVW = window.innerWidth * 0.9;
-
-  if (ninetyVW >= W) {
-    LogoNav.style.width = `${W + 4}px`;
-    LogoBackground.style.width = `${W}px`;
-    LogoNavbar.style.width = `${W}px`;
-    LogoNavbar.style.justifyContent = "center";
-  } else if (ninetyVW < W){
-    LogoNav.style.width = "90vw";
-    LogoBackground.style.width = "calc(90vw - 4px)";
-    LogoNavbar.style.width = "calc(90vw - 4px)";
-    LogoNavbar.style.justifyContent = "start";
-  }
-}
-
-updateNavWidths(); // Initial call
-
-window.addEventListener("resize", updateNavWidths);
-
-
-
+  
+});
   
 if(LogoContainer.classList.contains("mouse")){
 

@@ -38,7 +38,7 @@ let Y = window.innerHeight > window.innerWidth ? window.innerHeight : window.inn
 show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.34px))`;
 
 // Calculate total width (W) of all LogoSections
-const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth + 50, 0); // includes spacing
+const W = Array.from(LogoSections).reduce((total, section) => total + section.offsetWidth + 50, 0); // includes spacing
 
 function updateNavWidths() {
   Y = window.innerHeight > window.innerWidth ? window.innerHeight : window.innerWidth;

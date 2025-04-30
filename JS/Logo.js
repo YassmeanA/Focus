@@ -35,7 +35,7 @@ window.addEventListener("resize", () => {
 
 const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 50*(1 + sections.length));
 
-  LogoSections[0].innerHTML=W;
+  LogoSections[0].innerHTML = "0";
   
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
   

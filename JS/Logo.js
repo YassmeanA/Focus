@@ -43,10 +43,7 @@ function updateNavbarWidth() {
 
 
   // Calculate total width of spans + padding/gap allowance
-  const totalSpanWidth = Array.from(LogoSections).reduce(
-    (total, section) => total + section.offsetWidth + 50, // +50 for expected spacing
-    0
-  );
+  const totalSpanWidth = 250 + LogoSections[0].clientWidth + LogoSections[1].clientWidth + LogoSections[2].clientWidth + LogoSections[3].clientWidth;
 
   const ninetyVW = window.innerWidth * 0.9;
 

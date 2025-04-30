@@ -27,8 +27,7 @@ else {LogoContainer.classList.add("mouse");LogoContainer.classList.remove("touch
 
 show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.34px))`;
 
-function updateNavWidths() {
-  
+
 const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 50*(1 + sections.length));
 
 let Y;
@@ -51,13 +50,55 @@ LogoNavbar.style.justifyContent="start";
 
 }
 
+
+
+
+
+window.addEventListener("resize", () => {
+  
+if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+  
+if(window.innerWidth * 0.9 >= W){
+
+LogoNav.style.width=`calc(${W}px + 4px)`;
+LogoBackground.style.width=`${W}px`;
+LogoNavbar.style.width=`${W}px`;
+LogoNavbar.style.justifyContent="center";
+
+}else if(window.innerWidth * 0.9 < W){
+
+LogoNav.style.width="90vw";
+LogoBackground.style.width="calc(90vw - 4px)";
+LogoNavbar.style.width="calc(90vw - 4px)";
+LogoNavbar.style.justifyContent="start";
+
 }
+  
+});
 
-updateNavWidths(); // Initial call
 
-window.addEventListener("resize", updateNavWidths);
 window.addEventListener("orientationchange", () => {
-setTimeout(updateNavWidths, 100); // Small delay ensures new layout is calculated
+setTimeout(() => {
+
+if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+  
+if(window.innerWidth * 0.9 >= W){
+
+LogoNav.style.width=`calc(${W}px + 4px)`;
+LogoBackground.style.width=`${W}px`;
+LogoNavbar.style.width=`${W}px`;
+LogoNavbar.style.justifyContent="center";
+
+}else if(window.innerWidth * 0.9 < W){
+
+LogoNav.style.width="90vw";
+LogoBackground.style.width="calc(90vw - 4px)";
+LogoNavbar.style.width="calc(90vw - 4px)";
+LogoNavbar.style.justifyContent="start";
+
+}
+  
+}, 100); // Small delay ensures new layout is calculated
 });
   
 if(LogoContainer.classList.contains("mouse")){

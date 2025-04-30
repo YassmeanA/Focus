@@ -37,7 +37,7 @@ const W = Array.from(LogoSections).reduce((total, section) => total + section.cl
 
   LogoSections[0].innerHTML = "0";
   
-if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+//if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
   
 if(window.innerWidth * 0.9 >= W){
 

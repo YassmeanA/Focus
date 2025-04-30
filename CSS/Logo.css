@@ -314,35 +314,3 @@ border-radius:9px;
 background:linear-gradient(to bottom right,#00FFFF,#00FF9F);
 box-shadow:0px 0px 5px rgba(0,255,255,0.2);}
 
-
-@media screen and (max-width:700px) {
- 
-.show nav {
-width:90vw - 4px;}
-
-.show nav .background {
-width:calc(90vw - 4px);}
-
-.show nav section {
-width:calc(90vw - 4px);
-column-gap:30px;
-padding:0 30px;}
-
-}
-
-@media screen and (min-width:700px) {
- 
-.show nav {
-width:600px;}
-
-.show nav .background {
-width:596px;}
-
-.show nav section {
-width:596px;
-column-gap:50px;
-padding:0 50px;
-justify-content:center;}
- 
-}
-

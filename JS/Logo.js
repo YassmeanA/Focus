@@ -25,21 +25,16 @@ if ("ontouchstart" in document.documentElement)
 
 else {LogoContainer.classList.add("mouse");LogoContainer.classList.remove("touch");show.classList.add("mouse");show.classList.remove("touch");Z=7;}
 
-let Y;
-
-if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
-
 show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.34px))`;
+
+function updateNavWidths() {
   
-
-
-window.addEventListener("resize", () => {
 const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 50*(1 + sections.length));
-  
-//const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth + 50, 0);
+
+let Y;
   
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
-
+  
 if(window.innerWidth * 0.9 >= W){
 
 LogoNav.style.width=`calc(${W}px + 4px)`;
@@ -55,7 +50,14 @@ LogoNavbar.style.width="calc(90vw - 4px)";
 LogoNavbar.style.justifyContent="start";
 
 }
-  
+
+}
+
+updateNavWidths(); // Initial call
+
+window.addEventListener("resize", updateNavWidths);
+window.addEventListener("orientationchange", () => {
+setTimeout(updateNavWidths, 100); // Small delay ensures new layout is calculated
 });
   
 if(LogoContainer.classList.contains("mouse")){

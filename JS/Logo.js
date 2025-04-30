@@ -30,15 +30,12 @@ show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var
 let Y;
 
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
-LogoSections[0].innerHTML = "0";
 
-window.addEventListener("resize", () => {
+//window.addEventListener("resize", () => {
 
 const W = Array.from(LogoSections).reduce((total, section) => total + section.offsetWidth, 50*(1 + sections.length));
-
   
-  
-if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+//if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
   
 if(window.innerWidth * 0.9 >= W){
 
@@ -59,7 +56,7 @@ LogoNavbar.style.padding="0 30px";
 LogoNavbar.style.columnGap="30px";
 }
   
-});
+//});
 
 if(LogoContainer.classList.contains("mouse")){
 

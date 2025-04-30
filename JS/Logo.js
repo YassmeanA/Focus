@@ -31,12 +31,12 @@ if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.i
 
 show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.34px))`;
   
-//const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 50*(1 + sections.length));
 
 
 window.addEventListener("resize", () => {
-
-const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth + 50, 0);
+const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 50*(1 + sections.length));
+  
+//const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth + 50, 0);
   
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 

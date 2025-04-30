@@ -36,10 +36,11 @@ show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(v
 
 let Y;
 
+if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+
 // Function to recalculate and apply navbar width
 function updateNavbarWidth() {
 
-if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
   // Calculate total width of spans + padding/gap allowance
   const totalSpanWidth = Array.from(LogoSections).reduce(

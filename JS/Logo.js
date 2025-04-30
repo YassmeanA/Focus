@@ -35,22 +35,6 @@ show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var
 //const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth, 50*(1 + sections.length));
 const W = Array.from(LogoSections).reduce((total, section) => total + section.clientWidth + 50, 0);
 
-if(window.innerWidth * 0.9 >= W){
-
-LogoNav.style.width=`calc(${W}px + 4px)`;
-LogoBackground.style.width=`${W}px`;
-LogoNavbar.style.width=`${W}px`;
-LogoNavbar.style.justifyContent="center";
-
-}else if(window.innerWidth * 0.9 < W){
-
-LogoNav.style.width="90vw";
-LogoBackground.style.width="calc(90vw - 4px)";
-LogoNavbar.style.width="calc(90vw - 4px)";
-LogoNavbar.style.justifyContent="start";
-
-}
-
 
 window.addEventListener("resize", () => {
 

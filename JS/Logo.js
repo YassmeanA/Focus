@@ -49,7 +49,7 @@ function updateNavWidths() {
     LogoBackground.style.width = `${W}px`;
     LogoNavbar.style.width = `${W}px`;
     LogoNavbar.style.justifyContent = "center";
-  } else {
+  } else if (ninetyVW < W){
     LogoNav.style.width = "90vw";
     LogoBackground.style.width = "calc(90vw - 4px)";
     LogoNavbar.style.width = "calc(90vw - 4px)";

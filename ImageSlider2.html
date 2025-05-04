@@ -54,7 +54,8 @@ position:absolute;
 height:50px;
 display:flex;
 column-gap:200px;
-pointer-events:none;}
+pointer-events:none;
+display:none;}
 
 .slides:nth-child(1){
 transform:translateX(-40px);
@@ -339,7 +340,7 @@ addCart();
 });
 
 //Drag
-    let startX = 0;
+let startX = 0;
 let endX = 0;
 let isDragging = false;
 
@@ -375,11 +376,13 @@ slider.addEventListener('touchend', (e) => {
 slider.addEventListener('mousedown', (e) => {
   isDragging = true;
   startX = e.clientX;
+  slider.style.cursor="grab";
 });
 
 slider.addEventListener('mousemove', (e) => {
   if (!isDragging) return;
   endX = e.clientX;
+slider.style.cursor="grabbing";
 });
 
 slider.addEventListener('mouseup', (e) => {
@@ -387,6 +390,7 @@ slider.addEventListener('mouseup', (e) => {
   isDragging = false;
   endX = e.clientX;
   checkDirection();
+  slider.style.cursor="grab";
 });
 
 slider.addEventListener('mouseleave', () => {

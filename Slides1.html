@@ -162,7 +162,7 @@ opacity:1;}
 
 <li class="card" style="--i:url('Flowers/flowers8.jpg');">
 <h2>Yellow Tulips</h2>   
-<h3 id="E">$19.8</h3>   
+<h3>$19.8</h3>   
 </li>
 
 </ul> 
@@ -186,18 +186,8 @@ if(window.innerWidth < (Cards[1].offsetWidth + 10)*(Cards.length - 1) + Cards[0]
 Cards.forEach((Card, index) => {
 Card.addEventListener("click", () => {
 document.querySelector(".active").classList.remove("active");
-Card.classList.add("active");
+Card.classList.add("active");});});
 
-if(window.innerWidth < (Cards[1].offsetWidth + 10)*(Cards.length - 1) + Cards[0].offsetWidth + 10){Wrapper.style.justifyContent="start";}else{Wrapper.style.justifyContent="center";};
-   
-window.addEventListener("resize", () => {
-    
-if(window.innerWidth < (Cards[1].offsetWidth + 10)*(Cards.length - 1) + Cards[0].offsetWidth + 10){Wrapper.style.justifyContent="start";}else{Wrapper.style.justifyContent="center";};
-
-});   
-});});
-
-E.innerHTML=window.innerWidth
     
 </script>
 

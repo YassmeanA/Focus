@@ -186,7 +186,16 @@ if(window.innerWidth < (Cards[1].offsetWidth + 10)*(Cards.length - 1) + Cards[0]
 Cards.forEach((Card, index) => {
 Card.addEventListener("click", () => {
 document.querySelector(".active").classList.remove("active");
-Card.classList.add("active");});});
+Card.classList.add("active");
+
+if(window.innerWidth < (Cards[1].offsetWidth + 10)*(Cards.length - 1) + Cards[0].offsetWidth + 10){Wrapper.style.justifyContent="start";}else{Wrapper.style.justifyContent="center";};
+   
+window.addEventListener("resize", () => {
+    
+if(window.innerWidth < (Cards[1].offsetWidth + 10)*(Cards.length - 1) + Cards[0].offsetWidth + 10){Wrapper.style.justifyContent="start";}else{Wrapper.style.justifyContent="center";};
+
+});   
+});});
     
 </script>
 

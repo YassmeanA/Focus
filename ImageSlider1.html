@@ -81,7 +81,7 @@ opacity:0.5;}
 left:180px;
 opacity:0.2;}
 
-.slides:nth-child(6), .slides:nth-child(7), .slides:nth-child(8), .slides:nth-child(9){
+.slides:nth-child(n+6) {
 left:270px;
 opacity:0;}
 
@@ -141,14 +141,14 @@ filter:blur(0px);
 bottom:0px;
 opacity:1;}
 
-@media screen and (max-width: 630px) {
+@media screen and (max-height: 630px) {
 
 body {
 min-height:630px;}
     
 }
 
-@media screen and (min-width: 631px) {
+@media screen and (min-height: 631px) {
 
 body {
 min-height:100vh;}

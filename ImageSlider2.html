@@ -90,6 +90,7 @@ height:370px;
 filter:brightness(90%);}
 
 .slides{
+cursor:grab;
 position: absolute;
 transition:0.5s;
 background-image:var(--img);
@@ -172,14 +173,14 @@ width:25px;
 transform:scale(1);
 opacity:1;}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
 body {
 background-image:url("Kids1/background1.jpg");}
 
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 701px) {
 
 body {
 background-image:url("Kids1/background2.jpg");}
@@ -303,13 +304,6 @@ let indicator = document.querySelector(".indicator");
 const Slides = document.querySelectorAll(".slides");
 const Dots = document.querySelectorAll(".dot");
 
-//Check if the user uses touchscreen or not
-if ("ontouchstart" in document.documentElement)
-
-{Arrows.style.display="none";}
-
-else {Arrows.style.display="flex";}
-
 
 //Indicator
 let count = 0;
@@ -374,29 +368,26 @@ slider.addEventListener('touchend', (e) => {
 });
 
 // Mouse events
-slider.addEventListener('mousedown', (e) => {
+Slides.forEach(Slide => {
+    
+Slide.addEventListener('mousedown', (e) => {
   isDragging = true;
   startX = e.clientX;
-});
+  Slides.forEach(Slide => {
+  Slide.style.cursor="grab";});
 
-slider.addEventListener('mousemove', (e) => {
+Slide.addEventListener('mousemove', (e) => {
   if (!isDragging) return;
   endX = e.clientX;
-});
+  Slide.style.cursor="grabbing";});
 
-slider.addEventListener('mouseup', (e) => {
+Slide.addEventListener('mouseup', (e) => {
   if (!isDragging) return;
   isDragging = false;
   endX = e.clientX;
   checkDirection();
-});
+  Slide.style.cursor="grab";});
 
-slider.addEventListener('mouseleave', () => {
-  // In case the mouse leaves the slider during dragging
-  if (isDragging) {
-    isDragging = false;
-    checkDirection();
-  }
 });
 
 </script>

@@ -339,21 +339,21 @@ addCart();
 });
 
 //Drag
-let startX = 0;
+    let startX = 0;
 let endX = 0;
 let isDragging = false;
 
 function checkDirection() {
   if (endX < startX - 50) {
     // Swiped left
-    let Slides = document.querySelectorAll(".slides");
+    let slides = document.querySelectorAll(".slides");
     slider.appendChild(slides[0]);
     count++;
     if (count == 12) count = 0;
     addCart();
   } else if (endX > startX + 50) {
     // Swiped right
-    let Slides = document.querySelectorAll(".slides");
+    let slides = document.querySelectorAll(".slides");
     slider.prepend(slides[slides.length - 1]);
     if (count == 0) count = 12;
     count--;
@@ -371,23 +371,31 @@ slider.addEventListener('touchend', (e) => {
   checkDirection();
 });
 
-// Mouse events    
+// Mouse events
 slider.addEventListener('mousedown', (e) => {
   isDragging = true;
   startX = e.clientX;
-  slider.style.cursor="grab";});
+});
 
 slider.addEventListener('mousemove', (e) => {
   if (!isDragging) return;
   endX = e.clientX;
-  slider.style.cursor="grabbing";});
+});
 
 slider.addEventListener('mouseup', (e) => {
   if (!isDragging) return;
   isDragging = false;
   endX = e.clientX;
   checkDirection();
-  slider.style.cursor="grab";});
+});
+
+slider.addEventListener('mouseleave', () => {
+  // In case the mouse leaves the slider during dragging
+  if (isDragging) {
+    isDragging = false;
+    checkDirection();
+  }
+});
 
 </script>
 

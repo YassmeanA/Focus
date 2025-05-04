@@ -47,15 +47,15 @@ function updateNavbarWidth() {
   
   const ninetyVW = window.innerWidth * 0.9;
 
-  if (ninetyVW >= totalSpanWidth + 150 && ninetyVW < totalSpanWidth + 250) {
-    LogoNav.style.width = `${totalSpanWidth + 4}px`;
+  if (ninetyVW >= (totalSpanWidth + 150) && ninetyVW < (totalSpanWidth + 250)) {
+    LogoNav.style.width = `${totalSpanWidth + 154}px`;
     LogoBackground.style.width = `${totalSpanWidth}px`;
     LogoNavbar.style.width = `${totalSpanWidth}px`;
     LogoNavbar.style.justifyContent = "center";
     LogoNavbar.style.padding = "0 30px";
     LogoNavbar.style.columnGap = "30px";
   } else if (ninetyVW >= totalSpanWidth + 250) {
-    LogoNav.style.width = `${totalSpanWidth + 4}px`;
+    LogoNav.style.width = `${totalSpanWidth + 254}px`;
     LogoBackground.style.width = `${totalSpanWidth}px`;
     LogoNavbar.style.width = `${totalSpanWidth}px`;
     LogoNavbar.style.justifyContent = "center";

@@ -83,7 +83,7 @@ width:250px;
 height:350px;
 filter:brightness(100%);}
 
-.slides:nth-child(6),.slides:nth-child(7),.slides:nth-child(8), .slides:nth-child(9), .slides:nth-child(10), .slides:nth-child(11), .slides:nth-child(12){
+.slides:nth-child(n+6) {
 transform: translateX(100vw);
 width:270px;
 height:370px;
@@ -368,6 +368,13 @@ touchstartX = e.changedTouches[0].screenX;});
 
 slider.addEventListener('touchend', (e) => {
 touchendX = e.changedTouches[0].screenX
+checkDirection();});
+
+slider.addEventListener('mousedown', (e) => {
+touchstartX = e.screenX;});
+
+slider.addEventListener('mouseup', (e) => {
+touchendX = e.screenX
 checkDirection();});
 
 </script>

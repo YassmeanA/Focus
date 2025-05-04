@@ -54,7 +54,7 @@ display:flex;
 column-gap:200px;}
 
 .slides:nth-child(1){
-transform: translateX(-80px);
+transform: translateX(-40px);
 width:170px;
 height:250px;
 filter:brightness(20%);}
@@ -367,25 +367,23 @@ slider.addEventListener('touchend', (e) => {
   checkDirection();
 });
 
-// Mouse events
-Slides.forEach(Slide => {
-    
-Slide.addEventListener('mousedown', (e) => {
+// Mouse events    
+Slides[4].addEventListener('mousedown', (e) => {
   isDragging = true;
   startX = e.clientX;
-  Slide.style.cursor="grab";});
+  Slides[4].style.cursor="grab";});
 
-Slide.addEventListener('mousemove', (e) => {
+Slides[4].addEventListener('mousemove', (e) => {
   if (!isDragging) return;
   endX = e.clientX;
-  Slide.style.cursor="grabbing";});
+  Slides[4].style.cursor="grabbing";});
 
-Slide.addEventListener('mouseup', (e) => {
+Slides[4].addEventListener('mouseup', (e) => {
   if (!isDragging) return;
   isDragging = false;
   endX = e.clientX;
   checkDirection();
-  Slide.style.cursor="grab";});
+  Slides[4].style.cursor="grab";});
 
 });
 

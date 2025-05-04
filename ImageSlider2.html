@@ -342,14 +342,14 @@ let isDragging = false;
 function checkDirection() {
   if (endX < startX - 50) {
     // Swiped left
-    let slides = document.querySelectorAll(".slides");
+    let Slides = document.querySelectorAll(".slides");
     slider.appendChild(slides[0]);
     count++;
     if (count == 12) count = 0;
     addCart();
   } else if (endX > startX + 50) {
     // Swiped right
-    let slides = document.querySelectorAll(".slides");
+    let Slides = document.querySelectorAll(".slides");
     slider.prepend(slides[slides.length - 1]);
     if (count == 0) count = 12;
     count--;
@@ -373,7 +373,6 @@ Slides.forEach(Slide => {
 Slide.addEventListener('mousedown', (e) => {
   isDragging = true;
   startX = e.clientX;
-  Slides.forEach(Slide => {
   Slide.style.cursor="grab";});
 
 Slide.addEventListener('mousemove', (e) => {

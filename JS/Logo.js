@@ -43,11 +43,18 @@ function updateNavbarWidth() {
 
 
   // Calculate total width of spans + padding/gap allowance
-  let totalSpanWidth = LogoSections[0].clientWidth + LogoSections[1].clientWidth + LogoSections[2].clientWidth + LogoSections[3].clientWidth + 150;
+  let totalSpanWidth = LogoSections[0].clientWidth + LogoSections[1].clientWidth + LogoSections[2].clientWidth + LogoSections[3].clientWidth;
   
   const ninetyVW = window.innerWidth * 0.9;
 
-  if (ninetyVW >= totalSpanWidth) {
+  if (ninetyVW >= totalSpanWidth + 150) {
+    LogoNav.style.width = `${totalSpanWidth + 4}px`;
+    LogoBackground.style.width = `${totalSpanWidth}px`;
+    LogoNavbar.style.width = `${totalSpanWidth}px`;
+    LogoNavbar.style.justifyContent = "center";
+    LogoNavbar.style.padding = "0 30px";
+    LogoNavbar.style.columnGap = "30px";
+  } else if (ninetyVW >= totalSpanWidth + 250) {
     LogoNav.style.width = `${totalSpanWidth + 4}px`;
     LogoBackground.style.width = `${totalSpanWidth}px`;
     LogoNavbar.style.width = `${totalSpanWidth}px`;

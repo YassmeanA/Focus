@@ -1,4 +1,3 @@
-
 const carousel = document.querySelector(".carousel");
 const arrowBtns = document.querySelectorAll(".wrapper .arrow");
 const wrapper = document.querySelector(".wrapper");
@@ -37,7 +36,6 @@ if ("ontouchstart" in document.documentElement)
 
 else {carousel.classList.add("mouse");carousel.classList.remove("touch");}
 
-//Dragging by mouse
 //Dragging by mouse
     if(carousel.classList.contains("mouse")){
     

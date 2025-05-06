@@ -1,3 +1,4 @@
+const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const slides = document.querySelectorAll(".card");
 const dotsContainer = document.getElementById("dots");

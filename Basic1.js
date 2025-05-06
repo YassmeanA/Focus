@@ -36,7 +36,8 @@ if ("ontouchstart" in document.documentElement)
 
 else {carousel.classList.add("mouse");carousel.classList.remove("touch");}
 
-//Dragging by mouse
+
+    //Dragging by mouse
     if(carousel.classList.contains("mouse")){
     
       let isDragging = false,
@@ -87,7 +88,7 @@ else {carousel.classList.add("mouse");carousel.classList.remove("touch");}
       setTimeout(() => {
         carousel.classList.remove("dragging");
       }, 300);
-  
+    
         startAutoplay();
     };
     

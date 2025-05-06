@@ -1,4 +1,5 @@
 
+
 const carousel = document.querySelector(".carousel");
 const slides = document.querySelectorAll(".card");
 const dotsContainer = document.getElementById("dots");
@@ -66,7 +67,7 @@ const totalCardWidth = carousel.scrollWidth;
 let slidesInView;
 
 function getSlidesInView() {
-  return Math.floor(window.innerWidth / firstSlideWidth);
+  return Math.round(window.innerWidth / firstSlideWidth);
 }
 
 function setupDots() {
@@ -74,11 +75,10 @@ function setupDots() {
   slidesInView = getSlidesInView();
 
   
-  if (slidesInView >= 0.6 * slides.length) {dotsContainer.style.display = "none";}else{dotsContainer.style.display = "flex";}
+  if (slidesInView >= 0.7 * slides.length) {dotsContainer.style.display = "none";}else{dotsContainer.style.display = "flex";}
 
   if (slidesInView >= slides.length / 2) {slidesInView = slides.length / 2;} 
 
-  //if (window.innerWidth >= slides.length * firstSlideWidth + 10) {wrapper.style.width = `${slides.length * (10 + firstSlideWidth) + 10}px`;carousel.style.justifyContent="center";}else{wrapper.style.width = "100vw";carousel.style.justifyContent="start";}
 
   const totalDots = Math.round(slides.length / slidesInView);
   const dots = [];

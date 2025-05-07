@@ -28,7 +28,6 @@ display: flex;
 align-items: center;
 justify-content:center;
 min-height: 100vh;
-width:100vw;
 overflow-x:hidden;
 background:linear-gradient(to bottom, #FFDDE1, #EE9CA7);}
 
@@ -175,11 +174,11 @@ opacity:1;}
 const Cards = document.querySelectorAll(".card");
 const Wrapper = document.querySelector(".wrapper");
 
-if(window.innerWidth < 750){Wrapper.style.justifyContent="start";}else{Wrapper.style.justifyContent="center";};
+if(window.innerWidth < (Cards.length - 1)*80 + 190){Wrapper.style.justifyContent="start";}else{Wrapper.style.justifyContent="center";};
    
 window.addEventListener("resize", () => {
     
-if(window.innerWidth < 750){Wrapper.style.justifyContent="start";}else{Wrapper.style.justifyContent="center";};
+if(window.innerWidth < (Cards.length - 1)*80 + 190){Wrapper.style.justifyContent="start";}else{Wrapper.style.justifyContent="center";};
 
 });
 

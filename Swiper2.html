@@ -24,19 +24,18 @@ font-family: Sans-serif;
 display: flex;
 align-items: center;
 justify-content: center;
-min-height: 200vh;
 overflow-x:hidden;
 background: linear-gradient(to bottom right, #F8EBA6, #FFD8C2);}
 
 .Container{
-position: absolute;
-top:50px;
+position:absolute;
 width:100%;
-display: flex;
-overflow-x:hidden;
-align-items: center;
-visibility: visible;
-justify-content: center;}
+height:400px;
+display:flex;
+overflow:hidden;
+align-items:center;
+visibility:visible;
+justify-content:center;}
 
 .swiper {
 position:relative;
@@ -137,6 +136,21 @@ box-shadow: 0 5px 5px rgba(0, 0, 0, 0.03);
 opacity:0.5;
 transform:scale(0.6);}
 
+@media screen and (max-height: 400px) {
+
+body {
+min-height:400px;}
+
+}
+
+@media screen and (min-height: 400px) {
+
+body {
+min-height:100vh;}
+
+}
+    
+    
 @media screen and (min-width: 901px) {
 
 .controls{

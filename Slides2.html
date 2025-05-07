@@ -32,8 +32,8 @@ background-size:cover;
 background-position:center;}
 
 .wrapper{
-  background:red;
-margin:20px calc(50vw - 190px);
+background:red;
+width:100vw;
 height:350px;
 display:flex;
 justify-content:start;
@@ -44,6 +44,7 @@ transition:0.4s cubic-bezier(0.5,0,0.5,1);}
 
 .carousel {
 height:100%;
+padding:20px 10px;
 display:flex;
 column-gap:10px;
 align-items:center;
@@ -149,19 +150,34 @@ left:0;
 height:100vh;
 width:100vw;}
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 360px) {
 
-.wrapper {
---i1:20px calc(50vw - 190px);
---i2:20px calc(50vw - 190px);}
+.carousel {
+--i1:20px calc(50vw - 180px);
+--i2:20px calc(50vw - 180px);}
 
 }
 
-@media screen and (min-width: 341px) {
+@media screen and (min-width: 360px) {
+
+.carousel {
+--i1:20px calc(50vw - 180px);
+--i2:20px calc(50vw - 300px);}
+
+}
+
+
+@media screen and (max-width: 600px) {
 
 .wrapper {
---i1:20px calc(50vw - 190px);
---i2:20px calc(50vw - 310px);}
+justify-content:start;}
+
+}
+
+@media screen and (min-width: 600px) {
+
+.wrapper {
+justify-content:center;}
 
 }
 
@@ -229,14 +245,14 @@ Cards.forEach(card => {
 if (card !== Card && card.classList.contains("active")) {card.classList.remove("active");}});
 Card.classList.toggle("active");
 
-if(Card.classList.contains("active")){Wrapper.style.margin="var(--i2)";}else{Wrapper.style.margin="var(--i1)";};
+if(Card.classList.contains("active")){carousel.style.padding="var(--i2)";}else{carousel.style.padding="var(--i1)";};
 
 });
 
 
 W.addEventListener("click", () => {
 Cards.forEach(card => {
-if (card.classList.contains("active")) {card.classList.remove("active");Wrapper.style.margin="var(--i1)";};});
+if (card.classList.contains("active")) {card.classList.remove("active");carousel.style.padding="var(--i1)";};});
 
 });
 

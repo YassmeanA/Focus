@@ -16,6 +16,9 @@ const cus = document.querySelector(".logo-container #cus");
 const audio1 = document.querySelector("#audio1");
 const audio2 = document.querySelector("#audio2");
 
+
+window.addEventListener("load", () => {
+  
 // Touch or mouse setup
 let Z;
 if ("ontouchstart" in document.documentElement) {
@@ -31,8 +34,8 @@ if ("ontouchstart" in document.documentElement) {
   show.classList.remove("touch");
   Z = 7;
 }
-
-show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.34px))`;
+  
+ show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.34px))`;});
 
 let Y;
 

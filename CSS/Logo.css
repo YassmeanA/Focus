@@ -12,26 +12,20 @@ font-family: "Montserrat Alternates", serif;
 font-weight: 1000;
 font-style: normal;}
 
-.Body, .show::-webkit-scrollbar {
+.Body::-webkit-scrollbar, .show::-webkit-scrollbar {
 width:15px;}
 
-.Body, .show::-webkit-scrollbar-track {
+.Body::-webkit-scrollbar-track, .show::-webkit-scrollbar-track {
 background:#051B34;}
 
-.Body, .show::-webkit-scrollbar-thumb {
+.Body::-webkit-scrollbar-thumb, .show::-webkit-scrollbar-thumb {
 background:linear-gradient(to bottom,#00FFFF,#00FF9F);
 border-radius:7.5px;}
 
-.logo-container.touch::-webkit-scrollbar {
+.Body::-webkit-scrollbar, .show.touch::-webkit-scrollbar {
 display:none;}
 
-.logo-container.mouse::-webkit-scrollbar {
-display:flex;}
-
-.Body, .show.touch::-webkit-scrollbar {
-display:none;}
-
-.Body, .show.mouse::-webkit-scrollbar {
+.Body::-webkit-scrollbar, .show.mouse::-webkit-scrollbar {
 display:flex;}
 
 .logo-container .logo {

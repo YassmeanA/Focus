@@ -89,7 +89,7 @@ width:20px;
 height:20px;
 background:#051B34;
 border-radius:11px;
-border:0.114rem solid aqua;}
+border:0.112rem solid aqua;}
 
 .logo-container #glow {
 position:absolute;
@@ -197,7 +197,7 @@ height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-opacity:1;
+opacity:0;
 pointer-events:none;
 overflow-x:hidden;
 overflow-y:auto;}

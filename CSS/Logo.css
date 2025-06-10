@@ -1,9 +1,10 @@
 .logo-container {
-position:absolute;
+position:fixed;
 top:0;
 width:100vw;
 height:100vh;
-overflow:hidden;
+overflow-x:hidden;
+overflow-y:auto;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -11,20 +12,20 @@ font-family: "Montserrat Alternates", serif;
 font-weight: 1000;
 font-style: normal;}
 
-.Body::-webkit-scrollbar, .show::-webkit-scrollbar {
+.logo-container::-webkit-scrollbar, .show::-webkit-scrollbar {
 width:15px;}
 
-.Body::-webkit-scrollbar-track, .show::-webkit-scrollbar-track {
+.logo-container::-webkit-scrollbar-track, .show::-webkit-scrollbar-track {
 background:#051B34;}
 
-.Body::-webkit-scrollbar-thumb, .show::-webkit-scrollbar-thumb {
+.logo-container::-webkit-scrollbar-thumb, .show::-webkit-scrollbar-thumb {
 background:linear-gradient(to bottom,#00FFFF,#00FF9F);
 border-radius:7.5px;}
 
-.Body.touch::-webkit-scrollbar, .show.touch::-webkit-scrollbar {
-display:flex;}
+.logo-container.touch::-webkit-scrollbar, .show.touch::-webkit-scrollbar {
+display:none;}
 
-.Body.mouse::-webkit-scrollbar, .show.mouse::-webkit-scrollbar {
+.logo-container.mouse::-webkit-scrollbar, .show.mouse::-webkit-scrollbar {
 display:flex;}
 
 .logo-container .logo {

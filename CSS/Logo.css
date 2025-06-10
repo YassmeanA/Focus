@@ -22,10 +22,10 @@ background:#051B34;}
 background:linear-gradient(to bottom,#00FFFF,#00FF9F);
 border-radius:7.5px;}
 
-.Body::-webkit-scrollbar, .show.touch::-webkit-scrollbar {
+.Body.touch::-webkit-scrollbar, .show.touch::-webkit-scrollbar {
 display:none;}
 
-.Body::-webkit-scrollbar, .show.mouse::-webkit-scrollbar {
+.Body.mouse::-webkit-scrollbar, .show.mouse::-webkit-scrollbar {
 display:flex;}
 
 .logo-container .logo {

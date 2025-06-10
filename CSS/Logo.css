@@ -22,7 +22,7 @@ background:linear-gradient(to bottom,#00FFFF,#00FF9F);
 border-radius:7.5px;}
 
 .Body.touch::-webkit-scrollbar, .show.touch::-webkit-scrollbar {
-display:none;}
+display:flex;}
 
 .Body.mouse::-webkit-scrollbar, .show.mouse::-webkit-scrollbar {
 display:flex;}

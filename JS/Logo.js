@@ -1,4 +1,3 @@
-const Body = document.querySelector(".Body");
 const LogoContainer = document.querySelector(".logo-container");
 const LogoButton = document.querySelector(".logo-container button");
 const LogoBack = document.querySelector(".show .back");
@@ -21,14 +20,14 @@ const audio2 = document.querySelector("#audio2");
 // Touch or mouse setup
 let Z;
 if ("ontouchstart" in document.documentElement) {
-  Body.classList.add("touch");
-  Body.classList.remove("mouse");
+  LogoContainer.classList.add("touch");
+  LogoContainer.classList.remove("mouse");
   show.classList.add("touch");
   show.classList.remove("mouse");
   Z = 0;
 } else {
-  Body.classList.add("mouse");
-  Body.classList.remove("touch");
+  LogoContainer.classList.add("mouse");
+  LogoContainer.classList.remove("touch");
   show.classList.add("mouse");
   show.classList.remove("touch");
   Z = 7;
@@ -80,7 +79,7 @@ updateNavbarWidth();
 // Update on resize and orientation change
 window.addEventListener("resize", updateNavbarWidth);
 
-if(Body.classList.contains("mouse")){
+if(LogoContainer.classList.contains("mouse")){
 
 let isDragging = false, startX, startScrollLeft;
 

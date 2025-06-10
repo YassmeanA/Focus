@@ -143,7 +143,8 @@ show.classList.add("active");
 
 LogoContainer.style.pointerEvents="none";
 show.style.pointerEvents="auto";
-
+show.style.overflowY="auto";
+  
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="auto";};});
 
@@ -165,8 +166,7 @@ shine.classList.add("active");
 
 setTimeout(() => {
 shine.classList.remove("active");
-LogoContainer.style.overflowY="hidden";
-show.style.overflowY="auto";},500)
+LogoContainer.style.overflowY="hidden";},1000)
 
 glow.style.transition="0.3s";
 glow.style.opacity="0";
@@ -186,7 +186,6 @@ show.classList.remove("active");
   
 show.style.pointerEvents="none";
 LogoContainer.style.pointerEvents="auto";
-show.style.overflowY="hidden";
 LogoContainer.style.overflowY="auto";
   
 Containers.forEach((Container,index) => {
@@ -221,7 +220,6 @@ setTimeout(() => {
 
 shine.classList.add("active");
 setTimeout(() => {shine.classList.remove("active");
-LogoContainer.style.overflowY="auto";
 show.style.overflowY="hidden";},500);
 
 light.style.animation="lighting1 0.8s forwards";},200);

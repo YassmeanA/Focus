@@ -34,7 +34,7 @@ if ("ontouchstart" in document.documentElement) {
 }
 
 window.addEventListener("load", () => {
-show.style.clipPath = `circle(8.5px at calc(50% - 100px + 67px - ${Z}px) calc(var(--i) + 102.345px))`;});
+show.style.clipPath = `circle(8.5px at calc(50% - 100px + 67px - ${Z}px) calc(var(--i) + 102.35px))`;});
 
 let Y;
 
@@ -129,11 +129,11 @@ let X = LogoContainer.scrollTop;
 
 if(show.classList.contains("active")){
     
-show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) - ${X}px + 102.345px))`;
+show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) - ${X}px + 102.35px))`;
 
 }else{
 
-show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) - ${X}px + 102.345px))`;
+show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) - ${X}px + 102.35px))`;
 
 }
 
@@ -149,7 +149,7 @@ show.style.overflowY="auto";
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="auto";};});
 
-show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) - ${X}px + 102.345px))`;
+show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) - ${X}px + 102.35px))`;
 
 light.style.animation="lighting2 0.2s forwards";
 
@@ -192,7 +192,7 @@ if(Containers[index].classList.contains("active")){Containers[index].style.point
 
 show.style.transition="clip-path 0.5s, opacity 0.5s 0.5s";
 show.style.opacity="0";
-show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) - ${X}px + 102.345px))`;
+show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) - ${X}px + 102.35px))`;
 
 audio1.play();
 

@@ -34,7 +34,7 @@ if ("ontouchstart" in document.documentElement) {
 }
 
 window.addEventListener("load", () => {
-show.style.clipPath = `circle(8.5px at calc(50% - 100px + 67px - ${Z}px) calc(var(--i) + 102.35px))`;});
+show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.35px))`;});
 
 let Y;
 
@@ -143,8 +143,6 @@ show.classList.add("active");
 
 LogoContainer.style.pointerEvents="none";
 show.style.pointerEvents="auto";
-LogoContainer.style.overflowY="hidden";
-show.style.overflowY="auto";
 
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="auto";};});
@@ -164,7 +162,11 @@ shine.style.opacity="0";
 shine.style.left="3px";
 
 shine.classList.add("active");
-setTimeout(() => {shine.classList.remove("active");},500)
+
+setTimeout(() => {
+shine.classList.remove("active");
+LogoContainer.style.overflowY="hidden";
+show.style.overflowY="auto";},500)
 
 glow.style.transition="0.3s";
 glow.style.opacity="0";
@@ -218,7 +220,9 @@ hide.setAttribute('x',15);
 setTimeout(() => {
 
 shine.classList.add("active");
-setTimeout(() => {shine.classList.remove("active");},500);
+setTimeout(() => {shine.classList.remove("active");
+LogoContainer.style.overflowY="auto";
+show.style.overflowY="hidden";},500);
 
 light.style.animation="lighting1 0.8s forwards";},200);
 

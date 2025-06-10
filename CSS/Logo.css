@@ -12,23 +12,13 @@ font-family: "Montserrat Alternates", serif;
 font-weight: 1000;
 font-style: normal;}
 
-.logo-container::-webkit-scrollbar {
+.Body, .show::-webkit-scrollbar {
 width:15px;}
 
-.logo-container::-webkit-scrollbar-track {
-background:none;}
-
-.logo-container::-webkit-scrollbar-thumb {
-background:linear-gradient(to bottom,#00FFFF,#00FF9F);
-border-radius:7.5px;}
-
-.show::-webkit-scrollbar {
-width:15px;}
-
-.show::-webkit-scrollbar-track {
+.Body, .show::-webkit-scrollbar-track {
 background:#051B34;}
 
-.show::-webkit-scrollbar-thumb {
+.Body, .show::-webkit-scrollbar-thumb {
 background:linear-gradient(to bottom,#00FFFF,#00FF9F);
 border-radius:7.5px;}
 
@@ -38,10 +28,10 @@ display:none;}
 .logo-container.mouse::-webkit-scrollbar {
 display:flex;}
 
-.show.touch::-webkit-scrollbar {
+.Body, .show.touch::-webkit-scrollbar {
 display:none;}
 
-.show.mouse::-webkit-scrollbar {
+.Body, .show.mouse::-webkit-scrollbar {
 display:flex;}
 
 .logo-container .logo {
@@ -213,7 +203,7 @@ height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-opacity:0;
+opacity:1;
 pointer-events:none;
 overflow-x:hidden;
 overflow-y:auto;}

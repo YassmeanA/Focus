@@ -80,7 +80,7 @@ updateNavbarWidth();
 // Update on resize and orientation change
 window.addEventListener("resize", updateNavbarWidth);
 
-if(LogoContainer.classList.contains("mouse")){
+if(Body.classList.contains("mouse")){
 
 let isDragging = false, startX, startScrollLeft;
 

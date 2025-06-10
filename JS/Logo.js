@@ -34,7 +34,7 @@ if ("ontouchstart" in document.documentElement) {
 }
 
 window.addEventListener("load", () => {
-show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.34px))`;});
+show.style.clipPath = `circle(8.5px at calc(50% - 100px + 67px - ${Z}px) calc(var(--i) + 102.34px))`;});
 
 let Y;
 

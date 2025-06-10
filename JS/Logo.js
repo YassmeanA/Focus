@@ -166,7 +166,7 @@ shine.classList.add("active");
 
 setTimeout(() => {
 shine.classList.remove("active");
-LogoContainer.style.overflowY="hidden";},1000)
+LogoContainer.style.overflowY="hidden";},500)
 
 glow.style.transition="0.3s";
 glow.style.opacity="0";

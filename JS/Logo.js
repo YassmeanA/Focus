@@ -143,6 +143,8 @@ show.classList.add("active");
 
 LogoContainer.style.pointerEvents="none";
 show.style.pointerEvents="auto";
+LogoContainer.style.overflowY="hidden";
+show.style.overflowY="auto";
 
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="auto";};});
@@ -182,7 +184,9 @@ show.classList.remove("active");
   
 show.style.pointerEvents="none";
 LogoContainer.style.pointerEvents="auto";
-
+show.style.overflowY="hidden";
+LogoContainer.style.overflowY="auto";
+  
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="none";};});
 

@@ -25,6 +25,7 @@ else if (window.innerWidth >= 900){ slidesInView = 3;};
 
 createDots();
 updateDots();
+Arrows();
 
 }
 

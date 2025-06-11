@@ -13,7 +13,7 @@ let slidesInView = 1;
 
 updateDimensions();
 
-window.addEventListener("resize", updateDimensions);
+window.addEventListener("resize", () => {updateDimensions();Arrows();});
 
 function updateDimensions() {
 
@@ -25,7 +25,6 @@ else if (window.innerWidth >= 900){ slidesInView = 3;};
 
 createDots();
 updateDots();
-Arrows();
 
 }
 

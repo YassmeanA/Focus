@@ -157,7 +157,7 @@ const Arrows = () => {
   const approxIndex = Math.round(carousel.scrollLeft / firstCardWidth);
   currentIndex = Math.min(approxIndex, Slides.length - slidesInView);
 
-  updateDots();
+  //updateDots();
 };
 
 // Initial render

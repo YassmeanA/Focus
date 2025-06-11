@@ -154,8 +154,8 @@ const Arrows = () => {
   arrowBtns[1].style.display = carousel.scrollLeft >= maxScrollLeft - 200 ? "none" : "block";
 
   // Sync currentIndex from scroll position
-//  const approxIndex = Math.round(carousel.scrollLeft / firstCardWidth);
-  //currentIndex = Math.min(approxIndex, Slides.length - slidesInView);
+  const approxIndex = Math.round(carousel.scrollLeft / firstCardWidth);
+  currentIndex = Math.min(approxIndex, Slides.length - slidesInView);
 
 };
 

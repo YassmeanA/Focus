@@ -424,6 +424,24 @@ text-shadow:3px 3px 5px rgba(0,0,0,0.2);}
 
 const wrapper = document.querySelector(".swiper");
 
+let X;
+
+function HeightOfBody() {
+
+if(window.innerWidth <= 400){X = 0.7}
+else if (window.innerWidth > 400 && window.innerWidth <= 600){X = 0.6;}
+else if (window.innerWidth > 600 && window.innerWidth <= 900){X = 0.4;}
+else {X = 0.35;}
+
+if(window.innerHeight <= X*window.innerWidth + 120) {document.body.style.minHeight=`${X*window.innerWidth + 120}px`;}else{document.body.style.minHeight="100vh";}
+
+}
+
+HeightOfBody();
+
+window.addEventListener("resize",HeightOfBody);
+
+    
 var swiper = new Swiper(".mySwiper", {
 
 spaceBetween:0,

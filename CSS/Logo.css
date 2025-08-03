@@ -214,7 +214,6 @@ background:#051B34;}
 position:absolute;
 display:grid;
 width:100vw;
-height:auto;
 transition:0.3s;
 pointer-events:none;
 opacity:0;}

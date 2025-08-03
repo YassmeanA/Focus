@@ -183,7 +183,7 @@ LogoBack.addEventListener("click",() => {
 show.classList.remove("active");
   
 show.style.pointerEvents="none";
-LogoConatianer.style.overflowY="auto";
+LogoContainer.style.overflowY="auto";
   
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="none";};});
@@ -226,4 +226,5 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 

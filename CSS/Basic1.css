@@ -7,7 +7,7 @@
     justify-content:center;
     border-radius:20px;
     transition:0.3s;
-    background: rgb(228, 220, 220);}
+    background:#FFEDC2;}
     
     .container1 .wrapper {
     width:330px;
@@ -165,7 +165,7 @@
     height:12px;
     border-radius:6px;
     background-color:white;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
     opacity:0.5;
     transform:scale(0.6);
     transition: 0.3s ease;}
@@ -173,7 +173,8 @@
     .container1 .dot.active{
     width:30px;
     transform:scale(1);
-    opacity:1;}
+    opacity:1;
+    box-shadow:0 3px 5px rgba(0,0,0,0.08);}
     
     .container1 .slide:nth-child(8){
     padding-right:50px;}

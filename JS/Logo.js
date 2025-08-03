@@ -163,6 +163,7 @@ shine.style.left="3px";
 shine.classList.add("active");
 
 setTimeout(() => {
+LogoContainer.style.overflowY="hidden";
 shine.classList.remove("active");},500)
 
 glow.style.transition="0.3s";
@@ -181,6 +182,7 @@ LogoBack.addEventListener("click",() => {
  
 show.classList.remove("active");
 LogoNavbar.style.pointerEvents="none";
+LogoContainer.style.overflowY="auto";
   
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="none";};});
@@ -223,6 +225,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

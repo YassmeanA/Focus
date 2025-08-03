@@ -140,7 +140,7 @@ show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var
 LogoButton.addEventListener("click",() => {
 
 show.classList.add("active");
-show.style.pointerEvents="auto";
+LogoNavbar.style.pointerEvents="auto";
 show.style.overflowY="auto";
   
 Containers.forEach((Container,index) => {
@@ -163,8 +163,7 @@ shine.style.left="3px";
 shine.classList.add("active");
 
 setTimeout(() => {
-shine.classList.remove("active");
-LogoContainer.style.overflowY="hidden";},500)
+shine.classList.remove("active");},500)
 
 glow.style.transition="0.3s";
 glow.style.opacity="0";
@@ -181,9 +180,7 @@ hide.setAttribute('x',10);},100);
 LogoBack.addEventListener("click",() => {
  
 show.classList.remove("active");
-  
-show.style.pointerEvents="none";
-LogoContainer.style.overflowY="auto";
+LogoNavbar.style.pointerEvents="none";
   
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="none";};});
@@ -226,5 +223,6 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 

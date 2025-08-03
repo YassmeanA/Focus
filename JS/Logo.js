@@ -140,8 +140,6 @@ show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var
 LogoButton.addEventListener("click",() => {
 
 show.classList.add("active");
-
-LogoContainer.style.pointerEvents="none";
 show.style.pointerEvents="auto";
 show.style.overflowY="auto";
   
@@ -185,8 +183,7 @@ LogoBack.addEventListener("click",() => {
 show.classList.remove("active");
   
 show.style.pointerEvents="none";
-LogoContainer.style.pointerEvents="auto";
-LogoContainer.style.overflowY="auto";
+LogoConatianer.style.overflowY="auto";
   
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="none";};});
@@ -229,3 +226,4 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+

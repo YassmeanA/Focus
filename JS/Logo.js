@@ -163,8 +163,10 @@ shine.style.left="3px";
 shine.classList.add("active");
 
 setTimeout(() => {
-shine.classList.remove("active");
-LogoContainer.style.overflowY="hidden";},500)
+shine.classList.remove("active");},500);
+  
+setTimeout(() => {
+LogoContainer.style.overflowY="hidden";},800);
 
 glow.style.transition="0.3s";
 glow.style.opacity="0";
@@ -226,5 +228,6 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 

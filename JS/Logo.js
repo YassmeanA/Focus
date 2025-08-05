@@ -140,8 +140,9 @@ show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var
 LogoButton.addEventListener("click",() => {
 
 show.classList.add("active");
-show.style.pointerEvents="auto";
+show.style.pointerEvents="auto
 show.style.overflowY="auto";
+LogoContainer.style.pointerEvents="none";
   
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="auto";};});
@@ -166,7 +167,7 @@ setTimeout(() => {
 shine.classList.remove("active");},500);
   
 setTimeout(() => {
-LogoContainer.style.overflowY="hidden";},800);
+LogoContainer.style.overflowY="hidden";},1200);
 
 glow.style.transition="0.3s";
 glow.style.opacity="0";
@@ -186,6 +187,7 @@ show.classList.remove("active");
   
 show.style.pointerEvents="none";
 LogoContainer.style.overflowY="auto";
+LogoContainer.style.pointerEvents="auto";
   
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="none";};});
@@ -218,7 +220,8 @@ hide.setAttribute('x',15);
 setTimeout(() => {
 
 shine.classList.add("active");
-setTimeout(() => {shine.classList.remove("active");
+setTimeout(() => {
+shine.classList.remove("active");
 show.style.overflowY="hidden";},500);
 
 light.style.animation="lighting1 0.8s forwards";},200);
@@ -228,6 +231,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

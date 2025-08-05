@@ -140,7 +140,7 @@ show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var
 LogoButton.addEventListener("click",() => {
 
 show.classList.add("active");
-show.style.pointerEvents="auto
+show.style.pointerEvents="auto"
 show.style.overflowY="auto";
 LogoContainer.style.pointerEvents="none";
   
@@ -231,6 +231,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

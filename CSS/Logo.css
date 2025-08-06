@@ -207,7 +207,7 @@ position:fixed;
 top:0;
 left:0;
 width:calc(100% - 15px);
-height:100%;
+height:calc(100% + 100px);
 background:#051B34;}
 
 .show .Container{

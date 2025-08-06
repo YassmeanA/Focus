@@ -33,8 +33,9 @@ if ("ontouchstart" in document.documentElement) {
   Z = 7;
 }
 
-window.addEventListener("load", () => {
-show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.35px))`;});
+//window.addEventListener("load", () => {
+show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.35px))`;
+//});
 
 let Y;
 
@@ -231,6 +232,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

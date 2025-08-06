@@ -214,9 +214,10 @@ background:#051B34;}
 position:absolute;
 display:grid;
 width:100vw;
-transition:0.3s;
+transition:top 0.3s;
 pointer-events:none;
-opacity:0;}
+opacity:0;
+transform:translateY(-100%);}
 
 .show .Container.active {
 transition:0.3s 0.3s;

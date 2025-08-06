@@ -216,7 +216,8 @@ display:grid;
 width:100vw;
 transition:0.3s;
 pointer-events:none;
-opacity:0;}
+opacity:0;
+background:red;}
 
 .show .Container.active {
 transition:0.3s 0.3s;

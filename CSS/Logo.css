@@ -214,13 +214,13 @@ background:#051B34;}
 position:absolute;
 display:grid;
 width:100vw;
-transition:top 0.3s, transform 0s;
+transition:all 0.3s, transform 0s;
 pointer-events:none;
 opacity:0;
 transform:translateY(-100%);}
 
 .show .Container.active {
-transition:top 0.3s 0.3s, transform 0s;
+transition:all 0.3s 0.3s, transform 0s;
 pointer-events:auto;
 opacity:1;
 top:0;

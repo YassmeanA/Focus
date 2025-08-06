@@ -213,7 +213,6 @@ background:#051B34;}
 .show .Container{
 position:absolute;
 display:grid;
-  background:red;
 width:100vw;
 transition:0.3s;
 pointer-events:none;

@@ -223,7 +223,8 @@ transform:translateY(-100%);}
 transition:0.3s 0.3s;
 pointer-events:auto;
 opacity:1;
-top:0;} 
+top:0;
+transform:translateY(0);} 
 
 .show nav {
 transition:0.3s;

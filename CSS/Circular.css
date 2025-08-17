@@ -1,7 +1,6 @@
 
 .container7 {
 font-family:"Montserrat Alternates", serif !important;
-font-style:normal !important;
 width:330px;
 height:330px;
 position:absolute;
@@ -19,8 +18,7 @@ height:330px;
 display:flex;
 align-items:center;
 justify-content:center;
-overflow:hidden;
-transform:rotate(15deg);}
+overflow:hidden;}
 
 .container7 .MockUp img {
 position:absolute;

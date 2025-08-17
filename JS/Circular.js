@@ -31,12 +31,12 @@ Buttons[t].classList.add("active");
 const iceCream = iceCreams[t];
 
 Title.style.transition="0s";text.style.transition="0s";
-Title.style.top="170px";text.style.top="205px";
+Title.style.top="170px";text.style.top="210px";
 Title.style.opacity="0";text.style.opacity="0";
 
 setTimeout(() => {
 Title.style.transition="1s";text.style.transition="0.8s 0.5s";
-Title.style.top="130px";text.style.top="165px";
+Title.style.top="130px";text.style.top="170px";
 Title.style.opacity="1";text.style.opacity="1";
 },100);
 

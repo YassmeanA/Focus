@@ -19,7 +19,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 overflow:hidden;
-transform:rotate(30deg) scale(1.1);}
+transform:rotate(30deg) scale(1.2);}
 
 .container7 .MockUp img {
 position:absolute;
@@ -39,7 +39,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 overflow:hidden;
-border:2px solid red;}
+border:1px solid black;}
 
 .container7 .Container7 {
 width:100%;

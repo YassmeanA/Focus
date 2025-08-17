@@ -39,7 +39,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 overflow:hidden;
-border:1px solid black;}
+outline:1px solid black;}
 
 .container7 .Container7 {
 width:100%;

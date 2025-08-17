@@ -1,8 +1,5 @@
 
 .container7 {
-font-family:"Montserrat Alternates", serif;
-font-weight:1000;
-font-style:normal;
 width:330px;
 height:330px;
 position:absolute;
@@ -125,15 +122,19 @@ transform:scale(1.25);}
 .container7 #Title1 {
 width:100%;
 font-size:0.6rem;
+font-family:"Montserrat Alternates", serif;
 font-weight:1000;
+font-style:normal;
 color:#ff3884;
 text-shadow:1px 2px 3px rgba(0,0,0,0.1);}
 
 .container7 #Title2 {
 width:100%;
 font-size:0.6rem;
-font-weight:1000;
 color:#ff3884;
+font-family:"Montserrat Alternates", serif;
+font-weight:1000;
+font-style:normal;
 text-shadow:1px 2px 3px rgba(0,0,0,0.1);}
 
 .container7 #Title {
@@ -150,7 +151,9 @@ top:145px;
 left:0;
 margin:8px;
 font-size:0.45rem;
-font-weight:400;}
+font-weight:400;
+font-family:"Montserrat Alternates", serif;
+font-style:normal;}
 
 .container7 #W {
 position:fixed;

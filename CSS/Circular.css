@@ -19,7 +19,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 overflow:hidden;
-transform:rotate(20deg);}
+transform:rotate(20deg) scale(1.2);}
 
 .container7 .MockUp img {
 position:absolute;
@@ -61,11 +61,10 @@ transition:0.3s;}
 
 .container7 .Container7 img {
 position:absolute;
-left:0;
-top:0;
+top:-2px;
 object-fit:cover;
 opacity:0;
-width:100%;
+width:105%;
 height:70%;
 mask-image:linear-gradient(to bottom, black 0%, black 40%, transparent 90%);
 -webkit-mask-image:linear-gradient(to bottom, black 0%, black 40%, transparent 90%);

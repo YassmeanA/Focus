@@ -123,12 +123,14 @@ transform:scale(1.25);}
 .container7 #Title1 {
 width:100%;
 font-size:0.6rem;
+font-weight:1000;
 color:#ff3884;
 text-shadow:1px 2px 3px rgba(0,0,0,0.1);}
 
 .container7 #Title2 {
 width:100%;
 font-size:0.6rem;
+font-weight:1000;
 color:#ff3884;
 text-shadow:1px 2px 3px rgba(0,0,0,0.1);}
 

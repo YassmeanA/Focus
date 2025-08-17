@@ -26,7 +26,8 @@ transform: scale(1.1) translateY(10px);}
 position:absolute;
 height:330px;
 width:auto;
-object-fit:cover;}
+object-fit:cover;
+transform:translateX(-50px);}
 
 .container7 .S {
 position:absolute;

@@ -12,7 +12,7 @@ const iceCreams = [
   {bg: "#ffd4e4", color: "#ff3884", title: "Strawberry", text: "Strawberry ice cream mixed with small pieces of fresh strawberries."},
   {bg: "#baffe9", color: "#03fcad", title: "Mint", text: "Mint ice cream topped with fresh mint leaves and chocolate chips."},
   {bg: "#fcffba", color: "#fce303", title: "Mango", text: "Mango ice cream mixed with small cubes of fresh mango."},
-  {bg: "#8ceeff", color: "#00c3e6", title: "Blueberry", text: "Blueberry ice cream infused with fresh blueberries and topped with mint leaves."},
+  {bg: "#8ceeff", color: "#00c3e6", title: "Blueberry", text: "Blueberry ice cream infused with blueberries and topped with mint leaves."},
   {bg: "#fffef2", color: "#a1a08c", title: "Vanilla", text: "Vanilla ice cream topped with fresh mint leaves."},
   {bg: "#ab816a", color: "#703616", title: "Chocolate", text: "Chocolate ice cream garnished with chocolate sauce."},
   {bg: "#d3ffc2", color: "#61a13b", title: "Pistachio", text: "Pistachio ice cream garnished with pistachio and fresh mint leaves."},
@@ -31,12 +31,12 @@ Buttons[t].classList.add("active");
 const iceCream = iceCreams[t];
 
 Title.style.transition="0s";text.style.transition="0s";
-Title.style.top="170px";text.style.top="200px";
+Title.style.top="170px";text.style.top="205px";
 Title.style.opacity="0";text.style.opacity="0";
 
 setTimeout(() => {
 Title.style.transition="1s";text.style.transition="0.8s 0.5s";
-Title.style.top="130px";text.style.top="160px";
+Title.style.top="130px";text.style.top="165px";
 Title.style.opacity="1";text.style.opacity="1";
 },100);
 

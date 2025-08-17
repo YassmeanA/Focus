@@ -18,7 +18,8 @@ height:330px;
 display:flex;
 align-items:center;
 justify-content:center;
-overflow:hidden;}
+overflow:hidden;
+transform:rotate(20deg);}
 
 .container7 .MockUp img {
 position:absolute;

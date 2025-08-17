@@ -110,7 +110,7 @@ top:39px;
 right:0;
 height: 61px;
 width:61px;
-transition: 0.3s ;
+transition:0.3s;
 background:var(--i2);
 background-size:cover;
 background-position:center;
@@ -146,7 +146,7 @@ margin:8px;}
 .container7 #text {
 width:50%;
 position:absolute;
-top:167px;
+top:165px;
 left:0;
 margin:8px;
 font-size:0.4rem;

@@ -19,14 +19,14 @@ justify-content:center;
 align-items:center;}
    
 .container10 .slider {
-position:relative;
+position:absolute;
 width:250px;
 height:350px;
 display:flex;
 justify-content:center;
 align-items:center;
 list-style:none;
-transform:scale(0.75);}
+transform:translateY(-10px) scale(0.75);}
 
 .container10 .slide:nth-child(1){
 transform:translateX(-40px) scale(0.6);

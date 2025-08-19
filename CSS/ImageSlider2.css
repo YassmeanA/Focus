@@ -19,7 +19,9 @@ height:330px;
 overflow:hidden;
 display:flex;
 justify-content:center;
-align-items:center;}
+align-items:center;
+padding:0;
+margin:0;}
    
 .container10 .slider {
 position:absolute;

@@ -28,23 +28,23 @@ align-items:center;
 list-style:none;
 transform:scale(0.75);}
 
-.container10 .slide:nth-child(1){
+.container10 .slide:nth-child(1) {
 transform:translateX(-40px) scale(0.6);
 filter:brightness(20%);}
 
-.container10 .slide:nth-child(2){
+.container10 .slide:nth-child(2 ){
 transform:translateX(-60px) scale(0.7);
 filter:brightness(40%);}
 
-.container10 .slide:nth-child(3){
+.container10 .slide:nth-child(3) {
 transform:translateX(-40px) scale(0.8);
 filter:brightness(60%);}
 
-.container10 .slide:nth-child(4){
+.container10 .slide:nth-child(4) {
 transform:translateX(-20px) scale(0.9);
 filter:brightness(80%);}
 
-.container10 .slide:nth-child(5){
+.container10 .slide:nth-child(5) {
 transform:translateX(0px) scale(1);
 filter:brightness(100%);}
 
@@ -151,7 +151,7 @@ opacity:1;}
 .container10 .slide:nth-child(5) .logo.adidas {
 transform:scale(0.9) translateY(-2px);}
 
-.container10 .slide:nth-child(5) .ContainerZ span {
+.container10 .ContainerZ .slide:nth-child(5) span {
 filter:blur(0);
 bottom:0;
 opacity:1;}

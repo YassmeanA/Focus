@@ -3,7 +3,6 @@
 width:330px;
 height:330px;
 position:absolute;
-top:0;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -12,8 +11,7 @@ transition:0.3s;}
     
 .container10 .ContainerZ {
 position:absolute;
-    background:red;
-top:-80px;
+background:red;
 width:330px;
 height:330px;
 overflow:hidden;

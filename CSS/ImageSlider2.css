@@ -10,8 +10,8 @@ border-radius:20px;
 transition:0.3s;}
     
 .container10 .ContainerZ {
-    background:red;
 position:absolute;
+top:0;
 width:330px;
 height:330px;
 overflow:hidden;

@@ -20,6 +20,7 @@ align-items:center;}
    
 .container10 .slider {
 position:absolute;
+    background:red;
 width:250px;
 height:350px;
 display:flex;

@@ -11,7 +11,6 @@ transition:0.3s;}
     
 .container10 .ContainerZ {
 position:absolute;
-background:red;
 width:330px;
 height:330px;
 overflow:hidden;
@@ -65,7 +64,7 @@ background:var(--gradient);
 border-radius:15px;
 box-shadow:0 10px 20px rgba(0,0,0,0.3);}
 
-.container10 section {
+.container10 .ContainerZ section {
 position:absolute;
 top:50px;
 width:160px;
@@ -74,14 +73,14 @@ display:flex;
 align-items:center;
 justify-content:center;}
 
-.container10 section img {
+.container10 .ContainerZ section img {
 position:absolute;
 top:0;
 width:100%;
 height:100%;
 object-fit:cover;}
 
-.container10 section .shadow {
+.container10 .ContainerZ section .shadow {
 position:absolute;
 width:150px;
 height:20px;
@@ -89,14 +88,14 @@ border-radius:50%;
 filter:blur(10px);
 background:rgba(0,0,0,0.25);}
 
-.container10 section.adidas .shadow {
+.container10 .ContainerZ section.adidas .shadow {
 bottom:10%;
 background:rgba(0,0,0,0.3);}
 
-.container10 section.nike .shadow {
+.container10 .ContainerZ section.nike .shadow {
 bottom:-10%;}
 
-.container10 section.puma .shadow {
+.container10 .ContainerZ section.puma .shadow {
 bottom:0%;
 background:rgba(0,0,0,0.2);}
 

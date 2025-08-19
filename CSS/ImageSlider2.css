@@ -13,6 +13,7 @@ transition:0.3s;}
 .container10 .ContainerZ {
 position:absolute;
     top:0;
+    background:red;
 width:330px;
 height:330px;
 overflow:hidden;

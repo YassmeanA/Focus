@@ -12,16 +12,13 @@ transition:0.3s;}
     
 .container10 .ContainerZ {
 position:absolute;
-    top:0;
-    background:red;
+top:-80px;
 width:330px;
 height:330px;
 overflow:hidden;
 display:flex;
 justify-content:center;
-align-items:center;
-padding:0;
-margin:0;}
+align-items:center;}
    
 .container10 .slider {
 position:absolute;

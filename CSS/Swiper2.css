@@ -1,12 +1,4 @@
 .container12 {
-width:330px;
-height:330px;
-position:absolute;
-display:flex;
-align-items: center;
-justify-content:center;
-border-radius:20px;
-transition:0.3s;
 background: linear-gradient(to bottom right, #FFEC8A, #FFB78F);}
 
 .container12 .swiper-container {
@@ -32,7 +24,7 @@ overflow:hidden;
 width:250px;
 height:210px;
 border-radius:13px;
-box-shadow:0px 2px 12px rgba(0, 0, 0, 0.2);}
+box-shadow:0px 4px 12px rgba(0, 0, 0, 0.3);}
 
 .container12 span i {
 color:gold;

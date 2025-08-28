@@ -154,7 +154,7 @@ transform:scale(0.6);}
 
 .container10 .slide:nth-child(5) .logo {
 filter:blur(0) drop-shadow(-2px 2px 4px rgba(0,0,0,0.3));
-bottom:38px;
+bottom:40px;
 opacity:1;}
 
 .container10 .slide:nth-child(5) .logo.adidas {
@@ -162,12 +162,12 @@ transform:scale(0.9) translateY(-2px);}
 
 .container10 .ContainerZ .slide:nth-child(5) span {
 filter:blur(0);
-bottom:0;
+bottom:2px;
 opacity:1;}
 
 .container10 .slide:nth-child(5) h3 {
 filter:blur(0);
-bottom:23px;
+bottom:25px;
 opacity:1;}
 
 .container10 .slide:nth-child(5) .off {

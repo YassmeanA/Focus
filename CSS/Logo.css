@@ -8,7 +8,7 @@ overflow-y:auto;
 display:flex;
 justify-content:center;
 align-items:center;
-font-family: "Montserrat Alternates", serif;
+font-family:"Montserrat Alternates", serif;
 font-weight: 1000;
 font-style: normal;}
 
@@ -29,7 +29,7 @@ display:none;}
 display:flex;}
 
 .logo-container .logo {
-position: absolute;
+position:absolute;
 top:800px;
 width:200px;
 height:200px;
@@ -51,17 +51,17 @@ background:linear-gradient(to right, rgba(51,255,255,0.15) 0%, #051B34 80%);
 clip-path:path('M1.14431 53.3397L141.851 0C152.95 35.7562 152.48 84.1316 141.851 120L1.14431 67.1162C-0.334474 61.7426 -0.427685 58.7198 1.14431 53.3397Z');}
 
 .logo-container #F {
-font-weight: 1000;
+font-weight:1000;
 position:absolute;
 left:32px;
-color: aqua;
+color:aqua;
 letter-spacing:5px;}
 
-.logo-container #cus{
-font-weight: 1000;
+.logo-container #cus {
+font-weight:1000;
 position:absolute;
 left:89px;
-color: transparent;
+color:transparent;
 letter-spacing:5px;
 transition:0.4s;
 background:linear-gradient(to right,#00FFFF,#00FF9F);
@@ -129,9 +129,9 @@ animation:logo-rotate 0.5s;}
 100%{opacity:0;}}
 
 .logo-container button {
-font-family: "Montserrat Alternates", serif;
-font-weight: 1000;
-font-style: normal;
+font-family:"Montserrat Alternates", serif;
+font-weight:1000;
+font-style:normal;
 cursor:pointer;
 transition:0.3s;
 width:130px;
@@ -187,7 +187,7 @@ position:absolute;
 top:0;
 background:linear-gradient(to right, #00FFFF,#00FF9F);}
 
-.show{
+.show {
 --i:800px;
 position:fixed;
 top:0;
@@ -210,12 +210,16 @@ width:calc(100% - 15px);
 height:calc(100% + 100px);
 background:#051B34;}
 
-.show .Container{
+.show .Container {
 position:absolute;
-display:grid;
+top:-20px;
 width:100vw;
+padding-top:230px;
+display:grid;
+justify-content:center;
 transition:all 0.3s, transform 0s 0.3s;
 pointer-events:none;
+overflow:hidden;
 opacity:0;
 transform:translateY(-100%);}
 
@@ -238,9 +242,9 @@ justify-content:center;
 align-items:center;
 border-radius:35px;
 overflow:hidden;
-font-family: "Montserrat Alternates", serif;
-font-weight: 1000;
-font-style: normal;
+font-family:"Montserrat Alternates", serif;
+font-weight:1000;
+font-style:normal;
 background:linear-gradient(to right,#00FFFF,#00FF9F);}
 
 .show nav .background {
@@ -253,11 +257,11 @@ background:#051B34;}
 
 .show nav section {
 user-select:none;
-scroll-snap-type: x mandatory;
-scroll-behavior: smooth;
+scroll-snap-type:x mandatory;
+scroll-behavior:smooth;
 overflow-x:auto;
-position: absolute;
-display: flex;
+position:absolute;
+display:flex;
 align-items:center;
 border-radius:33px;
 height:66px;
@@ -265,8 +269,8 @@ padding:50px;
 gap:50px;}
 
 .show nav section.dragging {
-scroll-snap-type: none;
-scroll-behavior: auto;}
+scroll-snap-type:none;
+scroll-behavior:auto;}
 
 .show nav section::-webkit-scrollbar {
 display:none;}
@@ -285,19 +289,18 @@ background:linear-gradient(to right,#00FFFF,#00FF9F);
 -webkit-background-clip:text;
 color:#A1A1A1;}
 
-.show nav section span.active{
+.show nav section span.active {
 color:transparent;
 background:linear-gradient(to right,#00FFFF,#00FF9F);
 -webkit-background-clip:text;
 text-shadow:2px 2px 8px rgba(0,255,255,0.3);}
 
-.show .back{
+.show .back {
 cursor:pointer;
-position: absolute;
+position:absolute;
 top:10px;
 left:10px;
 border-radius:9px;
 z-index:5;
 background:linear-gradient(to bottom right,#00FFFF,#00FF9F);
 box-shadow:0px 0px 5px rgba(0,255,255,0.2);}
-

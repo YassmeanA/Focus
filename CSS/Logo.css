@@ -15,7 +15,10 @@ font-style: normal;}
 .logo-container::-webkit-scrollbar, .show::-webkit-scrollbar {
 width:15px;}
 
-.logo-container::-webkit-scrollbar-track, .show::-webkit-scrollbar-track {
+.logo-container::-webkit-scrollbar-track {
+background:transparent;}
+
+.show::-webkit-scrollbar-track {
 background:#051B34;}
 
 .logo-container::-webkit-scrollbar-thumb, .show::-webkit-scrollbar-thumb {

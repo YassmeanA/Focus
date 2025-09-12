@@ -2,13 +2,6 @@
 .container7 {
 font-family:"Montserrat Alternates", serif !important;
 font-style:normal;
-width:330px;
-height:330px;
-position:absolute;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:20px;
 background:#ffd4e4;
 transition:0.3s;}
 
@@ -20,7 +13,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 overflow:hidden;
-transform: scale(1.1) translateY(10px);}
+transform:scale(1.1) translateY(10px);}
 
 .container7 .MockUp img {
 position:absolute;

@@ -7,7 +7,8 @@ max-width:1100px;
 width:100vw;
 display:flex;
 align-items:center;
-justify-content:center;}
+justify-content:center;
+pointer-events:none;}
 
 .container12 .swiper-wrapper {
 position:relative;

@@ -1,8 +1,10 @@
-.container1S {
+    .container1S * {
     font-family:"Prompt", serif;
     font-weight:650;
     font-style:normal;
-    transition:0.4s;
+    transition:0.4s;}
+
+    .container1S {
     height:600px;
     --primary:aqua;
     --secondary:#A3A3A3;

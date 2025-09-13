@@ -174,7 +174,7 @@ color: transparent;
 background:#051B34;
 -webkit-background-clip:text;}
 
-footer {
+.logo-container footer {
 width:100vw;
 height:300px;
 position:absolute;
@@ -182,7 +182,7 @@ top:1200px;
 display:flex;
 justify-content:center;}
 
-.line {
+.logo-container .line {
 width:90vw;
 height:0.5px;
 border-radius:0.25px;

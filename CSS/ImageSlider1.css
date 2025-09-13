@@ -1,35 +1,28 @@
-.container9 {
-    width:330px;
-    height:330px;
-    position:absolute;
-    display:flex;
-    align-items: center;
-    justify-content:center;
-    border-radius:20px;
-    transition:0.3s;
+    .container9 {
     background: linear-gradient(#6eb4ff, #b5d9ff);}
     
-    .container9 .ContainerY{
-    position: absolute;
+    .container9 .ContainerY {
+    position:absolute;
     width:330px;
     height:330px;
     padding:30px;
     top:20px;
-    overflow-x: hidden;
-    display: flex;
+    overflow-x:hidden;
+    display:flex;
     justify-content:center;
-    align-items: center;}
+    align-items:center;
+    pointer-events:none;}
     
-    .container9 .slider{
-    position: absolute;
+    .container9 .slider {
+    position:absolute;
     top:0;
     border-radius:10px;
     width:180px;
     height:220px;
     list-style:none;}
     
-    .container9 .slides{
-    position: absolute;
+    .container9 .slides {
+    position:absolute;
     transition:0.5s;
     background-size:cover;
     background-position:center;
@@ -40,34 +33,34 @@
     height:50px;
     transform: translateY(0%);}
     
-    .container9 .slides:nth-child(1), .container9 .slides:nth-child(2){
+    .container9 .slides:nth-child(1), .container9 .slides:nth-child(2) {
     position: absolute;
     top:0;
     width:100%;
     height:100%;
-    transform: translateY(0);
+    transform:translateY(0);
     box-shadow:0 15px 25px rgba(0,0,0,0);}
     
-    .container9 .slides:nth-child(3){
+    .container9 .slides:nth-child(3) {
     opacity:1;
     left:0px;}
     
-    .container9 .slides:nth-child(4){
+    .container9 .slides:nth-child(4) {
     left:60px;
     opacity:0.5;}
     
-    .container9 .slides:nth-child(5){
+    .container9 .slides:nth-child(5) {
     left:120px;
     opacity:0.2;}
     
-    .container9 .slides:nth-child(6), .container9 .slides:nth-child(7), .container9 .slides:nth-child(8), .container9 .slides:nth-child(9){
+    .container9 .slides:nth-child(6), .container9 .slides:nth-child(7), .container9 .slides:nth-child(8), .container9 .slides:nth-child(9) {
     left:180px;
     opacity:0;}
     
-    .container9 h3{
+    .container9 h3 {
     font-size:13px;
     padding:10px;
-    position: absolute;
+    position:absolute;
     filter:blur(10px);
     opacity:0;
     left:0px;
@@ -76,10 +69,10 @@
     text-shadow:2px 2px 2px rgba(0,0,0,0.4);
     transition: all 0.5s 0.3s, opacity 0.3s 0.3s;}
     
-    .container9 .slides span{
+    .container9 .slides span {
     font-size:10px;
     padding:10px;
-    position: absolute;
+    position:absolute;
     filter:blur(10px);
     font-weight:150;
     opacity:0;
@@ -87,15 +80,14 @@
     bottom:0px;
     color:white;
     text-shadow:1px 2px 2px rgba(0,0,0,0.4);
-    transition: all 0.5s 0.3s, opacity 0.3s 0.3s;}
+    transition:all 0.5s 0.3s, opacity 0.3s 0.3s;}
     
-    .container9 .slides:nth-child(1) h3, .container9 .slides:nth-child(2) h3{
+    .container9 .slides:nth-child(1) h3, .container9 .slides:nth-child(2) h3 {
     filter:blur(0px);
     bottom:14px;
     opacity:1;}
     
-    .container9 .slides:nth-child(1) span, .container9 .slides:nth-child(2) span{
+    .container9 .slides:nth-child(1) span, .container9 .slides:nth-child(2) span {
     filter:blur(0px);
     bottom:0px;
     opacity:1;}
-    

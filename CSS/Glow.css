@@ -2,7 +2,8 @@
     font-family:"Prompt", serif !important;
     font-weight:650;
     font-style:normal;
-    transition:0.4s;}
+    transition:0.4s;
+    box-shadow:0 0 10px rgba(51,255,255,0.4);}
 
     .container1S {
     height:600px !important;

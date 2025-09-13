@@ -105,7 +105,7 @@ transform:var(--i1);}
 
 .container7 .wrapper section {
 cursor:pointer;
-pointer-events:auto;
+pointer-events:none;
 position: absolute;
 top:39px;
 right:0;

@@ -154,7 +154,7 @@
     
     .container1S .item .Text, .menu-item span, .container1S .account-settings .fields li section span {
     position:absolute;
-    font-size:0.55rem;
+    font-size:0.6rem;
     color:var(--secondary);}
     
     .container1S .item .Text, .container1S .menu-item span {
@@ -185,7 +185,7 @@
     opacity:1;}
     
     .container1S .menu-item span {
-    font-size:0.5rem;
+    font-size:0.55rem;
     left:10px;}
     
     .container1S .menu-item.active {

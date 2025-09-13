@@ -6,7 +6,8 @@ border-radius:20px;
 overflow:hidden;
 display:flex;
 justify-content:center;
-align-items:center;}
+align-items:center;
+pointer-events:none;}
    
 .container10 .slider {
 position:absolute;

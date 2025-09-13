@@ -1,31 +1,31 @@
-const Arrow1 = document.querySelector(".container1S .Arrow");
-const SideNavbar1 = document.querySelector(".container1S .side-navbar");
-const ItemBtn1s = document.querySelectorAll(".container1S .item-btn.N");
-const ItemMenu1s = document.querySelectorAll(".container1S .item.menu");
-const MenuItemA1s = document.querySelectorAll(".container1S .menu-item.A");
-const MenuItemB1s = document.querySelectorAll(".container1S .menu-item.B");
-const Menu1s = document.querySelectorAll(".container1S .Menu");
-const Text1s = document.querySelectorAll(".container1S .item .text");
-const Item1s = document.querySelectorAll(".container1S .item-btn");
-const Mouse1 = document.querySelector(".container1S .mouse");
+const Arrow = document.querySelector(".container1S .Arrow");
+const SideNavbar = document.querySelector(".container1S .side-navbar");
+const ItemBtns = document.querySelectorAll(".container1S .item-btn.N");
+const ItemMenus = document.querySelectorAll(".container1S .item.menu");
+const MenuItemAs = document.querySelectorAll(".container1S .menu-item.A");
+const MenuItemBs = document.querySelectorAll(".container1S .menu-item.B");
+const Menus = document.querySelectorAll(".container1S .Menu");
+const Texts = document.querySelectorAll(".container1S .item .text");
+const Items = document.querySelectorAll(".container1S .item-btn");
+const Mouse = document.querySelector(".container1S .mouse");
 
 
 //Activate & Deactivate Side Navbar
-Arrow1.addEventListener("click",() => {
+Arrow.addEventListener("click",() => {
 
-if(SideNavbar1.classList.contains("active")){
+if(SideNavbar.classList.contains("active")){
 
-SideNavbar1.classList.remove("active");
+SideNavbar.classList.remove("active");
 
-}else{SideNavbar1.classList.add("active");
+}else{SideNavbar.classList.add("active");
 
 };
 
-ItemMenu1s.forEach(ItemMenu => {
+ItemMenus.forEach(ItemMenu => {
 ItemMenu.querySelector(".item-btn").classList.remove("active");
 ItemMenu.classList.remove("active");});
 
-Menu1s.forEach(Menu => {
+Menus.forEach(Menu => {
 Menu.classList.remove("active");});
 
 });
@@ -33,107 +33,107 @@ Menu.classList.remove("active");});
 
 function Show1() {
 
-Mouse1.style.transform="translate(-155px,-235px)";
+Mouse.style.transform="translate(-155px,-235px)";
 setTimeout(() => {
-Mouse1.querySelector(".cursor").classList.add("active");
-setTimeout(() => {Arrow.click();Mouse1.querySelector(".cursor").classList.remove("active");
+Mouse.querySelector(".cursor").classList.add("active");
+setTimeout(() => {Arrow.click();Mouse.querySelector(".cursor").classList.remove("active");
 },300);
 
 setTimeout(() => {
 
-Mouse1.style.transform="translate(-110px,-130px)";
+Mouse.style.transform="translate(-110px,-130px)";
 
 setTimeout(() => {
 
-Mouse1.querySelector(".cursor").classList.add("active");
+Mouse.querySelector(".cursor").classList.add("active");
 
 setTimeout(() => {
-Mouse1.querySelector(".cursor").classList.remove("active");
+Mouse.querySelector(".cursor").classList.remove("active");
 
-ItemMenu1s[0].classList.add("active");
-ItemMenu1s[0].querySelector(".item-btn").classList.add("active");
-
-setTimeout(() => {
-Mouse1.style.transform="translate(-110px,10px)";
+ItemMenus[0].classList.add("active");
+ItemMenus[0].querySelector(".item-btn").classList.add("active");
 
 setTimeout(() => {
-Mouse1.querySelector(".cursor").classList.add("active");
+Mouse.style.transform="translate(-110px,10px)";
 
 setTimeout(() => {
-Mouse1.querySelector(".cursor").classList.remove("active");
-ItemMenu1s[0].classList.remove("active");
-ItemMenu1s[0].querySelector(".item-btn").classList.remove("active");
-
-ItemMenu1s[1].classList.add("active");
-ItemMenu1s[1].querySelector(".item-btn").classList.add("active");
+Mouse.querySelector(".cursor").classList.add("active");
 
 setTimeout(() => {
-Mouse1.style.transform="translate(-110px,-100px)";
+Mouse.querySelector(".cursor").classList.remove("active");
+ItemMenus[0].classList.remove("active");
+ItemMenus[0].querySelector(".item-btn").classList.remove("active");
+
+ItemMenus[1].classList.add("active");
+ItemMenus[1].querySelector(".item-btn").classList.add("active");
 
 setTimeout(() => {
-Mouse1.querySelector(".cursor").classList.add("active");
+Mouse.style.transform="translate(-110px,-100px)";
 
 setTimeout(() => {
-Mouse1.querySelector(".cursor").classList.remove("active");
-ItemMenu1s[1].classList.remove("active");
-ItemMenu1s[1].querySelector(".item-btn").classList.remove("active");
+Mouse.querySelector(".cursor").classList.add("active");
 
 setTimeout(() => {
-Mouse1.style.transform="translate(-90px,-235px)";
+Mouse.querySelector(".cursor").classList.remove("active");
+ItemMenus[1].classList.remove("active");
+ItemMenus[1].querySelector(".item-btn").classList.remove("active");
 
 setTimeout(() => {
-Mouse1.querySelector(".cursor").classList.add("active");
+Mouse.style.transform="translate(-90px,-235px)";
 
 setTimeout(() => {
-Mouse1.querySelector(".cursor").classList.remove("active");
+Mouse.querySelector(".cursor").classList.add("active");
+
+setTimeout(() => {
+Mouse.querySelector(".cursor").classList.remove("active");
 Arrow.click();
 
 
 setTimeout(() => {
-Mouse1.style.transform="translate(-175px,-100px)";
+Mouse.style.transform="translate(-175px,-100px)";
 
 setTimeout(() => {
-Text1s[2].style.display="flex";
+Texts[2].style.display="flex";
 setTimeout(() => {
-Mouse1.querySelector(".cursor").classList.add("active");
+Mouse.querySelector(".cursor").classList.add("active");
 
 setTimeout(() => {
-Mouse1.querySelector(".cursor").classList.remove("active");
-Menu1s[1].classList.add("active");
-ItemMenu1s[1].querySelector(".item-btn").classList.add("active");
+Mouse.querySelector(".cursor").classList.remove("active");
+Menus[1].classList.add("active");
+ItemMenus[1].querySelector(".item-btn").classList.add("active");
 
 setTimeout(() => {
-Mouse1.style.transform="translate(-175px,-130px)";
-Text1s[2].style.display="none";
+Mouse.style.transform="translate(-175px,-130px)";
+Texts[2].style.display="none";
 
 setTimeout(() => {
-Text1s[1].style.display="flex";
+Texts[1].style.display="flex";
 
 setTimeout(() => {
-Mouse1.querySelector(".cursor").classList.add("active");
+Mouse.querySelector(".cursor").classList.add("active");
 
 setTimeout(() => {
-Mouse1.querySelector(".cursor").classList.remove("active");
-Menu1s[0].classList.add("active");
-ItemMenu1s[0].querySelector(".item-btn").classList.add("active");
-Menu1s[1].classList.remove("active");
-ItemMenu1s[1].querySelector(".item-btn").classList.remove("active");
+Mouse.querySelector(".cursor").classList.remove("active");
+Menus[0].classList.add("active");
+ItemMenus[0].querySelector(".item-btn").classList.add("active");
+Menus[1].classList.remove("active");
+ItemMenus[1].querySelector(".item-btn").classList.remove("active");
 
 setTimeout(() => {
-Mouse1.style.transform="translate(-105px,-170px)";
-Text1s[1].style.display="none";
+Mouse.style.transform="translate(-105px,-170px)";
+Texts[1].style.display="none";
 
 setTimeout(() => {
-Mouse1.querySelector(".cursor").classList.add("active");
+Mouse.querySelector(".cursor").classList.add("active");
 
 setTimeout(() => {
 
-Mouse1.querySelector(".cursor").classList.remove("active");
-Menu1s[0].classList.remove("active");
-ItemMenu1s[0].querySelector(".item-btn").classList.remove("active");
+Mouse.querySelector(".cursor").classList.remove("active");
+Menus[0].classList.remove("active");
+ItemMenus[0].querySelector(".item-btn").classList.remove("active");
 
 setTimeout(() => {
-Mouse1.style.transform="translate(0px,0px)";
+Mouse.style.transform="translate(0px,0px)";
 },500);
 
 },300);
@@ -185,4 +185,5 @@ Mouse1.style.transform="translate(0px,0px)";
 setTimeout(() => {Show1();},500);
 
 setInterval(() => {Show1();},14500);
+
 

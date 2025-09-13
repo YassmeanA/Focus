@@ -1,53 +1,44 @@
-
-.container8 {
-    width:330px;
-    height:330px;
-    position:absolute;
-    display:flex;
-    align-items: center;
-    justify-content:center;
-    border-radius:20px;
-    transition:0.3s;
+    .container8 {
     background:linear-gradient(to bottom, #888888, #444444);}
     
     .container8 .containerX {
     height:300px;
     width:300px;
-    display: flex;
+    display:flex;
     justify-content:center;
-    align-items: center;
+    align-items:center;
     transform:scale(0.86);}
     
     .container8 .slider {
     position:relative;
     height:150px;
     width:100px;
-    transform-style: preserve-3d;
-    animation: rotate 30s linear infinite;}
+    transform-style:preserve-3d;
+    animation:rotate 30s linear infinite;}
     
     .container8 .slider span {
-    position: absolute;
+    position:absolute;
     left:0;
     top:0;
     width:100%;
     height:100%;
-    transform-origin: center;
+    transform-origin:center;
     border-radius:10px;
     transition:0.5s;
-    overflow: hidden;
+    overflow:hidden;
     box-shadow:0px 0px 25px rgba(252,252,252,0.4);
     outline:0.5px solid #A3A3A3;
-    transform-style: preserve-3d;
+    transform-style:preserve-3d;
     transform:rotateY(calc(var(--i)*45deg)) translateZ(190px);}
     
-    .container8 .slider img{
+    .container8 .slider img {
     width:100%;
     height:100%;
     object-fit:cover;
     transition:2s;
     opacity:1;}
     
-    .container8 h4{
+    .container8 h4 {
     position:absolute;
     left:10px;
     bottom:21px;
@@ -55,7 +46,7 @@
     text-shadow:2px 2px 2px rgba(0,0,0,0.3);
     color:white;}
     
-    .container8 h6{
+    .container8 h6 {
     position:absolute;
     left:10px;
     bottom:10px;
@@ -67,4 +58,3 @@
     @keyframes rotate {
     0%{transform: perspective(1000px) rotateY(0deg); }
     100%{transform: perspective(1000px) rotateY(360deg); }}
-    

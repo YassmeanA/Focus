@@ -184,6 +184,6 @@ Mouse1.style.transform="translate(0px,0px)";
 
 setTimeout(() => {Show1();},500);
 
-setInterval(() => {Show1();},14500);
+setInterval(() => {Show1();},14000);
 
 

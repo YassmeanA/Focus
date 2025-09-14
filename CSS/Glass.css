@@ -146,7 +146,7 @@ fill:var(--primary);}
 .container3S .item .Text, .container3S .account-settings .fields li section span {
 position:absolute;
 width:120px;
-font-size:0.6rem;
+font-size:0.7rem;
 color:var(--primary);
 opacity:0.5;}
 

@@ -1,0 +1,423 @@
+.container3S {
+--primary:white;
+--Background:rgba(255,255,255,0.3);
+background-image:url("Icons/GLASS.svg");
+background-size:cover;}
+
+
+.container3S .side-navbar * {
+font-family:"Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight:weight;
+font-style:normal;
+transition:0.4s;}
+
+.container3S .account-settings {
+position:absolute;
+justify-content:center;
+width:100%;
+height:110%;
+overflow-x:hidden;
+overflow-y:auto;
+display:flex;
+display:flex;
+pointer-events:none;
+transition:0.4s;
+transform:scale(0.8) translateX(500px);
+border-radius:20px;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+border:1px solid rgba(252,252,252,0.4);}
+
+.container3S .account-settings.active {
+transform:scale(0.8) translateX(0);}
+
+.container3S .content {
+position:absolute;
+width:100%;
+overflow:hidden;
+display:flex;
+justify-content:center;}
+
+.container3S .Header {
+position:absolute;
+top:0;
+width:100%;
+height:55px;}
+
+.container3S .account-settings .Header {
+position:sticky;}
+
+.container3S .back {
+position:absolute;
+top:10px;
+left:10px;
+border-radius:9px;
+cursor:pointer;
+background:linear-gradient(to bottom right, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0.05) 75%);
+box-shadow:1px 4.5px 12px rgba(0,0,0,0.2);}
+
+.container3S .Ham {
+position:absolute;
+top:10px;
+left:10px;
+cursor:pointer;
+transition:0.15s;}
+
+.container3S .Cross {
+position:absolute;
+top:10px;
+right:10px;
+cursor:pointer;
+width:25px;
+height:35px;
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+outline:1px solid rgba(255,255,255,0.4);}
+
+.container3S .side-navbar {
+position:absolute;
+width:251px;
+height:600px;
+direction:rtl;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+pointer-events:none;
+transition:0.4s;
+transform:scale(0.9) translateX(-330px);}
+
+.container3S .navbar-container {
+position:absolute;
+width:251px;
+height:600px;
+direction:ltr;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:20px;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+border:1px solid rgba(252,252,252,0.4);}
+
+.container3S .side-navbar.active {
+transform:scale(0.9) translateX(0);}
+
+.container3S .item-list {
+position:absolute;
+top:160px;
+width:220px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:15px;
+list-style:none;
+pointer-events:none;}
+
+.container3S .item {
+position:relative;
+width:100%;
+height:40px;
+display:flex;
+justify-content:center;
+align-items:center;
+pointer-events:auto;
+cursor:pointer;}
+
+.container3S .item .icon {
+position:absolute;
+width:40px;
+height:40px;
+opacity:0.5;
+left:0;
+display:flex;
+justify-content:center;
+align-items:center;}
+
+.container3S .item .icon img {
+position:absolute;
+top:-17px;
+opacity:0;
+pointer-events:none;}
+
+.container3S .icon svg, .container3S .back svg, .container3S .settings svg {
+fill:var(--primary);}
+
+.container3S .item .Text, .container3S .account-settings .fields li section span {
+position:absolute;
+width:120px;
+font-size:0.6rem;
+color:var(--primary);
+opacity:0.5;}
+
+.container3S .item .Text {
+left:50px;}
+
+.container3S .account-settings .fields li section span {
+top:0;
+left:5px;}
+
+.container3S .item.active .icon, .container3S .item.active .icon img, .container3S .item.active .Text {
+opacity:1;}
+
+.container3S .account {
+position:absolute;
+width:220px;
+bottom:15px;
+height:80px;
+border-radius:15px;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+outline:1px solid rgba(255,255,255,0.4);
+background:linear-gradient(to bottom right, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0.05) 100%);}
+
+.container3S .info-container {
+position:absolute;
+width:180px;
+height:40px;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;}
+
+.container3S .container {
+position:absolute;
+width:40px;
+height:40px;
+display:flex;
+justify-content:center;
+align-items:center;}
+
+.container3S .account .container {
+left:0;}
+
+.container3S .account .settings {
+position:absolute;
+top:5px;
+right:5px;
+width:30px;
+height:30px;
+cursor:pointer;
+display:flex;
+justify-content:center;
+align-items:center;}
+
+.container3S .account .settings .circle {
+position:absolute;
+width:25px;
+height:25px;
+border-radius:50%;
+opacity:0;
+transform:scale(0.5);
+background:rgba(255,255,255,0.2);}
+
+.container3S .account .settings .circle.active {
+animation:Circle 0.6s;}
+
+@keyframes Circle {
+0%{opacity:0;transform:scale(0.5);}
+50%{opacity:1;transform:scale(1);}
+100%{opacity:0;transform:scale(0.5);}}
+
+.container3S .container .glass {
+position:absolute;
+width:100%;
+height:100%;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(to bottom right, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.3) 75%);}
+
+.container3S .container img {
+position:absolute;
+width:95%;
+height:95%;
+border-radius:50%;
+object-fit:cover;
+pointer-events:none;}
+
+.container3S .container .Active {
+position:absolute;
+bottom:2px;
+right:2px;
+width:10px;
+height:10px;
+border-radius:50%;
+background:#4abf02;}
+
+.container3S .account .account-info {
+position:absolute;
+left:50px;
+width:140px;
+height:80%;
+overflow:hidden;}
+
+.container3S .account .account-info h3 {
+position:absolute;
+top:0;
+font-weight:700;
+font-size:0.7rem;
+color:var(--primary);
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+max-width:95%;}
+
+.container3S .account .account-info span {
+position:absolute;
+bottom:0;
+font-size:0.5rem;
+font-weight:300;
+color:var(--primary);
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+max-width:95%;}
+
+.container3S .search {
+position:absolute;
+top:90px;
+height:35px;
+width:220px;}
+
+.container3S .input::placeholder {
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+color:rgba(255,255,255,0.7);
+font-weight:400;
+font-size:0.6rem;}
+
+.container3S .input:focus::placeholder {
+color:transparent;}
+
+.container3S .input {
+position:absolute;
+width:100%;
+height:100%;
+color:white;
+caret-color:white;
+font-weight:400;
+font-size:0.6rem;
+border-radius:10px;
+padding-left:35px;
+background:var(--background);
+border:1px solid rgba(255,255,255,0.5);}
+
+.container3S .input:focus {
+outline:none;}
+
+.container3S .account-settings .container {
+width:120px;
+height:120px;
+top:50px;}
+
+.container3S .account-settings .container img {
+width:97%;
+height:97%;}
+
+.container3S .account-settings .camera {
+position:absolute;
+bottom:-12px;
+right:-3px;
+width:55px;
+height:55px;
+border-radius:50%;
+cursor:pointer;
+background:white;
+transition:0.3s;
+box-shadow:-3px 3px 5px rgba(0,0,0,0.1);}
+
+.container3S .camera:active, .container3S .account-settings .save:active {
+transform:scale(0.8);}
+
+.container3S .account-settings .fields {
+position:absolute;
+top:250px;
+width:90%;
+list-style:none;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:20px;}
+
+.container3S .account-settings .fields li {
+position:relative;
+width:100%;
+height:60px;
+display:flex;
+justify-content:center;
+align-items:center;}
+
+.container3S .account-settings .fields li section {
+position:absolute;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;}
+
+.container3S .account-settings .fields li section input {
+position:absolute;
+bottom:0;
+width:100%;
+height:40px;
+padding:0 10px;}
+
+.container3S .account-settings .Header {
+position:absolute;}
+
+.container3S .account-settings .save {
+position:absolute;
+bottom:30px;
+width:100px;
+height:50px;
+border-radius:15px;
+display:flex;
+justify-content:center;
+align-items:center;
+color:rgba(255,255,255,1);
+transition:0.3s;
+opacity:1;
+border:none;
+cursor:pointer;
+pointer-events:none;
+box-shadow:-2px 2px 5px rgba(0,0,0,0.1);
+background:linear-gradient(to bottom right, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0.05) 100%);}
+
+.container3S .save.active {
+opacity:1;
+pointer-events:auto;}
+
+.container3S .mouse {
+position:absolute;
+width:20px;
+height:20px;
+transition:0.5s;
+transform:translate(180px,50px);}
+
+.container3S .cursor {
+position:absolute;
+width:20px;
+height:20px;
+border-radius:10px;
+transition:0.3s;
+box-shadow:0 1.5px 5px rgba(255,255,255,0.4);
+border:1px solid rgba(255,255,255,0.2);
+background:rgba(255,255,255,0.2);}
+
+.container3S .cursor.active {
+animation:click 0.3s forwards;}
+
+@keyframes click {
+0%{transform:scale(1);}
+50%{transform:scale(0.8);}
+100%{transform:scale(1);}}

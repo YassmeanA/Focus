@@ -1,13 +1,13 @@
-const Arrow = document.querySelector(".container1S .Arrow");
-const SideNavbar = document.querySelector(".container1S .side-navbar");
-const ItemBtns = document.querySelectorAll(".container1S .item-btn.N");
-const ItemMenus = document.querySelectorAll(".container1S .item.menu");
-const MenuItemAs = document.querySelectorAll(".container1S .menu-item.A");
-const MenuItemBs = document.querySelectorAll(".container1S .menu-item.B");
-const Menus = document.querySelectorAll(".container1S .Menu");
-const Texts = document.querySelectorAll(".container1S .item .text");
-const Items = document.querySelectorAll(".container1S .item-btn");
-const Mouse = document.querySelector(".container1S .mouse");
+const Arrow = document.querySelector(".Arrow");
+const SideNavbar = document.querySelector(".side-navbar");
+const ItemBtns = document.querySelectorAll(".item-btn.N");
+const ItemMenus = document.querySelectorAll(".item.menu");
+const MenuItemAs = document.querySelectorAll(".menu-item.A");
+const MenuItemBs = document.querySelectorAll(".menu-item.B");
+const Menus = document.querySelectorAll(".Menu");
+const Texts = document.querySelectorAll(".item .text");
+const Items = document.querySelectorAll(".item-btn");
+const Mouse = document.querySelector(".mouse");
 
 
 //Activate & Deactivate Side Navbar

@@ -128,7 +128,7 @@ Mouse2.querySelector(".cursor").classList.add("active");
 
 setTimeout(() => {
 
-Mouse1.querySelector(".cursor").classList.remove("active");
+Mouse2.querySelector(".cursor").classList.remove("active");
 Menu2s[0].classList.remove("active");
 ItemMenu2s[0].querySelector(".item-btn").classList.remove("active");
 

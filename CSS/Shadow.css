@@ -134,7 +134,7 @@ fill:var(--primary);}
 
 .container2S .item .Text, .container2S .menu-item span, .container2S .account-settings .fields li section span {
 position:absolute;
-font-size:0.55rem;
+font-size:0.6rem;
 color:var(--primary);}
 
 .container2S .item .Text, .container2S .menu-item span {
@@ -142,7 +142,7 @@ left:35px;
 width:120px;}
 
 .container2S .menu-item span {
-font-size:0.5rem;
+font-size:0.55rem;
 left:10px;}
 
 .container2S .item.menu.active {

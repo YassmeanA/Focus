@@ -1,8 +1,6 @@
 .container3S {
 --primary:white;
---Background:rgba(255,255,255,0.3);
-background-image:url("Icons/GLASS.svg");
-background-size:cover;}
+--Background:rgba(255,255,255,0.3);}
 
 
 .container3S .side-navbar * {

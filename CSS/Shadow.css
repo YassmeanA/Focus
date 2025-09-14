@@ -13,7 +13,8 @@ background:linear-gradient(to bottom right, #FED2E3, #FFADCD);}
 .container2S .side-navbar * {
 font-family:"Prompt", serif;
 font-weight:650;
-font-style:normal;}
+font-style:normal;
+transition:0.4s;}
 
 .container2S .side-navbar {
 pointer-events:none;

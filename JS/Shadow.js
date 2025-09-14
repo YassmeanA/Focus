@@ -41,7 +41,7 @@ setTimeout(() => {Arrow2.click();Mouse2.querySelector(".cursor").classList.remov
 
 setTimeout(() => {
 
-Mouse2.style.transform="translate(-110px,-130px)";
+Mouse2.style.transform="translate(-110px,-140px)";
 
 setTimeout(() => {
 
@@ -54,7 +54,7 @@ ItemMenu2s[0].classList.add("active");
 ItemMenu2s[0].querySelector(".item-btn").classList.add("active");
 
 setTimeout(() => {
-Mouse2.style.transform="translate(-110px,10px)";
+Mouse2.style.transform="translate(-110px,0)";
 
 setTimeout(() => {
 Mouse2.querySelector(".cursor").classList.add("active");
@@ -68,7 +68,7 @@ ItemMenu2s[1].classList.add("active");
 ItemMenu2s[1].querySelector(".item-btn").classList.add("active");
 
 setTimeout(() => {
-Mouse2.style.transform="translate(-110px,-100px)";
+Mouse2.style.transform="translate(-110px,-110px)";
 
 setTimeout(() => {
 Mouse2.querySelector(".cursor").classList.add("active");
@@ -90,7 +90,7 @@ Arrow2.click();
 
 
 setTimeout(() => {
-Mouse2.style.transform="translate(-175px,-100px)";
+Mouse2.style.transform="translate(-175px,-110px)";
 
 setTimeout(() => {
 Text2s[2].style.display="flex";
@@ -103,7 +103,7 @@ Menu2s[1].classList.add("active");
 ItemMenu2s[1].querySelector(".item-btn").classList.add("active");
 
 setTimeout(() => {
-Mouse2.style.transform="translate(-175px,-130px)";
+Mouse2.style.transform="translate(-175px,-140px)";
 Text2s[2].style.display="none";
 
 setTimeout(() => {
@@ -133,7 +133,7 @@ Menu2s[0].classList.remove("active");
 ItemMenu2s[0].querySelector(".item-btn").classList.remove("active");
 
 setTimeout(() => {
-Mouse2.style.transform="translate(0px,0px)";
+Mouse2.style.transform="translate(0,0)";
 },500);
 
 },300);
@@ -184,4 +184,4 @@ Mouse2.style.transform="translate(0px,0px)";
 
 setTimeout(() => {Show2();},500);
 
-setInterval(() => {Show2();},14500);
+setInterval(() => {Show2();},14000);

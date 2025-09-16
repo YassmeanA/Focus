@@ -1,12 +1,12 @@
 .container3S {
 --primary:white;
---Background:rgba(255,255,255,0.3);}
-
-.container3S .navbar-container * {
+--Background:rgba(255,255,255,0.3);
 font-family:"Montserrat", sans-serif;
 font-optical-sizing: auto;
 font-weight:weight;
-font-style:normal;
+font-style:normal;}
+
+.container3S .navbar-container * {
 transition:0.4s;}
 
 .container3S .account-settings {

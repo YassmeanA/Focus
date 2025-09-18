@@ -1,13 +1,13 @@
 .container3S {
 --primary:white;
---Background:rgba(255,255,255,0.3);
-font-family:"Montserrat", sans-serif !important;
-font-optical-sizing: auto;
-font-weight:weight;
-font-style:normal;}
+--Background:rgba(255,255,255,0.3);}
 
 .container3S .navbar-container * {
-transition:0.4s;}
+transition:0.4s;
+font-family:"Montserrat", sans-serif !important;
+font-optical-sizing:auto;
+font-weight:weight;
+font-style:normal;}
 
 .container3S .account-settings {
 position:absolute;

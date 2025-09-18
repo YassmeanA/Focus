@@ -12,7 +12,6 @@ justify-content:center;
 pointer-events:none;}
     
 .container1 .carousel {
-scroll-snap-type:x mandatory;
 scroll-behavior:smooth;
 overflow-x:auto;
 position:absolute;
@@ -20,7 +19,7 @@ left:0;
 top:0;
 padding:0 20px;
 gap:0;
-display:grid;
+display:flex;
 grid-auto-flow:column;
 grid-template-columns:repeat(8,1fr) ;
 align-items:center;
@@ -34,8 +33,6 @@ display:none;}
 .container1 .slide {
 height:243px;
 padding:0 20px;
-scroll-snap-align:center;
-scroll-snap-stop:always;
 display:flex;
 align-items:center;
 justify-content:center;

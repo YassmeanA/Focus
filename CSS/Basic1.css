@@ -15,25 +15,22 @@ pointer-events:none;}
 position:absolute;
 left:0;
 top:0;
-padding:0 50px;
+padding:0 65px;
 display:flex;
 gap:32px;
 align-items:center;
 list-style:none;
-width:2164px;
-height:100%;
-background:red;}
+width:1954px;
+height:100%;}
     
 .container1 .slide {
 position:relative;
 flex-shrink:0;
-width:230px;
+width:200px;
 height:243px;
 display:flex;
 align-items:center;
-justify-content:center;
-text-align:center;
-background:blue;}
+justify-content:center;}
     
 .container1 .card {
 position:relative;

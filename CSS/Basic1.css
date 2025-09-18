@@ -37,6 +37,7 @@ background:blue;}
 .container1 .card {
 position:relative;
 height:100%;
+width:100%;
 border-radius:12px; 
 background:white;
 overflow:hidden;

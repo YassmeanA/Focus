@@ -21,7 +21,7 @@ currentLeft = 0;
 carouselA.style.left = "0px";
 arrowBtns[1].classList.remove("active");
 }
-console.log(currentLeft)
+ArrowsDots();
 },1500);
 
 const ArrowsDots = () => {
@@ -39,7 +39,3 @@ arrowBtns[1].style.display = offset >= 1550 ? "none" : "block";
     );
   });
 };
-
-// Update arrows/dots whenever transition ends
-carouselA.addEventListener("transitionend", ArrowsDots);
-

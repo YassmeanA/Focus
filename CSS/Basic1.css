@@ -16,13 +16,13 @@ position:absolute;
 left:0;
 top:0;
 padding:0 50px;
-gap:0;
 display:flex;
 gap:32px;
 align-items:center;
 list-style:none;
-width:2304px;
-height:100%;}
+width:2164px;
+height:100%;
+background:red;}
     
 .container1 .slide {
 flex-shrink:0;

@@ -16,7 +16,7 @@ currentLeft -= 232; // negative to move content to the left
 carouselA.style.left = currentLeft + "px";
 
 // when we reach the end, smoothly reset to 0
-
+console.log(currentLeft)
 },1500);
 
 const ArrowsDots = () => {

@@ -1,13 +1,13 @@
 .container3S {
 --primary:white;
---Background:rgba(255,255,255,0.3);
+--Background:rgba(255,255,255,0.3);}
+
+.container3S * {
+transition:0.4s;
 font-family:"Montserrat Alternates", serif;
 font-optical-sizing:auto;
 font-weight:weight;
 font-style:normal;}
-
-.container3S .navbar-container * {
-transition:0.4s;}
 
 .container3S .account-settings {
 position:absolute;
@@ -18,7 +18,6 @@ overflow:hidden;
 display:flex;
 display:flex;
 pointer-events:none;
-transition:0.4s;
 transform:scale(0.8) translateX(500px);
 border-radius:20px;
 background:rgba(255,255,255,0.1);
@@ -83,7 +82,6 @@ display:flex;
 justify-content:center;
 align-items:center;
 pointer-events:none;
-transition:0.4s;
 transform:scale(0.9) translateX(-330px);}
 
 .container3S .navbar-container {

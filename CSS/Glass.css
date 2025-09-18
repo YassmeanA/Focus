@@ -4,7 +4,7 @@
 
 .container3S * {
 transition:0.4s;
-font-family:"Montserrat Alternates", serif;
+font-family:"Montserrat", serif;
 font-optical-sizing:auto;
 font-weight:weight;
 font-style:normal;}
@@ -250,14 +250,14 @@ background:#4abf02;}
 position:absolute;
 left:50px;
 width:140px;
-height:80%;
+height:70%;
 overflow:hidden;}
 
 .container3S .account .account-info h3 {
 position:absolute;
 top:0;
 font-weight:700;
-font-size:0.7rem;
+font-size:0.75rem;
 color:var(--primary);
 white-space:nowrap;
 overflow:hidden;
@@ -267,7 +267,7 @@ max-width:95%;}
 .container3S .account .account-info span {
 position:absolute;
 bottom:0;
-font-size:0.5rem;
+font-size:0.6rem;
 font-weight:300;
 color:var(--primary);
 white-space:nowrap;
@@ -299,7 +299,7 @@ height:100%;
 color:white;
 caret-color:white;
 font-weight:400;
-font-size:0.6rem;
+font-size:0.7rem;
 border-radius:10px;
 padding-left:35px;
 background:var(--background);

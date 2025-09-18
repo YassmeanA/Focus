@@ -32,7 +32,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-scroll-snap-align:center;}
+background:blue;}
     
 .container1 .card {
 position:relative;

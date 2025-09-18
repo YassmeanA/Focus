@@ -21,6 +21,10 @@ if (Math.abs(currentLeft) > 1624) {
 currentLeft = 0;
 carouselA.style.left = "0px";
 arrowBtns[1].classList.remove("active");
+arrowBtns[0].classList.add("active");
+setTimeout(() => {
+arrowBtns[0].classList.remove("active");
+},500);
 }
 
 ArrowsDots();

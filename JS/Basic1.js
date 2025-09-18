@@ -23,6 +23,8 @@ carouselA.style.left = "0px";
 arrowBtns[1].classList.remove("active");
 }
 
+ArrowsDots();
+
 },1500);
 
 const ArrowsDots = () => {
@@ -38,6 +40,4 @@ Dots[x].classList.add("active");
 console.log(x)
 if(x == 8){x = 0;}
 };
-
-setInterval(() => {ArrowsDots();},1000);
 

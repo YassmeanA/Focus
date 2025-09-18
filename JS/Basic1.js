@@ -5,20 +5,26 @@ const Dots = document.querySelectorAll(".container1 .dot");
 
 
 setInterval(() => {
-
 arrowBtns[1].classList.add("active");
-setTimeout(() => {arrowBtns[1].classList.remove("active");},500);
 
-carouselA.scrollLeft += 210;
-
-if(carouselA.scrollLeft > 1600){
-
-carouselA.scrollLeft = 0;
+setTimeout(() => {
 arrowBtns[1].classList.remove("active");
+}, 500);
 
+// smooth horizontal scroll by 210 px
+carouselA.scrollTo({
+left: carouselA.scrollLeft + 210,
+behavior: 'smooth'
+});
+
+// when we reach the end, smoothly reset to 0
+if (carouselA.scrollLeft + 210 > 1600) {
+setTimeout(() => {
+carouselA.scrollTo({ left: 0, behavior: 'smooth' });
+arrowBtns[1].classList.remove("active");
+}, 600); // wait for current smooth scroll to finish
 }
-
-},1500);
+}, 1500);
 
 
 const ArrowsDots = () => {

@@ -21,7 +21,7 @@ setTimeout(() => {
 currentLeft = 0;
 carouselA.style.left = "0px";
 arrowBtns[1].classList.remove("active");
-},600);
+},1500);
 }
 console.log(currentLeft)
 },1500);

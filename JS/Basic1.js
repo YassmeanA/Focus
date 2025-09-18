@@ -16,7 +16,7 @@ currentLeft -= 232; // negative to move content to the left
 carouselA.style.left = currentLeft + "px";
 
 // when we reach the end, smoothly reset to 0
-if (Math.abs(currentLeft) >= 1624) {
+if (Math.abs(currentLeft) > 1624) {
 currentLeft = 0;
 carouselA.style.left = "0px";
 arrowBtns[1].classList.remove("active");
@@ -27,8 +27,8 @@ console.log(currentLeft)
 const ArrowsDots = () => {
 // Use Math.abs(currentLeft) because we move negatively
 const offset = Math.abs(currentLeft);
-arrowBtns[0].style.display = offset <= 10 ? "none" : "block";
-arrowBtns[1].style.display = offset >= 1600 ? "none" : "block";
+arrowBtns[0].style.display = offset <= 100 ? "none" : "block";
+arrowBtns[1].style.display = offset >= 1550 ? "none" : "block";
 
   Dots.forEach((dot, index) => {
     const thresholdStart = 232 * index - 50;

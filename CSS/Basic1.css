@@ -15,7 +15,7 @@ pointer-events:none;}
 position:absolute;
 left:0;
 top:0;
-padding:0 40px;
+padding:0 30px;
 gap:0;
 display:flex;
 gap:32px;
@@ -26,7 +26,7 @@ height:100%;}
     
 .container1 .slide {
 flex-shrink:0;
-width:250px;
+width:240px;
 height:243px;
 display:flex;
 align-items:center;

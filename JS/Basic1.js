@@ -3,10 +3,10 @@ const arrowBtns = document.querySelectorAll(".container1 .wrapper .arrow");
 const Dots = document.querySelectorAll(".container1 .dot");
 
 let currentLeft = 0; // Track the current left offset
+let x = 0;
 
 setInterval(() => {
 arrowBtns[1].classList.add("active");
-ArrowsDots();
 
 setTimeout(() => {
 arrowBtns[1].classList.remove("active");
@@ -30,15 +30,12 @@ const ArrowsDots = () => {
 const offset = Math.abs(currentLeft);
 arrowBtns[0].style.display = offset <= 100 ? "none" : "block";
 arrowBtns[1].style.display = offset >= 1550 ? "none" : "block";
-
-  Dots.forEach((dot, index) => {
-    const thresholdStart = 232 * index - 50;
-    const thresholdEnd   = 232 * (index + 1) - 50;
-    dot.classList.toggle(
-      "active",
-      offset > thresholdStart && offset < thresholdEnd
-    );
-  });
+x++;
+Dots.forEach((dot, index) => {
+Dots.forEach(dot => {dot.classList.remove("active");});
+Dots[x].classList.add("active");
+});
 };
 
+setInterval(() => {ArrowsDots();},1000);
 

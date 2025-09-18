@@ -31,10 +31,10 @@ const offset = Math.abs(currentLeft);
 arrowBtns[0].style.display = offset <= 100 ? "none" : "block";
 arrowBtns[1].style.display = offset >= 1550 ? "none" : "block";
 x++;
-Dots.forEach((dot, index) => {
+
 Dots.forEach(dot => {dot.classList.remove("active");});
 Dots[x].classList.add("active");
-});
+
 };
 
 setInterval(() => {ArrowsDots();},1000);

@@ -6,6 +6,7 @@ let currentLeft = 0; // Track the current left offset
 
 setInterval(() => {
 arrowBtns[1].classList.add("active");
+ArrowsDots();
 
 setTimeout(() => {
 arrowBtns[1].classList.remove("active");
@@ -40,4 +41,4 @@ arrowBtns[1].style.display = offset >= 1550 ? "none" : "block";
   });
 };
 
-ArrowsDots();
+

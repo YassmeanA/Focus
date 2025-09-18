@@ -5,7 +5,7 @@ background:#F3E9D3;}
 width:330px;
 height:330px;
 position:absolute;
-overflow-x:hidden;
+overflow:hidden;
 display:flex;
 align-items:center;
 justify-content:center;

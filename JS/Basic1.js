@@ -36,6 +36,7 @@ x++;
 Dots.forEach(dot => {dot.classList.remove("active");});
 Dots[x].classList.add("active");
 console.log(x)
+if(x == 8){x = 0;}
 };
 
 setInterval(() => {ArrowsDots();},1000);

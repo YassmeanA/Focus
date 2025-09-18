@@ -172,9 +172,3 @@ width:30px;
 transform:scale(1);
 opacity:1;
 box-shadow:0 3px 5px rgba(0,0,0,0.08);}
-    
-.container1 .slide:last-child {
-padding-right:50px;}
-    
-.container1 .slide:first-child {
-padding-left:50px;}

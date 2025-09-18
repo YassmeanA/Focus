@@ -17,11 +17,9 @@ carouselA.style.left = currentLeft + "px";
 
 // when we reach the end, smoothly reset to 0
 if (Math.abs(currentLeft) >= 1624) {
-setTimeout(() => {
 currentLeft = 0;
 carouselA.style.left = "0px";
 arrowBtns[1].classList.remove("active");
-},1500);
 }
 console.log(currentLeft)
 },1500);

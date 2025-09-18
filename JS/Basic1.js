@@ -38,7 +38,6 @@ if(x == 8){x = 0;}
 
 Dots.forEach(dot => {dot.classList.remove("active");});
 Dots[x].classList.add("active");
-console.log(x)
 
 };
 

@@ -18,13 +18,14 @@ top:0;
 padding:0 20px;
 gap:0;
 display:flex;
-gap:20px;
+gap:32px;
 align-items:center;
 list-style:none;
-width:1700px;
+width:1984px;
 height:100%;}
     
 .container1 .slide {
+flex-shrink:0;
 width:220px;
 height:243px;
 display:flex;

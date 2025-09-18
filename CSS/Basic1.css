@@ -15,18 +15,18 @@ pointer-events:none;}
 position:absolute;
 left:0;
 top:0;
-padding:0 20px;
+padding:0 40px;
 gap:0;
 display:flex;
 gap:32px;
 align-items:center;
 list-style:none;
-width:1984px;
+width:2304px;
 height:100%;}
     
 .container1 .slide {
 flex-shrink:0;
-width:220px;
+width:250px;
 height:243px;
 display:flex;
 align-items:center;

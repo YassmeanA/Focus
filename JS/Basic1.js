@@ -34,10 +34,11 @@ arrowBtns[0].style.display = offset <= 100 ? "none" : "block";
 arrowBtns[1].style.display = offset >= 1550 ? "none" : "block";
 
 x++;
+if(x == 8){x = 0;}
 
 Dots.forEach(dot => {dot.classList.remove("active");});
 Dots[x].classList.add("active");
 console.log(x)
-if(x == 8){x = 0;}
+
 };
 

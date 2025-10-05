@@ -21,35 +21,8 @@ const State5s = document.querySelectorAll(".container5S .X .text2");
 
 function state() {
 
-if(detail5s[0].querySelector(".tv .power").classList.contains("active")){
-State5s[0].innerHTML="On";}else{State5s[0].innerHTML="Off";};
-
 if(detail5s[1].querySelector(".air-conditioner .power").classList.contains("active")){
 State5s[1].innerHTML="On";}else{State5s[1].innerHTML="Off";};
-
-let isAnyLampActive1 = false;
-detail5s[2].querySelectorAll(".lighting .lamp").forEach((Lamp,index) => {
-
-if(Lamp.classList.contains("active")) {isAnyLampActive1 = true;}
-
-});
-
-State5s[2].innerHTML = isAnyLampActive1 ? "On" : "Off";
-
-let isAnyLampActive2 = false;
-detail5s[3].querySelectorAll(".lighting .lamp").forEach((Lamp,index) => {
-
-if(Lamp.classList.contains("active")) {isAnyLampActive2 = true;}
-
-});
-
-State5s[3].innerHTML = isAnyLampActive2 ? "On" : "Off";
-
-if(detail5s[4].querySelector(".microwave .power").classList.contains("active")){
-State5s[4].innerHTML="On";}else{State5s[4].innerHTML="Off";};
-
-if(detail5s[5].querySelector(".heater .power").classList.contains("active")){
-State5s[5].innerHTML="On";}else{State5s[5].innerHTML="Off";};
 
 }
 
@@ -77,9 +50,7 @@ SectionList5.classList.remove("active");
 });
 
 
-let x;
-let N;
-
+let x5;
 
 detail5s.forEach(detail => {
 detail.querySelectorAll('.section').forEach((el, i) => {
@@ -91,21 +62,19 @@ el.style.animation = `Show 1s cubic-bezier(0.5, 0.5, 0, 1) forwards ${i * 0.1}s`
 function Resize() {
 
 document.querySelectorAll('.item').forEach((el, index) => {
-
-N=2;
     
-const delay = Math.floor(index / N) * 0.1;
+const delay = Math.floor(index / 2) * 0.1;
 el.style.animation = `Show 1s cubic-bezier(0.5, 0.5, 0, 1) forwards ${delay}s`;
     
 });
 
 
-{x = 3000/(window.innerWidth - 60);}
+{x5 = 3000/(window.innerWidth - 60);}
 
 Rect5s.forEach(Rect => {
-Rect.setAttribute("rx",`${x}`);
-Rect.setAttribute("ry",`${x}`);
-Rect.setAttribute("stroke-width",`${x/10}`);
+Rect.setAttribute("rx",`${x5}`);
+Rect.setAttribute("ry",`${x5}`);
+Rect.setAttribute("stroke-width",`${x5/10}`);
 
 });
 

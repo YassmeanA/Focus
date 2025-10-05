@@ -156,25 +156,6 @@ detail5s.forEach(detail => {detail.classList.remove("active");});
 
 });
 
-Lamp5s.forEach(Lamp => {
-Lamp.querySelector(".stroke").addEventListener("click",() => {
-
-if(Lamp.classList.contains("active")){
-Lamp.classList.remove("active");}
-else{Lamp.classList.add("active");};
-
-});});
-
-
-Preset5s.forEach(Preset => {
-Preset.addEventListener("click",() => {
-
-Preset5s.forEach(Preset => {
-Preset.classList.remove("active");});
-
-Preset.classList.add("active");
-
-});});
 
 Power5s.forEach(Power => {
 Power.addEventListener("click",() => {
@@ -185,14 +166,6 @@ else{Power.classList.add("active");};
 
 });});
 
-Toggle5s.forEach(Toggle => {
-Toggle.addEventListener("click",() => {
-
-if(Toggle.classList.contains("active")){
-Toggle.classList.remove("active");}
-else{Toggle.classList.add("active");};
-
-});});
 
 
 
@@ -303,7 +276,7 @@ Mouse5.style.transform="translate(0,-100px)";
 setTimeout(() => {
 
 Mouse5.style.transform="translate(0,100px)";
-Details.scrollTop = 0;
+Detail5s.scrollTop = 0;
 
 setTimeout(() => {
 
@@ -311,12 +284,12 @@ Mouse5.style.transform="translate(130px,-260px)";
 
 setTimeout(() => {
 Mouse5.querySelector(".cursor").classList.add("active");
-Back.classList.add("active");
-Back.click();
+Back5.classList.add("active");
+Back5.click();
 
 setTimeout(() => {
 Mouse5.querySelector(".cursor").classList.remove("active");
-Back.classList.remove("active");
+Back5.classList.remove("active");
 
 },600);
 
@@ -341,7 +314,7 @@ Mouse5.style.transform="translate(0,250px)";
 setTimeout(() => {
 
 Mouse5.style.transform="translate(0,-250px)";
-Details.scrollTop = 500;
+Detail5s.scrollTop = 500;
 
 setTimeout(() => {
 
@@ -350,7 +323,7 @@ Mouse5.style.transform="translate(0,-250px)";
 setTimeout(() => {
 
 Mouse5.style.transform="translate(0,250px)";
-Details.scrollTop = 0;
+Detail5s.scrollTop = 0;
 
 setTimeout(() => {
 
@@ -358,23 +331,23 @@ Mouse5.style.transform="translate(130px,-260px)";
 
 setTimeout(() => {
 Mouse5.querySelector(".cursor").classList.add("active");
-Back.classList.add("active");
-Back.click();
+Back5.classList.add("active");
+Back5.click();
 
 setTimeout(() => {
 Mouse5.querySelector(".cursor").classList.remove("active");
-Back.classList.remove("active");
+Back5.classList.remove("active");
 
 },600);
 
 setTimeout(() => {
 Mouse5.querySelector(".cursor").classList.add("active");
-BACK.classList.add("active");
-BACK.click();
+BACK5.classList.add("active");
+BACK5.click();
 
 setTimeout(() => {
 Mouse5.querySelector(".cursor").classList.remove("active");
-BACK.classList.remove("active");
+BACK5.classList.remove("active");
 
 },600);
 

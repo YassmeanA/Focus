@@ -206,22 +206,22 @@ Mouse5.style.transform="translate(35px,-25px)";
 
 setTimeout(() => {
 Mouse5.querySelector(".cursor").classList.add("active");
-ArirConditioner5s[2].querySelector(".minus").click();
-ArirConditioner5s[2].querySelector(".minus").classList.add("active");
+ArirConditioner5s[0].querySelector(".minus").click();
+ArirConditioner5s[0].querySelector(".minus").classList.add("active");
 
 setTimeout(() => {
 Mouse5.querySelector(".cursor").classList.remove("active");
-ArirConditioner5s[2].querySelector(".minus").classList.remove("active");
+ArirConditioner5s[0].querySelector(".minus").classList.remove("active");
 
 },600);
 
 setTimeout(() => {
 Mouse5.querySelector(".cursor").classList.add("active");
-ArirConditioner5s[2].querySelector(".minus").click();
-ArirConditioner5s[2].querySelector(".minus").classList.add("active");
+ArirConditioner5s[0].querySelector(".minus").click();
+ArirConditioner5s[0].querySelector(".minus").classList.add("active");
 setTimeout(() => {
 Mouse5.querySelector(".cursor").classList.remove("active");
-ArirConditioner5s[2].querySelector(".minus").classList.remove("active");
+ArirConditioner5s[0].querySelector(".minus").classList.remove("active");
 
 },600);
 

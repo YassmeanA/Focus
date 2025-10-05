@@ -590,10 +590,6 @@ right:0;}
 .container5S .Buttons button:active, .container5S .controls button:active, .container5S .back:active {
 transform:scale(0.8);}
 
-@font-face {
-font-family:'Digital7';
-src:url('JS/digital-7.ttf') format('truetype');}
-
 .container5S .digital {
 font-family:'Digital7',monospace;
 font-size:4rem;

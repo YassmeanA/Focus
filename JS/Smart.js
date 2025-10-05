@@ -323,12 +323,12 @@ BACK5.classList.remove("active");
 setTimeout(() => {
 
 Mouse5.style.transform="translate(180px,50px)";
-document.querySelector(".section-container").classList.remove("active");
+document.querySelector(".container5S .section-container").classList.remove("active");
 
 setTimeout(() => {
 
-document.querySelector(".section-list").classList.remove("active");
-document.querySelector(".logo").style.display="none";
+document.querySelector(".container5S .section-list").classList.remove("active");
+document.querySelector(".container5S .logo").style.display="none";
 
 },100);
 

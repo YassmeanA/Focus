@@ -331,6 +331,9 @@ overflow-x:hidden;
 overflow-y:auto;
 scroll-behavior:smooth;}
 
+.container5S .details::-webkit-scrollbar {
+display:none;}
+
 .container5S .details.active {
 display:flex;
 opacity:1;}
@@ -374,13 +377,13 @@ display:flex;
 justify-content:center;
 align-items:center;}
 
-.container5S .title img {
+.container5S .section .title img {
 position:absolute;
 width:26px;
 height:26px;
 left:15px;}
 
-.container5S .title span {
+.container5S .section .title span {
 position:absolute;
 left:50px;
 color:rgba(255,255,255,0.5);

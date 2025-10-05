@@ -36,7 +36,7 @@ function Show2() {
 Mouse2.style.transform="translate(-155px,-235px)";
 setTimeout(() => {
 Mouse2.querySelector(".cursor").classList.add("active");
-setTimeout(() => {Arrow2.click();Mouse2.querySelector(".cursor").classList.remove("active");
+setTimeout(() => {SideNavbar2.classList.add("active");Mouse2.querySelector(".cursor").classList.remove("active");
 },300);
 
 setTimeout(() => {
@@ -86,8 +86,7 @@ Mouse2.querySelector(".cursor").classList.add("active");
 
 setTimeout(() => {
 Mouse2.querySelector(".cursor").classList.remove("active");
-Arrow2.click();
-
+SideNavbar2.classList.remove("active");
 
 setTimeout(() => {
 Mouse2.style.transform="translate(-175px,-110px)";

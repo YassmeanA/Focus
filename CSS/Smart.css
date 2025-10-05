@@ -39,8 +39,7 @@ height:100%;
 display:flex;
 justify-content:center;
 align-items:center;
-overflow-x:hidden;
-overflow-y:auto;
+overflow:hidden;
 opacity:0;
 transition:0.3s;}
 
@@ -173,8 +172,7 @@ height:100%;
 display:flex;
 justify-content:center;
 align-items:center;
-overflow-x:hidden;
-overflow-y:auto;
+overflow:hidden;
 opacity:0;
 transition:0.3s;}
 
@@ -385,9 +383,9 @@ left:15px;}
 
 .container5S .section .title span {
 position:absolute;
-left:50px;
-color:rgba(255,255,255,0.5);
-font-size:0.8rem;}
+left:50px !important;
+color:rgba(255,255,255,0.5) !important;
+font-size:0.8rem !important;}
 
 /* Lighting Section */
 .container5S .section .lighting {

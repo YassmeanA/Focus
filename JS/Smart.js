@@ -11,7 +11,7 @@ const Power5s = document.querySelectorAll(".container5S .power");
 const Toggle5s = document.querySelectorAll(".container5S .toggle");
 const ControlButton5s = document.querySelectorAll(".container5S .control");
 const ArirConditioner5s = document.querySelectorAll(".container5S .air-conditioner");
-const Back5 = document.querySelector(".container5S .back");
+const Back5 = document.querySelector(".container5S .back5");
 const BACK5 = document.querySelector(".container5S .Back");
 const Section5s = document.querySelectorAll(".container5S .Section");
 const SectionContainer5 = document.querySelector(".container5S .section-container");
@@ -69,7 +69,7 @@ el.style.animation = `Show 1s cubic-bezier(0.5, 0.5, 0, 1) forwards ${delay}s`;
 });
 
 
-{x5 = 3000/(window.innerWidth - 60);}
+{x5 = 10;}
 
 Rect5s.forEach(Rect => {
 Rect.setAttribute("rx",`${x5}`);

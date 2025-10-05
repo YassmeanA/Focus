@@ -231,7 +231,7 @@ Mouse5.style.transform="translate(-90px,160px)";
 
 setTimeout(() => {
 Mouse5.querySelector(".cursor").classList.add("active");
-Power5s[4].click();
+Power5s[1].click();
 
 setTimeout(() => {
 Mouse5.querySelector(".cursor").classList.remove("active");
@@ -263,9 +263,9 @@ Back5.classList.remove("active");
 },600);
 
 setTimeout(() => {
-ArirConditioner5s[2].querySelector(".plus").click();
-ArirConditioner5s[2].querySelector(".plus").click();
-Power5s[4].click();
+ArirConditioner5s[0].querySelector(".plus").click();
+ArirConditioner5s[0].querySelector(".plus").click();
+Power5s[0].click();
 Mouse5.style.transform="translate(-80px,140px)";
 
 setTimeout(() => {

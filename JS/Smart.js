@@ -123,8 +123,6 @@ else{Power.classList.add("active");};
 });});
 
 
-
-
 // Temperature Control
 ArirConditioner5s.forEach(AirConditioner => {
 
@@ -185,7 +183,7 @@ Mouse5.style.transform="translate(0,260px)";
 setTimeout(() => {
 
 Mouse5.style.transform="translate(0,10px)";
-Detail5s.scrollTop = 250;
+detail5s[1].style.transform = "translateY(-250px)";
 
 setTimeout(() => {
 
@@ -232,7 +230,7 @@ Mouse5.style.transform="translate(0,-100px)";
 setTimeout(() => {
 
 Mouse5.style.transform="translate(0,100px)";
-Detail5s.scrollTop = 0;
+detail5s[1].style.transform = "translateY(0px)";
 
 setTimeout(() => {
 
@@ -270,7 +268,7 @@ Mouse5.style.transform="translate(0,250px)";
 setTimeout(() => {
 
 Mouse5.style.transform="translate(0,-250px)";
-Detail5s.scrollTop = 500;
+detail5s[4].style.transform = "translateY(500px)";
 
 setTimeout(() => {
 
@@ -279,7 +277,7 @@ Mouse5.style.transform="translate(0,-250px)";
 setTimeout(() => {
 
 Mouse5.style.transform="translate(0,250px)";
-Detail5s.scrollTop = 0;
+detail5s[4].style.transform = "translateY(0px)";
 
 setTimeout(() => {
 

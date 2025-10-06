@@ -1,4 +1,4 @@
-do the same this for this code "const SideNavbar3 = document.querySelector(".container3S .side-navbar");
+const SideNavbar3 = document.querySelector(".container3S .side-navbar");
 const Item3s = document.querySelectorAll(".container3S .item.N");
 const AccountSettings3 = document.querySelector(".container3S .account-settings");
 const Settings3 = document.querySelector(".container3S .account .settings");
@@ -142,4 +142,4 @@ Mouse3.style.transform="translate(180px,50px)";
 
 setTimeout(() => {Show3();},500);
 
-setInterval(() => {Show3();},11000)'
+setInterval(() => {Show3();},11000);

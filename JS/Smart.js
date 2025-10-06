@@ -3,13 +3,9 @@ const ItemContainer5 = document.querySelector(".container5S .item-container");
 const ItemList5 = document.querySelector(".container5S .item-list");
 const Item5s = document.querySelectorAll(".container5S .item");
 const Rect5s = document.querySelectorAll(".container5S svg rect");
-const Lamp5s = document.querySelectorAll(".container5S .lighting .lamp");
-const Preset5s = document.querySelectorAll(".container5S .presets .lamp");
 const Detail5s = document.querySelector(".container5S .details");
 const detail5s = document.querySelectorAll(".container5S .details-list");
 const Power5s = document.querySelectorAll(".container5S .power");
-const Toggle5s = document.querySelectorAll(".container5S .toggle");
-const ControlButton5s = document.querySelectorAll(".container5S .control");
 const ArirConditioner5s = document.querySelectorAll(".container5S .air-conditioner");
 const Back5 = document.querySelector(".container5S .back5");
 const BACK5 = document.querySelector(".container5S .Back");
@@ -58,9 +54,6 @@ el.style.animation = `Show 1s cubic-bezier(0.5, 0.5, 0, 1) forwards ${i * 0.1}s`
 });
 });
 
-
-function Resize() {
-
 document.querySelectorAll('.item').forEach((el, index) => {
     
 const delay = Math.floor(index / 2) * 0.1;
@@ -69,7 +62,7 @@ el.style.animation = `Show 1s cubic-bezier(0.5, 0.5, 0, 1) forwards ${delay}s`;
 });
 
 
-{x5 = 10;}
+x5 = 10;
 
 Rect5s.forEach(Rect => {
 Rect.setAttribute("rx",`${x5}`);
@@ -77,12 +70,6 @@ Rect.setAttribute("ry",`${x5}`);
 Rect.setAttribute("stroke-width",`${x5/10}`);
 
 });
-
-}
-
-Resize();
-
-window.addEventListener("resize",Resize);
 
 Item5s.forEach((Item,index) => {
 Item.addEventListener("click",() => {
@@ -265,7 +252,7 @@ Back5.classList.remove("active");
 setTimeout(() => {
 ArirConditioner5s[0].querySelector(".plus").click();
 ArirConditioner5s[0].querySelector(".plus").click();
-Power5s[0].click();
+Power5s[1].click();
 Mouse5.style.transform="translate(-80px,140px)";
 
 setTimeout(() => {

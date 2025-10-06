@@ -142,229 +142,164 @@ AirConditioner.querySelector(".minus").addEventListener("click", () => {
 
 });
 
-document.querySelector(".container5S .section-container").classList.remove("active");
-document.querySelector(".container5S .section-list").classList.remove("active");
-document.querySelector(".container5S .logo").style.display="none";
+// ======== CONTAINER 5 SCRIPT ========
 
+// Select elements
+const container5 = document.querySelector(".container5S");
+const sectionContainer5 = container5.querySelector(".section-container");
+const sectionList5 = container5.querySelector(".section-list");
+const logo5 = container5.querySelector(".logo");
+const Mouse5 = container5.querySelector(".mouse");
+const Section5s = container5.querySelectorAll(".section");
+const Item5s = container5.querySelectorAll(".item");
+const ArirConditioner5s = container5.querySelectorAll(".air-conditioner");
+const Power5s = container5.querySelectorAll(".power");
+const Back5 = container5.querySelector(".back");
+const BACK5 = container5.querySelector(".BACK");
+const detail5s = container5.querySelectorAll(".details");
+
+
+// Utility: cursor blink effect
+function clickEffect5(targetFn, delay = 300) {
+  Mouse5.querySelector(".cursor").classList.add("active");
+  setTimeout(() => {
+    targetFn?.();
+    Mouse5.querySelector(".cursor").classList.remove("active");
+  }, delay);
+}
+
+
+// === Scheduler for container5 ===
+function schedule5() {
+
+  const tasks = [
+    // Step 1: Activate container
+    [0, () => {
+      sectionContainer5.classList.add("active");
+      logo5.style.display = "flex";
+    }],
+
+    // Step 2: Show section list
+    [500, () => {
+      sectionList5.classList.add("active");
+      Mouse5.style.transform = "translate(-90px,-150px)";
+    }],
+
+    // Step 3: Click first section
+    [800, () => clickEffect5(() => Section5s[0].click(), 400)],
+
+    // Step 4: Move and click second item
+    [1600, () => {
+      Mouse5.style.transform = "translate(90px,-160px)";
+      setTimeout(() => clickEffect5(() => Item5s[1].click(), 400), 400);
+    }],
+
+    // Step 5: Move to open details
+    [2800, () => {
+      Mouse5.style.transform = "translate(0,260px)";
+      setTimeout(() => {
+        Mouse5.style.transform = "translate(0,10px)";
+        Back5.style.transform = "translateY(-250px)";
+        detail5s[1].style.transform = "translateY(-250px)";
+      }, 600);
+    }],
+
+    // Step 6: Adjust air conditioner
+    [4000, () => {
+      Mouse5.style.transform = "translate(35px,-25px)";
+      setTimeout(() => clickEffect5(() => {
+        ArirConditioner5s[0].querySelector(".minus").click();
+      }), 400);
+    }],
+
+    // Step 7: Repeat minus click
+    [5000, () => clickEffect5(() => {
+      ArirConditioner5s[0].querySelector(".minus").click();
+    })],
+
+    // Step 8: Click power button
+    [6000, () => {
+      Mouse5.style.transform = "translate(-90px,160px)";
+      setTimeout(() => clickEffect5(() => Power5s[1].click()), 400);
+    }],
+
+    // Step 9: Close first detail
+    [7000, () => {
+      Mouse5.style.transform = "translate(0,-100px)";
+      setTimeout(() => {
+        Mouse5.style.transform = "translate(0,100px)";
+        Back5.style.transform = "translateY(0px)";
+        detail5s[1].style.transform = "translateY(0px)";
+      }, 400);
+    }],
+
+    // Step 10: Back click animation
+    [8500, () => {
+      Mouse5.style.transform = "translate(130px,-260px)";
+      setTimeout(() => clickEffect5(() => {
+        Back5.classList.add("active");
+        Back5.click();
+      }), 400);
+    }],
+
+    // Step 11: Move, click plus, and open new item
+    [9500, () => {
+      ArirConditioner5s[0].querySelector(".plus").click();
+      ArirConditioner5s[0].querySelector(".plus").click();
+      Power5s[1].click();
+      Mouse5.style.transform = "translate(-80px,140px)";
+      setTimeout(() => clickEffect5(() => Item5s[4].click()), 400);
+    }],
+
+    // Step 12: Animate detail open
+    [11000, () => {
+      Mouse5.style.transform = "translate(0,250px)";
+      setTimeout(() => {
+        Mouse5.style.transform = "translate(0,-250px)";
+        Back5.style.transform = "translateY(-500px)";
+        detail5s[4].style.transform = "translateY(-500px)";
+      }, 600);
+    }],
+
+    // Step 13: Animate detail close
+    [13000, () => {
+      Mouse5.style.transform = "translate(0,-250px)";
+      setTimeout(() => {
+        Mouse5.style.transform = "translate(0,250px)";
+        Back5.style.transform = "translateY(0px)";
+        detail5s[4].style.transform = "translateY(0px)";
+      }, 600);
+    }],
+
+    // Step 14: Click BACK button
+    [14500, () => {
+      Mouse5.style.transform = "translate(130px,-260px)";
+      setTimeout(() => clickEffect5(() => {
+        BACK5.classList.add("active");
+        BACK5.click();
+      }), 400);
+    }],
+
+    // Step 15: Hide container and reset
+    [16000, () => {
+      Mouse5.style.transform = "translate(180px,50px)";
+      sectionContainer5.classList.remove("active");
+      setTimeout(() => {
+        sectionList5.classList.remove("active");
+        logo5.style.display = "none";
+      }, 400);
+    }],
+  ];
+
+  // Run all scheduled tasks
+  tasks.forEach(([delay, task]) => setTimeout(task, delay));
+}
+
+
+// === Looping control ===
 function Show5() {
-
-document.querySelector(".container5S .section-container").classList.add("active");
-document.querySelector(".container5S .logo").style.display="flex";
-
-setTimeout(() => {
-
-document.querySelector(".container5S .section-list").classList.add("active");
-
-Mouse5.style.transform="translate(-90px,-150px)";
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.add("active");
-Section5s[0].click();
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.remove("active");
-
-setTimeout(() => {
-
-Mouse5.style.transform="translate(90px,-160px)";
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.add("active");
-Item5s[1].click();
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.remove("active");
-},600);
-
-setTimeout(() => {
-
-Mouse5.style.transform="translate(0,260px)";
-
-setTimeout(() => {
-
-Mouse5.style.transform="translate(0,10px)";
-Back5.style.transform = "translateY(-250px)";
-detail5s[1].style.transform = "translateY(-250px)";
-
-setTimeout(() => {
-
-Mouse5.style.transform="translate(35px,-25px)";
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.add("active");
-ArirConditioner5s[0].querySelector(".minus").click();
-ArirConditioner5s[0].querySelector(".minus").classList.add("active");
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.remove("active");
-ArirConditioner5s[0].querySelector(".minus").classList.remove("active");
-
-},600);
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.add("active");
-ArirConditioner5s[0].querySelector(".minus").click();
-ArirConditioner5s[0].querySelector(".minus").classList.add("active");
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.remove("active");
-ArirConditioner5s[0].querySelector(".minus").classList.remove("active");
-
-},600);
-
-setTimeout(() => {
-
-Mouse5.style.transform="translate(-90px,160px)";
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.add("active");
-Power5s[1].click();
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.remove("active");
-},600);
-
-
-setTimeout(() => {
-
-Mouse5.style.transform="translate(0,-100px)";
-
-setTimeout(() => {
-
-Mouse5.style.transform="translate(0,100px)";
-Back5.style.transform = "translateY(0px)";
-detail5s[1].style.transform = "translateY(0px)";
-
-setTimeout(() => {
-
-Mouse5.style.transform="translate(130px,-260px)";
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.add("active");
-Back5.classList.add("active");
-Back5.click();
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.remove("active");
-Back5.classList.remove("active");
-
-},600);
-
-setTimeout(() => {
-ArirConditioner5s[0].querySelector(".plus").click();
-ArirConditioner5s[0].querySelector(".plus").click();
-Power5s[1].click();
-Mouse5.style.transform="translate(-80px,140px)";
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.add("active");
-Item5s[4].click();
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.remove("active");
-},600);
-
-setTimeout(() => {
-
-Mouse5.style.transform="translate(0,250px)";
-
-setTimeout(() => {
-
-Mouse5.style.transform="translate(0,-250px)";
-Back5.style.transform = "translateY(-500px)";
-detail5s[4].style.transform = "translateY(-500px)";
-
-setTimeout(() => {
-
-Mouse5.style.transform="translate(0,-250px)";
-
-setTimeout(() => {
-
-Mouse5.style.transform="translate(0,250px)";
-Back5.style.transform = "translateY(0px)";
-detail5s[4].style.transform = "translateY(0px)";
-
-setTimeout(() => {
-
-Mouse5.style.transform="translate(130px,-260px)";
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.add("active");
-Back5.classList.add("active");
-Back5.click();
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.remove("active");
-Back5.classList.remove("active");
-
-},600);
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.add("active");
-BACK5.classList.add("active");
-BACK5.click();
-
-setTimeout(() => {
-Mouse5.querySelector(".cursor").classList.remove("active");
-BACK5.classList.remove("active");
-
-},600);
-
-setTimeout(() => {
-
-Mouse5.style.transform="translate(180px,50px)";
-document.querySelector(".container5S .section-container").classList.remove("active");
-
-setTimeout(() => {
-
-document.querySelector(".container5S .section-list").classList.remove("active");
-document.querySelector(".container5S .logo").style.display="none";
-
-},100);
-
-},1000);
-
-},1500);
-
-},500);
-},600);
-
-},500);
-},600);
-
-},800);
-},1000);
-
-},500);
-},800);
-
-},500);
-},500);
-
-},500);
-},500);
-
-},500);
-},500);
-
-},700);
-
-},500);
-},500);
-
-},500);
-
-},1000);
-
-},500);
-},500);
-
-},600);
-
-},500);
-
-},5000);
-
+  schedule5();
 }
 
 Show5();
-setInterval(() => {Show5();},23000);
+setInterval(Show5, 23000);

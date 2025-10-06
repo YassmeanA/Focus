@@ -1,160 +1,140 @@
+// --- Safe element lookup ---
 const SideNavbar3 = document.querySelector(".container3S .side-navbar");
 const Item3s = document.querySelectorAll(".container3S .item.N");
 const AccountSettings3 = document.querySelector(".container3S .account-settings");
 const Settings3 = document.querySelector(".container3S .account .settings");
 const Mouse3 = document.querySelector(".container3S .mouse");
-const Ham = document.querySelector(".container3S .Ham");
+const Ham3 = document.querySelector(".container3S .Ham");
 
-let activeTimeouts3 = [];
-let loopInterval3 = null;
+// --- Sequence scheduler ---
+let seqInterval3 = null;
+let seqStart3 = 0;
+let executed3 = [];
 
-// Utility: clear all pending timeouts
-function clearAllTimeouts3() {
-  activeTimeouts3.forEach(id => clearTimeout(id));
-  activeTimeouts3 = [];
-}
+// Build sequence of animation steps {t: <ms offset>, fn: <callback>}
+const steps3 = [
+  // --- Opening ---
+  { t: 0, fn: () => Mouse3 && (Mouse3.style.transform = "translate(-140px,-270px)") },
+  { t: 400, fn: () => Mouse3?.querySelector(".cursor")?.classList.add("active") },
+  { t: 700, fn: () => {
+      Mouse3?.querySelector(".cursor")?.classList.remove("active");
+      SideNavbar3?.classList.add("active");
+      if (Ham3) Ham3.style.opacity = "0";
+    }
+  },
 
-// Safe setTimeout wrapper
-function safeTimeout3(fn, delay) {
-  const id = setTimeout(fn, delay);
-  activeTimeouts3.push(id);
-  return id;
-}
+  // --- Move down & switch active item ---
+  { t: 1200, fn: () => Mouse3 && (Mouse3.style.transform = "translate(-80px,-55px)") },
+  { t: 1600, fn: () => Mouse3?.querySelector(".cursor")?.classList.add("active") },
+  { t: 1900, fn: () => {
+      Mouse3?.querySelector(".cursor")?.classList.remove("active");
+      Item3s[0]?.classList.remove("active");
+      Item3s[1]?.classList.add("active");
+    }
+  },
 
-// Reset all animation states instantly
-function resetState3() {
-  clearAllTimeouts3();
-  Mouse3.querySelector(".cursor").classList.remove("active");
-  SideNavbar3.classList.remove("active");
-  AccountSettings3.classList.remove("active");
-  Item3s.forEach(i => i.classList.remove("active"));
-  Settings3.querySelector(".circle").classList.remove("active");
-  Ham.style.opacity = "1";
-  Mouse3.style.transform = "translate(0,0)";
-}
+  // --- Move to settings ---
+  { t: 2500, fn: () => Mouse3 && (Mouse3.style.transform = "translate(80px,200px)") },
+  { t: 2900, fn: () => {
+      Mouse3?.querySelector(".cursor")?.classList.add("active");
+      Settings3?.querySelector(".circle")?.classList.add("active");
+    }
+  },
+  { t: 3500, fn: () => {
+      Mouse3?.querySelector(".cursor")?.classList.remove("active");
+      Settings3?.querySelector(".circle")?.classList.remove("active");
+    }
+  },
 
-// Core animation sequence
-function Show3() {
-  resetState3();
+  // --- Open account settings ---
+  { t: 4000, fn: () => {
+      SideNavbar3?.classList.remove("active");
+      AccountSettings3?.classList.add("active");
+    }
+  },
+  { t: 4400, fn: () => Mouse3 && (Mouse3.style.transform = "translate(-110px,-240px)") },
+  { t: 4800, fn: () => Mouse3?.querySelector(".cursor")?.classList.add("active") },
+  { t: 5100, fn: () => Mouse3?.querySelector(".cursor")?.classList.remove("active") },
 
-  safeTimeout3(() => {
-    Mouse3.style.transform = "translate(-140px,-270px)";
+  // --- Return to main side navbar ---
+  { t: 5600, fn: () => {
+      SideNavbar3?.classList.add("active");
+      AccountSettings3?.classList.remove("active");
+    }
+  },
+  { t: 6000, fn: () => Mouse3 && (Mouse3.style.transform = "translate(-80px,-100px)") },
+  { t: 6400, fn: () => Mouse3?.querySelector(".cursor")?.classList.add("active") },
+  { t: 6700, fn: () => {
+      Mouse3?.querySelector(".cursor")?.classList.remove("active");
+      Item3s[0]?.classList.add("active");
+      Item3s[1]?.classList.remove("active");
+    }
+  },
 
-    safeTimeout3(() => {
-      Mouse3.querySelector(".cursor").classList.add("active");
+  // --- Move up and close ---
+  { t: 7200, fn: () => Mouse3 && (Mouse3.style.transform = "translate(90px,-245px)") },
+  { t: 7600, fn: () => Mouse3?.querySelector(".cursor")?.classList.add("active") },
+  { t: 7900, fn: () => {
+      Mouse3?.querySelector(".cursor")?.classList.remove("active");
+      SideNavbar3?.classList.remove("active");
+    }
+  },
+  { t: 8300, fn: () => Ham3 && (Ham3.style.opacity = "1") },
+  { t: 8700, fn: () => Mouse3 && (Mouse3.style.transform = "translate(180px,50px)") },
 
-      safeTimeout3(() => {
-        Mouse3.querySelector(".cursor").classList.remove("active");
-        SideNavbar3.classList.add("active");
-        Ham.style.opacity = "0";
-      }, 300);
+  // --- End: reset mouse ---
+  { t: 9500, fn: () => Mouse3 && (Mouse3.style.transform = "translate(0,0)") }
+];
 
-      safeTimeout3(() => {
-        Mouse3.style.transform = "translate(-80px,-55px)";
-
-        safeTimeout3(() => {
-          Mouse3.querySelector(".cursor").classList.add("active");
-          safeTimeout3(() => {
-            Mouse3.querySelector(".cursor").classList.remove("active");
-
-            Item3s[0].classList.remove("active");
-            Item3s[1].classList.add("active");
-
-            safeTimeout3(() => {
-              Mouse3.style.transform = "translate(80px,200px)";
-              safeTimeout3(() => {
-                Mouse3.querySelector(".cursor").classList.add("active");
-                Settings3.querySelector(".circle").classList.add("active");
-
-                safeTimeout3(() => {
-                  Mouse3.querySelector(".cursor").classList.remove("active");
-                  Settings3.querySelector(".circle").classList.remove("active");
-
-                  safeTimeout3(() => {
-                    SideNavbar3.classList.remove("active");
-                    AccountSettings3.classList.add("active");
-
-                    safeTimeout3(() => {
-                      Mouse3.style.transform = "translate(-110px,-240px)";
-                      safeTimeout3(() => {
-                        Mouse3.querySelector(".cursor").classList.add("active");
-                        safeTimeout3(() => {
-                          Mouse3.querySelector(".cursor").classList.remove("active");
-
-                          safeTimeout3(() => {
-                            SideNavbar3.classList.add("active");
-                            AccountSettings3.classList.remove("active");
-
-                            safeTimeout3(() => {
-                              Mouse3.style.transform = "translate(-80px,-100px)";
-                              safeTimeout3(() => {
-                                Mouse3.querySelector(".cursor").classList.add("active");
-                                safeTimeout3(() => {
-                                  Mouse3.querySelector(".cursor").classList.remove("active");
-
-                                  Item3s[0].classList.add("active");
-                                  Item3s[1].classList.remove("active");
-
-                                  safeTimeout3(() => {
-                                    Mouse3.style.transform = "translate(90px,-245px)";
-                                    safeTimeout3(() => {
-                                      Mouse3.querySelector(".cursor").classList.add("active");
-                                      safeTimeout3(() => {
-                                        Mouse3.querySelector(".cursor").classList.remove("active");
-                                        SideNavbar3.classList.remove("active");
-                                        safeTimeout3(() => {
-                                          Ham.style.opacity = "1";
-                                          safeTimeout3(() => {
-                                            Mouse3.style.transform = "translate(180px,50px)";
-                                          }, 500);
-                                        }, 400);
-                                      }, 300);
-                                    }, 500);
-                                  }, 800);
-                                }, 300);
-                              }, 500);
-                            }, 800);
-                          }, 300);
-                        }, 300);
-                      }, 500);
-                    }, 800);
-                  }, 500);
-                }, 600);
-              }, 500);
-            }, 800);
-          }, 600);
-        }, 500);
-      }, 800);
-    }, 400);
-  }, 500);
-}
-
-// Run once, then loop safely
-function startLoop3() {
-  clearInterval(loopInterval3);
-  clearAllTimeouts3();
-  Show3();
-  loopInterval3 = setInterval(() => {
-    Show3();
-  }, 11000);
-}
-
-// Detect sleep/wake via visibilitychange
-document.addEventListener("visibilitychange", () => {
-  if (document.hidden) {
-    clearInterval(loopInterval3);
-    clearAllTimeouts3();
-  } else {
-    startLoop3(); // resync animation
+// --- Scheduler logic ---
+function stopSequence3() {
+  if (seqInterval3) {
+    clearInterval(seqInterval3);
+    seqInterval3 = null;
   }
+  executed3 = [];
+}
+
+function tickOnce3() {
+  if (!seqStart3) return;
+  const elapsed = Date.now() - seqStart3;
+
+  for (let i = 0; i < steps3.length; i++) {
+    if (!executed3[i] && elapsed >= steps3[i].t) {
+      try { steps3[i].fn(); } catch (e) { console.error("step3 error", e); }
+      executed3[i] = true;
+    }
+  }
+
+  if (executed3.length === steps3.length && executed3.every(Boolean)) stopSequence3();
+}
+
+function startSequence3() {
+  stopSequence3();
+  executed3 = new Array(steps3.length).fill(false);
+  seqStart3 = Date.now();
+  tickOnce3();
+  seqInterval3 = setInterval(tickOnce3, 100);
+}
+
+// Handle visibility & focus (pause/resume)
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden) tickOnce3();
 });
+window.addEventListener("focus", () => startSequence3());
+window.addEventListener("blur", () => stopSequence3());
 
-window.addEventListener("blur", () => {
-  clearInterval(loopInterval3);
-  clearAllTimeouts3();
+// Public function
+function Show3() {
+  startSequence3();
+}
+
+// Initial start + looping repeat
+Show3();
+const repeater3 = setInterval(() => Show3(), 11000);
+
+// Cleanup on unload
+window.addEventListener("beforeunload", () => {
+  clearInterval(repeater3);
+  stopSequence3();
 });
-
-window.addEventListener("focus", startLoop3);
-
-// Start after small delay
-safeTimeout3(startLoop3, 500);

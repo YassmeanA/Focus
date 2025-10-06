@@ -139,7 +139,6 @@ Mouse3.style.transform="translate(180px,50px)";
 
 }
 
-
 setTimeout(() => {Show3();},500);
 
-setInterval(() => {Show3();},11000);
+setInterval(() => {Show3();},11000)

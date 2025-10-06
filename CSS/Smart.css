@@ -172,8 +172,8 @@ height:100%;
 display:flex;
 justify-content:center;
 align-items:center;
-overflow:hidden;
-opacity:1;
+/*overflow:hidden;*/
+opacity:0;
 transition:0.3s;}
 
 .container5S .item-container.active {

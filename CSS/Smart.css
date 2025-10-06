@@ -13,7 +13,8 @@ border-radius:20px;
 display:flex;
 justify-content:center;
 align-items:center;
-background:#271b49;}
+background:#271b49;
+ box-shadow:0 0 10px rgba(252, 8, 183,0.4);}
 
 .container5S .Block {
 position:absolute;

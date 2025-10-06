@@ -12,7 +12,7 @@ setTimeout(() => {
 Mouse4.style.transform="translate(-65px,20px)";
 SideNavbar4.style.width="280px";
 setTimeout(() => {
-Mouse4.style.transform="translate(-205px,-135px)";
+Mouse4.style.transform="translate(-215px,-135px)";
 
 setTimeout(() => {
 Mouse4.querySelector(".cursor").classList.add("active");

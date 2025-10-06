@@ -14,7 +14,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 background:#271b49;
- box-shadow:0 0 10px rgba(247, 15, 139,0.5);}
+box-shadow:0 0 10px rgba(247, 15, 139,0.75);}
 
 .container5S .Block {
 position:absolute;
@@ -721,6 +721,7 @@ justify-content:center;
 align-items:center;
 cursor:pointer;
 background:#271b49;
+transiton:0.3s;
 border:1px solid rgba(255,255,255,0.05);}
 
 .container5S .mouse {

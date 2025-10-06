@@ -173,7 +173,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 overflow:hidden;
-opacity:0;
+opacity:1;
 transition:0.3s;}
 
 .container5S .item-container.active {
@@ -204,7 +204,7 @@ transform:translateY(0);}
 position:absolute;
 top:80px;
 width:calc(100% - 40px);
-display:grid;
+display:none;
 grid-template-columns:repeat(2,135px);
 justify-content:center;
 align-items:center;

@@ -183,7 +183,7 @@ Mouse5.style.transform="translate(0,260px)";
 setTimeout(() => {
 
 Mouse5.style.transform="translate(0,10px)";
-Back5.style.transform = "translateY(-235px)";
+Back5.style.transform = "translateY(-250px)";
 detail5s[1].style.transform = "translateY(-250px)";
 
 setTimeout(() => {
@@ -270,7 +270,7 @@ Mouse5.style.transform="translate(0,250px)";
 setTimeout(() => {
 
 Mouse5.style.transform="translate(0,-250px)";
-Back5.style.transform = "translateY(-485px)";
+Back5.style.transform = "translateY(-500px)";
 detail5s[4].style.transform = "translateY(-500px)";
 
 setTimeout(() => {

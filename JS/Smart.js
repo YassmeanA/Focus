@@ -54,7 +54,7 @@ el.style.animation = `Show 1s cubic-bezier(0.5, 0.5, 0, 1) forwards ${i * 0.1}s`
 });
 });
 
-document.querySelectorAll('.item').forEach((el, index) => {
+document.querySelectorAll('.container5S .item').forEach((el, index) => {
     
 const delay = Math.floor(index / 2) * 0.1;
 el.style.animation = `Show 1s cubic-bezier(0.5, 0.5, 0, 1) forwards ${delay}s`;

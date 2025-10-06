@@ -142,22 +142,6 @@ AirConditioner.querySelector(".minus").addEventListener("click", () => {
 
 });
 
-// ======== CONTAINER 5 SCRIPT ========
-
-// Select elements
-const container5 = document.querySelector(".container5S");
-const sectionContainer5 = container5.querySelector(".section-container");
-const sectionList5 = container5.querySelector(".section-list");
-const logo5 = container5.querySelector(".logo");
-const Mouse5 = container5.querySelector(".mouse");
-const Section5s = container5.querySelectorAll(".section");
-const Item5s = container5.querySelectorAll(".item");
-const ArirConditioner5s = container5.querySelectorAll(".air-conditioner");
-const Power5s = container5.querySelectorAll(".power");
-const Back5 = container5.querySelector(".back");
-const BACK5 = container5.querySelector(".BACK");
-const detail5s = container5.querySelectorAll(".details");
-
 
 // Utility: cursor blink effect
 function clickEffect5(targetFn, delay = 300) {

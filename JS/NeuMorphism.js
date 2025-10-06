@@ -6,6 +6,7 @@ const Minus6 = document.querySelector(".container6S .minus");
 const Reset6 = document.querySelector(".container6S .reset");
 const Toggle6 = document.querySelector(".container6S .Toggle");
 const range6s = document.querySelectorAll('.container6S .range');
+const speedButton = document.querySelector(".speed-button");
 const Mouse6 = document.querySelector(".container6S .mouse");
 
 let count = 22;
@@ -39,7 +40,7 @@ Power6.addEventListener("click", () => {
 
 // Toggle6 swing
 Toggle6.addEventListener("click", () => {
-  Toggle6.classList.Toggle6("active");
+  Toggle6.classList.toggle("active");
 });
 
 // Temp6erature controls

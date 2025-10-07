@@ -1,6 +1,6 @@
 
 const Cards = document.querySelectorAll(".container4 .card");
-const Wrapper = document.querySelector(".container4 .wrapper");
+const Wrapper = document.querySelector(".container4 .carousel");
 
 let y = 1;
 
@@ -11,13 +11,11 @@ Cards[y].classList.add("active");
 
 y++;
 
-if(y==9){setTimeout(() => {Wrapper.scrollLeft = 0;},500);}
+if(y==9){setTimeout(() => {Wrapper.style.left = 0;},500);}
 
 if(y==9){y=0;}
 
-if(y==1 || y==9){Wrapper.scrollLeft += 0;}else{Wrapper.scrollLeft += 50;}
-
-
+Wrapper.style.left = `${50*y}`;
 
 },1200);
 

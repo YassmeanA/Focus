@@ -18,13 +18,14 @@ carouselA.style.left = currentLeft + "px";
 
 // when we reach the end, smoothly reset to 0
 if (Math.abs(currentLeft) > 1624) {
-currentLeft = 0;
-carouselA.style.left = "0px";
+
 arrowBtns[1].classList.remove("active");
 arrowBtns[0].classList.add("active");
 setTimeout(() => {
 arrowBtns[0].classList.remove("active");
-},500);
+currentLeft = 0;
+carouselA.style.left = "0px";
+},300);
 }
 
 ArrowsDots();

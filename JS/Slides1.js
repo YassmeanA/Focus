@@ -7,12 +7,12 @@ setInterval(() => {
 
 document.querySelector(".container4 .card.active").classList.remove("active");
 Cards[y].classList.add("active");
-
+  
 y++;
 
 if(y == 7){Wrapper.style.left = `${-42*y}px`;}else{Wrapper.style.left = `${-50*y}px`;}
 
-if(y == 8){Wrapper.style.left = "-342px";y = 0;}
+if(y == 8){Wrapper.style.left = "-342px";y = -1;}
   
 },1200);
 

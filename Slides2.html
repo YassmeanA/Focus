@@ -231,18 +231,18 @@ if ((! "ontouchstart") in document.documentElement) {
 let isDragging = false, startX, startScrollLeft;
 
 const dragStart = (e) => {
-  if (wideScreen) return;
   isDragging = true;
   carousel.style.cursor="grab";
   startX = e.pageX;
-  startScrollLeft = LogoNavbar.scrollLeft;
+  startScrollLeft = parseInt(getComputedStyle(carousel).left);
+
 };
 
 const dragging = (e) => {
   if (!isDragging) return;
   carousel.style.cursor="grabbing";
   e.preventDefault(); // Prevent text/image selection
-  carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+  carousel.style.left = startScrollLeft - (e.pageX - startX);
 };
 
 const dragStop = () => {

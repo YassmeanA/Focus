@@ -16,7 +16,7 @@ arrowBtns[1].classList.remove("active");
 currentLeft -= 232; // negative to move content to the left
 carouselA.style.left = currentLeft + "px";
 
-Dots();
+dots();
   
 // when we reach the end, smoothly reset to 0
 if (Math.abs(currentLeft) > 1624) {
@@ -33,7 +33,7 @@ setTimeout(() => {Arrows();},300);
   
 },1500);
 
-const Dots = () => {
+const dots = () => {
 
 x++;
 if(x == 8){x = 0;}

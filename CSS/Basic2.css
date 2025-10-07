@@ -8,20 +8,15 @@
     pointer-events:none;}
     
     .container2 .carousel {
-    user-select:none;
-    display:grid;
-    grid-auto-flow:column;
-    grid-template-columns:repeat(8,1fr);
+    position:absolute;
+    left:0;
+    width:1210px;
+    height:200px;
+    display:flex;
     gap:10px;
-    padding:10px;
+    padding:0 10px;
     list-style:none;
-    overflow-x:auto;
-    scroll-snap-type:x mandatory;
-    scroll-behavior:smooth;
-    scrollbar-width:0;}
-    
-    .container2 .carousel::-webkit-scrollbar {
-    display:none;}
+    overflow:hidden;}
     
     .container2 .carousel :where(.card, .img) {
     display:flex;
@@ -67,7 +62,7 @@
     align-items:center;
     display:flex;}
     
-    .container2 .indicator{
+    .container2 .indicator {
     position:relative;
     top:10px;
     display:flex;
@@ -75,7 +70,7 @@
     justify-content:center;
     gap:10px;}
     
-    .container2 .dot{
+    .container2 .dot {
     width:12px;
     height:12px;
     border-radius:6px;
@@ -85,7 +80,7 @@
     transform:scale(0.8);
     transition:0.3s ease;}
     
-    .container2 .dot.active{
+    .container2 .dot.active {
     width:30px;
     transform:scale(1);
     opacity:1;}

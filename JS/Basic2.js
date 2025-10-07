@@ -7,7 +7,7 @@ let xb = 0;
 setInterval(() => {
 
 // move left position by 232 px
-currentLeftB -= 290; // negative to move content to the left
+currentLeftB -= 310; // negative to move content to the left
 carouselB.style.left = currentLeftB + "px";
 
 dotBs();

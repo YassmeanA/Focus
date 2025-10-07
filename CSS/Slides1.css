@@ -2,23 +2,24 @@
     background:linear-gradient(to bottom, #FFDDE1, #EE9CA7);}
     
     .container4 .wrapper {
+    posititon:absolute;
     width:330px;
+    height:200px;
     display:flex;
     align-items:center;
-    overflow-x:auto;
-    scroll-snap-type:x mandatory;
-    scroll-behavior:smooth;
+    overflow:hidden;
     pointer-events:none;}
     
     .container4 .carousel {
-    margin:20px 8px;
+    posititon:absolute;
+    left:0;
+    width:672px;
+    height:100%;
+    padding:0 8px;
     display:flex;
     column-gap:8px;
     align-items:center;
     flex-wrap:nowrap;}
-    
-    .container4 .wrapper::-webkit-scrollbar {
-    display:none;}
 
     .container4 .card {
     position:relative;

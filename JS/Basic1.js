@@ -2,6 +2,7 @@ const carouselA = document.querySelector(".container1 .carousel");
 const arrowBtns = document.querySelectorAll(".container1 .wrapper .arrow");
 const Dots = document.querySelectorAll(".container1 .dot");
 
+carouselA.style.background="red";
 let currentLeft = 0; // Track the current left offset
 let x = 0;
 

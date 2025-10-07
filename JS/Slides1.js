@@ -1,8 +1,7 @@
-
 const Cards = document.querySelectorAll(".container4 .card");
 const Wrapper = document.querySelector(".container4 .carousel");
 
-let y = 1;
+let y = 0;
 
 setInterval(() => {
 
@@ -11,11 +10,7 @@ Cards[y].classList.add("active");
 
 y++;
 
-if(y==9){setTimeout(() => {Wrapper.style.left = "0";},500);}
-
-if(y==9){y=0;}
-
-Wrapper.style.left = `${-50*y}px`;
+if(y==8){setTimeout(() => {Wrapper.style.left = "0";},500);y = 0;}else{Wrapper.style.left = `${-50*y}px`;}
 
 },1200);
 

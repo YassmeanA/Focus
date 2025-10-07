@@ -14,7 +14,7 @@ dotBs();
 
 // when we reach the end, smoothly reset to 0
 if (Math.abs(currentLeftB) > 1000) {
-currentLeftB = 20;
+currentLeftB = -20;
 carouselB.style.left = "0px";
 }
  

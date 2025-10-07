@@ -1,5 +1,5 @@
 const Cards = document.querySelectorAll(".container4 .card");
-const Wrapper = document.querySelector(".container4 .carousel");
+const Carousel = document.querySelector(".container4 .carousel");
 
 let y = 0;
 
@@ -10,9 +10,6 @@ y++;
 document.querySelector(".container4 .card.active").classList.remove("active");
 Cards[y].classList.add("active");
 
-if(y == 7){Wrapper.style.left = "-342px";y = -1;}else{Wrapper.style.left = `${-50*y}px`;}
+if(y == 7){Carousel.style.left = "-342px";y = -1;}else{Carousel.style.left = `${-50*y}px`;}
   
 },1200);
-
-
-

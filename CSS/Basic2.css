@@ -2,6 +2,7 @@
     background:linear-gradient(to bottom right,#FF0A6C,#5C27FE);}
     
     .container2 .wrapper {
+    position:absolute;
     max-width:1500px;
     width:330px;
     height:250px;

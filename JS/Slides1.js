@@ -11,11 +11,11 @@ Cards[y].classList.add("active");
 
 y++;
 
-if(y==9){setTimeout(() => {Wrapper.style.left = 0;},500);}
+if(y==9){setTimeout(() => {Wrapper.style.left = "0";},500);}
 
 if(y==9){y=0;}
 
-Wrapper.style.left = `${-50*y}`;
+Wrapper.style.left = `${-50*y}px`;
 
 },1200);
 

@@ -1,13 +1,13 @@
 const carouselB = document.querySelector(".container2 .carousel");
 const DotBs = document.querySelectorAll(".container2 .dot");
 
-let currentLeftB = 20; // Track the current left offset
+let currentLeftB = -20; // Track the current left offset
 let xb = 0;
 
 setInterval(() => {
 
 // move left position by 232 px
-currentLeftB -= 310; // negative to move content to the left
+currentLeftB -= 290; // negative to move content to the left
 carouselB.style.left = currentLeftB + "px";
 
 dotBs();

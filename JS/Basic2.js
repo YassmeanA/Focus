@@ -1,7 +1,7 @@
 const carouselB = document.querySelector(".container2 .carousel");
 const DotBs = document.querySelectorAll(".container2 .dot");
 
-let currentLeftB = 0; // Track the current left offset
+let currentLeftB = 20; // Track the current left offset
 let xb = 0;
 
 setInterval(() => {
@@ -13,8 +13,8 @@ carouselB.style.left = currentLeftB + "px";
 dotBs();
 
 // when we reach the end, smoothly reset to 0
-if (Math.abs(currentLeftB) > 880) {
-currentLeftB = 0;
+if (Math.abs(currentLeftB) > 1000) {
+currentLeftB = 20;
 carouselB.style.left = "0px";
 }
  

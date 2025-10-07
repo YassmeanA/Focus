@@ -7,7 +7,7 @@
     height:200px;
     display:flex;
     align-items:center;
-    overflow:hidden;
+    overflow-x:hidden;
     pointer-events:none;}
     
     .container4 .carousel {
@@ -19,7 +19,8 @@
     display:flex;
     column-gap:8px;
     align-items:center;
-    flex-wrap:nowrap;}
+    flex-wrap:nowrap;
+    transition:0.4s;}
 
     .container4 .card {
     position:relative;

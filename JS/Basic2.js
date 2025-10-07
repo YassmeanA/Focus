@@ -10,7 +10,7 @@ setInterval(() => {
 currentLeftB -= 310; // negative to move content to the left
 carouselB.style.left = currentLeftB + "px";
 
-dots();
+dotBs();
 
 // when we reach the end, smoothly reset to 0
 if (Math.abs(currentLeftB) > 1210) {
@@ -20,7 +20,7 @@ carouselB.style.left = "0px";
  
 },1500);
 
-const dots = () => {
+const dotBs = () => {
 
 xb++;
 if(xb == 8){xb = 0;}

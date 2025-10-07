@@ -4,17 +4,18 @@
     .container4 .wrapper {
     posititon:absolute;
     width:330px;
-    height:200px;
+    height:250px;
     display:flex;
     align-items:center;
-    overflow-x:hidden;
+    justify-content:center;
+    overflow:hidden;
     pointer-events:none;}
     
     .container4 .carousel {
     posititon:absolute;
     left:0;
     width:672px;
-    height:100%;
+    height:200px;
     padding:0 8px;
     display:flex;
     column-gap:8px;

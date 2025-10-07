@@ -9,10 +9,8 @@ y++;
 
 document.querySelector(".container4 .card.active").classList.remove("active");
 Cards[y].classList.add("active");
- 
-if(y == 7){Wrapper.style.left = `${-42*y}px`;}else{Wrapper.style.left = `${-50*y}px`;}
 
-if(y == 8){Wrapper.style.left = "-342px";y = -1;}
+if(y == 8){Wrapper.style.left = "-342px";y = -1;}else{Wrapper.style.left = `${-50*y}px`;}
   
 },1200);
 

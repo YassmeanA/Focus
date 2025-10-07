@@ -2,7 +2,7 @@
     background:linear-gradient(to bottom, #FFDDE1, #EE9CA7);}
     
     .container4 .wrapper {
-    posititon:absolute;
+    position:absolute;
     width:330px;
     height:250px;
     display:flex;
@@ -12,7 +12,7 @@
     pointer-events:none;}
     
     .container4 .carousel {
-    posititon:absolute;
+    position:absolute;
     left:0;
     width:672px;
     height:200px;

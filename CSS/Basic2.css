@@ -9,8 +9,7 @@
     pointer-events:none;
     display:flex;
     align-items:center;
-    justify-content:center;
-    background:red;}
+    justify-content:center;}
     
     .container2 .carousel {
     position:absolute;
@@ -69,8 +68,8 @@
     display:flex;}
     
     .container2 .indicator {
-    position:relative;
-    bottom:10px;
+    position:absolute;
+    bottom:-10px;
     display:flex;
     align-items:center;
     justify-content:center;

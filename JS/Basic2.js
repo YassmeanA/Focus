@@ -7,7 +7,7 @@ let xb = 0;
 setInterval(() => {
 
 // move left position by 232 px
-if(Math.abs(currentLeftB) == 0){currentLeftB -= 290;}else if(Math.abs(currentLeftB) == 590){currentLeftB -= 280;}else{currentLeftB -= 300;} // negative to move content to the left
+if(Math.abs(currentLeftB) == 0 || Math.abs(currentLeftB) == 590){currentLeftB -= 290;}else{currentLeftB -= 300;} // negative to move content to the left
 carouselB.style.left = currentLeftB + "px";
 
 dotBs();

@@ -6,7 +6,11 @@
     max-width:1500px;
     width:330px;
     height:250px;
-    pointer-events:none;}
+    pointer-events:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:red;}
     
     .container2 .carousel {
     position:absolute;

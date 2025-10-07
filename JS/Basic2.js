@@ -23,7 +23,7 @@ carouselB.style.left = "0px";
 const dotBs = () => {
 
 xb++;
-if(xb == 8){xb = 0;}
+if(xb == 4){xb = 0;}
 
 DotBs.forEach(dot => {dot.classList.remove("active");});
 DotBs[xb].classList.add("active");

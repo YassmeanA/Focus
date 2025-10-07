@@ -35,7 +35,7 @@ const ArrowsDots = () => {
 
 const offset = Math.abs(currentLeft);
 arrowBtns[0].style.display = offset <= 100 ? "none" : "block";
-//arrowBtns[1].style.display = offset >= 1550 ? "none" : "block";
+arrowBtns[1].style.display = offset >= 1550 ? "none" : "block";
 
 x++;
 if(x == 8){x = 0;}

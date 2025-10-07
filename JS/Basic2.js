@@ -1,45 +1,31 @@
+const carouselB = document.querySelector(".container2 .carousel");
+const DotBs = document.querySelectorAll(".container2 .dot");
 
-    const carouselB = document.querySelector(".container2 .carousel");
-    const DotBs = document.querySelectorAll(".container2 .dot");
-    
+let currentLeftB = 0; // Track the current left offset
+let xb = 0;
 
-    setInterval(() => {
-    
-    if(carouselB.scrollLeft > 800){carouselB.scrollLeft = 0;}else{
-    carouselB.scrollLeft += 375;}
+setInterval(() => {
 
-    },1500);
+// move left position by 232 px
+currentLeftB -= 310; // negative to move content to the left
+carouselB.style.left = currentLeftB + "px";
 
+dots();
 
-carouselB.addEventListener("scroll", () => {
-
-if(carouselB.scrollLeft > 0 && carouselB.scrollLeft <= 300){
-
-document.querySelector(".container2 .dot.active").classList.remove("active");
-DotBs[0].classList.add("active");
-
+// when we reach the end, smoothly reset to 0
+if (Math.abs(currentLeftB) > 1210) {
+currentLeftB = 0;
+carouselB.style.left = "0px";
 }
+ 
+},1500);
 
-if(carouselB.scrollLeft > 300 && carouselB.scrollLeft <= 600){
+const dots = () => {
 
-document.querySelector(".container2 .dot.active").classList.remove("active");
-DotBs[1].classList.add("active");
+xb++;
+if(xb == 8){xb = 0;}
 
-}
+DotBs.forEach(dot => {dot.classList.remove("active");});
+DotBs[xb].classList.add("active");
 
-if(carouselB.scrollLeft > 600 && carouselB.scrollLeft <= 800){
-
-document.querySelector(".container2 .dot.active").classList.remove("active");
-DotBs[2].classList.add("active");
-
-}
-
-if(carouselB.scrollLeft > 800){
-
-document.querySelector(".container2 .dot.active").classList.remove("active");
-DotBs[3].classList.add("active");
-
-}
-
-});
-
+};

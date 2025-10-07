@@ -10,8 +10,10 @@ Cards[y].classList.add("active");
 
 y++;
 
-if(y == 7){setTimeout(() => {Wrapper.style.left = `${-42*y}px`;},500);y = 0;}else{Wrapper.style.left = `${-50*y}px`;}
+if(y == 7){Wrapper.style.left = `${-42*y}px`;}else{Wrapper.style.left = `${-50*y}px`;}
 
+if(y == 8){Wrapper.style.left = "-342px";y = 0;}
+  
 },1200);
 
 

@@ -15,7 +15,7 @@ if(y==9){setTimeout(() => {Wrapper.style.left = 0;},500);}
 
 if(y==9){y=0;}
 
-Wrapper.style.left = `${50*y}`;
+Wrapper.style.left = `${-50*y}`;
 
 },1200);
 

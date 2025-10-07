@@ -13,7 +13,7 @@ carouselB.style.left = currentLeftB + "px";
 dotBs();
 
 // when we reach the end, smoothly reset to 0
-if (Math.abs(currentLeftB) > 880) {
+if (Math.abs(currentLeftB) > 910) {
 currentLeftB = 0;
 carouselB.style.left = "0px";
 }

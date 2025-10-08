@@ -91,7 +91,8 @@ width:65px;
 height:65px;
 display:flex;
 justify-content:center;
-align-items:center;}
+align-items:center;
+pointer-events:none;}
 
 .container6S .power button {
 position:absolute;

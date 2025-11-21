@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Exam Result Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px;
+      width: 360px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    label { display:block; text-align:left; margin-top:12px; font-weight:600; }
+
+    select, input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 12px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover { background:#0056b3; }
+
+    .result {
+      margin-top: 18px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 12px;
+      border-radius: 8px;
+      min-height: 40px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-sizing: border-box;
+    }
+
+    .passed {
+      color: #0a5f0a;
+      background: #e8f8ea;
+      border: 1px solid #d1efd1;
+    }
+
+    .failed {
+      color: #7a0b0b;
+      background: #ffecec;
+      border: 1px solid #f0caca;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Exam Result Checker</h2>
+
+    <label>Select Subject</label>
+    <select id="subject">
+      <option value="A">Analog Electronics</option>
+      <option value="B">IT Hardware & Software</option>
+    </select>
+
+    <label>Enter Student Code</label>
+    <input id="code" type="text" placeholder="e.g. 40225001">
+
+    <button id="checkBtn">Check Result</button>
+
+    <div id="output" class="result"></div>
+  </div>
+
+  <script>
+  // Failed Students for Subject A
+  const failedA = {
+    "40225030": "مروان أحمد",
+    "40225012": "إيڤانو مينا",
+    "40225073": "سهيلة أحمد",
+    "40225079": "غيداء عادل",
+    "40225016": "عبد الرحمن حسن",
+    "40225038": "إسراء ياسر",
+    "40225039": "إسلام محمد",
+    "40225040": "أسماء سعدي",
+    "40225042": "أمل عبد الباسط",
+    "40225058": "حبيبة عبد الناصر",
+    "40225066": "رودينا رمضان",
+    "40225070": "سلمى أسامة",
+    "40225086": "مريم رمضان",
+    "40225091": "منار أحمد",
+    "40225100": "وداد علي",
+    "40225024": "محمد حسان",
+    "40225028": "محمد مروان"
+  };
+
+  // Failed Students for Subject B
+  const failedB = {
+    "40225040": "أسماء سعدي",
+    "40225048": "بسملة أشرف",
+    "40225056": "جودي محمود",
+    "40225058": "حبيبة عبد الناصر",
+    "40225061": "حنين أحمد",
+    "40225066": "رودينا رمضان",
+    "40225080": "فاطمة أحمد"
+  };
+
+  const output = document.getElementById("output");
+  const codeInput = document.getElementById("code");
+  const subjectSelect = document.getElementById("subject");
+  const checkBtn = document.getElementById("checkBtn");
+
+  function checkResult() {
+    const code = codeInput.value.trim();
+    const subject = subjectSelect.value;
+    const minCode = 40225001;
+    const maxCode = 40225100;
+
+    output.className = "result";
+
+    if (code === "") {
+      output.textContent = "Please enter your student code.";
+      output.classList.add("failed");
+      return;
+    }
+
+    const codeNumber = parseInt(code);
+    if (isNaN(codeNumber) || codeNumber < minCode || codeNumber > maxCode) {
+      output.textContent = `Invalid code. Please enter a number between ${minCode} and ${maxCode}.`;
+      output.classList.add("failed");
+      return;
+    }
+
+    let selectedList = subject === "A" ? failedA : failedB;
+
+    if (selectedList[code]) {
+      output.textContent = `You need improvement plan, ${selectedList[code]}.`;
+      output.classList.add("failed");
+    } else {
+      output.textContent = "You have passed. Congratulations!";
+      output.classList.add("passed");
+    }
+  }
+
+  // Reset function when subject changes
+  function resetPage() {
+    codeInput.value = "";
+    output.textContent = "";
+    output.className = "result";
+  }
+
+  checkBtn.addEventListener("click", checkResult);
+  codeInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") checkResult();
+  });
+  subjectSelect.addEventListener("change", resetPage); // <-- resets page on subject change
+</script>
+
+</body>
+</html>

@@ -1,11 +1,10 @@
 .containerB1 {
-position:absolute;
+position:relative;
 width:330px;
 height:250px;
 border-radius:20px;
 background:#F0001D;
-display:flex;
-overflow:hidden;}
+display:flex;}
 
 .containerB1 .MockUp {
 position:absolute;

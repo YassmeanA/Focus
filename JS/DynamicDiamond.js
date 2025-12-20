@@ -204,5 +204,5 @@ setTimeout(Icon21,11000);
 
 ShowB2();
 
-setInterval(ShowB2,12000);
+setInterval(ShowB2,11000);
 

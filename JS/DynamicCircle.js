@@ -44,11 +44,11 @@ if(index != 0){ICON1s[index].style.bottom="-80px";};
 ICON1s[0].style.bottom="6px";});
 
 // trim path animation //
-S1.style.animation="trim 0.9s forwards",S2.style.animation="trim 0.9s forwards", S3.style.animation="trim 1s forwards", S4.style.animation="trim 1s forwards";
-D3.style.animation="d6 1s forwards",D2.style.animation="d5 1s forwards",D1.style.animation="d4 1s forwards",L3.style.animation="trim2 1s forwards",L2.style.animation="trim2 1s forwards",L1.style.animation="trim2 1s forwards";
-A1.style.animation="trim2 1s forwards",A2.style.animation="trim2 1s forwards",A3.style.animation="trim2 1s forwards",A4.style.animation="trim2 1s forwards",A5.style.animation="trim2 1s forwards",A6.style.animation="trim2 1s forwards";
-B1.style.animation="trim2 1s forwards",B2.style.animation="trim2 1s forwards",B3.style.animation="trim2 1s forwards",B4.style.animation="trim2 1s forwards";
-P1.style.animation="trim2 1s forwards",P2.style.animation="trim2 1s forwards",P3.style.animation="trim2 1s forwards",P4.style.animation="trim2 1s forwards";
+Sa1.style.animation="trim 0.9s forwards",Sa2.style.animation="trim 0.9s forwards", Sa3.style.animation="trim 1s forwards", Sa4.style.animation="trim 1s forwards";
+Da3.style.animation="d6 1s forwards",Da2.style.animation="d5 1s forwards",Da1.style.animation="d4 1s forwards",La3.style.animation="trim2 1s forwards",La2.style.animation="trim2 1s forwards",La1.style.animation="trim2 1s forwards";
+Aa1.style.animation="trim2 1s forwards",Aa2.style.animation="trim2 1s forwards",Aa3.style.animation="trim2 1s forwards",Aa4.style.animation="trim2 1s forwards", Aa5.style.animation="trim2 1s forwards",Aa6.style.animation="trim2 1s forwards";
+Ba1.style.animation="trim2 1s forwards",Ba2.style.animation="trim2 1s forwards",Ba3.style.animation="trim2 1s forwards",Ba4.style.animation="trim2 1s forwards";
+Pa1.style.animation="trim2 1s forwards",Pa2.style.animation="trim2 1s forwards",Pa3.style.animation="trim2 1s forwards",Pa4.style.animation="trim2 1s forwards";
 
 xb1 = 0;};
 
@@ -74,11 +74,11 @@ if(index != 1){ICON1s[index].style.bottom="-80px";};
 ICON1s[1].style.bottom="6px";});
 
 // trim path animation //
-D3.style.animation="d3 0.8s forwards 0.2s",D2.style.animation="d2 0.8s forwards 0.1s",D1.style.animation="d1 0.8s forwards 0s",L3.style.animation="trim1 2s forwards 0.2s",L2.style.animation="trim1 2s forwards 0.1s",L1.style.animation="trim1 2s forwards 0s";
-A1.style.animation="trim2 1s forwards",A2.style.animation="trim2 1s forwards",A3.style.animation="trim2 1s forwards",A4.style.animation="trim2 1s forwards",A5.style.animation="trim2 1s forwards",A6.style.animation="trim2 1s forwards";
-B1.style.animation="trim2 1s forwards",B2.style.animation="trim2 1s forwards",B3.style.animation="trim2 1s forwards",B4.style.animation="trim2 1s forwards";
-S1.style.animation="trim2 1s forwards",S2.style.animation="trim2 1s forwards",S3.style.animation="trim2 1s forwards", S4.style.animation="trim2 1s forwards";
-P1.style.animation="trim2 1s forwards",P2.style.animation="trim2 1s forwards",P3.style.animation="trim2 1s forwards",P4.style.animation="trim2 1s forwards";
+Da3.style.animation="d3 0.8s forwards 0.2s",Da2.style.animation="d2 0.8s forwards 0.1s",Da1.style.animation="d1 0.8s forwards 0s",La3.style.animation="trim1 2s forwards 0.2s",La2.style.animation="trim1 2s forwards 0.1s",La1.style.animation="trim1 2s forwards 0s";
+Aa1.style.animation="trim2 1s forwards",Aa2.style.animation="trim2 1s forwards",Aa3.style.animation="trim2 1s forwards",Aa4.style.animation="trim2 1s forwards",Aa5.style.animation="trim2 1s forwards",Aa6.style.animation="trim2 1s forwards";
+Ba1.style.animation="trim2 1s forwards",Ba2.style.animation="trim2 1s forwards",Ba3.style.animation="trim2 1s forwards",Ba4.style.animation="trim2 1s forwards";
+Sa1.style.animation="trim2 1s forwards",Sa2.style.animation="trim2 1s forwards",Sa3.style.animation="trim2 1s forwards",Sa4.style.animation="trim2 1s forwards";
+Pa1.style.animation="trim2 1s forwards",Pa2.style.animation="trim2 1s forwards",Pa3.style.animation="trim2 1s forwards",Pa4.style.animation="trim2 1s forwards";
 
 xb1 = 1;};
 
@@ -103,11 +103,11 @@ if(index != 2){ICON1s[index].style.bottom="-80px";};
 ICON1s[2].style.bottom="6px";});
 
 // trim path animation //
-P1.style.animation="trim 1.2s forwards",P2.style.animation="trim 1.2s forwards",P3.style.animation="trim 1.2s forwards",P4.style.animation="trim 1.2s forwards";
-D3.style.animation="d6 1s forwards",D2.style.animation="d5 1s forwards",D1.style.animation="d4 1s forwards",L3.style.animation="trim2 1s forwards",L2.style.animation="trim2 1s forwards",L1.style.animation="trim2 1s forwards";
-A1.style.animation="trim2 1s forwards",A2.style.animation="trim2 1s forwards",A3.style.animation="trim2 1s forwards",A4.style.animation="trim2 1s forwards",A5.style.animation="trim2 1s forwards",A6.style.animation="trim2 1s forwards";
-B1.style.animation="trim2 1s forwards",B2.style.animation="trim2 1s forwards",B3.style.animation="trim2 1s forwards",B4.style.animation="trim2 1s forwards";
-S1.style.animation="trim2 1s forwards",S2.style.animation="trim2 1s forwards",S3.style.animation="trim2 1s forwards", S4.style.animation="trim2 1s forwards";
+Pa1.style.animation="trim 1.2s forwards",Pa2.style.animation="trim 1.2s forwards",Pa3.style.animation="trim 1.2s forwards",Pa4.style.animation="trim 1.2s forwards";
+Da3.style.animation="d6 1s forwards",Da2.style.animation="d5 1s forwards",Da1.style.animation="d4 1s forwards",La3.style.animation="trim2 1s forwards",La2.style.animation="trim2 1s forwards",La1.style.animation="trim2 1s forwards";
+Aa1.style.animation="trim2 1s forwards",Aa2.style.animation="trim2 1s forwards",Aa3.style.animation="trim2 1s forwards",Aa4.style.animation="trim2 1s forwards",Aa5.style.animation="trim2 1s forwards",Aa6.style.animation="trim2 1s forwards";
+Ba1.style.animation="trim2 1s forwards",Ba2.style.animation="trim2 1s forwards",Ba3.style.animation="trim2 1s forwards",Ba4.style.animation="trim2 1s forwards";
+Sa1.style.animation="trim2 1s forwards",Sa2.style.animation="trim2 1s forwards",Sa3.style.animation="trim2 1s forwards",Sa4.style.animation="trim2 1s forwards";
 
 xb1 = 2;};
 
@@ -133,11 +133,11 @@ if(index != 3){ICON1s[index].style.bottom="-80px";};
 ICON1s[3].style.bottom="6px";});
 
 // trim path animation //
-A1.style.animation="trim 1s forwards",A2.style.animation="trim 1s forwards",A3.style.animation="trim 1s forwards",A4.style.animation="trim 1s forwards",A5.style.animation="trim 1s forwards",A6.style.animation="trim 1s forwards";
-D3.style.animation="d6 1s forwards",D2.style.animation="d5 1s forwards",D1.style.animation="d4 1s forwards",L3.style.animation="trim2 1s forwards",L2.style.animation="trim2 1s forwards",L1.style.animation="trim2 1s forwards";
-B1.style.animation="trim2 1s forwards",B2.style.animation="trim2 1s forwards",B3.style.animation="trim2 1s forwards",B4.style.animation="trim2 1s forwards";
-P1.style.animation="trim2 1s forwards",P2.style.animation="trim2 1s forwards",P3.style.animation="trim2 1s forwards",P4.style.animation="trim2 1s forwards";
-S1.style.animation="trim2 1s forwards",S2.style.animation="trim2 1s forwards",S3.style.animation="trim2 1s forwards", S4.style.animation="trim2 1s forwards";
+Aa1.style.animation="trim 1s forwards",Aa2.style.animation="trim 1s forwards",Aa3.style.animation="trim 1s forwards",Aa4.style.animation="trim 1s forwards",Aa5.style.animation="trim 1s forwards",Aa6.style.animation="trim 1s forwards";
+Da3.style.animation="d6 1s forwards",Da2.style.animation="d5 1s forwards",Da1.style.animation="d4 1s forwards",La3.style.animation="trim2 1s forwards",La2.style.animation="trim2 1s forwards",La1.style.animation="trim2 1s forwards";
+Ba1.style.animation="trim2 1s forwards",Ba2.style.animation="trim2 1s forwards",Ba3.style.animation="trim2 1s forwards",Ba4.style.animation="trim2 1s forwards";
+Pa1.style.animation="trim2 1s forwards",Pa2.style.animation="trim2 1s forwards",Pa3.style.animation="trim2 1s forwards",Pa4.style.animation="trim2 1s forwards";
+Sa1.style.animation="trim2 1s forwards",Sa2.style.animation="trim2 1s forwards",Sa3.style.animation="trim2 1s forwards", Sa4.style.animation="trim2 1s forwards";
 
 xb1 = 3;};
 
@@ -169,11 +169,11 @@ if(index != 4){ICON1s[index].style.bottom="-80px";};
 ICON1s[4].style.bottom="6px";});
 
 // trim path animation //
-B1.style.animation="trim 1.5s forwards",B2.style.animation="trim 2s forwards",B3.style.animation="trim 1.5s forwards", B4.style.animation="trim 2s forwards";
-D3.style.animation="d6 1s forwards",D2.style.animation="d5 1s forwards",D1.style.animation="d4 1s forwards",L3.style.animation="trim2 1s forwards",L2.style.animation="trim2 1s forwards",L1.style.animation="trim2 1s forwards";
-A1.style.animation="trim2 1s forwards",A2.style.animation="trim2 1s forwards",A3.style.animation="trim2 1s forwards",A4.style.animation="trim2 1s forwards",A5.style.animation="trim2 1s forwards",A6.style.animation="trim2 1s forwards";
-P1.style.animation="trim2 1s forwards",P2.style.animation="trim2 1s forwards",P3.style.animation="trim2 1s forwards",P4.style.animation="trim2 1s forwards";
-S1.style.animation="trim2 1s forwards",S2.style.animation="trim2 1s forwards",S3.style.animation="trim2 1s forwards", S4.style.animation="trim2 1s forwards";
+Ba1.style.animation="trim 1.5s forwards",Ba2.style.animation="trim 2s forwards",Ba3.style.animation="trim 1.5s forwards", Ba4.style.animation="trim 2s forwards";
+Da3.style.animation="d6 1s forwards",Da2.style.animation="d5 1s forwards",Da1.style.animation="d4 1s forwards",La3.style.animation="trim2 1s forwards",La2.style.animation="trim2 1s forwards",La1.style.animation="trim2 1s forwards";
+Aa1.style.animation="trim2 1s forwards",Aa2.style.animation="trim2 1s forwards",Aa3.style.animation="trim2 1s forwards",Aa4.style.animation="trim2 1s forwards",Aa5.style.animation="trim2 1s forwards",Aa6.style.animation="trim2 1s forwards";
+Pa1.style.animation="trim2 1s forwards",Pa2.style.animation="trim2 1s forwards",Pa3.style.animation="trim2 1s forwards",Pa4.style.animation="trim2 1s forwards";
+Sa1.style.animation="trim2 1s forwards",Sa2.style.animation="trim2 1s forwards",Sa3.style.animation="trim2 1s forwards", Sa4.style.animation="trim2 1s forwards";
 
 xb1 = 4;};
 

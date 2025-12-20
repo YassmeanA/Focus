@@ -1,7 +1,7 @@
-const Icon2As = document.querySelectorAll(".icon.A");
-const Icon2Bs = document.querySelectorAll(".icon.B");
-const Icon2Cs = document.querySelectorAll(".icon.C");
-const ICON2s = document.querySelectorAll(".ICON");
+const Icon2As = document.querySelectorAll(".containerB2 .icon.A");
+const Icon2Bs = document.querySelectorAll(".containerB2 .icon.B");
+const Icon2Cs = document.querySelectorAll(".containerB2 .icon.C");
+const ICON2s = document.querySelectorAll(".containerB2 .ICON");
 
 var xb2 = 0;
 

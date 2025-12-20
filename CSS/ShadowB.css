@@ -1,0 +1,65 @@
+.conatainerB4 {
+background:#FFCB04;
+--primary:#CACACA;
+--secondary:#FFCB04;}
+
+.conatainerB4 * {
+font-family:"Istok Web", serif;
+font-weight:300;
+font-style:normal;}
+
+.conatainerB4 nav {
+position:absolute;
+width:380px;
+height:80px;
+border-radius:40px;
+transform:scale(0.75);
+background:white;
+display:flex;
+align-items:center;
+justify-content:center;
+pointer-events:none;
+box-shadow:0 8px 15px rgba(0,0,0,0.1);}
+
+.conatainerB4 nav .icons {
+position:absolute;
+top:7px;
+width:320px;
+height:50px;
+column-gap:17.5px;
+display:flex;}
+
+.conatainerB4 nav .icon {
+position:relative;
+width:50px;
+height:50px;
+z-index:1;
+display:flex;
+justify-content:center;
+transition:0.6s;
+transform:scale(0.9);}
+
+.conatainerB4 nav .text {
+position:absolute;
+bottom:-5px;
+font-size:0.4rem;
+font-weight:500;
+color:var(--primary);
+transition:0.3s;}
+
+.conatainerB4 nav .shadow {
+transition:0.3s;
+opacity:0;}
+
+.conatainerB4 nav .path {
+transition:0.3s;}
+
+.conatainerB4 nav .icon.active .path {
+stroke:black;
+transform:translate(-3px,-3px);}
+
+.conatainerB4 nav .icon.active .text {
+color:black;}
+
+.conatainerB4 nav .icon.active .shadow {
+opacity:1;}

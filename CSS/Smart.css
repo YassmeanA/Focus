@@ -6,13 +6,6 @@ font-style:normal;
 transition:0.4s;}
 
 .container5S {
-position:absolute;
-width:330px;
-height:600px;
-border-radius:20px;
-display:flex;
-justify-content:center;
-align-items:center;
 background:#271b49;
 box-shadow:0 0 10px rgba(247, 15, 139,0.75);}
 

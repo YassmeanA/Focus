@@ -1,0 +1,117 @@
+.containerB3 {
+background:#65FA02;
+--primary:#3E3E3E;
+--secondary:#65FA02;}
+
+.containerB3 * {
+font-family:"Istok Web", serif;
+font-weight:300;
+font-style:normal;}
+
+.containerB3 nav {
+position:absolute;
+width:360px;
+height:80px;
+transform:scale(0.8);
+background:white;
+display:flex;
+align-items:center;
+justify-content:center;
+pointer-events:none;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+border-radius:12px 12px 30px 30px;}
+
+.containerB3 nav .icons {
+position:absolute;
+top:5px;
+height:50px;
+width:330px;
+display:flex;
+column-gap:40px;}
+
+.containerB3 nav .icon {
+position:relative;
+width:50px;
+height:50px;
+z-index:1;
+transform:scale(0.9);
+display:flex;
+justify-content:center;
+transition:0.6s;}
+
+.containerB3 nav .text {
+position:absolute;
+bottom:-5px;
+font-size:0.45rem;
+font-weight:500;
+color:var(--primary);}
+
+.containerB3 nav .path1{
+stroke:var(--primary);}
+
+.containerB3 nav .path2{
+stroke:var(--primary);}
+
+.containerB3 nav .path3{
+fill:var(--primary);}
+
+.containerB3 nav .icon.active .path1 {
+fill:var(--secondary);
+stroke:var(--secondary);}
+
+.containerB3 nav .icon.active .path2 {
+stroke:white;}
+
+.containerB3 nav .icon.active .path3 {
+fill:white;}
+
+.containerB3 nav .icon.active .path1 {
+stroke:var(--secondary);}
+
+.containerB3 nav .icon.active .path2 {
+stroke:white;}
+
+.containerB3 nav .icon.active .text {
+color:var(--secondary);}
+
+.containerB3 nav .icon.active .part1 {
+--i1:25px;
+--i2:25px;
+--i3:18px;
+--i4:-18px;
+animation:P1 0.3s,Bouncy-Height 1.8s forwards 0.3s,Bouncy-TranslateY 1.8s forwards 0.3s;}
+
+.containerB3 nav .icon.active .part2 {
+--i1:25px;
+--i2:25px;
+--i3:18px;
+--i4:-18px;
+animation:P1 0.3s,Bouncy-Height 1.8s forwards 0.3s,Bouncy-TranslateY 1.8s forwards 0.3s;}
+
+.containerB3 nav .icon.active .part3 {
+--i1:25px;
+--i2:25px;
+--i3:18px;
+--i4:-18px;
+animation:P1 0.3s,Bouncy-Height 1.8s forwards 0.3s,Bouncy-TranslateY 1.8s forwards 0.3s;}
+
+.containerB3 nav .icon.active .part4 {
+--i5:0.8;
+--i6:0.2;
+--i7:1.2;
+--i8:0.2;
+animation:P3 0.3s,Bouncy-Scale2 1.8s forwards 0.3s;}
+
+.containerB3 nav .icon.active .part5 {
+--i5:0.6;
+--i6:0.4;
+animation:P2 0.3s,Bouncy-Scale1 1.8s forwards 0.3s;}
+
+@keyframes P1 {
+100%{height:25px;transform:translateY(18px);}}
+
+@keyframes P2 {
+100%{transform:scale(0.6);}}
+
+@keyframes P3 {
+100%{transform:scale(1.4);}}

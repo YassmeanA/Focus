@@ -5,15 +5,8 @@ font-style:normal;
 transition:0.2s;}
 
 .container4S {
-position:absolute;
-width:330px;
-height:600px;
-border-radius:20px;
 background:#A3A3A3;
 direction:rtl;
-display:flex;
-justify-content:center;
-align-items:center;
 background:#ABFF70;
 --primary:#A3A3A3;
 --color:#ABFF70;}

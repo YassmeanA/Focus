@@ -1,0 +1,110 @@
+.containerB5 * {
+font-family:"Istok Web", serif;
+font-weight:300;
+font-style:normal;}
+
+.containerB5 {
+background:linear-gradient(#FF0099,#FF005C);}
+
+.containerB5 .Screen {
+position:absolute;
+top:-200px;
+width:250px;
+height:400px;
+border-radius:30px;
+border:5px solid #fcb3d8;
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);}
+
+.containerB5 .navbar {
+position:absolute;
+bottom:-15px;
+width:360px;
+height:80px;
+background:white;
+display:flex;
+align-items:center;
+justify-content:center;
+pointer-events:none;
+transform:scale(0.668);
+border-radius:10px 10px 0 0;}
+
+.containerB5 .icons {
+position:absolute;
+top:0;
+height:50px;
+width:330;
+display:flex;
+column-gap:20px;}
+
+.containerB5 .icon {
+position:relative;
+display:flex;
+justify-content:center;
+width:50px;
+height:50px;}
+
+.containerB5 .fill {
+--i1:0px;
+--i2:-20px;}
+
+.containerB5 .icon.A span {
+position:absolute;
+bottom:-8px;
+color:black;
+font-size:0.55rem;
+transition:0.2s ease-out;}
+
+.containerB5 .submenu {
+position:absolute;
+bottom:80px;
+height:50px;
+width:50px;
+transform:scale(0.8);}
+
+.containerB5 .submenu .icon.B {
+position:absolute;
+left:0;
+width:50px;
+height:50px;
+display:flex;
+transform:scale(0.5) translate(0px,130px);}
+
+.containerB5 .wrapper {
+width:50px;
+height:50px;
+background:white;
+border-radius:25px;
+transition:0.15s;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:5px 5px 10px rgba(0,0,0,0.2);}
+
+.containerB5 .wrapper:active {
+transform:scale(0.85);}
+
+@keyframes Hide {
+0%{transform:translate(-20px,-20px);}
+100%{transform:translate(0px,0px);}}
+
+@keyframes Path {
+0%{stroke-dashoffset:7;}
+100%{stroke-dashoffset:0;}}
+
+@keyframes Path1 {
+0%{stroke-dashoffset:0;}
+100%{stroke-dashoffset:7;}}
+
+@keyframes Dots {
+0%{transform:translateY(0px);opacity:1;}
+50%{transform:translateY(-3px);opacity:1;}
+100%{transform:translateY(0px); opacity:0;}}
+
+@keyframes Dots1 {
+0%{transform:translateY(0px);}
+50%{transform:translateY(-3px);}
+100%{transform:translateY(0px);}}

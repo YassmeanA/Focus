@@ -18,7 +18,7 @@ Icon1As[index].style.bottom="0px",Icon1As[index].style.opacity="1";}); };
 
 const Icon11 = () => { 
 
-indicator.style.left="0px";
+indicator1.style.left="0px";
 reset1();
 Icon1As[0].style.bottom="-120px",Icon1As[0].style.opacity="0";
 
@@ -54,7 +54,7 @@ xb1 = 0;};
 
 const Icon12 = () => {
 
-indicator.style.left="var(--i)";
+indicator1.style.left="var(--i)";
 reset1();
 Icon1As[1].style.bottom="-120px",Icon1As[1].style.opacity="0";
 
@@ -84,7 +84,7 @@ xb1 = 1;};
 
 const Icon13 = () => {
 
-indicator.style.left="calc(var(--i) * 2)";
+indicator1.style.left="calc(var(--i) * 2)";
 reset1();
 Icon1As[2].style.bottom="-120px",Icon1As[2].style.opacity="0";
 
@@ -113,7 +113,7 @@ xb1 = 2;};
 
 const Icon14 = () => {
 
-indicator.style.left="calc(var(--i) * 3)";
+indicator1.style.left="calc(var(--i) * 3)";
 reset1();
 Icon1As[3].style.bottom="-120px",Icon1As[3].style.opacity="0";
 
@@ -143,7 +143,7 @@ xb1 = 3;};
 
 const Icon15 = () => {
 
-indicator.style.left="calc(var(--i) * 4)";
+indicator1.style.left="calc(var(--i) * 4)";
 reset1();
 Icon1As[4].style.bottom="-120px",Icon1As[4].style.opacity="0";
 
@@ -177,11 +177,11 @@ S1.style.animation="trim2 1s forwards",S2.style.animation="trim2 1s forwards",S3
 
 xb1 = 4;};
 
-Click1.addEventListener("click",Icon11);
-Click2.addEventListener("click",Icon12);
-Click3.addEventListener("click",Icon13);
-Click4.addEventListener("click",Icon14);
-Click5.addEventListener("click",Icon15);
+Click11.addEventListener("click",Icon11);
+Click12.addEventListener("click",Icon12);
+Click13.addEventListener("click",Icon13);
+Click14.addEventListener("click",Icon14);
+Click15.addEventListener("click",Icon15);
 
 function ShowB1() {
 

@@ -30,6 +30,8 @@ Drip3.style.d="path('M52 59.9996C52 72.4258 41.9266 82.4992 29.5001 82.4992C17.0
 
 setTimeout(() => {
 
+Iconb5s.forEach(Icon => {Icon.style.display="flex";});
+
 Drip1.style.transition="all 0.3s, opacity 0s",
 Drip1.style.d="path('M124 60C124 60.2761 124.227 60.5 124.508 60.5C124.79 60.5 125 60.2761 125 60C125 59.7239 124.79 59.5 124.508 59.5C124.227 59.5 124 59.7239 124 60Z')",
 
@@ -64,6 +66,8 @@ Drip3.style.opacity="1";
 
 setTimeout(() => {
 
+Iconb5s.forEach(Icon => {Icon.style.display="none";});
+  
 Submenu.style.animation="X4 0.5s ease-out forwards , X3 0.3s ease-out forwards 0.5s";},300);
 
 Liquid.style.transition="0.5s 0.4s",

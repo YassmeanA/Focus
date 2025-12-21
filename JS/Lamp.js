@@ -64,11 +64,11 @@ xb4 = 5;});
 
 function ShowB6() {
 
-setTimeout(() => {Icons[1].click();},1200);
-setTimeout(() => {Icons[2].click();},2400);
-setTimeout(() => {Icons[3].click();},3600);
-setTimeout(() => {Icons[4].click();},4800);
-setTimeout(() => {Icons[0].click();},6000);
+setTimeout(() => {Iconb4s[1].click();},1200);
+setTimeout(() => {Iconb4s[2].click();},2400);
+setTimeout(() => {Iconb4s[3].click();},3600);
+setTimeout(() => {Iconb4s[4].click();},4800);
+setTimeout(() => {Iconb4s[0].click();},6000);
 
 }
 

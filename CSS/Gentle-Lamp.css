@@ -1,5 +1,5 @@
 
-@keyframes Gentle12 {
+@keyframes GentleL12 {
   0.00% { left:calc(var(--i1) + var(--i2)*0.00) }
   1.96% { left:calc(var(--i1) + var(--i2)*-0.0231) }
   3.92% { left:calc(var(--i1) + var(--i2)*0.0204) }
@@ -55,7 +55,7 @@
 }
 
 
-@keyframes Gentle23 {
+@keyframes GentleL23 {
   0.00% { left:calc(var(--i2) + var(--i2)*0.00) }
   1.96% { left:calc(var(--i2) + var(--i2)*-0.0231) }
   3.92% { left:calc(var(--i2) + var(--i2)*0.0204) }
@@ -111,7 +111,7 @@
 }
 
 
-@keyframes Gentle34 {
+@keyframes GentleL34 {
   0.00% { left:calc(var(--i3) + var(--i2)*0.00) }
   1.96% { left:calc(var(--i3) + var(--i2)*-0.0231) }
   3.92% { left:calc(var(--i3) + var(--i2)*0.0204) }
@@ -167,7 +167,7 @@
 }
 
 
-@keyframes Gentle45 {
+@keyframes GentleL45 {
   0.00% { left:calc(var(--i4) + var(--i2)*0.00) }
   1.96% { left:calc(var(--i4) + var(--i2)*-0.0231) }
   3.92% { left:calc(var(--i4) + var(--i2)*0.0204) }
@@ -223,7 +223,7 @@
 }
 
 
-@keyframes Gentle21 {
+@keyframes GentleL21 {
   0.00% { left:calc(var(--i2) - var(--i2)*0.00) }
   1.96% { left:calc(var(--i2) - var(--i2)*-0.0231) }
   3.92% { left:calc(var(--i2) - var(--i2)*0.0204) }
@@ -279,7 +279,7 @@
 }
 
 
-@keyframes Gentle32 {
+@keyframes GentleL32 {
   0.00% { left:calc(var(--i3) - var(--i2)*0.00) }
   1.96% { left:calc(var(--i3) - var(--i2)*-0.0231) }
   3.92% { left:calc(var(--i3) - var(--i2)*0.0204) }
@@ -335,7 +335,7 @@
 }
 
 
-@keyframes Gentle43 {
+@keyframes GentleL43 {
   0.00% { left:calc(var(--i4) - var(--i2)*0.00) }
   1.96% { left:calc(var(--i4) - var(--i2)*-0.0231) }
   3.92% { left:calc(var(--i4) - var(--i2)*0.0204) }
@@ -391,7 +391,7 @@
 }
 
 
-@keyframes Gentle54 {
+@keyframes GentleL54 {
   0.00% { left:calc(var(--i5) - var(--i2)*0.00) }
   1.96% { left:calc(var(--i5) - var(--i2)*-0.0231) }
   3.92% { left:calc(var(--i5) - var(--i2)*0.0204) }
@@ -447,7 +447,7 @@
 }
 
 
-@keyframes Gentle13 {
+@keyframes GentleL13 {
   0.00% { left:calc(var(--i1) + var(--i3)*0.00) }
   1.96% { left:calc(var(--i1) + var(--i3)*-0.0231) }
   3.92% { left:calc(var(--i1) + var(--i3)*0.0204) }
@@ -503,7 +503,7 @@
 }
 
 
-@keyframes Gentle24 {
+@keyframes GentleL24 {
   0.00% { left:calc(var(--i2) + var(--i3)*0.00) }
   1.96% { left:calc(var(--i2) + var(--i3)*-0.0231) }
   3.92% { left:calc(var(--i2) + var(--i3)*0.0204) }
@@ -559,7 +559,7 @@
 }
 
 
-@keyframes Gentle35 {
+@keyframes GentleL35 {
   0.00% { left:calc(var(--i3) + var(--i3)*0.00) }
   1.96% { left:calc(var(--i3) + var(--i3)*0.0231) }
   3.92% { left:calc(var(--i3) + var(--i3)*0.0204) }
@@ -615,7 +615,7 @@
 }
 
 
-@keyframes Gentle53 {
+@keyframes GentleL53 {
   0.00% { left:calc(var(--i5) - var(--i3)*0.00) }
   1.96% { left:calc(var(--i5) - var(--i3)*-0.0231) }
   3.92% { left:calc(var(--i5) - var(--i3)*0.0204) }
@@ -672,7 +672,7 @@
 
 
 
-@keyframes Gentle31 {
+@keyframes GentleL31 {
   0.00% { left:calc(var(--i3) - var(--i3)*0.00) }
   1.96% { left:calc(var(--i3) - var(--i3)*-0.0231) }
   3.92% { left:calc(var(--i3) - var(--i3)*0.0204) }
@@ -728,7 +728,7 @@
 }
 
 
-@keyframes Gentle42 {
+@keyframes GentleL42 {
   0.00% { left:calc(var(--i4) - var(--i3)*0.00) }
   1.96% { left:calc(var(--i4) - var(--i3)*-0.0231) }
   3.92% { left:calc(var(--i4) - var(--i3)*0.0204) }
@@ -784,7 +784,7 @@
 }
 
 
-@keyframes Gentle14 {
+@keyframes GentleL14 {
   0.00% { left:calc(var(--i1) + var(--i4)*0.00) }
   1.96% { left:calc(var(--i1) + var(--i4)*-0.0231) }
   3.92% { left:calc(var(--i1) + var(--i4)*0.0204) }
@@ -840,7 +840,7 @@
 }
 
 
-@keyframes Gentle25 {
+@keyframes GentleL25 {
   0.00% { left:calc(var(--i2) + var(--i4)*0.00) }
   1.96% { left:calc(var(--i2) + var(--i4)*-0.0231) }
   3.92% { left:calc(var(--i2) + var(--i4)*0.0204) }
@@ -896,7 +896,7 @@
 }
 
 
-@keyframes Gentle41 {
+@keyframes GentleL41 {
   0.00% { left:calc(var(--i4) - var(--i4)*0.00) }
   1.96% { left:calc(var(--i4) - var(--i4)*-0.0231) }
   3.92% { left:calc(var(--i4) - var(--i4)*0.0204) }
@@ -952,7 +952,7 @@
 }
 
 
-@keyframes Gentle52 {
+@keyframes GentleL52 {
   0.00% { left:calc(var(--i5) - var(--i4)*0.00) }
   1.96% { left:calc(var(--i5) - var(--i4)*-0.0231) }
   3.92% { left:calc(var(--i5) - var(--i4)*0.0204) }
@@ -1008,7 +1008,7 @@
 }
 
 
-@keyframes Gentle15 {
+@keyframes GentleL15 {
   0.00% { left:calc(var(--i1) + var(--i5)*0.00) }
   1.96% { left:calc(var(--i1) + var(--i5)*-0.0231) }
   3.92% { left:calc(var(--i1) + var(--i5)*0.0204) }
@@ -1064,7 +1064,7 @@
 }
 
 
-@keyframes Gentle51 {
+@keyframes GentleL51 {
   0.00% { left:calc(var(--i5) - var(--i5)*0.00) }
   1.96% { left:calc(var(--i5) - var(--i5)*-0.0231) }
   3.92% { left:calc(var(--i5) - var(--i5)*0.0204) }

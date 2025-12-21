@@ -32,10 +32,10 @@ dot1.style.animation="Dots1 0.7s forwards";
 dot2.style.animation="Dots1 0.7s forwards 0.1s";
 dot3.style.animation="Dots1 0.7s forwards 0.2s";}
 
-Textb3s[x].style.color="black";
+Textb3s[xb3].style.color="black";
 Textb3s[0].style.color="#FF0099";
 
-Fillb3s[x].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
+Fillb3s[xb3].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
 Fillb3s[0].style.animation="Gentle-Translate 1.6s forwards";
 
 xb3 = 0;}
@@ -52,10 +52,10 @@ dot1.style.animation="Dots1 0.7s forwards";
 dot2.style.animation="Dots1 0.7s forwards 0.1s";
 dot3.style.animation="Dots1 0.7s forwards 0.2s";}
 
-Textb3s[x].style.color="black";
+Textb3s[xb3].style.color="black";
 Textb3s[1].style.color="#FF0099";
 
-Fillb3s[x].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
+Fillb3s[xb3].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
 Fillb3s[1].style.animation="Gentle-Translate 1.6s forwards";
 
 xb3 = 1;}
@@ -68,10 +68,10 @@ dot1.style.animation="Dots 0.5s forwards";
 dot2.style.animation="Dots 0.5s forwards 0.1s";
 dot3.style.animation="Dots 0.5s forwards 0.2s";
 
-Textb3s[x].style.color="black";
+Textb3s[xb3].style.color="black";
 Textb3s[2].style.color="#FF0099";
 
-Fillb3s[x].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
+Fillb3s[xb3].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
 Fillb3s[2].style.animation="Gentle-Translate 1.6s forwards";
 
 xb3 = 2;}
@@ -88,10 +88,10 @@ dot1.style.animation="Dots1 0.7s forwards";
 dot2.style.animation="Dots1 0.7s forwards 0.1s";
 dot3.style.animation="Dots1 0.7s forwards 0.2s";}
 
-Textb3s[x].style.color="black";
+Textb3s[xb3].style.color="black";
 Textb3s[3].style.color="#FF0099";
 
-Fillb3s[x].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
+Fillb3s[xb3].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
 Fillb3s[3].style.animation="Gentle-Translate 1.6s forwards";
 
 xb3 = 3;}

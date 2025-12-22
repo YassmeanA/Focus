@@ -105,13 +105,13 @@ Plus.style.animation="Plus1 0.7s forwards";
 }
 
 
-function Show() {
+function ShowB7() {
 
 setTimeout(Open,1000);
 setTimeout(Close,3000);
 
 }
 
-Show();
+ShowB7();
 
-setInterval(Show,5000);
+setInterval(ShowB7,5000);

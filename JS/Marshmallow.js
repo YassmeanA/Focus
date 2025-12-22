@@ -19,7 +19,7 @@ Iconas[index].style.bottom="0px",Iconas[index].style.opacity="1";}); };
 
 const Icon111 = () => { 
 
-indicator.style.left="var(--i2)";
+indicator3.style.left="var(--i2)";
 reset();
 Iconas[0].style.bottom="-120px",Iconas[0].style.opacity="0";
 
@@ -40,7 +40,7 @@ xb5 = 0;};
 
 const Icon222 = () => {
 
-indicator.style.left="calc(var(--i2) + var(--i1))";
+indicator3.style.left="calc(var(--i2) + var(--i1))";
 reset();
 Iconas[1].style.bottom="-120px",Iconas[1].style.opacity="0";
 
@@ -56,7 +56,7 @@ xb5 = 1;};
 
 const Icon333 = () => {
 
-indicator.style.left="calc(var(--i2) + var(--i1)*2)";
+indicator3.style.left="calc(var(--i2) + var(--i1)*2)";
 reset();
 Iconas[2].style.bottom="-120px",Iconas[2].style.opacity="0";
 

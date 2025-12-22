@@ -1,6 +1,6 @@
 const Add = document.querySelector(".containerB8 .icon.Add");
 const Circles = document.querySelectorAll(".containerB8 .circle");
-const Iconb5s = document.querySelectorAll(".containerB8 .Icon");
+const Iconb6s = document.querySelectorAll(".containerB8 .Icon");
 
 //Click on Add btn
 Add.addEventListener("click", () => {
@@ -31,7 +31,7 @@ Drip3.style.d="path('M52 59.9996C52 72.4258 41.9266 82.4992 29.5001 82.4992C17.0
 
 setTimeout(() => {
 
-Iconb5s.forEach(Icon => {Icon.style.display="flex";});
+Iconb6s.forEach(Icon => {Icon.style.display="flex";});
 
 Drip1.style.transition="all 0.3s, opacity 0s",
 Drip1.style.d="path('M124 60C124 60.2761 124.227 60.5 124.508 60.5C124.79 60.5 125 60.2761 125 60C125 59.7239 124.79 59.5 124.508 59.5C124.227 59.5 124 59.7239 124 60Z')",
@@ -67,7 +67,7 @@ Drip3.style.opacity="1";
 
 setTimeout(() => {
 
-Iconb5s.forEach(Icon => {Icon.style.display="none";});
+Iconb6s.forEach(Icon => {Icon.style.display="none";});
   
 Submenu.style.animation="X4 0.5s ease-out forwards , X3 0.3s ease-out forwards 0.5s";},300);
 
@@ -106,13 +106,13 @@ Plus.style.animation="Plus1 0.7s forwards";
 }
 
 
-function ShowB7() {
+function ShowB8() {
 
 setTimeout(Open,1000);
 setTimeout(Close,3000);
 
 }
 
-ShowB7();
+ShowB8();
 
-setInterval(ShowB7,5000);
+setInterval(ShowB8,5000);

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+
+body {
+margin:0;
+display:flex;
+justify-content:center;
+align-items:center;
+background-color:white;
+overflow:hidden;
+min-height:100vh;
+background:#E5C7FC;}
+
+:root {
+--primary:#730BBA;
+--secondary:#D9D9D9;}
+
+* {
+font-family:"Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-style:normal;}
+
+#BottomNavBar {
+position:absolute;
+height:110px;
+width:320px;
+display:flex;
+justify-content:center;
+transform:scale(0.85);}
+
+.background {
+position:absolute;
+bottom:0;
+height:70px;
+width:400px;
+border-radius:35px;
+box-shadow:0px 20px 20px rgba(0,0,0,0.05);}
+
+#sides {
+position:absolute;
+bottom:0;
+height:70px;
+width:400px;}
+
+.side {
+position:absolute;
+height:70px;
+width:40px;
+background:white;}
+
+.left {
+left:0;
+border-radius:35px 0px 0px 35px;}
+
+.right {
+right:0;
+border-radius:0px 40px 40px 0px;}
+
+#Container {
+position:absolute;
+bottom:0;
+width:330px;
+height:100px;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;}
+
+#container {
+position:absolute;
+bottom:0;
+width:415px;
+height:100px;
+display:flex;
+justify-content:center;
+align-items:center;}
+
+#indicator {
+--i1:110px;
+--i2:30px;
+position:absolute;
+bottom:0;
+left:30px;
+width:415px;
+height:100px;
+display:flex;
+justify-content:center;
+align-items:center;
+transition:0.6s cubic-bezier(0,0,0,1);}
+
+#background {
+position:absolute;
+bottom:0;
+left:-552.5px;}
+
+.icon {
+height:50px;
+width:50px;}
+
+.icons {
+position:absolute;
+height:50px;
+width:270px;
+display:flex;
+column-gap:60px;}
+
+.icons.A {
+bottom:20px;}
+
+.icons.B {
+bottom:-120px;}
+
+.icons.C {
+bottom:-120px;}
+
+.icon.A:nth-child(1) {
+position:relative;
+bottom:-120px;}
+
+.icon.A {
+position:relative;
+bottom:0;
+transition:bottom 0.6s cubic-bezier(0,0,0,1), opacity 0s;}
+
+.icon.B, .icon.C {
+position:relative;
+bottom:0;
+transition:bottom 0.7s cubic-bezier(0,0,0,1), opacity 0s;}
+
+#blur {
+position:absolute;
+bottom:-20px;
+height:50px;
+width:330px;
+filter:blur(5px);
+background-color:white;}
+
+.ICONS {
+position:absolute;
+bottom:30px;
+left:0;
+height:80px;
+width:135px;
+display:flex;
+justify-content:center;}
+
+.ICON {
+position:absolute;
+bottom:-80px;
+height:50px;
+width:50px;
+display:flex;
+justify-content:center;
+box-shadow:1px 2px 5px rgba(0,0,0,0.2);
+border-radius:25px;
+background-color:white;
+transition:0.6s cubic-bezier(0,0,0,1) ;}
+
+.ICON:nth-child(1) {
+position:absolute;
+bottom:18px;}
+
+.clicks {
+position:absolute;
+bottom:20px;
+height:50px;
+width:270px;
+display:flex;
+column-gap:60px;}
+
+.click {
+height:50px;
+width:50px;
+display:flex;
+justify-content:center;}
+
+.text {
+position:absolute;
+bottom:0;
+font-size:0.4rem;
+color:#D9D9D9;
+transition:0.6s;}
+
+.text.active {
+transform:scale(1.2);
+color:#730BBA;}
+
+</style>
+</head>
+<body>
+
+<div id="BottomNavBar">
+
+<div class="background"></div>
+
+<div id="sides">
+<div class="side left"></div>
+<div class="side right"></div>
+</div>
+
+<div id="Container">
+
+<div id="container">
+
+<div id="indicator">
+
+<div class="ICONS">
+
+       <div class="ICON">
+       <svg style="transform:scale(0.9);" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path d="M24.5769 16.7825C24.8335 16.6114 25.1678 16.6114 25.4244 16.7825L33.8272 22.3843C34.0397 22.526 34.1673 22.7645 34.1673 23.0199V34.0694C34.1673 34.4913 33.8253 34.8333 33.4034 34.8333H28.0562C27.6343 34.8333 27.2923 34.4913 27.2923 34.0694V29.4861C27.2923 29.0642 26.9503 28.7222 26.5284 28.7222H25.0007H23.4729C23.051 28.7222 22.709 29.0642 22.709 29.4861V34.0694C22.709 34.4913 22.367 34.8333 21.9451 34.8333H16.5979C16.176 34.8333 15.834 34.4913 15.834 34.0694V23.0199C15.834 22.7645 15.9616 22.526 16.1741 22.3843L24.5769 16.7825Z" fill="#730BBA"/>
+       </svg>
+       </div>
+   
+       <div class="ICON">
+       <svg style="transform:scale(0.9);" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <rect x="29.2168" y="16.5" width="4.95002" height="18.3331" rx="0.818448" fill="#730BBA"/>
+       <rect x="22.6172" y="24.1992" width="4.95002" height="10.6332" rx="0.818448" fill="#730BBA"/>
+       <rect x="15.834" y="20.7188" width="4.95002" height="14.1165" rx="0.818448" fill="#730BBA"/>
+       </svg>
+       </div>
+
+       <div class="ICON">
+       <svg style="transform:scale(0.9);" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path d="M21.4482 25.9727C22.3787 26.9646 23.6451 27.5859 25.0762 27.5859C26.4912 27.5859 27.7444 26.9775 28.6719 26.0049C29.6655 26.286 30.5808 26.68 31.3652 27.1768C33.0526 28.2456 34.0017 29.6956 34.002 31.207V31.957C34.0016 32.785 33.3299 33.4567 32.502 33.457H17.502C16.6737 33.457 16.0003 32.7852 16 31.957L16.002 31.207C16.0022 29.6955 16.95 28.2456 18.6377 27.1768C19.453 26.6605 20.409 26.2554 21.4482 25.9727ZM25.0029 16C27.4882 16 29.5029 18.2386 29.5029 21C29.5029 23.7614 27.4882 26 25.0029 26C22.5176 26 20.5029 23.7614 20.5029 21C20.5029 18.2386 22.5176 16 25.0029 16Z" fill="var(--primary)"/>
+       </svg>
+       </div>
+
+</div>
+
+<svg id="background" width="1240" height="70" viewBox="0 0 1240 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M570.725 0H0V70H1240V0H669.275C661.613 0.208011 654.396 3.70432 649.483 9.61698L643.094 17.3039C631.088 31.7517 608.913 31.7517 596.906 17.3039L590.518 9.61729C585.604 3.70443 578.387 0.208014 570.725 0Z" fill="white"/>
+</svg>
+
+</div>
+
+</div>
+
+<div class="icons A">
+
+       <div class="icon A">
+       <svg style="transform:scale(0.8);" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path d="M24.5769 16.7825C24.8335 16.6114 25.1678 16.6114 25.4244 16.7825L33.8272 22.3843C34.0397 22.526 34.1673 22.7645 34.1673 23.0199V34.0694C34.1673 34.4913 33.8253 34.8333 33.4034 34.8333H28.0562C27.6343 34.8333 27.2923 34.4913 27.2923 34.0694V29.4861C27.2923 29.0642 26.9503 28.7222 26.5284 28.7222H25.0007H23.4729C23.051 28.7222 22.709 29.0642 22.709 29.4861V34.0694C22.709 34.4913 22.367 34.8333 21.9451 34.8333H16.5979C16.176 34.8333 15.834 34.4913 15.834 34.0694V23.0199C15.834 22.7645 15.9616 22.526 16.1741 22.3843L24.5769 16.7825Z" fill="#D9D9D9"/>
+       </svg>
+       </div>
+       
+       <div class="icon A">
+       <svg style="transform:scale(0.8);" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <rect x="29.2168" y="16.5" width="4.95002" height="18.3331" rx="0.818448" fill="#D9D9D9"/>
+       <rect x="22.6172" y="24.1992" width="4.95002" height="10.6332" rx="0.818448" fill="#D9D9D9"/>
+       <rect x="15.834" y="20.7188" width="4.95002" height="14.1165" rx="0.818448" fill="#D9D9D9"/>
+       </svg>
+       </div>
+
+       <div class="icon A">
+       <svg style="transform:scale(0.8);" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path d="M21.4482 25.9727C22.3787 26.9646 23.6451 27.5859 25.0762 27.5859C26.4912 27.5859 27.7444 26.9775 28.6719 26.0049C29.6655 26.286 30.5808 26.68 31.3652 27.1768C33.0526 28.2456 34.0017 29.6956 34.002 31.207V31.957C34.0016 32.785 33.3299 33.4567 32.502 33.457H17.502C16.6737 33.457 16.0003 32.7852 16 31.957L16.002 31.207C16.0022 29.6955 16.95 28.2456 18.6377 27.1768C19.453 26.6605 20.409 26.2554 21.4482 25.9727ZM25.0029 16C27.4882 16 29.5029 18.2386 29.5029 21C29.5029 23.7614 27.4882 26 25.0029 26C22.5176 26 20.5029 23.7614 20.5029 21C20.5029 18.2386 22.5176 16 25.0029 16Z" fill="var(--secondary)"/>
+       </svg>
+       </div>
+
+</div>
+
+<div class="icons B">
+
+       <div class="icon B">
+       <svg style="transform:scale(0.8);" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path d="M24.5769 16.7825C24.8335 16.6114 25.1678 16.6114 25.4244 16.7825L33.8272 22.3843C34.0397 22.526 34.1673 22.7645 34.1673 23.0199V34.0694C34.1673 34.4913 33.8253 34.8333 33.4034 34.8333H28.0562C27.6343 34.8333 27.2923 34.4913 27.2923 34.0694V29.4861C27.2923 29.0642 26.9503 28.7222 26.5284 28.7222H25.0007H23.4729C23.051 28.7222 22.709 29.0642 22.709 29.4861V34.0694C22.709 34.4913 22.367 34.8333 21.9451 34.8333H16.5979C16.176 34.8333 15.834 34.4913 15.834 34.0694V23.0199C15.834 22.7645 15.9616 22.526 16.1741 22.3843L24.5769 16.7825Z" fill="#D9D9D9"/>
+       </svg>
+       </div>
+       
+       <div class="icon B">
+       <svg style="transform:scale(0.8);" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <rect x="29.2168" y="16.5" width="4.95002" height="18.3331" rx="0.818448" fill="#D9D9D9"/>
+       <rect x="22.6172" y="24.1992" width="4.95002" height="10.6332" rx="0.818448" fill="#D9D9D9"/>
+       <rect x="15.834" y="20.7188" width="4.95002" height="14.1165" rx="0.818448" fill="#D9D9D9"/>
+       </svg>
+       </div>
+
+       <div class="icon B">
+       <svg style="transform:scale(0.8);" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path d="M21.4482 25.9727C22.3787 26.9646 23.6451 27.5859 25.0762 27.5859C26.4912 27.5859 27.7444 26.9775 28.6719 26.0049C29.6655 26.286 30.5808 26.68 31.3652 27.1768C33.0526 28.2456 34.0017 29.6956 34.002 31.207V31.957C34.0016 32.785 33.3299 33.4567 32.502 33.457H17.502C16.6737 33.457 16.0003 32.7852 16 31.957L16.002 31.207C16.0022 29.6955 16.95 28.2456 18.6377 27.1768C19.453 26.6605 20.409 26.2554 21.4482 25.9727ZM25.0029 16C27.4882 16 29.5029 18.2386 29.5029 21C29.5029 23.7614 27.4882 26 25.0029 26C22.5176 26 20.5029 23.7614 20.5029 21C20.5029 18.2386 22.5176 16 25.0029 16Z" fill="var(--secondary)"/>
+       </svg>
+       </div>
+
+</div>
+
+<div class="icons C">
+
+       <div class="icon C">
+       <svg style="transform:scale(0.8);" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path d="M24.5769 16.7825C24.8335 16.6114 25.1678 16.6114 25.4244 16.7825L33.8272 22.3843C34.0397 22.526 34.1673 22.7645 34.1673 23.0199V34.0694C34.1673 34.4913 33.8253 34.8333 33.4034 34.8333H28.0562C27.6343 34.8333 27.2923 34.4913 27.2923 34.0694V29.4861C27.2923 29.0642 26.9503 28.7222 26.5284 28.7222H25.0007H23.4729C23.051 28.7222 22.709 29.0642 22.709 29.4861V34.0694C22.709 34.4913 22.367 34.8333 21.9451 34.8333H16.5979C16.176 34.8333 15.834 34.4913 15.834 34.0694V23.0199C15.834 22.7645 15.9616 22.526 16.1741 22.3843L24.5769 16.7825Z" fill="#D9D9D9"/>
+       </svg>
+       </div>
+       
+       <div class="icon C">
+       <svg style="transform:scale(0.8);" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <rect x="29.2168" y="16.5" width="4.95002" height="18.3331" rx="0.818448" fill="#D9D9D9"/>
+       <rect x="22.6172" y="24.1992" width="4.95002" height="10.6332" rx="0.818448" fill="#D9D9D9"/>
+       <rect x="15.834" y="20.7188" width="4.95002" height="14.1165" rx="0.818448" fill="#D9D9D9"/>
+       </svg>
+       </div>
+       
+       <div class="icon C">
+       <svg style="transform:scale(0.8);" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path d="M21.4482 25.9727C22.3787 26.9646 23.6451 27.5859 25.0762 27.5859C26.4912 27.5859 27.7444 26.9775 28.6719 26.0049C29.6655 26.286 30.5808 26.68 31.3652 27.1768C33.0526 28.2456 34.0017 29.6956 34.002 31.207V31.957C34.0016 32.785 33.3299 33.4567 32.502 33.457H17.502C16.6737 33.457 16.0003 32.7852 16 31.957L16.002 31.207C16.0022 29.6955 16.95 28.2456 18.6377 27.1768C19.453 26.6605 20.409 26.2554 21.4482 25.9727ZM25.0029 16C27.4882 16 29.5029 18.2386 29.5029 21C29.5029 23.7614 27.4882 26 25.0029 26C22.5176 26 20.5029 23.7614 20.5029 21C20.5029 18.2386 22.5176 16 25.0029 16Z" fill="var(--secondary)"/>
+       </svg>
+       </div>
+
+</div>
+
+<div id="blur"></div>
+
+<div class="clicks">
+
+<div class="click" id="Click1">
+<span class="text active">Home</span>
+</div>
+
+<div class="click" id="Click2">
+<span class="text">History</span>
+</div>
+
+<div class="click" id="Click3">
+<span class="text">Personal</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const Iconas = document.querySelectorAll(".icon.A");
+const Iconbs = document.querySelectorAll(".icon.B");
+const Iconcs = document.querySelectorAll(".icon.C");
+const ICONAs = document.querySelectorAll(".ICON");
+const TextAs = document.querySelectorAll(".text");
+
+var x = 0;
+
+// reset IconAs & IconBs & IconCs//
+const reset = () => {
+Iconcs.forEach((IconC, index) => {
+Iconcs[index].style.bottom="0px",Iconcs[index].style.opacity="0";});
+
+Iconbs.forEach((IconB, index) => {
+Iconbs[index].style.bottom="0px",Iconbs[index].style.opacity="0";});
+
+Iconas.forEach((IconA, index) => {
+Iconas[index].style.bottom="0px",Iconas[index].style.opacity="1";}); };
+
+const Icon11 = () => { 
+
+indicator.style.left="var(--i2)";
+reset();
+Iconas[0].style.bottom="-120px",Iconas[0].style.opacity="0";
+
+document.querySelector(".text.active").classList.remove("active");
+TextAs[0].classList.add("active");
+
+// set the opacity & location of moving icons//
+if(x == 2){
+Iconas[1].style.opacity="0",
+Iconcs[1].style.opacity="1",Iconcs[1].style.bottom="140px";};
+
+// ICONS //
+ICONAs.forEach((ICON, index) => {
+if(index != 0){ICONAs[index].style.bottom="-80px";};
+ICONAs[0].style.bottom="18px";});
+
+x = 0;};
+
+const Icon22 = () => {
+
+indicator.style.left="calc(var(--i2) + var(--i1))";
+reset();
+Iconas[1].style.bottom="-120px",Iconas[1].style.opacity="0";
+
+document.querySelector(".text.active").classList.remove("active");
+TextAs[1].classList.add("active");
+
+// ICONS //
+ICONAs.forEach((ICON, index) => {
+if(index != 1){ICONAs[index].style.bottom="-80px";};
+ICONAs[1].style.bottom="18px"; });
+
+x = 1;};
+
+const Icon33 = () => {
+
+indicator.style.left="calc(var(--i2) + var(--i1)*2)";
+reset();
+Iconas[2].style.bottom="-120px",Iconas[2].style.opacity="0";
+
+document.querySelector(".text.active").classList.remove("active");
+TextAs[2].classList.add("active");
+
+// set the opacity & location of moving icons//
+if(x == 0){
+Iconas[1].style.opacity="0",
+Iconbs[1].style.opacity="1",Iconbs[1].style.bottom="140px";};
+
+// ICONS //
+ICONAs.forEach((ICON, index) => {
+if(index != 2){ICONAs[index].style.bottom="-80px";};
+ICONAs[2].style.bottom="18px";});
+
+x = 2;};
+
+Click1.addEventListener("click",Icon11);
+Click2.addEventListener("click",Icon22);
+Click3.addEventListener("click",Icon33);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="SpringBouncy.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+
+body {
+margin:0;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#65FA02;
+overflow:hidden;
+min-height:100vh;}
+
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Istok Web", serif;
+font-weight:300;
+font-style:normal;}
+
+:root{
+--primary:#3E3E3E;
+--secondary:#65FA02;}
+
+nav {
+position:absolute;
+width:360px;
+height:80px;
+transform:scale(0.85);
+background:white;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+border-radius:12px 12px 30px 30px;}
+
+nav .icons {
+position:absolute;
+top:5px;
+height:50px;
+width:330px;
+display:flex;
+column-gap:40px;}
+
+nav .icon {
+position:relative;
+width:50px;
+height:50px;
+z-index:1;
+transform:scale(0.9);
+display:flex;
+justify-content:center;
+transition:0.6s;}
+
+nav .text {
+position:absolute;
+bottom:-5px;
+font-size:0.45rem;
+font-weight:500;
+color:var(--primary);}
+
+nav .path1{
+stroke:var(--primary);}
+
+nav .path2{
+stroke:var(--primary);}
+
+nav .path3{
+fill:var(--primary);}
+
+nav .icon.active .path1 {
+fill:var(--secondary);
+stroke:var(--secondary);}
+
+nav .icon.active .path2 {
+stroke:white;}
+
+nav .icon.active .path3 {
+fill:white;}
+
+nav .icon.active .path1 {
+stroke:var(--secondary);}
+
+nav .icon.active .path2 {
+stroke:white;}
+
+nav .icon.active .text {
+color:var(--secondary);}
+
+nav .icon.active .part1 {
+--i1:25px;
+--i2:25px;
+--i3:18px;
+--i4:-18px;
+animation:P1 0.3s,Bouncy-Height 1.8s forwards 0.3s,Bouncy-TranslateY 1.8s forwards 0.3s;}
+
+nav .icon.active .part2 {
+--i1:25px;
+--i2:25px;
+--i3:18px;
+--i4:-18px;
+animation:P1 0.3s,Bouncy-Height 1.8s forwards 0.3s,Bouncy-TranslateY 1.8s forwards 0.3s;}
+
+nav .icon.active .part3 {
+--i1:25px;
+--i2:25px;
+--i3:18px;
+--i4:-18px;
+animation:P1 0.3s,Bouncy-Height 1.8s forwards 0.3s,Bouncy-TranslateY 1.8s forwards 0.3s;}
+
+nav .icon.active .part4 {
+--i5:0.8;
+--i6:0.2;
+--i7:1.2;
+--i8:0.2;
+animation:P3 0.3s,Bouncy-Scale2 1.8s forwards 0.3s;}
+
+nav .icon.active .part5 {
+--i5:0.6;
+--i6:0.4;
+animation:P2 0.3s,Bouncy-Scale1 1.8s forwards 0.3s;}
+
+@keyframes P1 {
+100%{height:25px;transform:translateY(18px);}}
+
+@keyframes P2 {
+100%{transform:scale(0.6);}}
+
+@keyframes P3 {
+100%{transform:scale(1.4);}}
+
+
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+
+<ul class="icons">
+
+<li class="icon active">
+<svg class="part1" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+<path class="path1" d="M15.5556 23.1139C15.5556 22.6094 15.7841 22.132 16.1771 21.8156L23.9549 15.5545C24.5651 15.0633 25.4349 15.0633 26.0451 15.5545L33.8229 21.8156C34.2159 22.132 34.4444 22.6094 34.4444 23.1139V34.7778C34.4444 35.6983 33.6983 36.4444 32.7778 36.4444H17.2222C16.3017 36.4444 15.5556 35.6983 15.5556 34.7778V23.1139Z" fill="none" stroke="var(--primary)" stroke-width="1.11111"/>
+<rect class="path3" x="24.335" y="26.793" width="1.2" height="6.30857" rx="0.6" fill="var(--primary)"/>
+</svg>
+<span class="text">Home</span>
+</li>
+
+<li class="icon">
+<svg class="part4" style="position: absolute;left:0;" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle class="path1" cx="30.2385" cy="19.7619" r="4.19048" fill="none" stroke="var(--primary)" stroke-width="1.14286"/>
+<rect class="path1" x="15.5714" y="26.048" width="8.38095" height="8.38095" rx="2.85714" fill="none" stroke="var(--primary)" stroke-width="1.14286"/>
+</svg>
+<svg class="part5" style="position: absolute;left:0;" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect class="path1" x="26.048" y="26.048" width="8.38095" height="8.38095" rx="2.85714" fill="none" stroke="var(--primary)" stroke-width="1.14286"/>
+<rect class="path1" x="15.5714" y="15.5714" width="8.38095" height="8.38095" rx="3.2381" fill="none" stroke="var(--primary)" stroke-width="1.14286"/>
+</svg>
+<span class="text">Categories</span>
+</li>
+
+<li class="icon">
+<svg class="part2" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+<path class="path1" d="M18.1817 16.8127C18.2795 15.5637 19.3215 14.6 20.5744 14.6H29.4256C30.6785 14.6 31.7205 15.5637 31.8183 16.8127L33.1487 33.8127C33.2579 35.2078 32.1553 36.4 30.756 36.4H19.244C17.8447 36.4 16.7421 35.2078 16.8513 33.8127L18.1817 16.8127Z" fill="none" stroke="var(--primary)" stroke-width="1.2"/>
+<path class="path2" d="M28.2683 18.9372C28.0704 19.6274 27.659 20.2372 27.0932 20.6792C26.5274 21.1213 25.8362 21.3729 25.1187 21.3979C24.4011 21.423 23.694 21.2202 23.0987 20.8187C22.5035 20.4172 22.0506 19.8376 21.805 19.1629" stroke="var(--primary)" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
+<span class="text">Shopping</span>
+</li>
+
+<li class="icon">
+<svg class="part5" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle class="path1" cx="25" cy="25" r="9.4" stroke="var(--primary)" fill="none"  stroke-width="1.2"/>
+<path class="path2" d="M28.8184 28.8184C27.8057 29.8311 26.4322 30.4 25 30.4C23.5678 30.4 22.1943 29.8311 21.1816 28.8184" stroke="var(--primary)" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
+<span class="text">Mine</span>
+</li>
+
+</ul>
+
+</nav>
+
+<script>
+
+const Icons = document.querySelectorAll(".icon");
+
+Icons.forEach((Icon,index)=>{
+Icons[index].addEventListener("click",() => {
+
+document.querySelector(".icon.active").classList.remove("active");
+Icons[index].classList.add("active");
+
+});});
+
+</script>
+
+</body>
+</html>

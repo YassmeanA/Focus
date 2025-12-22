@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Spring-Gentle.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+
+body {
+margin:0;
+display:flex;
+justify-content:center;
+align-items:center;
+width:100vw;
+height:100vh;
+overflow-x:hidden;}
+
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Istok Web", serif;
+font-weight:300;
+font-style:normal;}
+
+.containerB2 {
+position:absolute;
+top:0;
+width:100vw;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(#FF0099,#FF005C);}
+
+.Screen {
+position:absolute;
+bottom:30vh;
+width:330px;
+height:calc(70vh + 50px);
+border-radius:0px 0px 40px 40px;
+border:5px solid #fcb3d8;
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 15px 25px rgba(0,0,0,0.2);}
+
+.navbar {
+position:absolute;
+bottom:-5px;
+width:360px;
+height:80px;
+background:white;
+display:flex;
+align-items:center;
+justify-content:center;
+transform:scale(0.889);
+border-radius:10px 10px 0 0;}
+
+.icons {
+position:absolute;
+top:0;
+height:50px;
+width:330px;
+display:flex;
+column-gap:20px;}
+
+.icon {
+position:relative;
+display:flex;
+justify-content:center;
+width:50px;
+height:50px;}
+
+.fill {
+--i1:0px;
+--i2:-20px;}
+
+.icon.A span {
+position:absolute;
+bottom:-5px;
+color:black;
+font-size:0.5rem;
+transition:0.2s ease-out;}
+
+.submenu {
+position:absolute;
+bottom:100px;
+height:50px;
+width:50px;
+transform:scale(0.9);}
+
+.submenu .icon.B {
+position:absolute;
+left:0;
+width:50px;
+height:50px;
+display:flex;
+transform:scale(0.5) translate(0px,130px);}
+
+.wrapper {
+width:50px;
+height:50px;
+background:white;
+border-radius:25px;
+transition:0.15s;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:5px 5px 10px rgba(0,0,0,0.2);}
+
+.wrapper:active {
+transform:scale(0.85);}
+
+@keyframes Hide {
+0%{transform:translate(-20px,-20px);}
+100%{transform:translate(0px,0px);}}
+
+@keyframes Path {
+0%{stroke-dashoffset:7;}
+100%{stroke-dashoffset:0;}}
+
+@keyframes Path1 {
+0%{stroke-dashoffset:0;}
+100%{stroke-dashoffset:7;}}
+
+@keyframes Dots {
+0%{transform:translateY(0px);opacity:1;}
+50%{transform:translateY(-3px);opacity:1;}
+100%{transform:translateY(0px); opacity:0;}}
+
+@keyframes Dots1 {
+0%{transform:translateY(0px);}
+50%{transform:translateY(-3px);}
+100%{transform:translateY(0px);}}
+
+</style>
+</head>
+<body>
+
+<div class="containerB2">
+
+<div class="Screen">
+
+<div class="submenu">
+
+<div class="icon B">
+<div class="wrapper">
+<svg style="transform:scale(1.4);" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.7018 9.1204C20.9188 9.27079 21.0326 9.53075 20.9918 9.79072L19.6168 18.7284C19.5846 18.9368 19.4578 19.1194 19.273 19.2225C19.0883 19.3256 18.867 19.3385 18.6715 19.2569L16.1019 18.1891L14.6302 19.7811C14.439 19.9895 14.1382 20.0583 13.8739 19.9551C13.6097 19.852 13.4378 19.5963 13.4378 19.3127V17.5166C13.4378 17.4307 13.47 17.349 13.528 17.2846L17.1288 13.3572C17.2535 13.2218 17.2492 13.0134 17.1203 12.8845C16.9913 12.7556 16.7829 12.747 16.6476 12.8695L12.2776 16.7518L10.3805 15.8021C10.1528 15.6883 10.0067 15.4605 10.0002 15.207C9.99378 14.9535 10.127 14.7172 10.3461 14.5904L19.9713 9.09032C20.2012 8.95926 20.4848 8.97215 20.7018 9.1204Z" fill="black"/>
+</svg>
+</div>
+</div>
+
+<div class="icon B">
+<div class="wrapper">
+<svg style="transform:scale(1.3);" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.8 10.0898H11.2C10.54 10.0898 10.006 10.6421 10.006 11.3171L10 18.6808C10 19.3558 10.54 19.908 11.2 19.908H20.8C21.46 19.908 22 19.3558 22 18.6808V11.3171C22 10.6421 21.46 10.0898 20.8 10.0898ZM20.56 12.6978L16.318 15.4101C16.126 15.5328 15.874 15.5328 15.682 15.4101L11.44 12.6978C11.3798 12.6633 11.3272 12.6166 11.2851 12.5606C11.2431 12.5047 11.2126 12.4405 11.1955 12.3722C11.1785 12.3038 11.1751 12.2326 11.1857 12.1629C11.1963 12.0932 11.2206 12.0264 11.2572 11.9665C11.2937 11.9067 11.3418 11.8551 11.3984 11.8148C11.4551 11.7745 11.5191 11.7464 11.5867 11.7321C11.6543 11.7179 11.724 11.7178 11.7916 11.7319C11.8592 11.746 11.9233 11.774 11.98 11.8142L16 14.3853L20.02 11.8142C20.0767 11.774 20.1408 11.746 20.2084 11.7319C20.276 11.7178 20.3457 11.7179 20.4133 11.7321C20.4809 11.7464 20.5449 11.7745 20.6016 11.8148C20.6582 11.8551 20.7063 11.9067 20.7428 11.9665C20.7794 12.0264 20.8037 12.0932 20.8143 12.1629C20.8249 12.2326 20.8215 12.3038 20.8045 12.3722C20.7874 12.4405 20.7569 12.5047 20.7149 12.5606C20.6728 12.6166 20.6202 12.6633 20.56 12.6978Z" fill="black"/>
+</svg>
+</div>
+</div>
+
+<div class="icon B">
+<div class="wrapper">
+<svg style="transform:scale(1.3);" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 11.2222C10 10.8981 10.1288 10.5872 10.358 10.358C10.5872 10.1288 10.8981 10 11.2222 10H13.6239C13.8251 9.99997 14.0231 10.0496 14.2005 10.1445C14.3779 10.2394 14.5291 10.3765 14.6408 10.5439L15.137 11.2894C15.2486 11.4568 15.3999 11.594 15.5773 11.6889C15.7547 11.7837 15.9527 11.8334 16.1539 11.8333H19.7778C20.1019 11.8333 20.4128 11.9621 20.642 12.1913C20.8712 12.4205 21 12.7314 21 13.0556V18.5556C21 18.8797 20.8712 19.1906 20.642 19.4198C20.4128 19.649 20.1019 19.7778 19.7778 19.7778H11.2222C10.8981 19.7778 10.5872 19.649 10.358 19.4198C10.1288 19.1906 10 18.8797 10 18.5556V11.2222Z" fill="black" stroke="black" stroke-width="1.22222" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</div>
+
+<div class="icon B">
+<div class="wrapper">
+<svg style="transform:scale(1.4);" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.8194 16.9207V20.4123C15.8194 20.7323 16.0812 20.9942 16.4013 20.9942H19.8929C20.213 20.9942 20.4748 20.7323 20.4748 20.4123V16.9207C20.4748 16.6006 20.213 16.3387 19.8929 16.3387H16.4013C16.0812 16.3387 15.8194 16.6006 15.8194 16.9207ZM10.5819 20.9942H14.0735C14.3936 20.9942 14.6555 20.7323 14.6555 20.4123V16.9207C14.6555 16.6006 14.3936 16.3387 14.0735 16.3387H10.5819C10.2619 16.3387 10 16.6006 10 16.9207V20.4123C10 20.7323 10.2619 20.9942 10.5819 20.9942ZM10 11.1013V14.5929C10 14.913 10.2619 15.1749 10.5819 15.1749H14.0735C14.3936 15.1749 14.6555 14.913 14.6555 14.5929V11.1013C14.6555 10.7812 14.3936 10.5194 14.0735 10.5194H10.5819C10.2619 10.5194 10 10.7812 10 11.1013ZM17.5361 10.1702L15.0628 12.6376C15.0089 12.6915 14.9661 12.7554 14.9369 12.8258C14.9077 12.8962 14.8927 12.9717 14.8927 13.0479C14.8927 13.1241 14.9077 13.1996 14.9369 13.27C14.9661 13.3404 15.0089 13.4043 15.0628 13.4582L17.5361 15.9314C17.763 16.1583 18.1296 16.1583 18.3566 15.9314L20.8298 13.4582C20.8838 13.4043 20.9266 13.3404 20.9558 13.27C20.985 13.1996 21 13.1241 21 13.0479C21 12.9717 20.985 12.8962 20.9558 12.8258C20.9266 12.7554 20.8838 12.6915 20.8298 12.6376L18.3624 10.1702C18.1355 9.94326 17.763 9.94326 17.5361 10.1702Z" fill="black"/>
+</svg>
+</div>
+</div>
+
+</div>
+
+<div class="navbar">
+
+<div class="rect" style="width:80px;height:4px;background:#F1F1F1;border-radius:2px;position:absolute;bottom:10px;"></div>
+
+<div class="icons">
+
+<div class="icon A" style="transform:scale(0.9);">
+<span style="color:#FF0099;">home</span>
+
+<svg style="position:absolute;" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="path1" style="stroke-dasharray:7;stroke-dashoffset:7;" d="M18 22.9062L23.8087 19" stroke="#CACACA" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
+
+<div style="position:absolute;width:50px;height:50px;clip-path:path('M25.7364 15.3008C25.1037 14.8997 24.2963 14.8997 23.6636 15.3008L15.8991 20.2237C15.3392 20.5786 15 21.1954 15 21.8583V24.9141V31.1582V31.4C15 33.3882 16.6118 35 18.6 35H30.8C32.7882 35 34.4 33.3882 34.4 31.4V31.1582V24.9141V21.8583C34.4 21.1954 34.0607 20.5786 33.5009 20.2237L25.7364 15.3008Z');">
+<div class="fill" style="position:absolute;left:25px;top:23px;transform:translate(-20px,-20px);width:50px;height:50px;background:linear-gradient(#FF0099,#FF005C);clip-path:path('M25.7364 15.3008C25.1037 14.8997 24.2963 14.8997 23.6636 15.3008L15.8991 20.2237C15.3392 20.5786 15 21.1954 15 21.8583V24.9141V31.1582V31.4C15 33.3882 16.6118 35 18.6 35H30.8C32.7882 35 34.4 33.3882 34.4 31.4V31.1582V24.9141V21.8583C34.4 21.1954 34.0607 20.5786 33.5009 20.2237L25.7364 15.3008Z');"></div>
+</div>
+
+<svg style="position:absolute;" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.7364 15.3008C25.1037 14.8997 24.2963 14.8997 23.6636 15.3008L15.8991 20.2237C15.3392 20.5786 15 21.1954 15 21.8583V24.9141V31.1582V31.4C15 33.3882 16.6118 35 18.6 35H30.8C32.7882 35 34.4 33.3882 34.4 31.4V31.1582V24.9141V21.8583C34.4 21.1954 34.0607 20.5786 33.5009 20.2237L25.7364 15.3008Z" stroke="black" stroke-width="1.2"/>
+</svg>
+</div>
+
+<div class="icon A" style="transform:scale(0.9);">
+<span>follow</span>
+
+<svg id="plus" style="position:absolute;" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.5684 26.4505V24.2689H27.7501C27.9008 24.2689 28.0454 24.209 28.152 24.1024C28.2585 23.9958 28.3184 23.8513 28.3184 23.7005C28.3184 23.5498 28.2585 23.4052 28.152 23.2986C28.0454 23.1921 27.9008 23.1322 27.7501 23.1322H25.5684V20.9505C25.5684 20.7998 25.5085 20.6552 25.402 20.5486C25.2954 20.4421 25.1508 20.3822 25.0001 20.3822C24.8493 20.3822 24.7048 20.4421 24.5982 20.5486C24.4916 20.6552 24.4317 20.7998 24.4317 20.9505V23.1322H22.2501C22.0993 23.1322 21.9548 23.1921 21.8482 23.2986C21.7416 23.4052 21.6817 23.5498 21.6817 23.7005C21.6817 23.8513 21.7416 23.9958 21.8482 24.1024C21.9548 24.209 22.0993 24.2689 22.2501 24.2689H24.4317V26.4505C24.4317 26.6013 24.4916 26.7458 24.5982 26.8524C24.7048 26.959 24.8493 27.0189 25.0001 27.0189C25.1508 27.0189 25.2954 26.959 25.402 26.8524C25.5085 26.7458 25.5684 26.6013 25.5684 26.4505Z" fill="#CACACA" stroke="#CACACA" stroke-width="0.22"/>
+</svg>
+
+<div style="position:absolute;width:50px;height:50px;clip-path:path('M19.6 15C17.6118 15 16 16.6118 16 18.6V21.4531V25.5274V33.5977C16 34.6825 17.1805 35.3552 18.1138 34.8021L24.2862 31.144C24.7263 30.8831 25.2737 30.8831 25.7138 31.144L31.8862 34.8021C32.8195 35.3552 34 34.6825 34 33.5977V25.5274V21.4531V18.6C34 16.6118 32.3882 15 30.4 15H19.6Z');">
+<div class="fill" style="position:absolute;left:25px;top:25px;width:50px;height:50px;background:linear-gradient(#FF0099,#FF005C);clip-path:path('M19.6 15C17.6118 15 16 16.6118 16 18.6V21.4531V25.5274V33.5977C16 34.6825 17.1805 35.3552 18.1138 34.8021L24.2862 31.144C24.7263 30.8831 25.2737 30.8831 25.7138 31.144L31.8862 34.8021C32.8195 35.3552 34 34.6825 34 33.5977V25.5274V21.4531V18.6C34 16.6118 32.3882 15 30.4 15H19.6Z');"></div>
+</div>
+
+<svg style="position:absolute;" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.6 15C17.6118 15 16 16.6118 16 18.6V21.4531V25.5274V33.5977C16 34.6825 17.1805 35.3552 18.1138 34.8021L24.2862 31.144C24.7263 30.8831 25.2737 30.8831 25.7138 31.144L31.8862 34.8021C32.8195 35.3552 34 34.6825 34 33.5977V25.5274V21.4531V18.6C34 16.6118 32.3882 15 30.4 15H19.6Z" stroke="black" stroke-width="1.2"/>
+</svg>
+
+</div>
+
+<div class="icon C">
+<svg style="position:absolute;bottom:45px;transform:scale(1.3);" width="100" height="23" viewBox="0 0 100 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 16.5026H8.37242C16.0823 16.5026 23.5218 13.6614 29.269 8.52217V8.52217C41.1683 -2.11842 59.163 -2.11842 71.0623 8.52216V8.52216C76.8095 13.6614 84.249 16.5026 91.9589 16.5026H99.8675L100 22.8359H0V16.5026Z" fill="white"/>
+</svg>
+<div style="position:absolute;bottom:15px;background:linear-gradient(#FF0099,#FF005C);width:50px;height:50px;border-radius:25px;display:flex;justify-content:center;align-items:center;box-shadow:0 5px 10px rgba(255,0,153,0.2);">
+<div style="width:35px;height:35px;border-radius:20px;border:6px solid white;"></div>
+<div style="width:10px;height:10px;border-radius:5px;background:white;position:absolute;top:15px;left:25px;"></div>
+</div>
+</div>
+
+<div class="icon A" style="transform:scale(0.9);">
+<span>message</span>
+
+<svg style="position:absolute;" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="dot1" style="" d="M21 25H21.0001" stroke="#CACACA" stroke-width="2" stroke-linecap="round"/>
+<path id="dot2" style="animation:Dot 1s forwards 3.2s;" d="M25 25H25.0001" stroke="#CACACA" stroke-width="2" stroke-linecap="round"/>
+<path id="dot3" style="animation:Dot 1s forwards 3.4s;" d="M29 25H29.0001" stroke="#CACACA" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+<div style="position:absolute;width:50px;height:50px;clip-path:path('M25 35C30.5228 35 35 30.5228 35 25C35 19.4772 30.5228 15 25 15C19.4772 15 15 19.4772 15 25C15 26.6665 15.4077 28.2379 16.1287 29.6197C16.2624 29.8759 16.2949 30.175 16.2021 30.4487L15.3752 32.885C15.0857 33.7378 15.8039 34.5937 16.694 34.4567L20.1097 33.9312V33.9312C20.2761 33.9055 20.4504 33.9091 20.6016 33.9833C21.9289 34.6344 23.4218 35 25 35Z');">
+<div class="fill" style="position:absolute;left:25px;top:25px;width:50px;height:50px;background:linear-gradient(#FF0099,#FF005C);clip-path:path('M25 35C30.5228 35 35 30.5228 35 25C35 19.4772 30.5228 15 25 15C19.4772 15 15 19.4772 15 25C15 26.6665 15.4077 28.2379 16.1287 29.6197C16.2624 29.8759 16.2949 30.175 16.2021 30.4487L15.3752 32.885C15.0857 33.7378 15.8039 34.5937 16.694 34.4567L20.1097 33.9312V33.9312C20.2761 33.9055 20.4504 33.9091 20.6016 33.9833C21.9289 34.6344 23.4218 35 25 35Z');"></div>
+</div>
+
+<svg style="position:absolute;" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25 35C30.5228 35 35 30.5228 35 25C35 19.4772 30.5228 15 25 15C19.4772 15 15 19.4772 15 25C15 26.6665 15.4077 28.2379 16.1287 29.6197C16.2624 29.8759 16.2949 30.175 16.2021 30.4487L15.3752 32.885C15.0857 33.7378 15.8039 34.5937 16.694 34.4567L20.1097 33.9312V33.9312C20.2761 33.9055 20.4504 33.9091 20.6016 33.9833C21.9289 34.6344 23.4218 35 25 35Z" stroke="black" stroke-width="1.2"/>
+</svg>
+
+</div>
+
+<div class="icon A" style="transform:scale(0.9);">
+<span>personal</span>
+
+<svg style="position:absolute;" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="path2" style="stroke-dasharray:7;stroke-dashoffset:0;" d="M31.0622 27.8984C30.5098 28.8551 29.7389 29.6675 28.8125 30.2691C27.886 30.8708 26.8303 31.2446 25.7317 31.3601" stroke="#CACACA" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
+
+<div style="position:absolute;width:50px;height:50px;clip-path:path('M25 35C19.4772 35 15 30.5228 15 25C15 19.4772 19.4772 15 25 15C25.524 15 26.0385 15.0403 26.5408 15.118L33.0445 15.2602C34.0735 15.2827 34.7119 16.3885 34.2169 17.2908L33.1598 19.2179C34.3187 20.8503 35 22.8456 35 25C35 30.5228 30.5228 35 25 35Z');">
+<div class="fill" style="position:absolute;left:25px;top:25px;width:50px;height:50px;background:linear-gradient(#FF0099,#FF005C);clip-path:path('M25 35C19.4772 35 15 30.5228 15 25C15 19.4772 19.4772 15 25 15C25.524 15 26.0385 15.0403 26.5408 15.118L33.0445 15.2602C34.0735 15.2827 34.7119 16.3885 34.2169 17.2908L33.1598 19.2179C34.3187 20.8503 35 22.8456 35 25C35 30.5228 30.5228 35 25 35Z');"></div>
+</div>
+
+<svg style="position:absolute;" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25 35C19.4772 35 15 30.5228 15 25C15 19.4772 19.4772 15 25 15C25.524 15 26.0385 15.0403 26.5408 15.118L33.0445 15.2602C34.0735 15.2827 34.7119 16.3885 34.2169 17.2908L33.1598 19.2179C34.3187 20.8503 35 22.8456 35 25C35 30.5228 30.5228 35 25 35Z" stroke="black" stroke-width="1.2"/>
+</svg>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const Icons = document.querySelectorAll(".icon.A");
+const icons = document.querySelectorAll(".icon.B");
+const Fills = document.querySelectorAll(".fill");
+const Texts = document.querySelectorAll(".icon.A span");
+const Button = document.querySelector(".icon.C");
+
+const reset = () => {
+
+path1.style.transition="0.5s cubic-bezier(0,0,0.5,2) 0.4s";
+path1.style.strokeDashoffset="0";
+
+plus.style.transition="0.5s cubic-bezier(0,0,0.5,1.5) 0.4s";
+plus.style.transform="scale(1)";
+
+path2.style.transition="0.5s cubic-bezier(0,0,0.5,2) 0.4s";
+path2.style.strokeDashoffset="0";
+
+}
+
+var x = 0;
+
+//Click on items
+const ICON1 = () => {
+
+reset();
+
+path1.style.transition="0.3s cubic-bezier(0.5,-1,1,1)";
+path1.style.strokeDashoffset="7";
+
+if(x == 2){
+dot1.style.animation="Dots1 0.7s forwards";
+dot2.style.animation="Dots1 0.7s forwards 0.1s";
+dot3.style.animation="Dots1 0.7s forwards 0.2s";}
+
+Texts[x].style.color="black";
+Texts[0].style.color="#FF0099";
+
+Fills[x].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
+Fills[0].style.animation="Gentle-Translate 1.6s forwards";
+
+x = 0;}
+
+const ICON2 = () => {
+
+reset();
+
+plus.style.transition="0.3s cubic-bezier(0.5,-0.5,1,1)";
+plus.style.transform="scale(0)";
+
+if(x == 2){
+dot1.style.animation="Dots1 0.7s forwards";
+dot2.style.animation="Dots1 0.7s forwards 0.1s";
+dot3.style.animation="Dots1 0.7s forwards 0.2s";}
+
+Texts[x].style.color="black";
+Texts[1].style.color="#FF0099";
+
+Fills[x].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
+Fills[1].style.animation="Gentle-Translate 1.6s forwards";
+
+x = 1;}
+
+const ICON3 = () => {
+
+reset();
+
+dot1.style.animation="Dots 0.5s forwards";
+dot2.style.animation="Dots 0.5s forwards 0.1s";
+dot3.style.animation="Dots 0.5s forwards 0.2s";
+
+Texts[x].style.color="black";
+Texts[2].style.color="#FF0099";
+
+Fills[x].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
+Fills[2].style.animation="Gentle-Translate 1.6s forwards";
+
+x = 2;}
+
+const ICON4 = () => {
+
+reset();
+
+path2.style.transition="0.3s cubic-bezier(0.5,-1,1,1)";
+path2.style.strokeDashoffset="7";
+
+if(x == 2){
+dot1.style.animation="Dots1 0.7s forwards";
+dot2.style.animation="Dots1 0.7s forwards 0.1s";
+dot3.style.animation="Dots1 0.7s forwards 0.2s";}
+
+Texts[x].style.color="black";
+Texts[3].style.color="#FF0099";
+
+Fills[x].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
+Fills[3].style.animation="Gentle-Translate 1.6s forwards";
+
+x = 3;}
+
+Icons[0].addEventListener("click",ICON1);
+Icons[1].addEventListener("click",ICON2);
+Icons[2].addEventListener("click",ICON3);
+Icons[3].addEventListener("click",ICON4);
+
+
+//Click on submenu btn
+Button.addEventListener("click",()=> {
+
+if(Button.classList.contains("active")){Close();}else{Open();}
+
+});
+
+const Open = () => {
+
+Button.classList.add("active");
+
+Button.style.transition="0.6s cubic-bezier(0,0,0.5,3)";
+Button.style.transform="scale(1.2) translateY(4.15px)";
+
+icons[0].style.transition="0.6s cubic-bezier(0,0,0.5,1.5)";
+icons[0].style.transform="scale(1) translate(-80px,30px)";
+
+icons[1].style.transition="0.6s cubic-bezier(0,0,0.5,1.5) 0.05s";
+icons[1].style.transform="scale(1) translate(-30px,0px)";
+
+icons[2].style.transition="0.6s cubic-bezier(0,0,0.5,1.5) 0.1s";
+icons[2].style.transform="scale(1) translate(30px,0px)";
+
+icons[3].style.transition="0.6s cubic-bezier(0,0,0.5,1.5) 0.15s";
+icons[3].style.transform="scale(1) translate(80px, 30px)";
+
+}
+
+const Close = () => {
+
+Button.classList.remove("active");
+
+Button.style.transition="0.4s cubic-bezier(0.5,-2,1,1)";
+Button.style.transform="scale(1) translateY(0px)";
+
+icons[0].style.transition="0.8s cubic-bezier(0.5,-0.5,1,1)";
+icons[0].style.transform="scale(0.5) translate(0px,130px)";
+
+icons[1].style.transition="0.8s cubic-bezier(0.5,-0.5,1,1) 0.05s";
+icons[1].style.transform="scale(0.5) translate(0px,130px)";
+
+icons[2].style.transition="0.8s cubic-bezier(0.5,-0.5,1,1) 0.1s";
+icons[2].style.transform="scale(0.5) translate(0px,130px)";
+
+icons[3].style.transition="0.8s cubic-bezier(0.5,-0.5,1,1) 0.15s";
+icons[3].style.transform="scale(0.5) translate(0px,130px)";
+
+}
+
+</script>
+
+</body>
+</html>

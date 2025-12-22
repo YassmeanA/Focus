@@ -17,7 +17,7 @@ Iconbs[index].style.bottom="0px",Iconbs[index].style.opacity="0";});
 Iconas.forEach((IconA, index) => {
 Iconas[index].style.bottom="0px",Iconas[index].style.opacity="1";}); };
 
-const Icon11 = () => { 
+const Icon111 = () => { 
 
 indicator.style.left="var(--i2)";
 reset();
@@ -38,7 +38,7 @@ ICONAs[0].style.bottom="18px";});
 
 xb5 = 0;};
 
-const Icon22 = () => {
+const Icon222 = () => {
 
 indicator.style.left="calc(var(--i2) + var(--i1))";
 reset();
@@ -54,7 +54,7 @@ ICONAs[1].style.bottom="18px"; });
 
 xb5 = 1;};
 
-const Icon33 = () => {
+const Icon333 = () => {
 
 indicator.style.left="calc(var(--i2) + var(--i1)*2)";
 reset();
@@ -75,15 +75,15 @@ ICONAs[2].style.bottom="18px";});
 
 xb5 = 2;};
 
-Click31.addEventListener("click",Icon11);
-Click32.addEventListener("click",Icon22);
-Click33.addEventListener("click",Icon33);
+Click31.addEventListener("click",Icon111);
+Click32.addEventListener("click",Icon222);
+Click33.addEventListener("click",Icon333);
 
 function ShowB7() {
 
-setTimeout(Icon22,1000);
-setTimeout(Icon33,2000);
-setTimeout(Icon11,3000);}
+setTimeout(Icon222,1000);
+setTimeout(Icon333,2000);
+setTimeout(Icon111,3000);}
 
 ShowB7();
 

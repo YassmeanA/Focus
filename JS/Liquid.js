@@ -1,5 +1,6 @@
 const Add = document.querySelector(".containerB8 .icon.Add");
 const Circles = document.querySelectorAll(".containerB8 .circle");
+const Iconb5s = document.querySelectorAll(".containerB8 .Icon");
 
 //Click on Add btn
 Add.addEventListener("click", () => {

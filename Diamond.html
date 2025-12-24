@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dynamic - Circle</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="SVG/Focus.svg">
+<style>
+
+body {
+margin:0;
+display:flex;
+justify-content:center;
+overflow:hidden;}
+
+.containerB2 {
+position:absolute;
+top:0;
+width:100vw;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#00E0FF;}
+
+.Screen {
+position:absolute;
+bottom:30vh;
+width:330px;
+height:calc(70vh + 50px);
+border-radius:0px 0px 40px 40px;
+border:5px solid #b3eefc;
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 15px 25px rgba(0,0,0,0.2);}
+
+#BottomNavBar {
+position:absolute;
+bottom:-10px;
+height:110px;
+width:360px;
+transform:scale(0.93);
+display:flex;
+justify-content:center;
+overflow:hidden;}
+
+#container {
+position:absolute;
+bottom:0;
+width:415px;
+height:100px;
+display:flex;
+justify-content:center;
+align-items:center;}
+
+#indicator {
+position:absolute;
+bottom:0;
+left:0;
+--i:70px;
+width:415px;
+height:100px;
+display:flex;
+justify-content:center;
+align-items:center;
+transition:0.6s cubic-bezier(0,0,0,1);}
+
+#background {
+position:absolute;
+bottom:0;
+left:-552.5px;}
+
+.icon {
+height:50px;
+width:50px;
+transform:scale(0.9);}
+
+.icons {
+position:absolute;
+width:330px;
+height:50px;
+display:flex;
+column-gap:20px;}
+
+.icons.A {
+bottom:20px;}
+
+.icons.B, .icons.C {
+bottom:-120px;}
+
+.icon.A:nth-child(1) {
+position:relative;
+bottom:-120px;}
+
+.icon.A {
+position:relative;
+bottom:0;
+transition:bottom 0.6s cubic-bezier(0,0,0,1), opacity 0s;}
+
+.icon.B, .icon.C {
+position: relative;
+bottom:0px;
+transition:bottom 0.7s cubic-bezier(0,0,0,1), opacity 0s;}
+
+#blur {
+position:absolute;
+bottom:-25px;
+width:330px;
+height:50px;
+filter:blur(5px);
+background-color:white;}
+
+.ICONS {
+position:absolute;
+bottom:30px;
+left:0;
+height:80px;
+width:135px;
+display:flex;
+justify-content:center;}
+
+.ICON {
+position:absolute;
+bottom:-80px;
+height:50px;
+width:50px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:15px;
+box-shadow:1px 4.5px 9px rgba(0,0,0,0.35);
+transform:rotate(45deg) scale(0.95);
+background:white;
+transition:0.6s cubic-bezier(0,0,0,1) ;}
+
+.X {
+transform:rotate(-45deg);}
+
+.ICON:nth-child(1) {
+position:absolute;
+bottom:11px;}
+
+.clicks {
+position:absolute;
+bottom:20px;
+width:330px;
+height:50px;
+column-gap:20px;
+display:flex;}
+
+.click {
+height:50px;
+width:50px;
+cursor:pointer;}
+
+.path {
+stroke-dasharray:170;}
+
+.line{
+stroke-dasharray:170;
+stroke-dashoffset:170;}
+
+.dot {
+visibility:hidden;}
+
+@keyframes d6 {
+0% { d: path('M106.018 123.036C112.102 123.036 117.035 118.103 117.035 112.018C117.035 105.933 112.102 101 106.018 101C99.9327 101 95 105.933 95 112.018C95 118.103 99.9327 123.036 106.018 123.036Z');visibility:visible;}
+100% { d: path('M106.016 112.516C106.292 112.516 106.516 112.292 106.516 112.016C106.516 111.739 106.292 111.516 106.016 111.516C105.739 111.516 105.516 111.739 105.516 112.016C105.516 112.292 105.739 112.516 106.016 112.516Z'); visibility: visible;}}
+
+@keyframes d5 {
+0% { d: path('M106.018 160.907C112.102 160.907 117.035 155.974 117.035 149.889C117.035 143.804 112.102 138.871 106.018 138.871C99.9327 138.871 95 143.804 95 149.889C95 155.974 99.9327 160.907 106.018 160.907Z');visibility:visible;}
+100% { d: path('M106.016 150.391C106.292 150.391 106.516 150.167 106.516 149.891C106.516 149.614 106.292 149.391 106.016 149.391C105.739 149.391 105.516 149.614 105.516 149.891C105.516 150.167 105.739 150.391 106.016 150.391Z'); visibility: visible;}} 
+
+@keyframes d4 {
+0% { d: path('M106.018 198.778C112.102 198.778 117.035 193.845 117.035 187.76C117.035 181.675 112.102 176.742 106.018 176.742C99.9327 176.742 95 181.675 95 187.76C95 193.845 99.9327 198.778 106.018 198.778Z'); visibility: visible;}
+100% { d: path('M106.016 188.262C106.292 188.262 106.516 188.038 106.516 187.762C106.516 187.486 106.292 187.262 106.016 187.262C105.739 187.262 105.516 187.486 105.516 187.762C105.516 188.038 105.739 188.262 106.016 188.262Z'); visibility: visible;}}
+
+@keyframes d3 { 
+100% { d: path('M106.018 198.778C112.102 198.778 117.035 193.845 117.035 187.76C117.035 181.675 112.102 176.742 106.018 176.742C99.9327 176.742 95 181.675 95 187.76C95 193.845 99.9327 198.778 106.018 198.778Z'); visibility: visible;}}
+
+@keyframes d2 { 
+100% { d: path('M106.018 160.907C112.102 160.907 117.035 155.974 117.035 149.889C117.035 143.804 112.102 138.871 106.018 138.871C99.9327 138.871 95 143.804 95 149.889C95 155.974 99.9327 160.907 106.018 160.907Z');visibility:visible;}}
+
+@keyframes d1 { 
+100% { d: path('M106.018 123.036C112.102 123.036 117.035 118.103 117.035 112.018C117.035 105.933 112.102 101 106.018 101C99.9327 101 95 105.933 95 112.018C95 118.103 99.9327 123.036 106.018 123.036Z');visibility:visible;}}
+
+@keyframes trim {
+0%{ stroke-dashoffset: 170; visibility: visible;}
+100%{ stroke-dashoffset: 0; visibility: visible;}}
+
+@keyframes trim1 {
+100%{ stroke-dashoffset: 0; visibility: visible;}}
+
+@keyframes trim2 {
+0%{ stroke-dashoffset: 0; visibility: visible;}
+100%{ stroke-dashoffset: 170; visibility: visible;}}
+
+</style>
+</head>
+<body>
+      
+<div class="containerB2">
+
+<div class="Screen">
+
+<div id="BottomNavBar">
+
+<div id="container">
+
+<div id="indicator">
+
+<div class="ICONS">
+
+       <div class="ICON">
+       <svg class="X" id="plugin" width="50" height="50" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path class="path" id="S1" d="M171.591 160.793H194.208C200.17 160.793 205.002 165.626 205.002 171.587V194.204C205.002 200.166 200.17 204.999 194.208 204.999H171.591C165.63 204.999 160.797 200.166 160.797 194.204V171.587C160.797 165.626 165.63 160.793 171.591 160.793Z" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       <path class="path" id="S2" d="M139.206 171.587V194.204C139.206 200.166 134.373 204.999 128.411 204.999H105.794C99.8328 204.999 95 200.166 95 194.204V171.587C95 165.626 99.8328 160.793 105.794 160.793H128.411C134.373 160.793 139.206 165.626 139.206 171.587Z" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       <path class="path" id="S3" d="M160.797 128.411V105.794C160.797 99.8328 165.63 95 171.591 95H194.208C200.17 95 205.002 99.8328 205.002 105.794V128.411C205.002 134.373 200.17 139.206 194.208 139.206H171.591C165.63 139.206 160.797 134.373 160.797 128.411Z" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       <path class="path" id="S4" d="M128.411 139.206H105.794C99.8328 139.206 95 134.373 95 128.411V105.794C95 99.8328 99.8328 95 105.794 95H128.411C134.373 95 139.206 99.8328 139.206 105.794V128.411C139.206 134.373 134.373 139.206 128.411 139.206Z" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       </svg>
+       </div>
+    
+       <div class="ICON"> 
+       <svg class="X" id="menu" width="50" height="50" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path class="line" id="L3" d="M205 187.75H132.869" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       <path class="line" id="L2" d="M205 149.895H132.869" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       <path class="line" id="L1" d="M205 112.02H132.869" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       <path class="dot" id="D3" d="M106.016 188.262C106.292 188.262 106.516 188.038 106.516 187.762C106.516 187.486 106.292 187.262 106.016 187.262C105.739 187.262 105.516 187.486 105.516 187.762C105.516 188.038 105.739 188.262 106.016 188.262Z" fill="black"/>
+       <path class="dot" id="D2" d="M106.016 150.391C106.292 150.391 106.516 150.167 106.516 149.891C106.516 149.614 106.292 149.391 106.016 149.391C105.739 149.391 105.516 149.614 105.516 149.891C105.516 150.167 105.739 150.391 106.016 150.391Z" fill="black"/>
+       <path class="dot" id="D1" d="M106.016 112.516C106.292 112.516 106.516 112.292 106.516 112.016C106.516 111.739 106.292 111.516 106.016 111.516C105.739 111.516 105.516 111.739 105.516 112.016C105.516 112.292 105.739 112.516 106.016 112.516Z" fill="black"/>
+       </svg>
+       </div>
+   
+       <div class="ICON">
+       <svg class="X" id="change" width="50" height="50" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path class="path" id="P1" d="M195.719 174.383H106.295C105.8 174.383 105.543 174.972 105.879 175.335L133.347 205.001" stroke="black" stroke-width="12" stroke-linecap="round"/>
+       <path class="path" id="P2" d="M195.719 174.38H106.295C105.8 174.38 105.543 173.791 105.879 173.428L133.347 143.762" stroke="black" stroke-width="12" stroke-linecap="round"/>
+       <path class="path" id="P3" d="M105 125.617H194.424C194.919 125.617 195.176 126.206 194.84 126.569L167.371 156.236" stroke="black" stroke-width="12" stroke-linecap="round"/>
+       <path class="path" id="P4" d="M105 125.619H194.424C194.919 125.619 195.176 125.029 194.84 124.666L167.371 95" stroke="black" stroke-width="12" stroke-linecap="round"/>
+       </svg>
+       </div>
+    
+       <div class="ICON">
+       <svg class="X" id="display" width="50" height="50" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path class="path" id="A1" d="M150 136.668H194C200.075 136.668 205 141.593 205 147.668V189.835C205 195.909 200.075 200.835 194 200.835H150" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       <path class="path" id="A2" d="M150 136.668H106C99.9249 136.668 95 141.593 95 147.668V189.835C95 195.909 99.9249 200.835 106 200.835H150" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       <path class="path" id="A3" d="M150 118.332H191.25" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       <path class="path" id="A4" d="M150 118.332H108.75" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       <path class="path" id="A5" d="M150 100H179.333" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       <path class="path" id="A6" d="M149.997 100H120.664" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       </svg>
+       </div>
+    
+       <div class="ICON">
+       <svg class="X" id="personal" width="50" height="50" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path class="path" id="B1" d="M149.644 166.816C136.213 166.816 123.331 169.242 113.833 173.558C104.336 177.875 99 183.73 99 189.835V191.413C99 198.916 105.083 204.999 112.587 204.999H149.644" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       <path class="path" id="B2" d="M149.64 150.245C134.383 150.245 122.016 137.878 122.016 122.623C122.016 107.367 134.383 95 149.64 95" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       <path class="path" id="B3" d="M149.945 166.816C163.377 166.816 176.259 169.242 185.756 173.558C195.254 177.875 200.59 183.73 200.59 189.835V191.413C200.59 198.916 194.506 204.999 187.003 204.999H149.945" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       <path class="path" id="B4" d="M149.945 150.245C165.202 150.245 177.569 137.878 177.569 122.623C177.569 107.367 165.202 95 149.945 95" stroke="black" stroke-width="11" stroke-linecap="round"/>
+       </svg>
+       </div>
+
+</div>
+
+<svg id="background" width="1240" height="70" viewBox="0 0 1240 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M557 0H0V70H1240V0H683C674.667 0 666.667 3.26674 660.715 9.09907L633.999 35.2814C626.222 42.9024 613.778 42.9024 606.001 35.2814L579.285 9.09907C573.333 3.26674 565.333 0 557 0Z" fill="white"/>
+</svg>
+
+</div>
+
+</div>
+
+<div class="icons A">
+
+       <div class="icon A">
+       <img id="plugin" src="plugin.svg">
+       </div>
+       
+       <div class="icon A">
+       <img id="menu" src="menu.svg">
+       </div>
+       
+       <div class="icon A">
+       <img id="change" src="change.svg">
+       </div>
+       
+       <div class="icon A">
+       <img id="display" src="display.svg">
+       </div>
+
+       <div class="icon A">
+       <img id="personal" src="personal.svg">
+       </div>
+
+</div>
+
+<div class="icons B">
+
+       <div class="icon B">
+       <img id="plugin" src="plugin.svg">
+       </div>
+       
+       <div class="icon B">
+       <img id="menu" src="menu.svg">
+       </div>
+       
+       <div class="icon B">
+       <img id="change" src="change.svg">
+       </div>
+       
+       <div class="icon B">
+       <img id="display" src="display.svg">
+       </div>
+
+       <div class="icon B">
+       <img id="personal" src="personal.svg">
+       </div>
+
+</div>
+
+<div class="icons C">
+
+       <div class="icon C">
+       <img id="plugin" src="plugin.svg">
+       </div>
+       
+       <div class="icon C">
+       <img id="menu" src="menu.svg">
+       </div>
+       
+       <div class="icon C">
+       <img id="change" src="change.svg">
+       </div>
+       
+       <div class="icon C">
+       <img id="display" src="display.svg">
+       </div>
+
+       <div class="icon C">
+       <img id="personal" src="personal.svg">
+       </div>
+</div>
+
+<div id="blur"></div>
+
+<div class="clicks">
+<div class="click" id="Click1"></div>
+<div class="click" id="Click2"></div>
+<div class="click" id="Click3"></div>
+<div class="click" id="Click4"></div>
+<div class="click" id="Click5"></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const IconAs = document.querySelectorAll(".icon.A");
+const IconBs = document.querySelectorAll(".icon.B");
+const IconCs = document.querySelectorAll(".icon.C");
+const ICONs = document.querySelectorAll(".ICON");
+
+var x = 0;
+
+// reset IconAs & IconBs & IconCs//
+const reset = () => {
+IconCs.forEach((IconC, index) => {
+IconCs[index].style.bottom="0px",IconCs[index].style.opacity="0";});
+
+IconBs.forEach((IconB, index) => {
+IconBs[index].style.bottom="0px",IconBs[index].style.opacity="0";});
+
+IconAs.forEach((IconA, index) => {
+IconAs[index].style.bottom="0px",IconAs[index].style.opacity="1";}); };
+
+const Icon1 = () => { 
+
+indicator.style.left="0px";
+reset();
+IconAs[0].style.bottom="-120px",IconAs[0].style.opacity="0";
+
+// set the opacity & location of moving icons//
+if(x == 2){
+IconAs[1].style.opacity="0",
+IconCs[1].style.opacity="1",IconCs[1].style.bottom="140px";};
+
+if(x == 3){
+IconAs[1].style.opacity="0",IconAs[2].style.opacity="0",
+IconCs[1].style.opacity="1",IconCs[1].style.bottom="140px",
+IconCs[2].style.opacity="1",IconCs[2].style.bottom="140px";};
+
+if(x == 4){
+IconAs[1].style.opacity="0",IconAs[2].style.opacity="0",IconAs[3].style.opacity="0",
+IconCs[1].style.opacity="1",IconCs[1].style.bottom="140px",
+IconCs[2].style.opacity="1",IconCs[2].style.bottom="140px",
+IconCs[3].style.opacity="1",IconCs[3].style.bottom="140px";};
+
+// ICONS //
+ICONs.forEach((ICON, index) => {
+if(index != 0){ICONs[index].style.bottom="-80px";};
+ICONs[0].style.bottom="11px";});
+
+// trim path animation //
+S1.style.animation="trim 0.9s forwards",S2.style.animation="trim 0.9s forwards", S3.style.animation="trim 1s forwards", S4.style.animation="trim 1s forwards";
+D3.style.animation="d6 1s forwards",D2.style.animation="d5 1s forwards",D1.style.animation="d4 1s forwards",L3.style.animation="trim2 1s forwards",L2.style.animation="trim2 1s forwards",L1.style.animation="trim2 1s forwards";
+A1.style.animation="trim2 1s forwards",A2.style.animation="trim2 1s forwards",A3.style.animation="trim2 1s forwards",A4.style.animation="trim2 1s forwards",A5.style.animation="trim2 1s forwards",A6.style.animation="trim2 1s forwards";
+B1.style.animation="trim2 1s forwards",B2.style.animation="trim2 1s forwards",B3.style.animation="trim2 1s forwards",B4.style.animation="trim2 1s forwards";
+P1.style.animation="trim2 1s forwards",P2.style.animation="trim2 1s forwards",P3.style.animation="trim2 1s forwards",P4.style.animation="trim2 1s forwards";
+
+x = 0;};
+
+const Icon2 = () => {
+
+indicator.style.left="var(--i)";
+reset();
+IconAs[1].style.bottom="-120px",IconAs[1].style.opacity="0";
+
+// set the opacity & location of moving icons//
+if(x == 3){
+IconAs[2].style.opacity="0",
+IconCs[2].style.opacity="1",IconCs[2].style.bottom="140px";};
+
+if(x == 4){
+IconAs[2].style.opacity="0",IconAs[3].style.opacity="0",
+IconCs[2].style.opacity="1",IconCs[2].style.bottom="140px",
+IconCs[3].style.opacity="1",IconCs[3].style.bottom="140px";};
+
+// ICONS //
+ICONs.forEach((ICON, index) => {
+if(index != 1){ICONs[index].style.bottom="-80px";};
+ICONs[1].style.bottom="11px";});
+
+// trim path animation //
+D3.style.animation="d3 0.8s forwards 0.2s",D2.style.animation="d2 0.8s forwards 0.1s",D1.style.animation="d1 0.8s forwards 0s",L3.style.animation="trim1 2s forwards 0.2s",L2.style.animation="trim1 2s forwards 0.1s",L1.style.animation="trim1 2s forwards 0s";
+A1.style.animation="trim2 1s forwards",A2.style.animation="trim2 1s forwards",A3.style.animation="trim2 1s forwards",A4.style.animation="trim2 1s forwards",A5.style.animation="trim2 1s forwards",A6.style.animation="trim2 1s forwards";
+B1.style.animation="trim2 1s forwards",B2.style.animation="trim2 1s forwards",B3.style.animation="trim2 1s forwards",B4.style.animation="trim2 1s forwards";
+S1.style.animation="trim2 1s forwards",S2.style.animation="trim2 1s forwards",S3.style.animation="trim2 1s forwards", S4.style.animation="trim2 1s forwards";
+P1.style.animation="trim2 1s forwards",P2.style.animation="trim2 1s forwards",P3.style.animation="trim2 1s forwards",P4.style.animation="trim2 1s forwards";
+
+x = 1;};
+
+const Icon3 = () => {
+
+indicator.style.left="calc(var(--i) * 2)";
+reset();
+IconAs[2].style.bottom="-120px",IconAs[2].style.opacity="0";
+
+// set the opacity & location of moving icons//
+if(x == 0){
+IconAs[1].style.opacity="0",
+IconBs[1].style.opacity="1",IconBs[1].style.bottom="140px";};
+
+if(x == 4){
+IconAs[3].style.opacity="0",
+IconCs[3].style.opacity="1",IconCs[3].style.bottom="140px";};
+
+// ICONS //
+ICONs.forEach((ICON, index) => {
+if(index != 2){ICONs[index].style.bottom="-80px";};
+ICONs[2].style.bottom="11px";});
+
+// trim path animation //
+P1.style.animation="trim 1.2s forwards",P2.style.animation="trim 1.2s forwards",P3.style.animation="trim 1.2s forwards",P4.style.animation="trim 1.2s forwards";
+D3.style.animation="d6 1s forwards",D2.style.animation="d5 1s forwards",D1.style.animation="d4 1s forwards",L3.style.animation="trim2 1s forwards",L2.style.animation="trim2 1s forwards",L1.style.animation="trim2 1s forwards";
+A1.style.animation="trim2 1s forwards",A2.style.animation="trim2 1s forwards",A3.style.animation="trim2 1s forwards",A4.style.animation="trim2 1s forwards",A5.style.animation="trim2 1s forwards",A6.style.animation="trim2 1s forwards";
+B1.style.animation="trim2 1s forwards",B2.style.animation="trim2 1s forwards",B3.style.animation="trim2 1s forwards",B4.style.animation="trim2 1s forwards";
+S1.style.animation="trim2 1s forwards",S2.style.animation="trim2 1s forwards",S3.style.animation="trim2 1s forwards", S4.style.animation="trim2 1s forwards";
+
+x = 2;};
+
+const Icon4 = () => {
+
+indicator.style.left="calc(var(--i) * 3)";
+reset();
+IconAs[3].style.bottom="-120px",IconAs[3].style.opacity="0";
+
+// set the opacity & location of moving icons//
+if(x == 0){
+IconAs[1].style.opacity="0",IconAs[2].style.opacity="0",
+IconBs[1].style.opacity="1",IconBs[1].style.bottom="140px",
+IconBs[2].style.opacity="1",IconBs[2].style.bottom="140px";};
+
+if(x == 1){
+IconAs[2].style.opacity="0",
+IconBs[2].style.opacity="1",IconBs[2].style.bottom="140px";};
+
+// ICONS //
+ICONs.forEach((ICON, index) => {
+if(index != 3){ICONs[index].style.bottom="-80px";};
+ICONs[3].style.bottom="11px";});
+
+// trim path animation //
+A1.style.animation="trim 1s forwards",A2.style.animation="trim 1s forwards",A3.style.animation="trim 1s forwards",A4.style.animation="trim 1s forwards",A5.style.animation="trim 1s forwards",A6.style.animation="trim 1s forwards";
+D3.style.animation="d6 1s forwards",D2.style.animation="d5 1s forwards",D1.style.animation="d4 1s forwards",L3.style.animation="trim2 1s forwards",L2.style.animation="trim2 1s forwards",L1.style.animation="trim2 1s forwards";
+B1.style.animation="trim2 1s forwards",B2.style.animation="trim2 1s forwards",B3.style.animation="trim2 1s forwards",B4.style.animation="trim2 1s forwards";
+P1.style.animation="trim2 1s forwards",P2.style.animation="trim2 1s forwards",P3.style.animation="trim2 1s forwards",P4.style.animation="trim2 1s forwards";
+S1.style.animation="trim2 1s forwards",S2.style.animation="trim2 1s forwards",S3.style.animation="trim2 1s forwards", S4.style.animation="trim2 1s forwards";
+
+x = 3;};
+
+const Icon5 = () => {
+
+indicator.style.left="calc(var(--i) * 4)";
+reset();
+IconAs[4].style.bottom="-120px",IconAs[4].style.opacity="0";
+
+// set the opacity & location of moving icons//
+if(x == 0){
+IconAs[1].style.opacity="0",IconAs[2].style.opacity="0",IconAs[3].style.opacity="0",
+IconBs[1].style.opacity="1",IconBs[1].style.bottom="140px",
+IconBs[2].style.opacity="1",IconBs[2].style.bottom="140px",
+IconBs[3].style.opacity="1",IconBs[3].style.bottom="140px";};
+
+if(x == 1){
+IconAs[2].style.opacity="0",IconAs[3].style.opacity="0",
+IconBs[2].style.opacity="1",IconBs[2].style.bottom="140px",
+IconBs[3].style.opacity="1",IconBs[3].style.bottom="140px";};
+
+if(x == 2){
+IconAs[3].style.opacity="0",
+IconBs[3].style.opacity="1",IconBs[3].style.bottom="140px";};
+
+// ICONS //
+ICONs.forEach((ICON, index) => {
+if(index != 4){ICONs[index].style.bottom="-80px";};
+ICONs[4].style.bottom="11px";});
+
+// trim path animation //
+B1.style.animation="trim 1.5s forwards",B2.style.animation="trim 2s forwards",B3.style.animation="trim 1.5s forwards", B4.style.animation="trim 2s forwards";
+D3.style.animation="d6 1s forwards",D2.style.animation="d5 1s forwards",D1.style.animation="d4 1s forwards",L3.style.animation="trim2 1s forwards",L2.style.animation="trim2 1s forwards",L1.style.animation="trim2 1s forwards";
+A1.style.animation="trim2 1s forwards",A2.style.animation="trim2 1s forwards",A3.style.animation="trim2 1s forwards",A4.style.animation="trim2 1s forwards",A5.style.animation="trim2 1s forwards",A6.style.animation="trim2 1s forwards";
+P1.style.animation="trim2 1s forwards",P2.style.animation="trim2 1s forwards",P3.style.animation="trim2 1s forwards",P4.style.animation="trim2 1s forwards";
+S1.style.animation="trim2 1s forwards",S2.style.animation="trim2 1s forwards",S3.style.animation="trim2 1s forwards", S4.style.animation="trim2 1s forwards";
+
+x = 4;};
+
+Click1.addEventListener("click",Icon1);
+Click2.addEventListener("click",Icon2);
+Click3.addEventListener("click",Icon3);
+Click4.addEventListener("click",Icon4);
+Click5.addEventListener("click",Icon5);
+
+</script>
+
+</body>
+
+</html>

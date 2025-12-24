@@ -45,8 +45,6 @@ transition:0.3s ease-out;}
 
 .containerB8 .Icons {
 position:absolute;
-left:7.5px;
-top:37.5px;
 width:235px;
 height:45px;
 display:flex;
@@ -63,6 +61,8 @@ transform:scale(1.2);}
 width:250px;
 height:120px;
 display:flex;
+align-items:center;
+justify-content:center;
 filter:url("#liquid");
 clip-path:path('M113.5 60.4998C113.5 66.5748 118.489 71.4996 124.687 71.4996C130.885 71.4996 135.5 66.5748 135.5 60.4998C135.5 54.4248 130.885 49.5 124.687 49.5C118.489 49.5 113.5 54.4248 113.5 60.4998Z');}
 
@@ -147,7 +147,7 @@ animation:Shadow 0.7s;}
 100%{transform:rotate(0deg);}}
 
 @keyframes Circle {
-50%{transform:scale(1);opacity:0.15;}
+50%{transform:scale(1);opacity:0.1;}
 100%{transform:scale(0.5);opacity:0;}}
 
 @keyframes Shadow {

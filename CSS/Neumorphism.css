@@ -52,7 +52,7 @@ perspective:800px;}
 
 .container6S .control-panel {
 position:absolute;
-height:888px;
+height:886px;
 width:330px;
 display:flex;
 justify-content:center;
@@ -63,7 +63,7 @@ overflow:hidden;
 background:#e9edf0;
 border-radius:50px;
 transform-style: preserve-3d;           /* Keep 3D for nested elements */
-transform:scale(0.55) translateX(35px) rotateY(17.5deg);}
+transform:scale(0.55) translate(35px,2px) rotateY(17.5deg);}
 
 .container6S .control-panel.active {
 pointer-events:auto;}

@@ -269,8 +269,7 @@ align-items:center;
 border-radius:33px;
 height:66px;
 padding:50px;
-gap:50px;
-cursor:grab;}
+gap:50px;}
 
 .show nav section.dragging {
 scroll-snap-type:none;

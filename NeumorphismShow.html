@@ -826,7 +826,6 @@ function onMove(e) {
   rotation += delta;
   rotation = Math.max(minRotation, Math.min(maxRotation, rotation));
   speedButton.style.transform = `rotate(${rotation}deg)`;
-  speedButton.style.cursor="grabbing";
 }
 
 function onEnd() {
@@ -866,12 +865,11 @@ ranges.forEach(range => {
     updateLevel(e, range);
   });
 
-  document.addEventListener('mousemove', (e) => {
+  range.addEventListener('mousemove', (e) => {
     if (isDraggingRange) updateLevel(e, range);
-    range.style.cursor="grabbing";
   });
 
-  document.addEventListener('mouseup', () => {
+  range.addEventListener('mouseup', () => {
     if (!isDraggingRange) return;
     range.style.cursor="grab";
     isDraggingRange = false;

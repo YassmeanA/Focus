@@ -113,23 +113,17 @@ height:35px;
 border-radius:17.5px;
 cursor:pointer;
 border:none;
-background:var(--background);
+background:#e9edf0;
 display:flex;
 justify-content:center;
 align-items:center;
-box-shadow:inset 2px 2px 4px var(--shadow1),inset -2px -2px 4px var(--shadow2);}
+box-shadow:inset 2px 2px 4px #c4c7c9,inset -2px -2px 4px #ffffff;}
 
 .container6S .theme img {
 position:absolute;
 left:10px;
 width:20px;
 height:20px;}
-
-.container6S .Body.dark .theme .light, .container6S .Body.light .theme .dark {
-display:none;}
-
-.container6S .Body.light .theme .light, .container6S .Body.dark .theme .dark {
-display:flex;}
 
 .container6S .theme span {
 position:absolute;

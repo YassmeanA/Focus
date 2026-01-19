@@ -6,7 +6,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<title>Side Navbar Design - Shadow Effect</title>
+<link rel="icon" type="image/x-icon" href="SVG/Focus.svg">
+<title>Shadow Effect</title>
     
 <style>
 
@@ -115,14 +116,13 @@ overflow:hidden;
 cursor:pointer;
 display:flex;
 justify-content:center;
-align-items:center;
-pointer-events:auto;}
+align-items:center;}
 
 .item-btn.active {
-pointer-events:none;}
+cursor:default;}
 
 .item.menu .item-btn.active {
-pointer-events:auto;}
+cursor:pointer;}
 
 .item-container {
 position:absolute;
@@ -313,7 +313,7 @@ footer {
 position:absolute;
 left:10px;
 bottom:90px;
-width:200px;
+width:calc(100% - 20px);
 height:102px;
 display:flex;
 flex-direction:column;
@@ -326,12 +326,9 @@ footer .line {
 position:absolute;
 top:-6px;
 left:0;
-width:30px;
+width:100%;
 height:0.5px;
 background:var(--section);}
-
-.side-navbar.active footer .line {
-width:200px;}
 
 .account {
 position:absolute;

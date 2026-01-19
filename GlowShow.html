@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<title>Side Navbar Design - Shadow Effect</title>
+<title>Side Navbar Design - Glow Effect</title>
     
 <style>
 
@@ -15,22 +15,20 @@ html {
 scroll-behavior:smooth;}
 
 :root {
---primary:white;
+--primary:aqua;
+--secondary:#A3A3A3;
 --background:rgba(255, 255, 255,0.2);
---Background:linear-gradient(#FF93BA,#FD518F);
---Hover:#FF93BA;
---footer:#FE72A4;
---HoverX:#FCACC9;
---text:#FD518F;
---section:#FFB6D8;
---account:rgba(255, 255, 255,0.1);}
+--Background:#051B34;
+--account:#A3A3A3;
+--Hover:#051B34;
+--section:#A3A3A3;
+--account:white;}
 
 body {
 margin:0;
 display:flex;
 justify-content:center;
 align-items:center;
-min-height:100vh;
 overflow-x:hidden;
 overflow-y:auto;}
 
@@ -54,7 +52,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 overflow:hidden;
-background:linear-gradient(to bottom right, #FED2E3, #FFADCD);}
+background:#051B34;}
 
 .Background {
 position:fixed;
@@ -70,23 +68,54 @@ overflow:hidden;}
 position:absolute;
 width:50px;
 height:680px;
-border-radius:10px;
-transform:scale(0.85);
-direction:ltr;
+border-radius:7px;
+pointer-events:auto;
 display:flex;
 justify-content:center;
 align-items:center;
-box-shadow:-5px 5px 10px rgba(217, 30, 98,0.3);
-background:var(--Background);}
+transform:scale(0.85);
+background:var(--Background);
+box-shadow:0 0 7px rgba(51,255,255,0.4);}
 
 .side-navbar.active {
 width:220px;}
 
+.dots {
+margin:6px;
+position:absolute;
+top:0;
+left:0;
+width:21px;
+height:5px;
+display:flex;
+column-gap:3px;}
+
+.dot {
+position:relative;
+width:5px;
+height:5px;}
+
+.dot1 {
+position:absolute;
+left:0;
+width:5px;
+height:5px;
+border-radius:3px;}
+
+.dot2 {
+position:absolute;
+left:0;
+width:5px;
+height:5px;
+border-radius:3px;
+transform:scale(1.1);
+filter:blur(3px);}
+
 .item-list {
 position:absolute;
-left:10px;
-top:20px;
-width:calc(100% - 20px);
+left:0;
+top:30px;
+width:100%;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -102,21 +131,35 @@ height:30px;
 display:flex;
 justify-content:center;
 align-items:center;
-pointer-events:auto;}
+pointer-events:none;}
 
 .item-btn {
 position:absolute;
 left:0;
 top:0;
-width:30px;
+width:50px;
 height:30px;
-border-radius:7px;
-overflow:hidden;
 cursor:pointer;
 display:flex;
 justify-content:center;
 align-items:center;
 pointer-events:auto;}
+
+.item-container {
+position:absolute;
+left:0;
+width:40px;
+height:100%;
+display:flex;
+overflow:hidden;
+justify-content:center;
+align-items:center;}
+
+.side-navbar.active .item-btn {
+width:220px;}
+
+.side-navbar.active .item-container {
+width:210px;}
 
 .item-btn.active {
 pointer-events:none;}
@@ -124,50 +167,19 @@ pointer-events:none;}
 .item.menu .item-btn.active {
 pointer-events:auto;}
 
-.item-container {
-position:absolute;
-left:0;
-width:22px;
-height:100%;
-display:flex;
-justify-content:center;
-align-items:center;
-overflow:hidden;}
-
-.side-navbar.active .item-container {
-width:192px;}
-
 .text {
 position:absolute;
-left:35px;
+left:40px;
 font-size:8px;
-line-height:10px;
-color:var(--primary);
 padding:3px 6px;
-border-radius:4px;
-background:var(--Hover);
-box-shadow:0 2px 5px rgba(217, 30, 98,0.3);
+line-height:10px;
 display:none;
 justify-content:center;
-align-items:center;}
-
-.side-navbar.active .item-btn {
-width:200px;}
-
-.item-btn.active, .menu-item.active {
-box-shadow:0 5px 5px rgba(217, 30, 98,0.4);}
-
-.item-list .item-btn.active, .menu-item.A.active {
-background:var(--Hover);}
-
-.menu-item.B.active {
-background:var(--HoverX);}
-
-.item-btn.active .arrow {
-transform:rotate(180deg);}
-
-footer .item-btn.active {
-background:var(--footer);}
+align-items:center;
+color:var(--secondary);
+border-radius:6px;
+box-shadow:0 5px 5px rgba(51,255,255,0.1);
+background:var(--Background);}
 
 .item .icon, .item .arrow {
 position:absolute;
@@ -178,26 +190,56 @@ justify-content:center;
 align-items:center;}
 
 .item .icon {
-left:0;}
+left:10px;}
 
 .item .arrow {
-left:170px;}
+left:180px;}
 
-.icon svg, .back svg, .settings svg {
-fill:var(--primary);}
+.item-btn .icon svg, .item-btn .arrow {
+fill:var(--secondary);}
+
+.item-btn.active .arrow {
+transform:rotate(180deg);}
 
 .item .Text, .menu-item span, .account-settings .fields li section span {
 position:absolute;
-font-size:0.55rem;
-color:var(--primary);}
+font-size:0.6rem;
+color:var(--secondary);}
 
 .item .Text, .menu-item span {
-left:35px;
+left:45px;
 width:120px;}
 
+.indicator {
+position:absolute;
+left:0;
+width:6.5px;
+height:26px;
+opacity:0;
+border-radius:0 6px 6px 0 ;
+background:var(--primary);
+box-shadow:0 0 5px aqua;}
+
+.item-btn.active .icon svg, .item-btn.active .Text, .item-btn.active .arrow, .item-btn.active .text, .menu-item.active span {
+color:var(--primary);
+fill:var(--primary);}
+
+.item-btn.active .icon svg, .item-btn.active .Text, .item-btn.active .arrow, .menu-item.active span {
+filter:drop-shadow(0 0 3px aqua);}
+
+.item-btn.active .text {
+text-shadow:0 0 3px aqua;}
+
+.item-btn.active .indicator {
+opacity:1;}
+
 .menu-item span {
-font-size:0.5rem;
+font-size:0.55rem;
 left:10px;}
+
+.menu-item.active {
+box-shadow:0px 3px 3px rgba(51, 255, 255,0.2);
+background:rgba(51,255,255,0.1);}
 
 .item.menu.active {
 height:174px;}
@@ -223,7 +265,7 @@ height:154px;}
 .menu-content {
 position:absolute;
 top:0;
-left:0;
+left:10px;
 width:calc(100% - 20px);
 height:144px;
 display:flex;
@@ -233,8 +275,8 @@ align-items:center;}
 .menu-list {
 position:absolute;
 bottom:0;
-left:27px;
-width:calc(100% - 27px);
+left:24px;
+width:calc(100% - 24px);
 height:138px;
 display:flex;
 flex-direction:column;
@@ -278,8 +320,9 @@ align-items:center;}
 position:absolute;
 top:6px;
 left:14.5px;
-width:1px;
+width:0.5px;
 height:113px;
+opacity:0.5;
 background:var(--section);}
 
 .section-container {
@@ -293,21 +336,6 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 gap:26px;}
-
-.sec { 
-position:relative;
-height:10px;
-width:10px;
-overflow:hidden;}
-
-.arc {
-position:relative;
-left:0px;
-top:-10px;
-border:1px solid var(--section);
-height:20px;
-width:20px;
-border-radius:10px;}
 
 footer {
 position:absolute;
@@ -328,6 +356,7 @@ top:-6px;
 left:0;
 width:30px;
 height:0.5px;
+opacity:0.5;
 background:var(--section);}
 
 .side-navbar.active footer .line {
@@ -339,12 +368,12 @@ left:4px;
 bottom:10px;
 width:42px;
 height:70px;
-border-radius:6px;
+border-radius:10px;
 display:flex;
 justify-content:center;
 align-items:center;
 overflow:hidden;
-background:var(--account);}
+background:rgba(255,255,255,0.05);}
 
 .info-container {
 position:absolute;
@@ -383,7 +412,7 @@ height:25px;
 border-radius:50%;
 opacity:0;
 transform:scale(0.5);
-background:rgba(255,255,255,0.2);}
+background:rgba(255,255,255,0.1);}
 
 .account .settings .circle.active {
 animation:Circle 0.6s;}
@@ -418,15 +447,15 @@ width:180px;}
 position:absolute;
 left:45px;
 width:140px;
-height:85%;
+height:90%;
 overflow:hidden;}
 
 .account .account-info h3 {
 position:absolute;
 top:0;
+font-size:0.7rem;
 font-weight:700;
-font-size:0.6rem;
-color:var(--primary);
+color:var(--account);
 white-space:nowrap;
 overflow:hidden;
 text-overflow:ellipsis;
@@ -437,7 +466,7 @@ position:absolute;
 bottom:0;
 font-size:0.5rem;
 font-weight:300;
-color:var(--primary);
+color:var(--account);
 white-space:nowrap;
 overflow:hidden;
 text-overflow:ellipsis;
@@ -450,14 +479,20 @@ width:200px;}
 .logo {
 transform:translateY(-5px);}
 
-.logo .item-container {
-width:30px;}
+.logo .icon {
+position:absolute;
+left:10px;
+display:flex;
+justify-content:center;
+align-items:center;}
 
 .logo .Text {
+position:absolute;
+left:50px;
 font-size:0.8rem;
 font-weight:600;
-left:40px;
-width:150px;}
+width:150px;
+color:white;}
 
 .input::placeholder {
 position:absolute;
@@ -472,17 +507,18 @@ color:transparent;}
 
 .side-navbar .input {
 position:absolute;
-left:-1px;
+left:9px;
 width:30px;
 height:100%;
 color:white;
 caret-color:white;
+pointer-events:auto;
 cursor:pointer;
 font-weight:400;
 font-size:0.6rem;
 border-radius:7px;
 padding-left:30px;
-background:var(--background);
+background:rgba(255,255,255,0.05);
 border:1px solid rgba(255,255,255,0.5);}
 
 .input:focus {
@@ -496,8 +532,8 @@ height:25px;
 width:25px;
 cursor:pointer;
 border-radius:12.5px;
-background:#FF93BA;
-box-shadow:0 5px 5px rgba(217, 30, 98,0.4);}
+background:var(--Background);
+box-shadow:0 5px 5px rgba(51,255,255,0.1);}
 
 .side-navbar.active .input {
 width:200px;}
@@ -508,13 +544,13 @@ transform:rotate(180deg);}
 
 .Menu {
 position:absolute;
-left:0;
+left:10px;
 top:42px;
 width:200px;
-height:150px;
+height:152px;
 border-radius:13px;
 background:var(--Hover);
-box-shadow:0 2px 5px rgba(217, 30, 98,0.3);
+box-shadow:0 5px 5px rgba(51,255,255,0.1);
 transition:0.3s ease-out;
 display:flex;
 overflow:hidden;
@@ -559,6 +595,25 @@ height:100vh;}
 
 <div class="side-navbar">
 
+<div class="dots">
+
+<div class="dot">
+<div class="dot1" style="background:#FE000F;"></div>
+<div class="dot2" style="background:#FE000F;"></div>
+</div>
+
+<div class="dot">
+<div class="dot1" style="background:#FED500;"></div>
+<div class="dot2" style="background:#FED500;"></div>
+</div>
+
+<div class="dot">
+<div class="dot1" style="background:#00FE56;"></div>
+<div class="dot2" style="background:#00FE56;"></div>
+</div>
+
+</div>
+
 <ul class="item-list">
 
 <li class="item logo">
@@ -575,13 +630,14 @@ height:100vh;}
 
 <li class="item search">
 <input class="input" placeholder="Search">
-<svg style="position:absolute;left:0;pointer-events:none;" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg style="position:absolute;left:10;pointer-events:none;" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M22 22L18.6221 18.6221M18.6221 18.6221C19.1999 18.0444 19.6583 17.3584 19.971 16.6035C20.2837 15.8486 20.4446 15.0394 20.4446 14.2223C20.4446 13.4052 20.2837 12.5961 19.971 11.8411C19.6583 11.0862 19.1999 10.4003 18.6221 9.82247C18.0444 9.24468 17.3584 8.78635 16.6035 8.47365C15.8486 8.16094 15.0394 8 14.2223 8C13.4052 8 12.5961 8.16094 11.8411 8.47365C11.0862 8.78635 10.4003 9.24468 9.82247 9.82247C8.65556 10.9894 8 12.5721 8 14.2223C8 15.8726 8.65556 17.4552 9.82247 18.6221C10.9894 19.7891 12.5721 20.4446 14.2223 20.4446C15.8726 20.4446 17.4552 19.7891 18.6221 18.6221Z" stroke="rgba(255,255,255,0.5)" stroke-width="1.94442" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </li>
 
 <li class="item">
 <div class="item-btn N active">
+<div class="indicator"></div>
 <div class="item-container">
 <div class="icon">
 <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -590,12 +646,13 @@ height:100vh;}
 </div>
 <span class="Text">Home</span>
 </div>
-</div>
 <span class="text">Home</span>
+</div>
 </li>
 
 <li class="item menu">
 <div class="item-btn">
+<div class="indicator"></div>
 <div class="item-container">
 <div class="icon">
 <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -603,31 +660,22 @@ height:100vh;}
 </svg>
 </div>
 <span class="Text">Projects</span>
-<svg class="arrow" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.8085 12.6786C11.9353 12.5517 12.1074 12.4805 12.2868 12.4805C12.4662 12.4805 12.6383 12.5517 12.7652 12.6786L16.1144 16.0278L19.4637 12.6786C19.5913 12.5553 19.7622 12.4871 19.9396 12.4887C20.117 12.4902 20.2867 12.5614 20.4122 12.6868C20.5376 12.8123 20.6088 12.982 20.6103 13.1594C20.6119 13.3368 20.5437 13.5077 20.4204 13.6353L16.5928 17.4629C16.4659 17.5898 16.2939 17.661 16.1144 17.661C15.935 17.661 15.763 17.5898 15.6361 17.4629L11.8085 13.6353C11.6816 13.5084 11.6104 13.3364 11.6104 13.1569C11.6104 12.9775 11.6816 12.8055 11.8085 12.6786Z" stroke="var(--primary)" stroke-width="0.431713" fill="var(--primary)"/>
+<svg class="arrow" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.3341 21C17.1072 20.9989 16.8834 20.9472 16.6789 20.8488C16.4744 20.7504 16.2944 20.6077 16.1519 20.4311L12.4099 15.8978C12.1912 15.6249 12.0536 15.296 12.0128 14.9487C11.9719 14.6014 12.0295 14.2495 12.1788 13.9333C12.2999 13.6585 12.4976 13.4244 12.7482 13.2589C12.9988 13.0934 13.2918 13.0035 13.5921 13H21.0761C21.3764 13.0035 21.6694 13.0934 21.92 13.2589C22.1706 13.4244 22.3683 13.6585 22.4894 13.9333C22.6388 14.2495 22.6963 14.6014 22.6554 14.9487C22.6146 15.296 22.477 15.6249 22.2583 15.8978L18.5163 20.4311C18.3738 20.6077 18.1938 20.7504 17.9893 20.8488C17.7848 20.9472 17.561 20.9989 17.3341 21Z"/>
 </svg>
 </div>
-</div>
-
 <span class="text">Projects</span>
+</div>
 
 <section class="menu-container">
 <div class="menu-content">
 
 <div class="sections">
 <div class="line"></div>
-<div class="section-container">
-
-<div class="sec"><div class="arc"></div></div>
-<div class="sec"><div class="arc"></div></div>
-<div class="sec"><div class="arc"></div></div>
-<div class="sec"><div class="arc"></div></div>
-
-</div>
 </div>
 
 <ul class="menu-list">
-<li class="menu-item A"><div class="menu-item-container active"><span>Recent</span></div></li>
+<li class="menu-item A"><div class="menu-item-container"><span>Recent</span></div></li>
 <li class="menu-item A"><div class="menu-item-container"><span>Adobe XD</span></div></li>
 <li class="menu-item A"><div class="menu-item-container"><span>Figma</span></div></li>
 <li class="menu-item A"><div class="menu-item-container"><span>Sketch</span></div></li>
@@ -640,14 +688,6 @@ height:100vh;}
 
 <div class="sections">
 <div class="line"></div>
-<div class="section-container">
-
-<div class="sec"><div class="arc"></div></div>
-<div class="sec"><div class="arc"></div></div>
-<div class="sec"><div class="arc"></div></div>
-<div class="sec"><div class="arc"></div></div>
-
-</div>
 </div>
 
 <ul class="menu-list">
@@ -664,6 +704,7 @@ height:100vh;}
 
 <li class="item menu">
 <div class="item-btn">
+<div class="indicator"></div>
 <div class="item-container">
 <div class="icon">
 <svg  width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -671,27 +712,18 @@ height:100vh;}
 </svg>
 </div>
 <span class="Text">Pluggins</span>
-<svg class="arrow" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.8085 12.6786C11.9353 12.5517 12.1074 12.4805 12.2868 12.4805C12.4662 12.4805 12.6383 12.5517 12.7652 12.6786L16.1144 16.0278L19.4637 12.6786C19.5913 12.5553 19.7622 12.4871 19.9396 12.4887C20.117 12.4902 20.2867 12.5614 20.4122 12.6868C20.5376 12.8123 20.6088 12.982 20.6103 13.1594C20.6119 13.3368 20.5437 13.5077 20.4204 13.6353L16.5928 17.4629C16.4659 17.5898 16.2939 17.661 16.1144 17.661C15.935 17.661 15.763 17.5898 15.6361 17.4629L11.8085 13.6353C11.6816 13.5084 11.6104 13.3364 11.6104 13.1569C11.6104 12.9775 11.6816 12.8055 11.8085 12.6786Z" stroke="var(--primary)" stroke-width="0.431713" fill="var(--primary)"/>
+<svg class="arrow" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.3341 21C17.1072 20.9989 16.8834 20.9472 16.6789 20.8488C16.4744 20.7504 16.2944 20.6077 16.1519 20.4311L12.4099 15.8978C12.1912 15.6249 12.0536 15.296 12.0128 14.9487C11.9719 14.6014 12.0295 14.2495 12.1788 13.9333C12.2999 13.6585 12.4976 13.4244 12.7482 13.2589C12.9988 13.0934 13.2918 13.0035 13.5921 13H21.0761C21.3764 13.0035 21.6694 13.0934 21.92 13.2589C22.1706 13.4244 22.3683 13.6585 22.4894 13.9333C22.6388 14.2495 22.6963 14.6014 22.6554 14.9487C22.6146 15.296 22.477 15.6249 22.2583 15.8978L18.5163 20.4311C18.3738 20.6077 18.1938 20.7504 17.9893 20.8488C17.7848 20.9472 17.561 20.9989 17.3341 21Z"/>
 </svg>
 </div>
-</div>
-
 <span class="text">Pluggins</span>
+</div>
 
 <section class="menu-container">
 <div class="menu-content">
 
 <div class="sections">
 <div class="line"></div>
-<div class="section-container">
-
-<div class="sec"><div class="arc"></div></div>
-<div class="sec"><div class="arc"></div></div>
-<div class="sec"><div class="arc"></div></div>
-<div class="sec"><div class="arc"></div></div>
-
-</div>
 </div>
 
 <ul class="menu-list">
@@ -708,14 +740,6 @@ height:100vh;}
 
 <div class="sections">
 <div class="line"></div>
-<div class="section-container">
-
-<div class="sec"><div class="arc"></div></div>
-<div class="sec"><div class="arc"></div></div>
-<div class="sec"><div class="arc"></div></div>
-<div class="sec"><div class="arc"></div></div>
-
-</div>
 </div>
 
 <ul class="menu-list">
@@ -732,6 +756,7 @@ height:100vh;}
 
 <li class="item">
 <div class="item-btn N">
+<div class="indicator"></div>
 <div class="item-container">
 <div class="icon">
 <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -740,12 +765,13 @@ height:100vh;}
 </div>
 <span class="Text">Community</span>
 </div>
-</div>
 <span class="text">Community</span>
+</div>
 </li>
 
 <li class="item">
 <div class="item-btn N">
+<div class="indicator"></div>
 <div class="item-container">
 <div class="icon">
 <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -754,12 +780,13 @@ height:100vh;}
 </div>
 <span class="Text">Email</span>
 </div>
-</div>
 <span class="text">Email</span>
+</div>
 </li>
 
 <li class="item">
 <div class="item-btn N">
+<div class="indicator"></div>
 <div class="item-container">
 <div class="icon">
 <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -768,8 +795,8 @@ height:100vh;}
 </div>
 <span class="Text">Share</span>
 </div>
-</div>
 <span class="text">Share</span>
+</div>
 </li>
 
 </ul>
@@ -780,6 +807,7 @@ height:100vh;}
 
 <li class="item">
 <div class="item-btn N">
+<div class="indicator"></div>
 <div class="item-container">
 <div class="icon">
 <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -788,12 +816,13 @@ height:100vh;}
 </div>
 <span class="Text">Settings</span>
 </div>
-</div>
 <span class="text">Settings</span>
+</div>
 </li>
 
 <li class="item">
 <div class="item-btn N">
+<div class="indicator"></div>
 <div class="item-container">
 <div class="icon">
 <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -802,12 +831,13 @@ height:100vh;}
 </div>
 <span class="Text">Support</span>
 </div>
-</div>
 <span class="text">Support</span>
+</div>
 </li>
 
 <li class="item">
 <div class="item-btn N">
+<div class="indicator"></div>
 <div class="item-container">
 <div class="icon">
 <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -817,8 +847,8 @@ height:100vh;}
 </div>
 <span class="Text">Log Out</span>
 </div>
-</div>
 <span class="text" style="width:50px;">Log Out</span>
+</div>
 </li>
 
 </footer>
@@ -826,12 +856,12 @@ height:100vh;}
 <section class="account">
 <div class="info-container">
 <div class="container">
-<img class="profile" src="Media/Camellia.jpg">
+<img class="profile" src="Media/Daniel.jpg">
 <div class="Active"></div>
 </div>
 <div class="account-info">
-<h3>Camellia Lawrence</h3>
-<span>camellia35@gmail.com</span>
+<h3>Daniel Parker</h3>
+<span>daniel42@gmail.com</span>
 </div>
 </div>
 <div class="settings">
@@ -913,6 +943,7 @@ MenuItemBs.forEach((MenuItem,index) => {
 MenuItem.classList.remove("active");});
 
 }
+
 
 //Click on each item-btn
 ItemBtns.forEach((ItemBtn,index) => {

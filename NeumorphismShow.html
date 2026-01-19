@@ -865,11 +865,11 @@ ranges.forEach(range => {
     updateLevel(e, range);
   });
 
-  range.addEventListener('mousemove', (e) => {
+  document.addEventListener('mousemove', (e) => {
     if (isDraggingRange) updateLevel(e, range);
   });
 
-  range.addEventListener('mouseup', () => {
+  document.addEventListener('mouseup', () => {
     if (!isDraggingRange) return;
     range.style.cursor="grab";
     isDraggingRange = false;

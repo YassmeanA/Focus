@@ -1,5 +1,7 @@
     .container9 {
-    background: linear-gradient(#6eb4ff, #b5d9ff);}
+    background-image:url("Suits/Background.png");
+    background-size:cover;
+    background-position:center;}
     
     .container9 .ContainerY {
     position:absolute;

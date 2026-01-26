@@ -46,7 +46,6 @@ const offset = circumference - (current1 / 100) * circumference;
 progresss[0].style.strokeDashoffset = offset;
 textPs[0].textContent = current1 + '%';
 current1++;
-
     
 }
 
@@ -305,6 +304,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

@@ -34,6 +34,7 @@ const target3 = 80;
 let current1 = 0;
 let current2 = 0;
 let current3 = 0;
+let H = Header.offsetHeight + Section1.offsetHeight + Section2.offsetHeight + Section3.offsetHeight + Section4.offsetHeight + Section5.offsetHeight + 0.5 * Section6.offsetHeight - 100;
 
 function animate() {
 
@@ -107,7 +108,7 @@ if ("ontouchstart" in document.documentElement) {
 }
 
 
-show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) + 102.35px))`;
+show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(${H}px + 102.35px))`;
 
 let Y;
 
@@ -202,11 +203,11 @@ let X = LogoContainer.scrollTop;
 
 if(show.classList.contains("active")){
     
-show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) - ${X}px + 102.35px))`;
+show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 67px - ${Z}px) calc(${H}px - ${X}px + 102.35px))`;
 
 }else{
 
-show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) - ${X}px + 102.35px))`;
+show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(${H}px - ${X}px + 102.35px))`;
 
 }
 
@@ -220,7 +221,7 @@ LogoContainer.style.pointerEvents="none";
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="auto";};});
 
-show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) - ${X}px + 102.35px))`;
+show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 67px - ${Z}px) calc(${H}px - ${X}px + 102.35px))`;
 
 light.style.animation="lighting2 0.2s forwards";
 
@@ -267,7 +268,7 @@ if(Containers[index].classList.contains("active")){Containers[index].style.point
 
 show.style.transition="clip-path 0.5s, opacity 0.5s 0.5s";
 show.style.opacity="0";
-show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(var(--i) - ${X}px + 102.35px))`;
+show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(${H}px - ${X}px + 102.35px))`;
 
 audio1.play();
 
@@ -304,11 +305,3 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
-
-
-
-
-
-
-
-

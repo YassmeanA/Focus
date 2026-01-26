@@ -113,7 +113,7 @@ function updateDimensions() {
 
 H = Header.offsetHeight + Section1.offsetHeight + Section2.offsetHeight + Section3.offsetHeight + Section4.offsetHeight + Section5.offsetHeight + 0.5 * Section6.offsetHeight - 175;
 
-show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(${H}px + 102.35px))`;
+show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 75px - ${Z}px) calc(${H}px + 102.35px))`;
 
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
@@ -304,6 +304,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

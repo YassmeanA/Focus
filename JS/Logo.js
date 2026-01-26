@@ -15,7 +15,80 @@ const glass = document.querySelector(".logo-container #glass");
 const cus = document.querySelector(".logo-container #cus");
 const audio1 = document.querySelector("#audio1");
 const audio2 = document.querySelector("#audio2");
+const Header = document.querySelector('.logo-container header');
+const Section1 = document.querySelector('.logo-container .section1');
+const Section2 = document.querySelector('.logo-container .section2');
+const Section3 = document.querySelector('.logo-container .section3');
+const Section4 = document.querySelector('.logo-container .section4');
+const Section5 = document.querySelector('.logo-container .section5');
+const Section6 = document.querySelector('.logo-container .section6');
+const Footer = document.querySelector('.logo-container footer');
+const progresss = document.querySelectorAll('.logo-container .progress');
+const textPs = document.querySelectorAll('.logo-container .percentage');
 
+const radius = 70;
+const circumference = 2 * Math.PI * radius;
+const target1 = 90;
+const target2 = 85;
+const target3 = 80;
+let current1 = 0;
+let current2 = 0;
+let current3 = 0;
+
+function animate() {
+
+if (current1 <= target1) {
+const offset = circumference - (current1 / 100) * circumference;
+progresss[0].style.strokeDashoffset = offset;
+textPs[0].textContent = current1 + '%';
+current1++;
+
+    
+}
+
+if (current2 <= target2) {
+const offset = circumference - (current2 / 100) * circumference;
+progresss[1].style.strokeDashoffset = offset;
+textPs[1].textContent = current2 + '%';
+current2++;
+    
+}
+
+if (current3 <= target3) {
+const offset = circumference - (current3 / 100) * circumference;
+progresss[2].style.strokeDashoffset = offset;
+textPs[2].textContent = current3 + '%';
+current3++;
+    
+}
+
+}
+
+LogoContainer.addEventListener("scroll",() => {
+
+if(LogoContainer.scrollTop >= 0.5 * Header.offsetHeight){Section1.style.opacity="1";Section2.style.opacity="1";}
+
+if(LogoContainer.scrollTop >= Header.offsetHeight + 0.3 * Section1.offsetHeight){
+
+Section2.querySelectorAll("li").forEach((Item,index) => {
+Item.style.animation = "Show5 0.5s ease forwards";
+Section2.querySelectorAll("li")[index].style.animationDelay = `${index * 0.2}s`;
+});
+
+}
+
+if(LogoContainer.scrollTop >= Header.offsetHeight + Section1.offsetHeight + 0.6 * Section2.offsetHeight){animate();}
+
+if(LogoContainer.scrollTop >= Header.offsetHeight + Section1.offsetHeight + Section2.offsetHeight + 0.6 * Section3.offsetHeight){
+
+Section4.querySelectorAll("li").forEach((Item,index) => {
+Item.style.animation = "Show5 0.5s ease forwards";
+Section4.querySelectorAll("li")[index].style.animationDelay = `${index * 0.2}s`;
+});
+
+}
+
+});
 
 // Touch or mouse setup
 let Z;
@@ -231,6 +304,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

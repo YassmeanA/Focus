@@ -93,6 +93,9 @@ Section4.querySelectorAll("li")[index].style.animationDelay = `${index * 0.2}s`;
 
 });
 
+// Dimensions Function
+function updateDimensions() {
+
 // Touch or mouse setup
 if ("ontouchstart" in document.documentElement) {
   LogoContainer.classList.add("touch");
@@ -105,11 +108,8 @@ if ("ontouchstart" in document.documentElement) {
   LogoContainer.classList.remove("touch");
   show.classList.add("mouse");
   show.classList.remove("touch");
-  Z = 7;
+  Z = 15;
 }
-
-// Dimensions Function
-function updateDimensions() {
 
 H = Header.offsetHeight + Section1.offsetHeight + Section2.offsetHeight + Section3.offsetHeight + Section4.offsetHeight + Section5.offsetHeight + 0.5 * Section6.offsetHeight - 175;
 
@@ -202,11 +202,11 @@ X = LogoContainer.scrollTop;
     
 if(show.classList.contains("active")){
     
-show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 74px - ${Z}px) calc(${H}px - ${X}px + 102.5px))`;
+show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 74px - ${Z}px) calc(${H}px - ${X}px + 102px))`;
 
 }else{
 
-show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 74px - ${Z}px) calc(${H}px - ${X}px + 102.5px))`;
+show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 74px - ${Z}px) calc(${H}px - ${X}px + 102px))`;
 
 }
 
@@ -304,6 +304,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

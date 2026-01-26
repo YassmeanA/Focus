@@ -95,7 +95,7 @@ right:-19vw;
 transform:translate(22vw,22vw) rotate(150deg);
 animation:Show4 0.5s 0.5s forwards;}
 
-.logo-container rect {
+.logo-container .Rect {
 opacity:0.3;
 fill:none;
 stroke-width:0.8;

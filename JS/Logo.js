@@ -34,7 +34,7 @@ const target3 = 80;
 let current1 = 0;
 let current2 = 0;
 let current3 = 0;
-let H = Header.offsetHeight + Section1.offsetHeight + Section2.offsetHeight + Section3.offsetHeight + Section4.offsetHeight + Section5.offsetHeight + 0.5 * Section6.offsetHeight - 100;
+let H = Header.offsetHeight + Section1.offsetHeight + Section2.offsetHeight + Section3.offsetHeight + Section4.offsetHeight + Section5.offsetHeight + 0.5 * Section6.offsetHeight;
 
 function animate() {
 
@@ -305,3 +305,4 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+

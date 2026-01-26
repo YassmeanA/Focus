@@ -206,7 +206,7 @@ show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 73px - ${Z}px) calc(${
 
 }else{
 
-show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 73px - ${Z}px) calc(${H}px - ${X}px + 102.35px))`;
+show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 73px - ${Z}px) calc(${H}px - ${X}px + 103.35px))`;
 
 }
 
@@ -304,6 +304,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

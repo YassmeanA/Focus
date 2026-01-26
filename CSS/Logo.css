@@ -9,14 +9,16 @@ display:flex;
 justify-content:center;
 align-items:center;
 font-family:"Montserrat Alternates", serif;
-font-weight: 1000;
 font-style: normal;}
+
+.logo-container  * {
+ transition:0.3s;}
 
 .logo-container::-webkit-scrollbar, .show::-webkit-scrollbar {
 width:15px;}
 
 .logo-container::-webkit-scrollbar-track {
-background:transparent;}
+background:rgba(0,0,0,0);}
 
 .show::-webkit-scrollbar-track {
 background:#051B34;}

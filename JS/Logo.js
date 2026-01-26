@@ -34,7 +34,10 @@ const target3 = 80;
 let current1 = 0;
 let current2 = 0;
 let current3 = 0;
-let H = Header.offsetHeight + Section1.offsetHeight + Section2.offsetHeight + Section3.offsetHeight + Section4.offsetHeight + Section5.offsetHeight + 0.5 * Section6.offsetHeight - 175;
+let X;
+let Y;
+let Z;
+let H;
 
 function animate() {
 
@@ -92,7 +95,6 @@ Section4.querySelectorAll("li")[index].style.animationDelay = `${index * 0.2}s`;
 });
 
 // Touch or mouse setup
-let Z;
 if ("ontouchstart" in document.documentElement) {
   LogoContainer.classList.add("touch");
   LogoContainer.classList.remove("mouse");
@@ -107,16 +109,14 @@ if ("ontouchstart" in document.documentElement) {
   Z = 7;
 }
 
+// Dimensions Function
+function updateDimensions() {
+
+H = Header.offsetHeight + Section1.offsetHeight + Section2.offsetHeight + Section3.offsetHeight + Section4.offsetHeight + Section5.offsetHeight + 0.5 * Section6.offsetHeight - 175;
 
 show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(${H}px + 102.35px))`;
 
-let Y;
-
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
-
-// Function to recalculate and apply navbar width
-function updateNavbarWidth() {
-
 
   // Calculate total width of spans + padding/gap allowance
   let totalSpanWidth = LogoSections[0].clientWidth + LogoSections[1].clientWidth + LogoSections[2].clientWidth + LogoSections[3].clientWidth;
@@ -148,10 +148,10 @@ function updateNavbarWidth() {
 }
 
 // Initial call
-updateNavbarWidth();
+updateDimensions();
 
 // Update on resize and orientation change
-window.addEventListener("resize", updateNavbarWidth);
+window.addEventListener("resize", updateDimensions);
 
 if(LogoContainer.classList.contains("mouse")){
 
@@ -199,8 +199,8 @@ if(Containers[index].classList.contains("active")){Containers[index].style.point
 
 LogoContainer.addEventListener("scroll",() => {
 
-let X = LogoContainer.scrollTop;
-
+X = LogoContainer.scrollTop;
+    
 if(show.classList.contains("active")){
     
 show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 67px - ${Z}px) calc(${H}px - ${X}px + 102.35px))`;
@@ -305,6 +305,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

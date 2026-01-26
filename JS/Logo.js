@@ -202,11 +202,11 @@ X = LogoContainer.scrollTop;
     
 if(show.classList.contains("active")){
     
-show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 74px - ${Z}px) calc(${H}px - ${X}px + 101.35px))`;
+show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 74px - ${Z}px) calc(${H}px - ${X}px + 102.35px))`;
 
 }else{
 
-show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 74px - ${Z}px) calc(${H}px - ${X}px + 101.35px))`;
+show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 74px - ${Z}px) calc(${H}px - ${X}px + 102.35px))`;
 
 }
 
@@ -304,6 +304,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

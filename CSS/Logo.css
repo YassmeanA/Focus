@@ -428,7 +428,6 @@ padding-bottom:150px;}
 
 .logo-container .logo {
 position:absolute;
-top:800px;
 width:200px;
 height:200px;
 display:flex;
@@ -527,20 +526,19 @@ animation:logo-rotate 0.5s;}
 100%{opacity:0;}}
 
 .logo-container button {
-font-family:"Montserrat Alternates", serif;
-font-weight:1000;
-font-style:normal;
-cursor:pointer;
-transition:0.3s;
+position:absolute;
 width:130px;
 height:50px;
-position:absolute;
-top:980px;
+border-radius:25px;
 border:none;
+cursor:pointer;
 display:flex;
 justify-content:center;
 align-items:center;
-border-radius:25px;
+transform:translateY(250px);
+font-weight:1000;
+font-style:normal;
+font-family:"Montserrat Alternates", serif;
 background:linear-gradient(to right,#00FFFF,#00FF9F);}
 
 .logo-container button .background {
@@ -774,7 +772,7 @@ height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-opacity:0;
+opacity:1;
 pointer-events:none;
 overflow-x:hidden;
 overflow-y:hidden;}

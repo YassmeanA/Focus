@@ -535,7 +535,7 @@ cursor:pointer;
 display:flex;
 justify-content:center;
 align-items:center;
-transform:translateY(150px);
+transform:translateY(120px);
 font-weight:1000;
 font-style:normal;
 font-family:"Montserrat Alternates", serif;
@@ -567,7 +567,7 @@ color:transparent;
 background:#051B34;
 -webkit-background-clip:text;}
 
-/* ===== SECTION 6 ===== */
+/* ===== FOOTER ===== */
 
 .logo-container footer {
 width:100vw;

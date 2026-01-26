@@ -95,13 +95,13 @@ right:-19vw;
 transform:translate(22vw,22vw) rotate(150deg);
 animation:Show4 0.5s 0.5s forwards;}
 
-.logo-container .Rect1 {
+.logo-container .rect {
 opacity:0.3;
 fill:none;
 stroke-width:0.8;
 stroke-linecap:round;}
 
-.logo-container .Rect2 {
+.logo-container .rect.main {
 opacity:1;
 stroke-width:1;
 stroke-dasharray:0 290;

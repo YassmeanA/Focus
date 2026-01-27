@@ -16,14 +16,14 @@ font-style:normal;}
  transition:0.3s;}
 
 .show::-webkit-scrollbar {
-width:15px;}
+width:10px;}
 
 .show::-webkit-scrollbar-track {
 background:#051B34;}
 
 .show::-webkit-scrollbar-thumb {
 background:linear-gradient(to bottom,#00FFFF,#00FF9F);
-border-radius:7.5px;}
+border-radius:5px;}
 
 .show.touch::-webkit-scrollbar {
 display:none;}
@@ -779,7 +779,7 @@ overflow-y:hidden;}
 position:fixed;
 top:0;
 left:0;
-width:calc(100% - 15px);
+width:calc(100% - 10px);
 height:calc(100% + 100px);
 background:#051B34;}
 

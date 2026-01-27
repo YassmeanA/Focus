@@ -113,9 +113,19 @@ if ("ontouchstart" in document.documentElement) {
 
 H = Header.offsetHeight + Section1.offsetHeight + Section2.offsetHeight + Section3.offsetHeight + Section4.offsetHeight + Section5.offsetHeight + 0.5 * Section6.offsetHeight - 175;
 
-show.style.clipPath = `circle(8.5px at calc(50vw - 100px + 75px - ${Z}px) calc(${H}px + 102.35px))`;
-
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+
+const rect = glass.getBoundingClientRect();
+
+if(show.classList.contains("active")){
+    
+show.style.clipPath=`circle(${Y}px at ${rect.x}px ${rect.y}px)`;
+
+}else{
+
+show.style.clipPath=`circle(8.5px at ${rect.x}px ${rect.y}px)`;
+
+}
 
   // Calculate total width of spans + padding/gap allowance
   let totalSpanWidth = LogoSections[0].clientWidth + LogoSections[1].clientWidth + LogoSections[2].clientWidth + LogoSections[3].clientWidth;
@@ -200,6 +210,9 @@ LogoContainer.addEventListener("scroll",() => {
 
 X = LogoContainer.scrollTop;
 const rect = glass.getBoundingClientRect();
+
+if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+
 console.log(rect.y);
 if(show.classList.contains("active")){
     
@@ -305,6 +318,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

@@ -9,7 +9,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 font-family:"Montserrat Alternates", serif;
-font-style: normal;}
+font-style:normal;}
 
 .logo-container  * {
  transition:0.3s;}
@@ -437,29 +437,29 @@ align-items:center;
 user-select:none;}
 
 .logo-container #light {
-opacity:1;
 position:absolute;
 left:67px;
 top:42.15px;
 width:120px;
 height:120px;
+opacity:1;
 display:flex;
 justify-content:center;
 background:linear-gradient(to right, rgba(51,255,255,0.15) 0%, #051B34 80%);
 clip-path:path('M1.14431 53.3397L141.851 0C152.95 35.7562 152.48 84.1316 141.851 120L1.14431 67.1162C-0.334474 61.7426 -0.427685 58.7198 1.14431 53.3397Z');}
 
 .logo-container #F {
-font-weight:1000;
 position:absolute;
 left:32px;
 color:aqua;
+font-weight:1000;
 letter-spacing:5px;}
 
 .logo-container #cus {
-font-weight:1000;
 position:absolute;
 left:89px;
 color:transparent;
+font-weight:1000;
 letter-spacing:5px;
 transition:0.4s;
 background:linear-gradient(to right,#00FFFF,#00FF9F);
@@ -543,10 +543,10 @@ font-family:"Montserrat Alternates", serif;
 background:linear-gradient(to right,#00FFFF,#00FF9F);}
 
 .logo-container button .background {
-transition:0.3s;
+position:absolute;
 width:126px;
 height:46px;
-position:absolute;
+transition:0.3s;
 border-radius:23px;
 background:#051B34;}
 
@@ -871,11 +871,11 @@ text-shadow:2px 2px 8px rgba(0,255,255,0.3);
 cursor:default;}
 
 .show .back {
-cursor:pointer;
 position:absolute;
 top:10px;
 left:10px;
 border-radius:9px;
+cursor:pointer;
 z-index:5;
 background:linear-gradient(to bottom right,#00FFFF,#00FF9F);
 box-shadow:0px 0px 5px rgba(0,255,255,0.2);}

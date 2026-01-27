@@ -10,7 +10,7 @@ const show = document.querySelector(".show");
 const shine = document.querySelector(".logo-container #shine");
 const light = document.querySelector(".logo-container #light");
 const hide = document.querySelector(".logo-container #hide");
-const glow = document.querySelector(".logo-container #glow");
+const glow = document.querySelector(".logo-container .logo #glow");
 const glass = document.querySelector(".logo-container #glass");
 const cus = document.querySelector(".logo-container #cus");
 const audio1 = document.querySelector("#audio1");
@@ -308,4 +308,5 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 

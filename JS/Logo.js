@@ -199,14 +199,15 @@ if(Containers[index].classList.contains("active")){Containers[index].style.point
 LogoContainer.addEventListener("scroll",() => {
 
 X = LogoContainer.scrollTop;
-    
+const rect = glass.getBoundingClientRect();
+
 if(show.classList.contains("active")){
     
-show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 74px - ${Z}px) calc(${H}px - ${X}px + 102px))`;
+show.style.clipPath=`circle(${Y}px at ${rect.x}px ${rect.y}px)`;
 
 }else{
 
-show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 74px - ${Z}px) calc(${H}px - ${X}px + 102px))`;
+show.style.clipPath=`circle(8.5px at ${rect.x}px ${rect.y}px)`;
 
 }
 
@@ -304,6 +305,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

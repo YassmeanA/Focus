@@ -200,7 +200,7 @@ LogoContainer.addEventListener("scroll",() => {
 
 X = LogoContainer.scrollTop;
 const rect = glass.getBoundingClientRect();
-
+console.log(rect.y);
 if(show.classList.contains("active")){
     
 show.style.clipPath=`circle(${Y}px at ${rect.x}px ${rect.y}px)`;
@@ -305,6 +305,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

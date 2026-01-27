@@ -14,25 +14,6 @@ font-style:normal;}
 .logo-container  * {
  transition:0.3s;}
 
-.logo-container::-webkit-scrollbar, .show::-webkit-scrollbar {
-width:15px;}
-
-.logo-container::-webkit-scrollbar-track {
-background:transparent;}
-
-.show::-webkit-scrollbar-track {
-background:#051B34;}
-
-.logo-container::-webkit-scrollbar-thumb, .show::-webkit-scrollbar-thumb {
-background:linear-gradient(to bottom,#00FFFF,#00FF9F);
-border-radius:7.5px;}
-
-.logo-container.touch::-webkit-scrollbar, .show.touch::-webkit-scrollbar {
-display:none;}
-
-.logo-container.mouse::-webkit-scrollbar, .show.mouse::-webkit-scrollbar {
-display:flex;}
-
 /* ===== MAIN STACK ===== */
 
 .logo-container .section-container {

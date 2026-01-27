@@ -36,8 +36,6 @@ let current2 = 0;
 let current3 = 0;
 let X;
 let Y;
-let Z;
-let H;
 
 function animate() {
 
@@ -96,23 +94,6 @@ Section4.querySelectorAll("li")[index].style.animationDelay = `${index * 0.2}s`;
 // Dimensions Function
 function updateDimensions() {
 
-// Touch or mouse setup
-if ("ontouchstart" in document.documentElement) {
-  LogoContainer.classList.add("touch");
-  LogoContainer.classList.remove("mouse");
-  show.classList.add("touch");
-  show.classList.remove("mouse");
-  Z = 7;
-} else {
-  LogoContainer.classList.add("mouse");
-  LogoContainer.classList.remove("touch");
-  show.classList.add("mouse");
-  show.classList.remove("touch");
-  Z = 7;
-}
-
-H = Header.offsetHeight + Section1.offsetHeight + Section2.offsetHeight + Section3.offsetHeight + Section4.offsetHeight + Section5.offsetHeight + 0.5 * Section6.offsetHeight - 175;
-
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
 const rect = glass.getBoundingClientRect();
@@ -127,33 +108,33 @@ show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y + 10}px)`;
 
 }
 
-  // Calculate total width of spans + padding/gap allowance
-  let totalSpanWidth = LogoSections[0].clientWidth + LogoSections[1].clientWidth + LogoSections[2].clientWidth + LogoSections[3].clientWidth;
+// Calculate total width of spans + padding/gap allowance
+let totalSpanWidth = LogoSections[0].clientWidth + LogoSections[1].clientWidth + LogoSections[2].clientWidth + LogoSections[3].clientWidth;
   
-  const ninetyVW = window.innerWidth * 0.9;
+const ninetyVW = window.innerWidth * 0.9;
 
-  if (ninetyVW >= (totalSpanWidth + 150) && ninetyVW < (totalSpanWidth + 250)) {
-    LogoNav.style.width = `${totalSpanWidth + 154}px`;
-    LogoBackground.style.width = `${totalSpanWidth + 150}px`;
-    LogoNavbar.style.width = `${totalSpanWidth + 150}px`;
-    LogoNavbar.style.justifyContent = "center";
-    LogoNavbar.style.padding = "0 30px";
-    LogoNavbar.style.columnGap = "30px";
-  } else if (ninetyVW >= totalSpanWidth + 250) {
-    LogoNav.style.width = `${totalSpanWidth + 254}px`;
-    LogoBackground.style.width = `${totalSpanWidth + 250}px`;
-    LogoNavbar.style.width = `${totalSpanWidth + 250}px`;
-    LogoNavbar.style.justifyContent = "center";
-    LogoNavbar.style.padding = "0 50px";
-    LogoNavbar.style.columnGap = "50px";
-  } else if (ninetyVW < totalSpanWidth + 150) {
-    LogoNav.style.width = "90vw";
-    LogoBackground.style.width = "calc(90vw - 4px)";
-    LogoNavbar.style.width = "calc(90vw - 4px)";
-    LogoNavbar.style.justifyContent = "start";
-    LogoNavbar.style.padding = "0 30px";
-    LogoNavbar.style.columnGap = "30px";
-  }
+if (ninetyVW >= (totalSpanWidth + 150) && ninetyVW < (totalSpanWidth + 250)) {
+LogoNav.style.width = `${totalSpanWidth + 154}px`;
+LogoBackground.style.width = `${totalSpanWidth + 150}px`;
+LogoNavbar.style.width = `${totalSpanWidth + 150}px`;
+LogoNavbar.style.justifyContent = "center";
+LogoNavbar.style.padding = "0 30px";
+LogoNavbar.style.columnGap = "30px";
+} else if (ninetyVW >= totalSpanWidth + 250) {
+LogoNav.style.width = `${totalSpanWidth + 254}px`;
+LogoBackground.style.width = `${totalSpanWidth + 250}px`;
+LogoNavbar.style.width = `${totalSpanWidth + 250}px`;
+LogoNavbar.style.justifyContent = "center";
+LogoNavbar.style.padding = "0 50px";
+LogoNavbar.style.columnGap = "50px";
+} else if (ninetyVW < totalSpanWidth + 150) {
+LogoNav.style.width = "90vw";
+LogoBackground.style.width = "calc(90vw - 4px)";
+LogoNavbar.style.width = "calc(90vw - 4px)";
+LogoNavbar.style.justifyContent = "start";
+LogoNavbar.style.padding = "0 30px";
+LogoNavbar.style.columnGap = "30px";
+}
 }
 
 // Initial call
@@ -208,12 +189,10 @@ if(Containers[index].classList.contains("active")){Containers[index].style.point
 
 LogoContainer.addEventListener("scroll",() => {
 
-X = LogoContainer.scrollTop;
 const rect = glass.getBoundingClientRect();
 
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
-console.log(rect.y);
 if(show.classList.contains("active")){
     
 show.style.clipPath=`circle(${Y}px at ${rect.x + 10}px ${rect.y + 10}px)`;
@@ -234,7 +213,7 @@ LogoContainer.style.pointerEvents="none";
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="auto";};});
 
-show.style.clipPath=`circle(${Y}px at calc(50vw - 100px + 67px - ${Z}px) calc(${H}px - ${X}px + 102.35px))`;
+show.style.clipPath=`circle(${Y}px at ${rect.x + 10}px ${rect.y + 10}px)`;
 
 light.style.animation="lighting2 0.2s forwards";
 
@@ -281,13 +260,13 @@ if(Containers[index].classList.contains("active")){Containers[index].style.point
 
 show.style.transition="clip-path 0.5s, opacity 0.5s 0.5s";
 show.style.opacity="0";
-show.style.clipPath=`circle(8.5px at calc(50vw - 100px + 67px - ${Z}px) calc(${H}px - ${X}px + 102.35px))`;
+show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y +10}px)`;
 
 audio1.play();
 
 setTimeout(() => {
 
-show.scrollTop=0;
+show.scrollTop = 0;
 
 shine.style.transition="opacity 0.5s, left 0.4s";
 shine.style.opacity="1";
@@ -318,31 +297,3 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

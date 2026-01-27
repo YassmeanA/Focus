@@ -34,7 +34,6 @@ const target3 = 80;
 let current1 = 0;
 let current2 = 0;
 let current3 = 0;
-let X;
 let Y;
 
 function animate() {
@@ -93,6 +92,19 @@ Section4.querySelectorAll("li")[index].style.animationDelay = `${index * 0.2}s`;
 
 // Dimensions Function
 function updateDimensions() {
+
+// Touch or mouse setup
+if ("ontouchstart" in document.documentElement) {
+LogoContainer.classList.add("touch");
+LogoContainer.classList.remove("mouse");
+show.classList.add("touch");
+show.classList.remove("mouse");
+} else {
+LogoContainer.classList.add("mouse");
+LogoContainer.classList.remove("touch");
+show.classList.add("mouse");
+show.classList.remove("touch");
+}
 
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
@@ -278,7 +290,6 @@ glow.style.opacity="0.5";
 glass.style.transition="0.4s";
 glass.style.left="8.5px";
 cus.style.left="89px";
-
 
 hide.setAttribute('width',0);
 hide.setAttribute('x',15);

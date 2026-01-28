@@ -37,6 +37,36 @@ let current3 = 0;
 let Y;
 let rect;
 
+let lastRect = {};
+
+function trackPosition() {
+  
+rect = glass.getBoundingClientRect();
+
+if (rect.top !== lastRect.top || rect.left !== lastRect.left) {
+
+if(window.innerHeight > window.innerWidth){Y = window.innerHeight;}else{Y = window.innerWidth;}
+
+if(show.classList.contains("active")){
+    
+show.style.clipPath=`circle(${Y}px at ${rect.x + 10}px ${rect.y + 10}px)`;
+
+}else{
+
+show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y + 10}px)`;
+
+}
+
+lastRect = rect;
+
+}
+
+requestAnimationFrame(trackPosition);
+
+}
+
+trackPosition();
+
 function animate() {
 
 if (current1 <= target1) {
@@ -105,18 +135,6 @@ LogoContainer.classList.add("mouse");
 LogoContainer.classList.remove("touch");
 show.classList.add("mouse");
 show.classList.remove("touch");
-}
-
-if(window.innerHeight > window.innerWidth){Y = window.innerHeight;}else{Y = window.innerWidth;}
-
-if(show.classList.contains("active")){
-    
-show.style.clipPath=`circle(${Y}px at ${rect.x + 10}px ${rect.y + 10}px)`;
-
-}else{
-
-show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y + 10}px)`;
-
 }
 
 // Calculate total width of spans + padding/gap allowance
@@ -199,10 +217,6 @@ Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="none";};});
 
 LogoContainer.addEventListener("scroll",() => {
-
-rect = glass.getBoundingClientRect();
-
-updateDimensions();
 
 LogoButton.addEventListener("click",() => {
 
@@ -298,6 +312,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

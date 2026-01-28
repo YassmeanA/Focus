@@ -106,8 +106,8 @@ show.classList.add("mouse");
 show.classList.remove("touch");
 }
 
-//M.innerHTML = window.innerWidth;
-//N.innerHTML = window.innerWidth; 
+M.innerHTML = Y;
+N.innerHTML = Y; 
 
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
@@ -313,6 +313,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

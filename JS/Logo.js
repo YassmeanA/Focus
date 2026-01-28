@@ -232,14 +232,11 @@ light.style.animation="lighting2 0.2s forwards";
 
 audio2.play();
 
-show.style.transition="clip-path 0.5s 0.6s, opacity 0.1s 0.6s";
-show.style.opacity="1";
-
 setTimeout(() => {
+
 shine.style.transition="opacity 0.2s 0.1s, left 0.4s";
 shine.style.opacity="0";
 shine.style.left="3px";
-
 shine.classList.add("active");
 
 setTimeout(() => {
@@ -255,11 +252,15 @@ glass.style.transition="0.4s";
 glass.style.left="3px";
 cus.style.left="83.5px";
 
+show.style.transition="clip-path 0.5s 0.5s, opacity 0.1s 0.5s";
+show.style.opacity="1";
 rect = glass.getBoundingClientRect();
 show.style.clipPath=`circle(${Y}px at ${rect.x + 10}px ${rect.y + 10}px)`;
 
 hide.setAttribute('width',5.2);
-hide.setAttribute('x',10);},100);
+hide.setAttribute('x',10);
+
+},100);
 
 });
 
@@ -313,8 +314,3 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
-
-
-
-
-

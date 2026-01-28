@@ -109,8 +109,6 @@ show.classList.remove("touch");
 
 if(window.innerHeight > window.innerWidth){Y = window.innerHeight;}else{Y = window.innerWidth;}
 
-rect = glass.getBoundingClientRect();
-
 if(show.classList.contains("active")){
     
 show.style.clipPath=`circle(${Y}px at ${rect.x + 10}px ${rect.y + 10}px)`;
@@ -204,17 +202,7 @@ LogoContainer.addEventListener("scroll",() => {
 
 rect = glass.getBoundingClientRect();
 
-if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
-
-if(show.classList.contains("active")){
-    
-show.style.clipPath=`circle(${Y}px at ${rect.x + 10}px ${rect.y + 10}px)`;
-
-}else{
-
-show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y +10}px)`;
-
-}
+updateDimensions();
 
 LogoButton.addEventListener("click",() => {
 
@@ -310,5 +298,6 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 

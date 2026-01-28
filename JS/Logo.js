@@ -252,7 +252,6 @@ cus.style.left="83.5px";
 
 show.style.transition="clip-path 0.5s 0.5s, opacity 0.1s 0.5s";
 show.style.opacity="1";
-setTimeout(() => {rect = glass.getBoundingClientRect();},400);
 show.style.clipPath=`circle(${Y}px at ${rect.x + 10}px ${rect.y + 10}px)`;
 
 hide.setAttribute('width',5.2);
@@ -275,7 +274,6 @@ if(Containers[index].classList.contains("active")){Containers[index].style.point
 
 show.style.transition="clip-path 0.5s, opacity 0.5s 0.5s";
 show.style.opacity="0";
-rect = glass.getBoundingClientRect();
 show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y +10}px)`;
 
 audio1.play();
@@ -312,4 +310,5 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 

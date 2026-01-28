@@ -3,7 +3,6 @@ const LogoButton = document.querySelector(".logo-container button");
 const LogoBack = document.querySelector(".show .back");
 const LogoSections = document.querySelectorAll(".show section span");
 const Containers = document.querySelectorAll(".show .Container");
-const LogoContainer = document.querySelector(".logo-container");
 const LogoButton = document.querySelector(".logo-container button");
 const LogoBack = document.querySelector(".show .back");
 const LogoSections = document.querySelectorAll(".show section span");
@@ -313,4 +312,5 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 

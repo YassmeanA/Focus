@@ -128,6 +128,9 @@ font-size:0.85rem;
 color:#999999;
 line-height:20px;}
 
+.logo-container .section1 p {
+max-width:80%;}
+
 /* ===== SECTION 2 ===== */
 
 .logo-container .section2 {
@@ -746,7 +749,8 @@ font-size:1.7rem;}
  
 .logo-container .section1 p {
 font-size:1.1rem;
-line-height:25px;}
+line-height:25px;
+max-width:70%;}
 
 }
 
@@ -772,7 +776,8 @@ font-size:2.3rem;}
 
 .logo-container .section1 p {
 font-size:1.3rem;
-line-height:30px;}
+line-height:30px;
+max-width:60%;}
 
 }
 

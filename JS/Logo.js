@@ -3,6 +3,11 @@ const LogoButton = document.querySelector(".logo-container button");
 const LogoBack = document.querySelector(".show .back");
 const LogoSections = document.querySelectorAll(".show section span");
 const Containers = document.querySelectorAll(".show .Container");
+const LogoContainer = document.querySelector(".logo-container");
+const LogoButton = document.querySelector(".logo-container button");
+const LogoBack = document.querySelector(".show .back");
+const LogoSections = document.querySelectorAll(".show section span");
+const Containers = document.querySelectorAll(".show .Container");
 const LogoNav = document.querySelector(".show nav");
 const LogoBackground = document.querySelector(".show nav .background");
 const LogoNavbar = document.querySelector(".show nav section");
@@ -35,37 +40,6 @@ let current1 = 0;
 let current2 = 0;
 let current3 = 0;
 let Y;
-let rect;
-
-let lastRect = {};
-
-function trackPosition() {
-  
-rect = glass.getBoundingClientRect();
-
-if (rect.top !== lastRect.top || rect.left !== lastRect.left) {
-
-if(window.innerHeight > window.innerWidth){Y = window.innerHeight;}else{Y = window.innerWidth;}
-
-if(show.classList.contains("active")){
-    
-show.style.clipPath=`circle(${Y}px at ${rect.x + 10}px ${rect.y + 10}px)`;
-
-}else{
-
-show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y + 10}px)`;
-
-}
-
-lastRect = rect;
-
-}
-
-requestAnimationFrame(trackPosition);
-
-}
-
-trackPosition();
 
 function animate() {
 
@@ -135,6 +109,20 @@ LogoContainer.classList.add("mouse");
 LogoContainer.classList.remove("touch");
 show.classList.add("mouse");
 show.classList.remove("touch");
+}
+
+if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+
+const rect = glass.getBoundingClientRect();
+
+if(show.classList.contains("active")){
+    
+show.style.clipPath=`circle(${Y}px at ${rect.x + 4.5}px ${rect.y + 10}px)`;
+
+}else{
+
+show.style.clipPath=`circle(8.5px at ${rect.x + 4.5}px ${rect.y + 10}px)`;
+
 }
 
 // Calculate total width of spans + padding/gap allowance
@@ -218,6 +206,20 @@ if(Containers[index].classList.contains("active")){Containers[index].style.point
 
 LogoContainer.addEventListener("scroll",() => {
 
+const rect = glass.getBoundingClientRect();
+
+if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+
+if(show.classList.contains("active")){
+    
+show.style.clipPath=`circle(${Y}px at ${rect.x + 4.5}px ${rect.y + 10}px)`;
+
+}else{
+
+show.style.clipPath=`circle(8.5px at ${rect.x + 4.5}px ${rect.y +10}px)`;
+
+}
+
 LogoButton.addEventListener("click",() => {
 
 show.classList.add("active");
@@ -228,15 +230,20 @@ LogoContainer.style.pointerEvents="none";
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="auto";};});
 
+show.style.clipPath=`circle(${Y}px at ${rect.x + 4.5}px ${rect.y + 10}px)`;
+
 light.style.animation="lighting2 0.2s forwards";
 
 audio2.play();
 
-setTimeout(() => {
+show.style.transition="clip-path 0.5s 0.6s, opacity 0.1s 0.6s";
+show.style.opacity="1";
 
+setTimeout(() => {
 shine.style.transition="opacity 0.2s 0.1s, left 0.4s";
 shine.style.opacity="0";
 shine.style.left="3px";
+
 shine.classList.add("active");
 
 setTimeout(() => {
@@ -252,14 +259,8 @@ glass.style.transition="0.4s";
 glass.style.left="3px";
 cus.style.left="83.5px";
 
-show.style.transition="clip-path 0.5s 0.5s, opacity 0.1s 0.5s";
-show.style.opacity="1";
-show.style.clipPath=`circle(${Y}px at ${rect.x + 10}px ${rect.y + 10}px)`;
-
 hide.setAttribute('width',5.2);
-hide.setAttribute('x',10);
-
-},100);
+hide.setAttribute('x',10);},100);
 
 });
 
@@ -276,7 +277,7 @@ if(Containers[index].classList.contains("active")){Containers[index].style.point
 
 show.style.transition="clip-path 0.5s, opacity 0.5s 0.5s";
 show.style.opacity="0";
-show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y +10}px)`;
+show.style.clipPath=`circle(8.5px at ${rect.x + 4.5}px ${rect.y +10}px)`;
 
 audio1.play();
 
@@ -312,7 +313,3 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
-
-
-
-

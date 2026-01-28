@@ -112,11 +112,11 @@ const rect = glass.getBoundingClientRect();
 
 if(show.classList.contains("active")){
     
-show.style.clipPath=`circle(${Y}px at ${rect.x + 4.5}px ${rect.y + 10}px)`;
+show.style.clipPath=`circle(${Y}px at ${rect.x + 10}px ${rect.y + 10}px)`;
 
 }else{
 
-show.style.clipPath=`circle(8.5px at ${rect.x + 4.5}px ${rect.y + 10}px)`;
+show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y + 10}px)`;
 
 }
 
@@ -207,11 +207,11 @@ if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.i
 
 if(show.classList.contains("active")){
     
-show.style.clipPath=`circle(${Y}px at ${rect.x + 4.5}px ${rect.y + 10}px)`;
+show.style.clipPath=`circle(${Y}px at ${rect.x + 10}px ${rect.y + 10}px)`;
 
 }else{
 
-show.style.clipPath=`circle(8.5px at ${rect.x + 4.5}px ${rect.y +10}px)`;
+show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y +10}px)`;
 
 }
 
@@ -308,4 +308,5 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 

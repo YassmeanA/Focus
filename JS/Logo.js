@@ -202,8 +202,6 @@ if(Containers[index].classList.contains("active")){Containers[index].style.point
 
 LogoContainer.addEventListener("scroll",() => {
 
-updateDimensions();
-
 rect = glass.getBoundingClientRect();
 
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
@@ -254,7 +252,7 @@ cus.style.left="83.5px";
 
 show.style.transition="clip-path 0.5s 0.5s, opacity 0.1s 0.5s";
 show.style.opacity="1";
-rect = glass.getBoundingClientRect();
+setTimeout(() => {rect = glass.getBoundingClientRect();},400);
 show.style.clipPath=`circle(${Y}px at ${rect.x + 10}px ${rect.y + 10}px)`;
 
 hide.setAttribute('width',5.2);
@@ -314,3 +312,4 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+

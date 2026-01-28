@@ -126,10 +126,15 @@ text-align:center;}
 .logo-container .section1 h3 {
 text-align:left;}
 
-.logo-container .section1 p, .logo-container .section3 .language, .logo-container .section4 span {
+.logo-container .section3 .language, .logo-container .section4 span {
 font-size:0.85rem;
 color:#999999;
 line-height:20px;}
+
+.logo-container .section1 p {
+font-size:30px;
+line-height:50px;
+}
 
 /* ===== SECTION 2 ===== */
 

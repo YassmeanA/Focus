@@ -132,9 +132,10 @@ color:#999999;
 line-height:20px;}
 
 .logo-container .section1 p {
-font-size:30px;
-line-height:50px;
-}
+font-size:2.5vw;
+line-height:4.2vw;
+color:#999999;
+max-width:80%;}
 
 /* ===== SECTION 2 ===== */
 

@@ -106,6 +106,9 @@ show.classList.add("mouse");
 show.classList.remove("touch");
 }
 
+//M.innerHTML = window.innerWidth;
+//N.innerHTML = window.innerWidth; 
+
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
 const rect = glass.getBoundingClientRect();
@@ -200,6 +203,8 @@ Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="none";};});
 
 LogoContainer.addEventListener("scroll",() => {
+
+updateDimensions();
 
 const rect = glass.getBoundingClientRect();
 
@@ -308,5 +313,6 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 

@@ -3,10 +3,6 @@ const LogoButton = document.querySelector(".logo-container button");
 const LogoBack = document.querySelector(".show .back");
 const LogoSections = document.querySelectorAll(".show section span");
 const Containers = document.querySelectorAll(".show .Container");
-const LogoButton = document.querySelector(".logo-container button");
-const LogoBack = document.querySelector(".show .back");
-const LogoSections = document.querySelectorAll(".show section span");
-const Containers = document.querySelectorAll(".show .Container");
 const LogoNav = document.querySelector(".show nav");
 const LogoBackground = document.querySelector(".show nav .background");
 const LogoNavbar = document.querySelector(".show nav section");
@@ -312,5 +308,6 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 

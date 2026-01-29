@@ -699,7 +699,7 @@ justify-content:center;
 cursor:pointer;
 background:linear-gradient(to bottom right, #00FFFF,#00FF9F);
 background-clip:linear-gradient(to bottom right, #00FFFF,#00FF9F);
-box-shadow:0 3px 10px rgba(51,255,255,0.4);}
+box-shadow:0 3px 6px rgba(51,255,255,0.2);}
 
 .logo-container footer .social-media .items a:hover {
 transform:scale(1.15);}
@@ -923,4 +923,4 @@ border-radius:9px;
 cursor:pointer;
 z-index:5;
 background:linear-gradient(to bottom right,#00FFFF,#00FF9F);
-box-shadow:3px 3px 6px rgba(0,255,255,0.3);}
+box-shadow:0px 3px 6px rgba(0,255,255,0.2);}

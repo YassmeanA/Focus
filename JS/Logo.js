@@ -218,8 +218,8 @@ show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y +10}px)`;
 LogoButton.addEventListener("click",() => {
 
 show.classList.add("active");
-show.style.pointerEvents="auto"
-show.style.overflowY="auto";
+show.querySelector(".layer").style.pointerEvents="auto"
+show.querySelector(".layer").style.overflowY="auto";
 LogoContainer.style.pointerEvents="none";
   
 Containers.forEach((Container,index) => {
@@ -263,7 +263,7 @@ LogoBack.addEventListener("click",() => {
  
 show.classList.remove("active");
   
-show.style.pointerEvents="none";
+show.querySelector(".layer").style.pointerEvents="none";
 LogoContainer.style.overflowY="auto";
 LogoContainer.style.pointerEvents="auto";
   
@@ -308,5 +308,3 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
-
-

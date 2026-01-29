@@ -70,7 +70,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 flex-direction:column;
-gap:20px;
+gap:15px;
 transform:translateY(2.8vw);
 animation:Show1 0.5s 1.5s forwards;}
 
@@ -426,8 +426,9 @@ transform:scale(0.8);}
 
 .logo-container .section5 .carousel-container .arrows .arrow img {
 position:absolute;
-width:39px;
-height:39px;
+width:38px;
+height:38px;
+border-radius:50%;
 background:#051B34;}
 
 /* ===== SECTION 6 ===== */

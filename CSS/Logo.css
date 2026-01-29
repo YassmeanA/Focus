@@ -825,7 +825,10 @@ height:100%;
 background:#051B34;
 pointer-events:none;
 overflow-x:hidden;
-overflow-y:hidden;}
+overflow-y:hidden;
+display:flex;
+justify-content:center;
+align-items:center;}
 
 .show .Container {
 position:absolute;

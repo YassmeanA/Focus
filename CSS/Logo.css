@@ -70,7 +70,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 flex-direction:column;
-gap:15px;
+gap:0;
 transform:translateY(2.8vw);
 animation:Show1 0.5s 1.5s forwards;}
 
@@ -630,9 +630,8 @@ position:absolute;
 left:0;
 font-size:0.7rem;
 cursor:pointer;
-background:linear-gradient(to right,#999999,#999999);
+background:linear-gradient(to right,#00FFFF,#00FF9F);
 -webkit-background-clip:text;
-background-clip:text;
 color:#999999;
 text-decoration:none !important;}
 

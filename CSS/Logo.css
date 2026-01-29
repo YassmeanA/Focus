@@ -16,14 +16,11 @@ font-style:normal;}
  transition:0.3s;}
 
 .show .layer::-webkit-scrollbar {
-width:10px;}
-
-.show .layer::-webkit-scrollbar-track {
-background:#051B34;}
+width:15px;}
 
 .show .layer::-webkit-scrollbar-thumb {
 background:linear-gradient(to bottom,#00FFFF,#00FF9F);
-border-radius:5px;}
+border-radius:7.5px;}
 
 .show.touch .layer::-webkit-scrollbar {
 display:none;}

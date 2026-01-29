@@ -308,6 +308,7 @@ flex-direction:column;}
 
 .logo-container .section5 h3 {
 position:relative;
+align-self:flex-start;
 padding:0 20px;}
 
 .logo-container .section5 .carousel-wrapper {

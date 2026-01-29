@@ -63,13 +63,20 @@ line-height:25px;
 text-align:center;
 letter-spacing:1px;}
 
-.logo-container .slogan {
+.logo-container header .text-container {
 width:50%;
 font-size:3.2vw;
 line-height:6.9vw;
 opacity:0;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:30px;
 transform:translateY(2.8vw);
 animation:Show1 0.5s 1.5s forwards;}
+
+.logo-container .slogan {
+width:100%;}
 
 .logo-container .Logo1 {
 position:absolute;

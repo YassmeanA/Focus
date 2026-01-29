@@ -65,8 +65,6 @@ letter-spacing:1px;}
 
 .logo-container header .text-container {
 width:50%;
-font-size:3.2vw;
-line-height:6.9vw;
 opacity:0;
 display:flex;
 align-items:center;
@@ -75,6 +73,10 @@ flex-direction:column;
 gap:30px;
 transform:translateY(2.8vw);
 animation:Show1 0.5s 1.5s forwards;}
+
+.logo-container header .text-container .slogan {
+font-size:3.2vw;
+line-height:6.9vw;}
 
 .logo-container .Logo1 {
 position:absolute;
@@ -309,8 +311,7 @@ flex-direction:column;
 padding-bottom:50px;}
 
 .logo-container .section5 h3 {
-position:absolute;
-left:0;
+position:relative;
 padding:0 20px;}
  
 .logo-container .section5 .carousel-container {

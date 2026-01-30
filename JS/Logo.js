@@ -64,6 +64,8 @@ current3++;
 
 }
 
+setTimeout(() => {setInterval(() => {animate();},50);},5000)
+
 // Carousel
 Section5.querySelector(".carousel-container").addEventListener("scroll",() => {
 
@@ -100,7 +102,7 @@ Section2.querySelectorAll("li")[index].style.animationDelay = `${index * 0.2}s`;
 
 }
 
-if(LogoContainer.scrollTop >= Header.offsetHeight + Section1.offsetHeight + 0.6 * Section2.offsetHeight){animate();}
+//if(LogoContainer.scrollTop >= Header.offsetHeight + Section1.offsetHeight + 0.6 * Section2.offsetHeight){animate();}
 
 if(LogoContainer.scrollTop >= Header.offsetHeight + Section1.offsetHeight + Section2.offsetHeight + 0.6 * Section3.offsetHeight){
 
@@ -333,6 +335,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

@@ -406,7 +406,7 @@ display:flex;
 align-items:center;
 justify-content:center;}
 
-.logo-container .section5 .carousel-wrapper .arrows .arrow {
+.logo-container .section5 .carousel-wrapper .arrows img {
 position:absolute;
 width:40px;
 height:40px;
@@ -429,13 +429,6 @@ right:0;}
 
 .logo-container .section5 .carousel-wrapper .arrows .arrow:active {
 transform:scale(0.8);}
-
-.logo-container .section5 .carousel-wrapper .arrows .arrow img {
-position:absolute;
-width:38px;
-height:38px;
-border-radius:50%;
-background:#051B34;}
 
 /* ===== SECTION 6 ===== */
 

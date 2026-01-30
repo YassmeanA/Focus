@@ -44,7 +44,7 @@ if (current1 <= target1) {
 const offset = circumference - (current1 / 100) * circumference;
 progresss[0].style.strokeDashoffset = offset;
 textPs[0].textContent = current1 + '%';
-current1++;
+current1 += 2;
 done = false;
 }
 
@@ -52,7 +52,7 @@ if (current2 <= target2) {
 const offset = circumference - (current2 / 100) * circumference;
 progresss[1].style.strokeDashoffset = offset;
 textPs[1].textContent = current2 + '%';
-current2++;
+current2 += 2;
 done = false;
 }
 
@@ -60,7 +60,7 @@ if (current3 <= target3) {
 const offset = circumference - (current3 / 100) * circumference;
 progresss[2].style.strokeDashoffset = offset;
 textPs[2].textContent = current3 + '%';
-current3++;
+current3 += 2;
 done = false;
 }
 
@@ -340,6 +340,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

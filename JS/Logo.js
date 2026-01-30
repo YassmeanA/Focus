@@ -38,12 +38,14 @@ let Y;
 
 function animate() {
 
+let done = true;
+
 if (current1 <= target1) {
 const offset = circumference - (current1 / 100) * circumference;
 progresss[0].style.strokeDashoffset = offset;
 textPs[0].textContent = current1 + '%';
 current1++;
-    
+done = false;
 }
 
 if (current2 <= target2) {
@@ -51,7 +53,7 @@ const offset = circumference - (current2 / 100) * circumference;
 progresss[1].style.strokeDashoffset = offset;
 textPs[1].textContent = current2 + '%';
 current2++;
-    
+done = false;
 }
 
 if (current3 <= target3) {
@@ -59,12 +61,15 @@ const offset = circumference - (current3 / 100) * circumference;
 progresss[2].style.strokeDashoffset = offset;
 textPs[2].textContent = current3 + '%';
 current3++;
-    
+done = false;
 }
+
+if (!done) {requestAnimationFrame(animate);}
 
 }
 
-setTimeout(() => {setInterval(() => {animate();},5);},7000);
+// start animation
+setTimeout(() => {requestAnimationFrame(animate);},7000);
 
 // Carousel
 Section5.querySelector(".carousel-container").addEventListener("scroll",() => {
@@ -335,6 +340,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

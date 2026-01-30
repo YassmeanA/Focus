@@ -69,8 +69,8 @@ Section5.querySelector(".carousel-container").addEventListener("scroll",() => {
 
 let MaxScrollLeft = Section5.querySelector(".carousel-container").scrollWidth - Section5.querySelector(".carousel-container").clientWidth;
 
-if(Section5.querySelector(".carousel-container").scrollLeft <= 50){Section5.querySelector(".carousel-wrapper .left").style.pointerEvents="none";Section5.querySelector(".carousel-wrapper .left").style.opacity="0";}else{Section5.querySelector(".carousel-wrapper .left").style.pointerEvents="auto";Section5.querySelector(".carousel-wrapper .left").style.opacity="1";}
-if(Section5.querySelector(".carousel-container").scrollLeft >= MaxScrollLeft - 50){Section5.querySelector(".carousel-wrapper .right").style.pointerEvents="none";Section5.querySelector(".carousel-wrapper .right").style.opacity="0";}else{Section5.querySelector(".carousel-wrapper .right").style.pointerEvents="auto";Section5.querySelector(".carousel-wrapper .right").style.opacity="1";}
+if(Section5.querySelector(".carousel-container").scrollLeft <= 100){Section5.querySelector(".carousel-wrapper .left").style.pointerEvents="none";Section5.querySelector(".carousel-wrapper .left").style.opacity="0";}else{Section5.querySelector(".carousel-wrapper .left").style.pointerEvents="auto";Section5.querySelector(".carousel-wrapper .left").style.opacity="1";}
+if(Section5.querySelector(".carousel-container").scrollLeft >= MaxScrollLeft - 100){Section5.querySelector(".carousel-wrapper .right").style.pointerEvents="none";Section5.querySelector(".carousel-wrapper .right").style.opacity="0";}else{Section5.querySelector(".carousel-wrapper .right").style.pointerEvents="auto";Section5.querySelector(".carousel-wrapper .right").style.opacity="1";}
 
 });
 
@@ -333,6 +333,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

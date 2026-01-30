@@ -62,7 +62,9 @@ letter-spacing:1px;}
 
 .TITLE {
 font-family:"Montserrat Alternates", serif;
-font-style:normal;}
+font-style:normal;
+font-size:2.3rem;
+line-height:60px;}
 
 .logo-container header .text-container {
 width:50%;
@@ -765,7 +767,7 @@ justify-self:center;}
 .logo-container .section1 {
 padding:30px 30px 150px 30px;}
 
-.logo-container .section1 h3, .logo-container .section2 h3, .logo-container .section4 h3, .logo-container .section5 h3, .TITLE {
+.logo-container .section1 h3, .logo-container .section2 h3, .logo-container .section4 h3, .logo-container .section5 h3 {
 font-size:1.7rem;
 line-height:50px;}
  
@@ -798,7 +800,7 @@ justify-self:center;}
 .logo-container .section1 {
 padding:40px 40px 150px 40px;}
 
-.logo-container .section1 h3, .logo-container .section2 h3, .logo-container .section4 h3, .logo-container .section5 h3, .TITLE {
+.logo-container .section1 h3, .logo-container .section2 h3, .logo-container .section4 h3, .logo-container .section5 h3 {
 font-size:2.3rem;
 line-height:60px;}
 

@@ -35,6 +35,7 @@ let current1 = 0;
 let current2 = 0;
 let current3 = 0;
 let Y;
+let triggered = false;
 
 function animate() {
 
@@ -64,8 +65,21 @@ current3++;
 
 }
 
+function onScroll() {
+
+if (triggered) return;
+
+if (LogoContainer.scrollTop >= Header.offsetHeight + Section1.offsetHeight + 0.6 * Section2.offsetHeight) {
+
+triggered = true;
+
 // start animation
 setTimeout(() => {setInterval(() => {animate();},5);},7000);
+      
+}
+
+}
+
 
 // Carousel
 Section5.querySelector(".carousel-container").addEventListener("scroll",() => {
@@ -103,7 +117,7 @@ Section2.querySelectorAll("li")[index].style.animationDelay = `${index * 0.2}s`;
 
 }
 
-//if(LogoContainer.scrollTop >= Header.offsetHeight + Section1.offsetHeight + 0.6 * Section2.offsetHeight){animate();}
+onScroll();
 
 if(LogoContainer.scrollTop >= Header.offsetHeight + Section1.offsetHeight + Section2.offsetHeight + 0.6 * Section3.offsetHeight){
 
@@ -336,6 +350,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

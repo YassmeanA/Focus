@@ -60,6 +60,10 @@ line-height:25px;
 text-align:center;
 letter-spacing:1px;}
 
+.TITLE {
+font-family:"Montserrat Alternates", serif;
+font-style:normal;}
+
 .logo-container header .text-container {
 width:50%;
 opacity:0;

@@ -48,7 +48,7 @@ align-items:center;
 justify-content:center;
 overflow:hidden;}
 
-.logo-container h3, .logo-container h4, .logo-container footer .lists ul .titleP a, .logo-container footer .social-media span, .logo-container footer .social-media p {
+.logo-container h3, .logo-container h4, .logo-container footer .lists ul .titleP a, .logo-container footer .social-media span, .logo-container footer .social-media p, .TITLE {
 font-weight:600;
 font-size:0.85rem;
 color:transparent;

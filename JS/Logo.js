@@ -133,18 +133,6 @@ show.classList.remove("touch");
 
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
-const rect = glass.getBoundingClientRect();
-
-if(show.classList.contains("active")){
-    
-show.style.clipPath=`circle(${Y}px at ${rect.x + 10}px ${rect.y + 10}px)`;
-
-}else{
-
-show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y + 10}px)`;
-
-}
-
 // Calculate total width of spans + padding/gap allowance
 let totalSpanWidth = LogoSections[0].clientWidth + LogoSections[1].clientWidth + LogoSections[2].clientWidth + LogoSections[3].clientWidth;
   
@@ -333,4 +321,5 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 

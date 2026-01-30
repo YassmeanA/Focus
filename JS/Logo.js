@@ -74,7 +74,7 @@ if (LogoContainer.scrollTop >= Header.offsetHeight + Section1.offsetHeight + 0.6
 triggered = true;
 
 // start animation
-setInterval(() => {animate();},5);
+setInterval(() => {animate();},10);
       
 }
 
@@ -350,6 +350,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

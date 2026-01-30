@@ -69,23 +69,21 @@ Section5.querySelector(".carousel-container").addEventListener("scroll",() => {
 
 let MaxScrollLeft = Section5.querySelector(".carousel-container").scrollWidth - Section5.querySelector(".carousel-container").clientWidth;
 
-if(Section5.querySelector(".carousel-container").scrollLeft <= 50){Section5.querySelector(".carousel-container .left").style.pointerEvents="none";Section5.querySelector(".carousel-container .left").style.opacity="0";}else{Section5.querySelector(".carousel-container .left").style.pointerEvents="auto";Section5.querySelector(".carousel-container .left").style.opacity="1";}
-if(Section5.querySelector(".carousel-container").scrollLeft >= MaxScrollLeft - 50){Section5.querySelector(".carousel-container .right").style.pointerEvents="none";Section5.querySelector(".carousel-container .right").style.opacity="0";}else{Section5.querySelector(".carousel-container .right").style.pointerEvents="auto";Section5.querySelector(".carousel-container .right").style.opacity="1";}
+if(Section5.querySelector(".carousel-container").scrollLeft <= 50){Section5.querySelector(".carousel-wrapper .left").style.pointerEvents="none";Section5.querySelector(".carousel-wrapper .left").style.opacity="0";}else{Section5.querySelector(".carousel-wrapper .left").style.pointerEvents="auto";Section5.querySelector(".carousel-wrapper .left").style.opacity="1";}
+if(Section5.querySelector(".carousel-container").scrollLeft >= MaxScrollLeft - 50){Section5.querySelector(".carousel-wrapper .right").style.pointerEvents="none";Section5.querySelector(".carousel-wrapper .right").style.opacity="0";}else{Section5.querySelector(".carousel-wrapper .right").style.pointerEvents="auto";Section5.querySelector(".carousel-wrapper .right").style.opacity="1";}
 
 });
 
-Section5.querySelector(".carousel-container .left").addEventListener("click",() => {
+Section5.querySelector(".carousel-wrapper .left").addEventListener("click",() => {
 
-const CardWidth = Section5.querySelectorAll(".carousel-container li").clientWidth + 35;
-Section5.querySelector(".carousel-container").scrollLeft -= CardWidth;
+Section5.querySelector(".carousel-container").scrollLeft -= 335;
 
 });
 
 
-Section5.querySelector(".carousel-container .right").addEventListener("click",() => {
+Section5.querySelector(".carousel-wrapper .right").addEventListener("click",() => {
 
-const CardWidth = Section5.querySelectorAll(".carousel-container li").clientWidth + 35;
-Section5.querySelector(".carousel-container").scrollLeft += CardWidth;
+Section5.querySelector(".carousel-container").scrollLeft += 335;
 
 });
 
@@ -321,5 +319,6 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 

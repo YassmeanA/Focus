@@ -64,8 +64,7 @@ current3++;
 
 }
 
-//setTimeout(() => {setInterval(() => {animate();},10);},5000)
-animate();
+setTimeout(() => {setInterval(() => {animate();},10);},5000)
 
 // Carousel
 Section5.querySelector(".carousel-container").addEventListener("scroll",() => {
@@ -336,6 +335,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

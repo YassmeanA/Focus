@@ -415,6 +415,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 overflow:hidden;
+pointer-events:auto;
 cursor:pointer;
 transition:0.2s;
 background:linear-gradient(to bottom right,#00FFFF,#00FF9F);

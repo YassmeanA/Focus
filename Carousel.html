@@ -1353,7 +1353,6 @@ transform:scale(0.8);}
 
 <script>
 
-const LogoContainer = document.querySelector(".logo-container");
 const show = document.querySelector(".show");
 
 // Dimensions Function
@@ -1361,13 +1360,9 @@ function updateDimensions() {
 
 // Touch or mouse setup
 if ("ontouchstart" in document.documentElement) {
-LogoContainer.classList.add("touch");
-LogoContainer.classList.remove("mouse");
 show.classList.add("touch");
 show.classList.remove("mouse");
 } else {
-LogoContainer.classList.add("mouse");
-LogoContainer.classList.remove("touch");
 show.classList.add("mouse");
 show.classList.remove("touch");
 }

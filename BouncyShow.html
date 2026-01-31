@@ -11,6 +11,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <style>
 
+html {
+-webkit-tap-highlight-color:transparent;
+scroll-behavior:smooth;}
+
 body {
 margin:0;
 display:flex;
@@ -64,6 +68,9 @@ justify-content:center;
 transition:0.6s;
 cursor:pointer;}
 
+nav .icon.active {
+cursor:default;}
+
 nav .text {
 position:absolute;
 bottom:-7px;
@@ -71,13 +78,13 @@ font-size:0.6rem;
 font-weight:500;
 color:var(--primary);}
 
-nav .path1{
+nav .path1 {
 stroke:var(--primary);}
 
-nav .path2{
+nav .path2 {
 stroke:var(--primary);}
 
-nav .path3{
+nav .path3 {
 fill:var(--primary);}
 
 nav .icon.active .path1 {

@@ -7,6 +7,10 @@
 <link rel="icon" type="image/x-icon" href="SVG/Focus.svg">
 <style>
 
+html {
+-webkit-tap-highlight-color:transparent;
+scroll-behavior:smooth;}
+
 body {
 margin:0;
 display:flex;
@@ -366,6 +370,7 @@ const IconAs = document.querySelectorAll(".icon.A");
 const IconBs = document.querySelectorAll(".icon.B");
 const IconCs = document.querySelectorAll(".icon.C");
 const ICONs = document.querySelectorAll(".ICON");
+const Clicks = document.querySelectorAll(".click");
 
 var x = 0;
 
@@ -414,6 +419,9 @@ A1.style.animation="trim2 1s forwards",A2.style.animation="trim2 1s forwards",A3
 B1.style.animation="trim2 1s forwards",B2.style.animation="trim2 1s forwards",B3.style.animation="trim2 1s forwards",B4.style.animation="trim2 1s forwards";
 P1.style.animation="trim2 1s forwards",P2.style.animation="trim2 1s forwards",P3.style.animation="trim2 1s forwards",P4.style.animation="trim2 1s forwards";
 
+Clicks.forEach((Click, index) => {Click.style.cursor="pointer";});
+Click1.style.cursor="default";
+
 x = 0;};
 
 const Icon2 = () => {
@@ -444,6 +452,9 @@ B1.style.animation="trim2 1s forwards",B2.style.animation="trim2 1s forwards",B3
 S1.style.animation="trim2 1s forwards",S2.style.animation="trim2 1s forwards",S3.style.animation="trim2 1s forwards", S4.style.animation="trim2 1s forwards";
 P1.style.animation="trim2 1s forwards",P2.style.animation="trim2 1s forwards",P3.style.animation="trim2 1s forwards",P4.style.animation="trim2 1s forwards";
 
+Clicks.forEach((Click, index) => {Click.style.cursor="pointer";});
+Click2.style.cursor="default";
+
 x = 1;};
 
 const Icon3 = () => {
@@ -472,6 +483,9 @@ D3.style.animation="d6 1s forwards",D2.style.animation="d5 1s forwards",D1.style
 A1.style.animation="trim2 1s forwards",A2.style.animation="trim2 1s forwards",A3.style.animation="trim2 1s forwards",A4.style.animation="trim2 1s forwards",A5.style.animation="trim2 1s forwards",A6.style.animation="trim2 1s forwards";
 B1.style.animation="trim2 1s forwards",B2.style.animation="trim2 1s forwards",B3.style.animation="trim2 1s forwards",B4.style.animation="trim2 1s forwards";
 S1.style.animation="trim2 1s forwards",S2.style.animation="trim2 1s forwards",S3.style.animation="trim2 1s forwards", S4.style.animation="trim2 1s forwards";
+
+Clicks.forEach((Click, index) => {Click.style.cursor="pointer";});
+Click3.style.cursor="default";
 
 x = 2;};
 
@@ -502,6 +516,9 @@ D3.style.animation="d6 1s forwards",D2.style.animation="d5 1s forwards",D1.style
 B1.style.animation="trim2 1s forwards",B2.style.animation="trim2 1s forwards",B3.style.animation="trim2 1s forwards",B4.style.animation="trim2 1s forwards";
 P1.style.animation="trim2 1s forwards",P2.style.animation="trim2 1s forwards",P3.style.animation="trim2 1s forwards",P4.style.animation="trim2 1s forwards";
 S1.style.animation="trim2 1s forwards",S2.style.animation="trim2 1s forwards",S3.style.animation="trim2 1s forwards", S4.style.animation="trim2 1s forwards";
+
+Clicks.forEach((Click, index) => {Click.style.cursor="pointer";});
+Click4.style.cursor="default";
 
 x = 3;};
 
@@ -539,6 +556,9 @@ A1.style.animation="trim2 1s forwards",A2.style.animation="trim2 1s forwards",A3
 P1.style.animation="trim2 1s forwards",P2.style.animation="trim2 1s forwards",P3.style.animation="trim2 1s forwards",P4.style.animation="trim2 1s forwards";
 S1.style.animation="trim2 1s forwards",S2.style.animation="trim2 1s forwards",S3.style.animation="trim2 1s forwards", S4.style.animation="trim2 1s forwards";
 
+Clicks.forEach((Click, index) => {Click.style.cursor="pointer";});
+Click5.style.cursor="default";
+
 x = 4;};
 
 Click1.addEventListener("click",Icon1);
@@ -552,6 +572,3 @@ Click5.addEventListener("click",Icon5);
 </body>
 
 </html>
-
-
-

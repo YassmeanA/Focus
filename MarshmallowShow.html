@@ -10,6 +10,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <style>
 
+html {
+-webkit-tap-highlight-color:transparent;
+scroll-behavior:smooth;}
+
 body {
 margin:0;
 display:flex;
@@ -185,6 +189,9 @@ display:flex;
 justify-content:center;
 cursor:pointer;}
 
+#Click1 {
+cursor:default;}
+
 .text {
 position:absolute;
 bottom:0;
@@ -348,6 +355,7 @@ const Iconbs = document.querySelectorAll(".icon.B");
 const Iconcs = document.querySelectorAll(".icon.C");
 const ICONAs = document.querySelectorAll(".ICON");
 const TextAs = document.querySelectorAll(".text");
+const Clicks = document.querySelectorAll(".click");
 
 var x = 0;
 
@@ -381,6 +389,9 @@ ICONAs.forEach((ICON, index) => {
 if(index != 0){ICONAs[index].style.bottom="-80px";};
 ICONAs[0].style.bottom="18px";});
 
+Clicks.forEach((Click, index) => {Click.style.cursor="pointer";});
+Click1.style.cursor="default";
+
 x = 0;};
 
 const Icon22 = () => {
@@ -396,6 +407,9 @@ TextAs[1].classList.add("active");
 ICONAs.forEach((ICON, index) => {
 if(index != 1){ICONAs[index].style.bottom="-80px";};
 ICONAs[1].style.bottom="18px"; });
+
+Clicks.forEach((Click, index) => {Click.style.cursor="pointer";});
+Click2.style.cursor="default";
 
 x = 1;};
 
@@ -417,6 +431,9 @@ Iconbs[1].style.opacity="1",Iconbs[1].style.bottom="140px";};
 ICONAs.forEach((ICON, index) => {
 if(index != 2){ICONAs[index].style.bottom="-80px";};
 ICONAs[2].style.bottom="18px";});
+
+Clicks.forEach((Click, index) => {Click.style.cursor="pointer";});
+Click3.style.cursor="default";
 
 x = 2;};
 

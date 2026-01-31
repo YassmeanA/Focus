@@ -116,7 +116,7 @@ transform:scale(1);}
 
 }
 
-@media screen and (min-width: 700px) and (max-width: 1050px) {
+@media screen and (min-width: 700px) {
 
 .show .Container {
 grid-template-columns:repeat(2,330px);
@@ -1350,6 +1350,37 @@ transform:scale(0.8);}
 <script src="JS/SwiperSource.js"></script>
 <script src="JS/Swiper1.js"></script>
 <script src="JS/Swiper2.js"></script>
+
+<script>
+
+const LogoContainer = document.querySelector(".logo-container");
+const show = document.querySelector(".show");
+
+// Dimensions Function
+function updateDimensions() {
+
+// Touch or mouse setup
+if ("ontouchstart" in document.documentElement) {
+LogoContainer.classList.add("touch");
+LogoContainer.classList.remove("mouse");
+show.classList.add("touch");
+show.classList.remove("mouse");
+} else {
+LogoContainer.classList.add("mouse");
+LogoContainer.classList.remove("touch");
+show.classList.add("mouse");
+show.classList.remove("touch");
+}
+
+}
+
+// Initial call
+updateDimensions();
+
+// Update on resize and orientation change
+window.addEventListener("resize", updateDimensions);
+
+</script>
 
 </body>
 

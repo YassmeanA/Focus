@@ -928,6 +928,7 @@ position:absolute;
 top:10px;
 left:10px;
 border-radius:9px;
+transition:0.3s;
 cursor:pointer;
 z-index:5;
 background:linear-gradient(to bottom right,#00FFFF,#00FF9F);

@@ -86,9 +86,6 @@ height:50px;}
 .icon.A, .wrapper {
 cursor:pointer;}
 
-.icon.A.active {
-cursor:default;}
-
 .fill {
 --i1:0px;
 --i2:-20px;}
@@ -311,6 +308,8 @@ path2.style.strokeDashoffset="0";
 
 var x = 0;
 
+Icons[0].style.cursor="default";
+
 //Click on items
 const ICON1 = () => {
 
@@ -329,6 +328,9 @@ Texts[0].style.color="#FF0099";
 
 Fills[x].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
 Fills[0].style.animation="Gentle-Translate 1.6s forwards";
+
+Icons.forEach(Icon => {Icon.style.cursor="pointer";});
+Icons[0].style.cursor="default";
 
 x = 0;}
 
@@ -350,6 +352,9 @@ Texts[1].style.color="#FF0099";
 Fills[x].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
 Fills[1].style.animation="Gentle-Translate 1.6s forwards";
 
+Icons.forEach(Icon => {Icon.style.cursor="pointer";});
+Icons[1].style.cursor="default";
+
 x = 1;}
 
 const ICON3 = () => {
@@ -365,6 +370,9 @@ Texts[2].style.color="#FF0099";
 
 Fills[x].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
 Fills[2].style.animation="Gentle-Translate 1.6s forwards";
+
+Icons.forEach(Icon => {Icon.style.cursor="pointer";});
+Icons[2].style.cursor="default";
 
 x = 2;}
 
@@ -385,6 +393,9 @@ Texts[3].style.color="#FF0099";
 
 Fills[x].style.animation="Hide 0.6s cubic-bezier(0.5,-0.5,1,1) forwards";
 Fills[3].style.animation="Gentle-Translate 1.6s forwards";
+
+Icons.forEach(Icon => {Icon.style.cursor="pointer";});
+Icons[3].style.cursor="default";
 
 x = 3;}
 

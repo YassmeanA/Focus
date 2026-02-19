@@ -104,6 +104,10 @@ Section5.querySelector(".carousel-container").scrollLeft += 335;
 
 });
 
+function getClipRadius() {
+return Math.hypot(window.innerWidth, window.innerHeight);
+}
+
 // Dimensions Function
 function updateDimensions() {
 
@@ -120,11 +124,9 @@ show.classList.add("mouse");
 show.classList.remove("touch");
 }
 
-if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
 
 const rect = glass.getBoundingClientRect();
-
-if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+Y = getClipRadius();
 
 if(show.classList.contains("active")){
     
@@ -240,8 +242,7 @@ Section4.querySelectorAll("li")[index].style.animationDelay = `${index * 0.2}s`;
 }
 
 const rect = glass.getBoundingClientRect();
-
-if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
+Y = getClipRadius();
 
 if(show.classList.contains("active")){
     
@@ -346,5 +347,3 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
-
-

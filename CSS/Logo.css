@@ -822,7 +822,6 @@ display:flex;
 justify-content:center;
 align-items:center;
 opacity:1;
-background:red;
 overflow:hidden;}
 
 .show .layer {
@@ -832,6 +831,7 @@ left:0;
 width:100%;
 height:100%;
 background:#051B34;
+background:red;
 pointer-events:none;
 overflow-x:hidden;
 overflow-y:hidden;

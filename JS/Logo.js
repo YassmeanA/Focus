@@ -104,6 +104,7 @@ Section5.querySelector(".carousel-container").scrollLeft += 335;
 
 });
 
+let totalSpanWidth = LogoSections[0].clientWidth + LogoSections[1].clientWidth + LogoSections[2].clientWidth + LogoSections[3].clientWidth;
 
 // Dimensions Function
 function updateDimensions() {
@@ -138,7 +139,7 @@ show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y + 10}px)`;
 }
 
 // Calculate total width of spans + padding/gap allowance
-let totalSpanWidth = LogoSections[0].clientWidth + LogoSections[1].clientWidth + LogoSections[2].clientWidth + LogoSections[3].clientWidth;
+totalSpanWidth = LogoSections[0].clientWidth + LogoSections[1].clientWidth + LogoSections[2].clientWidth + LogoSections[3].clientWidth;
   
 const ninetyVW = window.innerWidth * 0.9;
 
@@ -165,6 +166,13 @@ LogoNavbar.style.padding = "0 30px";
 LogoNavbar.style.columnGap = "30px";
 }
 }
+
+LogoNav.style.width = `${totalSpanWidth + 254}px`;
+LogoBackground.style.width = `${totalSpanWidth + 250}px`;
+LogoNavbar.style.width = `${totalSpanWidth + 250}px`;
+LogoNavbar.style.justifyContent = "center";
+LogoNavbar.style.padding = "0 50px";
+LogoNavbar.style.columnGap = "50px";
 
 // Initial call
 updateDimensions();
@@ -347,3 +355,4 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+

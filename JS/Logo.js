@@ -104,31 +104,6 @@ Section5.querySelector(".carousel-container").scrollLeft += 335;
 
 });
 
-LogoContainer.addEventListener("scroll",() => {
-
-if(LogoContainer.scrollTop >= 0.5 * Header.offsetHeight){Section1.style.opacity="1";Section2.style.opacity="1";}
-
-if(LogoContainer.scrollTop >= Header.offsetHeight + 0.3 * Section1.offsetHeight){
-
-Section2.querySelectorAll("li").forEach((Item,index) => {
-Item.style.animation = "Show5 0.5s ease forwards";
-Section2.querySelectorAll("li")[index].style.animationDelay = `${index * 0.2}s`;
-});
-
-}
-
-onScroll();
-
-if(LogoContainer.scrollTop >= Header.offsetHeight + Section1.offsetHeight + Section2.offsetHeight + 0.6 * Section3.offsetHeight){
-
-Section4.querySelectorAll("li").forEach((Item,index) => {
-Item.style.animation = "Show5 0.5s ease forwards";
-Section4.querySelectorAll("li")[index].style.animationDelay = `${index * 0.2}s`;
-});
-
-}
-
-});
 
 // Dimensions Function
 function updateDimensions() {
@@ -243,6 +218,28 @@ if(Containers[index].classList.contains("active")){Containers[index].style.point
 
 LogoContainer.addEventListener("scroll",() => {
 
+if(LogoContainer.scrollTop >= 0.5 * Header.offsetHeight){Section1.style.opacity="1";Section2.style.opacity="1";}
+
+if(LogoContainer.scrollTop >= Header.offsetHeight + 0.3 * Section1.offsetHeight){
+
+Section2.querySelectorAll("li").forEach((Item,index) => {
+Item.style.animation = "Show5 0.5s ease forwards";
+Section2.querySelectorAll("li")[index].style.animationDelay = `${index * 0.2}s`;
+});
+
+}
+
+onScroll();
+
+if(LogoContainer.scrollTop >= Header.offsetHeight + Section1.offsetHeight + Section2.offsetHeight + 0.6 * Section3.offsetHeight){
+
+Section4.querySelectorAll("li").forEach((Item,index) => {
+Item.style.animation = "Show5 0.5s ease forwards";
+Section4.querySelectorAll("li")[index].style.animationDelay = `${index * 0.2}s`;
+});
+
+}
+
 const rect = glass.getBoundingClientRect();
 
 if(window.innerHeight > window.innerWidth){Y=window.innerHeight;}else{Y=window.innerWidth;}
@@ -350,6 +347,7 @@ light.style.animation="lighting1 0.8s forwards";},200);
 });
 
 });
+
 
 
 

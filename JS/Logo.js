@@ -317,7 +317,7 @@ if(Containers[index].classList.contains("active")){Containers[index].style.point
 rect = glass.getBoundingClientRect();
 
 show.style.transition="clip-path 0.5s, opacity 0.5s 0.5s";
-show.style.opacity="1";
+show.style.opacity="0";
 show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y + 10}px)`;
 
 audio1.play();

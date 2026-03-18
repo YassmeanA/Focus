@@ -683,7 +683,7 @@ top:0;}
 .logo-container footer .social-media p {
 position:absolute;
 bottom:0;
-font-weight:300;
+font-weight:400;
 font-size:0.6rem;}
 
 .logo-container footer .social-media .items {
@@ -821,7 +821,7 @@ height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-opacity:1;
+opacity:0;
 overflow:hidden;}
 
 .show .layer {
@@ -831,7 +831,6 @@ left:0;
 width:100%;
 height:100%;
 background:#051B34;
-background:red;
 pointer-events:none;
 overflow-x:hidden;
 overflow-y:hidden;

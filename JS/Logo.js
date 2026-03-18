@@ -35,7 +35,8 @@ let current1 = 0;
 let current2 = 0;
 let current3 = 0;
 let Y;
-let rect = glass.getBoundingClientRect();
+let rect;
+let rectX;
 let triggered = false;
 
 function animate() {
@@ -127,16 +128,17 @@ show.classList.remove("touch");
 
 
 rect = glass.getBoundingClientRect();
+rectX = rect.x;
 
 if(window.innerWidth > window.innerHeight){Y = window.innerHeight}else{Y = window.innerWidth}
 
 if(show.classList.contains("active")){
     
-show.style.clipPath=`circle(${Y}px at ${rect.x + 4.5}px ${rect.y + 10}px)`;
+show.style.clipPath=`circle(${Y}px at ${rectX + 4.5}px ${rect.y + 10}px)`;
 
 }else{
 
-show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y + 10}px)`;
+show.style.clipPath=`circle(8.5px at ${rectX + 10}px ${rect.y + 10}px)`;
 
 }
 
@@ -243,14 +245,15 @@ Section4.querySelectorAll("li")[index].style.animationDelay = `${index * 0.2}s`;
 
 }
 
+rect = glass.getBoundingClientRect();
 
 if(show.classList.contains("active")){
     
-show.style.clipPath=`circle(${Y}px at ${rect.x + 4.5}px ${rect.y + 10}px)`;
+show.style.clipPath=`circle(${Y}px at ${rectX + 4.5}px ${rect.y + 10}px)`;
 
 }else{
 
-show.style.clipPath=`circle(8.5px at ${rect.x + 4.5}px ${rect.y + 10}px)`;
+show.style.clipPath=`circle(8.5px at ${rectX + 4.5}px ${rect.y + 10}px)`;
 
 }
 

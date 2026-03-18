@@ -270,7 +270,7 @@ if(Containers[index].classList.contains("active")){Containers[index].style.point
 
 rect = glass.getBoundingClientRect();
 
-show.style.clipPath=`circle(${Y}px at ${rect.x + 4.5}px ${rect.y + 10}px)`;
+show.style.clipPath=`circle(${Y}px at ${rect.x + 10}px ${rect.y + 10}px)`;
 
 light.style.animation="lighting2 0.2s forwards";
 
@@ -319,7 +319,7 @@ rect = glass.getBoundingClientRect();
 
 show.style.transition="clip-path 0.5s, opacity 0.5s 0.5s";
 show.style.opacity="1";
-show.style.clipPath=`circle(8.5px at ${rect.x + 4.5}px ${rect.y + 10}px)`;
+show.style.clipPath=`circle(8.5px at ${rect.x + 10}px ${rect.y + 10}px)`;
 
 audio1.play();
 

@@ -257,6 +257,8 @@ show.style.clipPath=`circle(8.5px at ${rectX + 4.5}px ${rect.y + 10}px)`;
 
 }
 
+});
+
 LogoButton.addEventListener("click",() => {
 
 show.classList.add("active");
@@ -267,7 +269,9 @@ LogoContainer.style.pointerEvents="none";
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="auto";};});
 
-show.style.clipPath=`circle(${Y}px at ${rect.x + 4.5}px ${rect.y + 10}px)`;
+rect = glass.getBoundingClientRect();
+
+show.style.clipPath=`circle(${Y}px at ${rectX + 4.5}px ${rect.y + 10}px)`;
 
 light.style.animation="lighting2 0.2s forwards";
 
@@ -312,9 +316,11 @@ LogoContainer.style.pointerEvents="auto";
 Containers.forEach((Container,index) => {
 if(Containers[index].classList.contains("active")){Containers[index].style.pointerEvents="none";};});
 
+rect = glass.getBoundingClientRect();
+
 show.style.transition="clip-path 0.5s, opacity 0.5s 0.5s";
 show.style.opacity="1";
-show.style.clipPath=`circle(8.5px at ${rect.x + 4.5}px ${rect.y + 10}px)`;
+show.style.clipPath=`circle(8.5px at ${rectX + 4.5}px ${rect.y + 10}px)`;
 
 audio1.play();
 
@@ -346,7 +352,5 @@ show.style.overflowY="hidden";},500);
 light.style.animation="lighting1 0.8s forwards";},200);
 
 },900);
-
-});
 
 });

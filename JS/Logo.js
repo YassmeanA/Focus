@@ -36,7 +36,6 @@ let current2 = 0;
 let current3 = 0;
 let Y;
 let rect;
-let rectX;
 let triggered = false;
 
 function animate() {

@@ -35,7 +35,7 @@ let current1 = 0;
 let current2 = 0;
 let current3 = 0;
 let Y;
-let rect;
+let rect = glass.getBoundingClientRect();
 let triggered = false;
 
 function animate() {

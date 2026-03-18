@@ -35,6 +35,7 @@ let current1 = 0;
 let current2 = 0;
 let current3 = 0;
 let Y;
+let rect;
 let triggered = false;
 
 function animate() {
@@ -125,8 +126,9 @@ show.classList.remove("touch");
 }
 
 
-const rect = glass.getBoundingClientRect();
-Y = getClipRadius();
+rect = glass.getBoundingClientRect();
+
+if(window.innerWidth > window.innerHeight){Y = window.innerHeight}else{window.innerWidth}
 
 if(show.classList.contains("active")){
     
@@ -241,8 +243,6 @@ Section4.querySelectorAll("li")[index].style.animationDelay = `${index * 0.2}s`;
 
 }
 
-const rect = glass.getBoundingClientRect();
-Y = getClipRadius();
 
 if(show.classList.contains("active")){
     

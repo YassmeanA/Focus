@@ -128,7 +128,7 @@ show.classList.remove("touch");
 
 rect = glass.getBoundingClientRect();
 
-if(window.innerWidth > window.innerHeight){Y = window.innerHeight}else{window.innerWidth}
+if(window.innerWidth > window.innerHeight){Y = window.innerHeight}else{Y = window.innerWidth}
 
 if(show.classList.contains("active")){
     
